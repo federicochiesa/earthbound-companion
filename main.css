@@ -4,8 +4,10 @@
 }
 
 body {
-    background-color: black;
-    font-family: "appleKid";
-    font-size: 300px;
-    color: white;
+    background-color: black !important;
+    font-family: "appleKid" !important;
+}
+
+nav{
+    background-color: black !important;
 }

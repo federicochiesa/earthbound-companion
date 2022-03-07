@@ -12,8 +12,56 @@
         <meta name="application-name" content="Earthbound Companion">
         <meta name="msapplication-TileColor" content="#a9221c">
         <meta name="theme-color" content="#ffffff">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="scripts/main.js"></script>
     </head>
     <body>
-        Belch e' ghei e usa il miele di mosche come lubrificante
+        <nav class="navbar navbar-expand-lg navbar-dark m-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Earthbound Companion</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Equipment Testing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                      Wiki
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Enemies</a></li>
+                      <li><a class="dropdown-item" href="#">Equipments</a></li>
+                      <li class="dropend">
+                        <a class="dropdown-item" href="#" id="dropdownSubMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Maps</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownSubMenuLink">
+                          <li><a class="dropdown-item" href="#">Onett</a></li>
+                          <li><a class="dropdown-item" href="#">Twoson</a></li>
+                          <li><a class="dropdown-item" href="#">Threed</a></li>
+                          <li><a class="dropdown-item" href="#">Fourside</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Sanctuaries</a></li>
+                      <li><a class="dropdown-item" href="#">Stores</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Save file viewer</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </body>
 </html>
