@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "appleKid";
+    src: url("fonts/apple_kid.woff");
+}
+
+body {
+    background-color: black;
+    font-family: "appleKid";
+    font-size: 300px;
+    color: white;
+}
