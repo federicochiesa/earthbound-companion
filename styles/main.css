@@ -1,13 +1,17 @@
 @font-face {
     font-family: "appleKid";
-    src: url("fonts/apple_kid.woff");
+    src: url("../fonts/apple_kid.woff");
 }
 
 body {
     background-color: black !important;
     font-family: "appleKid" !important;
+    image-rendering: pixelated;
 }
 
 nav{
     background-color: black !important;
+    border-style: solid;
+    border-width: 20px;
+    border-image: url(../assets/border.png) 6 round;
 }
