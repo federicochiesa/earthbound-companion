@@ -1,0 +1,2321 @@
+[
+   {
+      "name":"Abstract Art",
+      "data":{
+         "Comments":"This art may not make sense to you. It makes Ness sleepy just thinking about it. Use Paralysis to knock some sense into the painting.",
+         "Hit points":"301",
+         "Psychic points":"60",
+         "Speed":"19",
+         "Offense":"67",
+         "Defense":"79",
+         "Guts":"7",
+         "Exp":"4361",
+         "Money":"$255",
+         "Item":"Refreshing herb",
+         "Location":"Moonside"
+      }
+   },
+   {
+      "name":"Annoying Old Party Man",
+      "data":{
+         "Comments":"The Annoying Old Party Man is always in a hurry. When he runs into people on the streets, he's in a big rush to do them in. Hurry to get out of his way.",
+         "Hit points":"99",
+         "Psychic points":"0",
+         "Speed":"6",
+         "Offense":"20",
+         "Defense":"25",
+         "Guts":"50",
+         "Exp":"130",
+         "Money":"$32",
+         "Item":"Protein drink",
+         "Location":"Twoson"
+      }
+   },
+   {
+      "name":"Annoying Reveler",
+      "data":{
+         "Comments":"He may look pretty potted, but this obnoxious drunk sobers up in battle. Use a regular attack.",
+         "Hit points":"288",
+         "Psychic points":"0",
+         "Speed":"17",
+         "Offense":"58",
+         "Defense":"77",
+         "Guts":"50",
+         "Exp":"2373",
+         "Money":"$268",
+         "Item":"Protein drink",
+         "Location":"Fourside"
+      }
+   },
+   {
+      "name":"Arachnid!",
+      "data":{
+         "Comments":"Spiders may give you the creeps, but any weapon attack should squash them quickly.",
+         "Hit points":"216",
+         "Psychic points":"0",
+         "Speed":"23",
+         "Offense":"61",
+         "Defense":"30",
+         "Guts":"3",
+         "Exp":"4933",
+         "Money":"$296",
+         "Item":"Jar of hot sauce",
+         "Location":"Brick Road Maze"
+      }
+   },
+   {
+      "name":"Arachnid!!!",
+      "data":{
+         "Hit points":"344",
+         "Psychic points":"0",
+         "Speed":"20",
+         "Offense":"87",
+         "Defense":"86",
+         "Location":"Scaraba"
+      }
+   },
+   {
+      "name":"Armored Frog",
+      "data":{
+         "Comments":"How dangerous can a frog be? The Armored Frog has amazing defenses. Use a strong PSI Power or Bottle Rockets to blow him away.",
+         "Hit points":"202",
+         "Psychic points":"0",
+         "Speed":"7",
+         "Offense":"37",
+         "Defense":"108",
+         "Guts":"5",
+         "Exp":"1566",
+         "Money":"$77",
+         "Item":"Broken spray can",
+         "Location":"Grapefruit Falls"
+      }
+   },
+   {
+      "name":"Atomic Power Robot",
+      "data":{
+         "Comments":"The Atomic Power Robot is an early prototype of the Starman series. These robots will continue to function until they melt down.",
+         "Hit points":"594",
+         "Psychic points":"0",
+         "Speed":"25",
+         "Offense":"119",
+         "Defense":"133",
+         "Location":"Stonehenge base"
+      }
+   },
+   {
+      "name":"Attack Slug",
+      "data":{
+         "Comments":"Slow-moving slugs usually attack in packs. They don't pack much of a punch, but they can be dangerous just because of their numbers. Use a PSI attack.",
+         "Hit points":"30",
+         "Psychic points":"6",
+         "Speed":"1",
+         "Offense":"9",
+         "Defense":"2",
+         "Guts":"0",
+         "Exp":"27",
+         "Money":"$6",
+         "Item":"Bomb",
+         "Location":"Giant Step"
+      }
+   },
+   {
+      "name":"Bad Buffalo",
+      "data":{
+         "Comments":"This buffalo charges with lowered horns and can cause a lot of damage. Use PSI Paralysis to stop him in his tracks.",
+         "Hit points":"341",
+         "Psychic points":"0",
+         "Speed":"11",
+         "Offense":"164",
+         "Defense":"104",
+         "Guts":"5",
+         "Exp":"4108",
+         "Money":"$172",
+         "Item":"Wet towel",
+         "Location":"Dusty Dunes Desert"
+      }
+   },
+   {
+      "name":"Beautiful UFO",
+      "data":{
+         "Comments":"Beautiful UFOs take care to tie pretty bows on their chrome domes before flying out to attack unsuspecting travelers. Don't be distracted by their beauty!",
+         "Hit points":"339",
+         "Psychic points":"15",
+         "Speed":"59",
+         "Offense":"86",
+         "Defense":"97",
+         "Location":"Scaraba, Dungeon Man, Magicant"
+      }
+   },
+   {
+      "name":"Big Pile of Puke",
+      "data":{
+         "Comments":"The big, brown Barf is ever so offensive. One whiff of the malodorous mass can make you cry. Have herbs on hand when you fight.",
+         "Hit points":"631",
+         "Psychic points":"0",
+         "Speed":"16",
+         "Offense":"120",
+         "Defense":"158",
+         "Location":"Deep Darkness"
+      }
+   },
+   {
+      "name":"Bionic Kraken",
+      "data":{
+         "Comments":"This fire-breathing aquatic serpent gets steamed when you interrupt it in the Tunnel of the Past. Bottle Rockets and regular attacks will sink it.",
+         "Hit points":"900",
+         "Psychic points":"60",
+         "Speed":"42",
+         "Offense":"155",
+         "Defense":"195",
+         "Drops:":"Gutsy Bat",
+         "Location":"Cave of the Past"
+      }
+   },
+   {
+      "name":"Black Antoid",
+      "data":{
+         "Comments":"When you venture into the caves, you'll have the distinct displeasure of meeting the Black Antoids. They're small, quick and they attack in teams.",
+         "Hit points":"34",
+         "Psychic points":"25",
+         "Speed":"4",
+         "Offense":"14",
+         "Defense":"13",
+         "Guts":"3",
+         "Exp":"37",
+         "Money":"$7",
+         "Item":"Cookie",
+         "Location":"Giant Step"
+      }
+   },
+   {
+      "name":"Carefree Bomb",
+      "data":{
+         "Comments":"Much tougher than it looks, the CFB tosses bombs and Super Bombs at you every turn. It also takes a lot of hits and has no weaknesses to exploit.",
+         "Hit points":"504",
+         "Psychic points":"0",
+         "Speed":"31",
+         "Offense":"135",
+         "Defense":"215",
+         "Location":"Magicant"
+      }
+   },
+   {
+      "name":"Caveboy",
+      "data":{
+         "Comments":"Caveboy is a nasty Neanderthal with a spiked club. He looks mean\u2013and he is mean. Use a powerful attack to send him back to the stone age. It often drops picnic lunches, very useful HP-recovering items, so be sure to defeat some of them.",
+         "Hit points":"314",
+         "Psychic points":"0",
+         "Speed":"79",
+         "Offense":"21",
+         "Defense":"33",
+         "Guts":"0",
+         "Exp":"618",
+         "Money":"$17",
+         "Item":"Picnic lunch, Double burger",
+         "Location":"Winters, Stonehenge area"
+      }
+   },
+   {
+      "name":"Chomposaur",
+      "data":{
+         "Comments":"The voracious Chomposaur stomps about the plains of the Lost Underworld, hunting slow dinosaur watchers. If you meet one of these monsters, make sure you greet it with a powerful attack like the Multi-Bottle Rocket. Note that it can use a shield.",
+         "Hit points":"1288",
+         "Psychic points":"320",
+         "Speed":"17",
+         "Offense":"139",
+         "Defense":"183",
+         "Drops:":"Magic Fry Pan",
+         "Location":"Lost Underworld"
+      }
+   },
+   {
+      "name":"Coil Snake",
+      "data":{
+         "Comments":"Watch out for Snakes in the grass as you're enjoying the sights. They can sneak up quickly to strike, so make sure that you meet them head on.",
+         "Hit points":"18",
+         "Psychic points":"0",
+         "Speed":"2",
+         "Offense":"3",
+         "Defense":"4",
+         "Guts":"0",
+         "Exp":"1",
+         "Money":"$4",
+         "Item":"Cookie",
+         "Location":"Onett, Twoson, Threed(saved)"
+      }
+   },
+   {
+      "name":"Conducting Menace",
+      "data":{
+         "Comments":"Zzzzt! You're in for a shock when you meet the Conducting Menace. You'll have to find a way to short-circuit this hothead.",
+         "Hit points":"445",
+         "Psychic points":"238",
+         "Speed":"20",
+         "Offense":"107",
+         "Defense":"107",
+         "Guts":"5",
+         "Exp":"14792",
+         "Money":"$574",
+         "Item":"Bottle of water",
+         "Location":"Cave of the Pink Cloud"
+      }
+   },
+   {
+      "name":"Conducting Spirit",
+      "data":{
+         "Hit points":"587",
+         "Psychic points":"329",
+         "Speed":"26",
+         "Offense":"130",
+         "Defense":"139",
+         "Location":"Lumine Hall"
+      }
+   },
+   {
+      "name":"Cop",
+      "data":{
+         "Comments":"Before you head out of town, you'll have a showdown with five of Onett's finest. Before you set foot in the police station, be sure to stock up on supplies.",
+         "Hit points":"75",
+         "Psychic points":"0",
+         "Speed":"5",
+         "Offense":"15",
+         "Defense":"18",
+         "Guts":"7",
+         "Exp":"86",
+         "Money":"$18",
+         "Item":"Hamburger",
+         "Location":"Onett (Police Station), Twoson"
+      }
+   },
+   {
+      "name":"Cranky Lady",
+      "data":{
+         "Comments":"There are some people in Twoson that just can't keep their noses out of other people's business. Steer clear of them when you can.",
+         "Hit points":"95",
+         "Psychic points":"0",
+         "Speed":"6",
+         "Offense":"16",
+         "Defense":"18",
+         "Guts":"3",
+         "Exp":"200",
+         "Money":"$17",
+         "Item":"Handbag strap",
+         "Location":"Twoson"
+      }
+   },
+   {
+      "name":"Crazed Sign",
+      "data":{
+         "Comments":"This sinister sign won't give you any warning before it attacks. Be prepared with your Paralyze or Sleep PSI powers.",
+         "Hit points":"295",
+         "Psychic points":"98",
+         "Speed":"17",
+         "Offense":"64",
+         "Defense":"96",
+         "Guts":"5",
+         "Exp":"3618",
+         "Money":"$244",
+         "Item":"Big bottle rocket",
+         "Location":"Fourside, Summers"
+      }
+   },
+   {
+      "name":"Crested Booka",
+      "data":{
+         "Comments":"This odd-looking beast from the Dusty Dunes Desert presents a serious threat. Use Hypnosis to slow it down, then finish it with regular attacks.",
+         "Hit points":"265",
+         "Psychic points":"0",
+         "Speed":"17",
+         "Offense":"53",
+         "Defense":"73",
+         "Guts":"24",
+         "Exp":"3011",
+         "Money":"$130",
+         "Item":"Picnic lunch",
+         "Location":"Dusty Dunes Desert"
+      }
+   },
+   {
+      "name":"Criminal Caterpillar",
+      "data":{
+         "Comments":"This caterpillar is a rare and elusive enemy. It's worth LOTS of Exp, so do chase it immediately.",
+         "Hit points":"250",
+         "Psychic points":"168",
+         "Speed":"134",
+         "Offense":"47",
+         "Defense":"16",
+         "Guts":"0",
+         "Exp":"30384",
+         "Location":"Dusty Dunes Desert"
+      }
+   },
+   {
+      "name":"Cute Li'l UFO",
+      "data":{
+         "Comments":"These extraterrestrial visitors buzz annoyingly about firing beams that will give you a nasty cold.",
+         "Hit points":"162",
+         "Psychic points":"25",
+         "Speed":"58",
+         "Offense":"42",
+         "Defense":"32",
+         "Guts":"1",
+         "Exp":"1519",
+         "Money":"$110",
+         "Location":"Dusty Dunes Desert"
+      }
+   },
+   {
+      "name":"Dali's Clock",
+      "data":{
+         "Comments":"Dali's Clock may look twisted, but it freezes time and stops your attacks. Use Hypnosis to slow it down.",
+         "Hit points":"296",
+         "Psychic points":"0",
+         "Speed":"4",
+         "Offense":"65",
+         "Defense":"66",
+         "Guts":"5",
+         "Exp":"2503",
+         "Money":"$314",
+         "Item":"PSI caramel",
+         "Location":"Moonside, Dungeon Man"
+      }
+   },
+   {
+      "name":"Deadly Mouse",
+      "data":{
+         "Comments:":"This mouse has very high guts, which means that it will often inflict SMAAASH hits, making it somewhat hard",
+         "Hit points":"416",
+         "Psychic points":"0",
+         "Speed":"18",
+         "Offense":"63",
+         "Defense":"98",
+         "Guts":"225",
+         "Exp":"9225",
+         "Money":"$406",
+         "Item":"Rust promoter DX",
+         "Location":"Fourside Sewers"
+      }
+   },
+   {
+      "name":"Demonic Petunia",
+      "data":{
+         "Comments":"The huge, Demonic Petunias are anything but friendly flora. They put up fierce fights!",
+         "Hit points":"478",
+         "Psychic points":"0",
+         "Speed":"26",
+         "Offense":"102",
+         "Defense":"111",
+         "Location":"Deep Darkness"
+      }
+   },
+   {
+      "name":"Desert Wolf",
+      "data":{
+         "Comments":"This lone lobo attacks ferociously, but you can stun him with Paralyze.",
+         "Hit points":"247",
+         "Psychic points":"0",
+         "Speed":"33",
+         "Offense":"57",
+         "Defense":"67",
+         "Guts":"2",
+         "Exp":"3740",
+         "Money":"$114",
+         "Item":"Sudden guts pill",
+         "Location":"Dusty Dunes Desert"
+      }
+   },
+   {
+      "name":"Dread Skelpion",
+      "data":{
+         "Hit points":"214",
+         "Psychic points":"125",
+         "Speed":"40",
+         "Offense":"82",
+         "Defense":"57",
+         "Location":"Scaraba"
+      }
+   },
+   {
+      "name":"Ego Orb",
+      "data":{
+         "Comments":"The Ego Orb won't be able to weather an attack from Poo and Paula using the PSI Freeze power. It will crack up.",
+         "Hit points":"592",
+         "Psychic points":"0",
+         "Speed":"17",
+         "Offense":"124",
+         "Defense":"140",
+         "Location":"Lost Underworld"
+      }
+   },
+   {
+      "name":"Elder Batty",
+      "data":{
+         "Comments":"This bat has a weakness to PSI Flash like its weaker cousin, Mr. Batty.",
+         "Hit points":"294",
+         "Psychic points":"0",
+         "Speed":"33",
+         "Offense":"66",
+         "Defense":"72",
+         "Guts":"8",
+         "Exp":"4178",
+         "Money":"$371",
+         "Item":"Double burger",
+         "Location":"Pond Cave"
+      }
+   },
+   {
+      "name":"Electro Swoosh",
+      "data":{
+         "Comments":"This enemy believes in shock treatment, but if you use Freeze against it, it won't have time to charge itself up.",
+         "Hit points":"543",
+         "Psychic points":"338",
+         "Speed":"40",
+         "Offense":"140",
+         "Defense":"156",
+         "Location":"Magicant"
+      }
+   },
+   {
+      "name":"Enraged Fire Plug",
+      "data":{
+         "Comments":"Put out the fire in this foe's pump with any attack. As a fighter, the Hydrant is all wet.",
+         "Hit points":"309",
+         "Psychic points":"0",
+         "Speed":"14",
+         "Offense":"60",
+         "Defense":"81",
+         "Guts":"5",
+         "Exp":"4321",
+         "Money":"$346",
+         "Item":"Sudden guts pill",
+         "Location":"Moonside"
+      }
+   },
+   {
+      "name":"Even Slimier Little Pile",
+      "data":{
+         "Comments":"Like their cousins, the Even Slimier Little Piles can ooze their way into your life with unexpected speed.",
+         "Hit points":"326",
+         "Psychic points":"0",
+         "Speed":"22",
+         "Offense":"103",
+         "Defense":"101",
+         "Location":"Deep Darkness"
+      }
+   },
+   {
+      "name":"Evil Elemental",
+      "data":{
+         "Comments":"The disembodied (and quite annoyed about it) being will take out its wrath on anyone it encounters. It has no real strengths or weaknesses.",
+         "Hit points":"564",
+         "Psychic points":"0",
+         "Speed":"30",
+         "Offense":"121",
+         "Defense":"136",
+         "Location":"Fire Spring"
+      }
+   },
+   {
+      "name":"Evil Eye",
+      "data":{
+         "Comments":"The Evil Eye uses Brainshock on its Ness and co. Use the PSI Shield to protect your party and attack with any PSI or regular attack.",
+         "Hit points":"720",
+         "Psychic points":"400",
+         "Speed":"38",
+         "Offense":"141",
+         "Defense":"162",
+         "Location":"Onett(invaded)"
+      }
+   },
+   {
+      "name":"Extra Cranky Lady",
+      "data":{
+         "Hit points":"277",
+         "Psychic points":"0",
+         "Speed":"17",
+         "Offense":"48",
+         "Defense":"70",
+         "Guts":"5",
+         "Exp":"3651",
+         "Money":"$134",
+         "Item":"Handbag strap",
+         "Location":"Fourside"
+      }
+   },
+   {
+      "name":"Farm Zombie",
+      "data":{
+         "Hit points":"171",
+         "Psychic points":"0",
+         "Speed":"10",
+         "Offense":"31",
+         "Defense":"24",
+         "Exp":"700",
+         "Money":"$58",
+         "Item":"Skip sandwich",
+         "Location":"Grapefruit Falls"
+      }
+   },
+   {
+      "name":"Fierce Shattered Man",
+      "data":{
+         "Comments":"Wandering mindlessly amid the Hieroglyphs and coffins are Shattered Men, who attack any and everything they touch. Stay clear.",
+         "Hit points":"516",
+         "Psychic points":"0",
+         "Speed":"12",
+         "Offense":"101",
+         "Defense":"116",
+         "Location":"Pyramid"
+      }
+   },
+   {
+      "name":"Filthy Attack Roach",
+      "data":{
+         "Hit points":"399",
+         "Psychic points":"0",
+         "Speed":"77",
+         "Offense":"84",
+         "Defense":"33",
+         "Exp":"10543",
+         "Money":"$432",
+         "Item":"Secret herb",
+         "Location":"Fourside Sewers"
+      }
+   },
+   {
+      "name":"Final Starman",
+      "data":{
+         "Comments":"The last in a distinguished line of starmen is also the strongest. Use Multi Bottle Rockets to blow it back into space. You can also put him under using Hypnosis.",
+         "Hit points":"840",
+         "Psychic points":"860",
+         "Speed":"47",
+         "Offense":"178",
+         "Defense":"187",
+         "Location":"Cave of the Past"
+      }
+   },
+   {
+      "name":"Fobby",
+      "data":{
+         "Comments":"While Fobby is one of the weakest foes, he is capable of discharging a deadly Brain Shock attack.",
+         "Hit points":"240",
+         "Psychic points":"19",
+         "Speed":"5",
+         "Offense":"98",
+         "Defense":"84",
+         "Location":"Lumine Hall, Magicant"
+      }
+   },
+   {
+      "name":"Foppy",
+      "data":{
+         "Comments":"Be prepared to meet a mess of these enemies in Master Belch's base. They aren't much of a threat. In fact, most of them won't ever attack you.",
+         "Hit points":"120",
+         "Psychic points":"10",
+         "Speed":"1",
+         "Offense":"29",
+         "Defense":"9",
+         "Guts":"5",
+         "Exp":"1311",
+         "Money":"$93",
+         "Item":"PSI caramel",
+         "Location":"Belch's Factory"
+      }
+   },
+   {
+      "name":"French Kiss of Death",
+      "data":{
+         "Hit points":"588",
+         "Psychic points":"0",
+         "Speed":"30",
+         "Offense":"160",
+         "Defense":"160",
+         "Location":"Magicant"
+      }
+   },
+   {
+      "name":"Ghost of Starman",
+      "data":{
+         "Comments":"The Ghost of Starman uses Starstorm Alpha as its chief attack. Paula's Psych Shield will help fend off the attack. Use Multi-Bottle Rockets and other regular attacks to defeat the alien.",
+         "Hit points":"750",
+         "Psychic points":"462",
+         "Speed":"46",
+         "Offense":"152",
+         "Defense":"170",
+         "Location":"Onett, Cave of the Past"
+      }
+   },
+   {
+      "name":"Gigantic Ant",
+      "data":{
+         "Comments":"This is a descend-ant of Titanic Ant. Watch out for poison attacks. Your PSI Freeze should put a chill on it.",
+         "Hit points":"308",
+         "Psychic points":"81",
+         "Speed":"17",
+         "Offense":"54",
+         "Defense":"112",
+         "Guts":"5",
+         "Exp":"3980",
+         "Money":"$304",
+         "Item":"Double burger",
+         "Location":"Desert Gold Mine"
+      }
+   },
+   {
+      "name":"Great Crested Booka",
+      "data":{
+         "Comments":"The Great Crested Booka is a bird of a different color. It darts around, attacking unwary travelers whenever their backs are turned. Keep a close eye on these birds, even if you aren't a birdwatcher.",
+         "Hit points":"452",
+         "Psychic points":"0",
+         "Speed":"20",
+         "Offense":"100",
+         "Defense":"110",
+         "Location":"Scaraba"
+      }
+   },
+   {
+      "name":"Gruff Goat",
+      "data":{
+         "Comments":"This woodland creature can inflict severe damage to unwary travelers with its horns. If attacked by a goat, you should fight back fiercely and eat a Cookie to restore your energy.",
+         "Hit points":"45",
+         "Psychic points":"0",
+         "Speed":"12",
+         "Offense":"8",
+         "Defense":"23",
+         "Guts":"0",
+         "Exp":"20",
+         "Money":"$9",
+         "Item":"Salt packet",
+         "Location":"Winters"
+      }
+   },
+   {
+      "name":"Guardian Hieroglyph",
+      "data":{
+         "Comments":"When you enter the Sphinx, you'll find that the walls do indeed, have eyes. The Guardian Hierglyphs will step right off the wall to attack intruders.",
+         "Hit points":"470",
+         "Psychic points":"126",
+         "Speed":"20",
+         "Offense":"94",
+         "Defense":"106",
+         "Location":"Pyramid"
+      }
+   },
+   {
+      "name":"Handsome Tom",
+      "data":{
+         "Comments":"Handsome is as handsome does, but Handsome Tom doesn't do anything handsome at all. This animated puppet will try to string you up, but he doesn't have the power. Disappear after Master Belch is defeated.",
+         "Hit points":"133",
+         "Psychic points":"16",
+         "Speed":"11",
+         "Offense":"27",
+         "Defense":"25",
+         "Guts":"5",
+         "Exp":"520",
+         "Money":"$45",
+         "Item":"Tin of cocoa",
+         "Location":"Threed"
+      }
+   },
+   {
+      "name":"Hard Crocodile",
+      "data":{
+         "Comments":"Hard Crocs hide in the thick undergrowth of the Deep Darkness. They're quicker than you might think, so beware of their bites.",
+         "Hit points":"522",
+         "Psychic points":"0",
+         "Speed":"23",
+         "Offense":"110",
+         "Defense":"128",
+         "Location":"Deep Darkness"
+      }
+   },
+   {
+      "name":"High-class UFO",
+      "data":{
+         "Comments":"High Class UFOs are pert and pink, but they also attack with annoying speed and accuracy. You won't think they're so cute when they strike.",
+         "Hit points":"433",
+         "Psychic points":"72",
+         "Speed":"60",
+         "Offense":"93",
+         "Defense":"103",
+         "Location":"Scaraba"
+      }
+   },
+   {
+      "name":"Hostile Elder Oak",
+      "data":{
+         "Comments":"The walking woodwork with purple leaves certainly is hostile. Not one to stay rooted in one place, it will track you down to attack.",
+         "Hit points":"609",
+         "Psychic points":"76",
+         "Speed":"14",
+         "Offense":"134",
+         "Defense":"146",
+         "Location":"Deep Darkness"
+      }
+   },
+   {
+      "name":"Hyper Spinning Robo",
+      "data":{
+         "Comments":"Scientists and engineers believe that the Hyper Spinning Robot is constructed from parts of discarded record players. This dizzy robot is vulnerable to extreme cold.",
+         "Hit points":"553",
+         "Psychic points":"83",
+         "Speed":"28",
+         "Offense":"122",
+         "Defense":"130",
+         "Location":"Lumine Hall"
+      }
+   },
+   {
+      "name":"Insane Cultist",
+      "data":{
+         "Comments":"The Happy Happyists aren't as harmful\u2013or as happy\u2013as they might at first appear to be. Their weapons are paint brushes and their mission is to paint everything blue.",
+         "Hit points":"94",
+         "Psychic points":"0",
+         "Offense":"19",
+         "Defense":"25",
+         "Speed":"8",
+         "Guts":"20",
+         "Exp":"353",
+         "Money":"$33",
+         "Item":"PSI caramel"
+      }
+   },
+   {
+      "name":"Kiss of Death",
+      "data":{
+         "Comments":"Pucker up! The giant lips of the Kiss of Death will try to land a deadly smooch.",
+         "Hit points":"333",
+         "Psychic points":"0",
+         "Speed":"19",
+         "Offense":"91",
+         "Defense":"100",
+         "Guts":"7",
+         "Exp":"10354",
+         "Money":"$528",
+         "Item":"Jar of delisauce",
+         "Location":"Cave of the Pink Cloud"
+      }
+   },
+   {
+      "name":"Lesser Mook",
+      "data":{
+         "Comments":"The Lesser Mook is one of the few organic occupants of the Stonehenge compound. This beast is neutralized by most PSI attacks and should be nothing more than a minor nuisance for the party. However, its diamondize attack can still pose a threat.",
+         "Hit points":"401",
+         "Psychic points":"190",
+         "Speed":"17",
+         "Offense":"76",
+         "Defense":"102",
+         "Location":"Dungeon Man, Winters"
+      }
+   },
+   {
+      "name":"Lethal Asp Hieroglyph",
+      "data":{
+         "Hit points":"458",
+         "Psychic points":"0",
+         "Speed":"21",
+         "Offense":"89",
+         "Defense":"94",
+         "Location":"Pyramid"
+      }
+   },
+   {
+      "name":"Lil' UFO",
+      "data":{
+         "Comments":"L'il UFOs dart in and attack quickly. They're so fast that it's tough to dodge them, and they can leave you with a bad case of the sniffles.",
+         "Hit points":"82",
+         "Psychic points":"0",
+         "Speed":"53",
+         "Offense":"18",
+         "Defense":"17",
+         "Guts":"13",
+         "Exp":"223",
+         "Money":"$14",
+         "Item":"Skip sandwich",
+         "Location":"Peaceful Rest Valley"
+      }
+   },
+   {
+      "name":"Loaded Dice",
+      "data":{
+         "Comments":"The Loaded Dice will try to call for help, but it doesn't call more Loaded Dice. This enemy has the ability to call any of the enemies in Magicant, like the Carefree Bomb or French Kiss of Death. Its PSI defenses are weak.",
+         "Hit points":"307",
+         "Psychic points":"0",
+         "Speed":"77",
+         "Offense":"146",
+         "Defense":"113",
+         "Location":"Magicant"
+      }
+   },
+   {
+      "name":"Mad Duck",
+      "data":{
+         "Comments":"This water fowl's attack is worse than its quack. Although it may seem a bird-brained baddie at best, this Duck fights like an eagle with an attitude. Mad ducks use an elusive attack that can disrupt your concentration, although this should not be a problem since you will probably be fighting it with Jeff alone.",
+         "Hit points":"51",
+         "Psychic points":"0",
+         "Speed":"30",
+         "Offense":"12",
+         "Defense":"24",
+         "Exp":"41",
+         "Money":"$12",
+         "Item":"Fresh Egg",
+         "Location":"Brick Road Maze, Saturn Valley, Desert Gold Mine"
+      }
+   },
+   {
+      "name":"Mad Taxi",
+      "data":{
+         "Comments":"Although you might not run into this careening car in Fourside, it will be trying to run into you. Slow it down using PSI Paralysis.",
+         "Hit points":"253",
+         "Psychic points":"0",
+         "Speed":"38",
+         "Offense":"53",
+         "Defense":"68",
+         "Guts":"5",
+         "Exp":"2336",
+         "Money":"$216",
+         "Item":"Xterminator spray",
+         "Location":"Fourside, Summers"
+      }
+   },
+   {
+      "name":"Major Psychic Psycho",
+      "data":{
+         "Comments":"This psycho can singe the roots of your hair with his powerful Omega strength Fire and his PSI Shield keeps him safe from Freeze. Try Brain Shock instead. It has a 1/128 chance of dropping a Star Pendant, an incredibly useful accessory.",
+         "Hit points":"618",
+         "Psychic points":"574",
+         "Speed":"31",
+         "Offense":"145",
+         "Defense":"152",
+         "Item:":"Star Pendant (1/128)",
+         "Location":"Fire Spring"
+      }
+   },
+   {
+      "name":"Manly Fish",
+      "data":{
+         "Comments":"The bug-eyed, slimy-scaled Manly Fish chucks a mean spear. He's better adapted to moving around in the water than you are.",
+         "Hit points":"500",
+         "Psychic points":"0",
+         "Speed":"22",
+         "Offense":"83",
+         "Defense":"114",
+         "Location":"Deep Darkness"
+      }
+   },
+   {
+      "name":"Manly Fish's Brother",
+      "data":{
+         "Comments":"He's manly, he's mean and he watches his bro's back. When the two get together, you're in big trouble.",
+         "Hit points":"526",
+         "Psychic points":"220",
+         "Speed":"24",
+         "Offense":"114",
+         "Defense":"123",
+         "Location":"Deep Darkness"
+      }
+   },
+   {
+      "name":"Marauder Octobot",
+      "data":{
+         "Hit points":"482",
+         "Psychic points":"220",
+         "Speed":"23",
+         "Offense":"99",
+         "Defense":"121",
+         "Location":"Scaraba"
+      }
+   },
+   {
+      "name":"Master Criminal Worm",
+      "data":{
+         "Comments:":"Obscure enemy that is worth tons of EXP. If you see it, immediately chase it.",
+         "Hit points":"377",
+         "Psychic points":"300",
+         "Speed":"136",
+         "Offense":"73",
+         "Defense":"40",
+         "Location":"Scaraba"
+      }
+   },
+   {
+      "name":"Mechanical Octobot",
+      "data":{
+         "Comments":"Big brother to the Ultimate Octobot, this droid doesn't present much danger, but it usually shows up with other enemies that are very dangerous.",
+         "Hit points":"768",
+         "Psychic points":"0",
+         "Speed":"44",
+         "Offense":"163",
+         "Defense":"81",
+         "Location":"Onett(invaded)"
+      }
+   },
+   {
+      "name":"Mighty Bear",
+      "data":{
+         "Comments":"When you wake the Mighty Bears from their hibernation, they're very grouchy. They'll chase you down and maul you, if given half a chance.",
+         "Hit points":"167",
+         "Psychic points":"0",
+         "Speed":"7",
+         "Offense":"29",
+         "Defense":"31",
+         "Guts":"1",
+         "Exp":"609",
+         "Money":"$49",
+         "Item":"Teddy bear",
+         "Location":"Lilliput Steps"
+      }
+   },
+   {
+      "name":"Mighty Bear Seven",
+      "data":{
+         "Hit points":"367",
+         "Psychic points":"0",
+         "Speed":"11",
+         "Offense":"85",
+         "Defense":"76",
+         "Guts":"1",
+         "Exp":"8884",
+         "Money":"$440",
+         "Item":"Super plush bear",
+         "Location":"Winters"
+      }
+   },
+   {
+      "name":"Military Octobot",
+      "data":{
+         "Comments":"The Blue Octopus is a rare but deadly opponent. Don't let this vile mechanized creature get his tentacles on you. Use the PSI Freeze attack and turn this monster into scrap metal sushi.",
+         "Hit points":"604",
+         "Psychic points":"0",
+         "Speed":"26",
+         "Offense":"138",
+         "Defense":"147",
+         "Location":"Winters"
+      }
+   },
+   {
+      "name":"Mobile Sprout",
+      "data":{
+         "Comments":"The Mobile Sprouts spring up suddenly, and they can grow new sprouts to help them in battle. They often attack in pesky packs.",
+         "Hit points":"79",
+         "Psychic points":"9",
+         "Speed":"6",
+         "Offense":"17",
+         "Defense":"12",
+         "Guts":"5",
+         "Exp":"133",
+         "Money":"$13",
+         "Item":"Croissant",
+         "Location":"Twoson, Peaceful Rest Valley"
+      }
+   },
+   {
+      "name":"Mole Playing Rough",
+      "data":{
+         "Comments":"The Moles Playing Rough generally hang around caves, where their vision is an advantage. Attack them aggressively.",
+         "Hit points":"103",
+         "Psychic points":"0",
+         "Speed":"9",
+         "Offense":"22",
+         "Defense":"28",
+         "Guts":"2",
+         "Exp":"456",
+         "Money":"$36",
+         "Item":"Croissant",
+         "Location":"Lilliput Steps, Dusty Dunes Desert, Deep Darkness, Summers"
+      }
+   },
+   {
+      "name":"Mr. Molecule",
+      "data":{
+         "Comments":"The Molecules often bunch together and attack as compounds, but they have weak defenses. Use your PSI Special power to defeat them all at once.",
+         "Hit points":"280",
+         "Psychic points":"21",
+         "Speed":"18",
+         "Offense":"118",
+         "Defense":"97",
+         "Location":"Magicant"
+      }
+   },
+   {
+      "name":"Mook Senior",
+      "data":{
+         "Comments":"Mook Seniors are one of the few carbon based creatures that inhabit the alien Stonehenge Base. Use Hypnosis or PSI Fire to neutralize this adversary. Watch out, for Mook Seniors can diamondize you.",
+         "Hit points":"501",
+         "Psychic points":"700",
+         "Speed":"25",
+         "Offense":"108",
+         "Defense":"122",
+         "Location":"Stonehenge base"
+      }
+   },
+   {
+      "name":"Mostly Bad Fly",
+      "data":{
+         "Hit points":"141",
+         "Psychic points":"0",
+         "Speed":"15",
+         "Offense":"32",
+         "Defense":"16",
+         "Guts":"4",
+         "Exp":"1116",
+         "Money":"$84",
+         "Item":"Pizza",
+         "Location":"Belch's Factory"
+      }
+   },
+   {
+      "name":"Mr. Batty",
+      "data":{
+         "Comments":"Attack Bats hang out in the caves round Happy Happy Village. Try to attack them before they take flight.",
+         "Hit points":"86",
+         "Psychic points":"0",
+         "Speed":"29",
+         "Offense":"25",
+         "Defense":"5",
+         "Guts":"4",
+         "Exp":"304",
+         "Money":"$30",
+         "Item":"Jar of hot sauce",
+         "Location":"Happy Happy Village cave"
+      }
+   },
+   {
+      "name":"Musica",
+      "data":{
+         "Comments":"This bad bass guitar might strike a cord with some, but it wants to settle a score with you. The Franklin Badge deflects Musica's attack notes.",
+         "Hit points":"292",
+         "Psychic points":"0",
+         "Speed":"21",
+         "Offense":"69",
+         "Defense":"85",
+         "Guts":"20",
+         "Exp":"3748",
+         "Money":"$341",
+         "Item":"Sudden guts pill",
+         "Location":"Fourside (Department Store)"
+      }
+   },
+   {
+      "name":"Mystical Record",
+      "data":{
+         "Comments":"Put the spin on this disk with strong attacks and PSI power attacks such as Fire that inflict damage.",
+         "Hit points":"263",
+         "Psychic points":"35",
+         "Speed":"20",
+         "Offense":"63",
+         "Defense":"78",
+         "Guts":"12",
+         "Exp":"2736",
+         "Money":"$310",
+         "Item":"Pizza",
+         "Location":"Fourside (Department Store), Dungeon Man"
+      }
+   },
+   {
+      "name":"New Age Retro Hippie",
+      "data":{
+         "Comments":"The Hippie hangs out on the streets of Twoson, and his only purpose in life appears to be making the going less easy for everybody else.",
+         "Hit points":"87",
+         "Psychic points":"0",
+         "Speed":"5",
+         "Offense":"19",
+         "Defense":"14",
+         "Guts":"10",
+         "Exp":"160",
+         "Money":"$23",
+         "Item":"Ruler",
+         "Location":"Twoson"
+      }
+   },
+   {
+      "name":"No Good Fly",
+      "data":{
+         "Comments":"A few swats will quiet this buzzing annoyance.",
+         "Hit points":"100",
+         "Psychic points":"0",
+         "Speed":"10",
+         "Offense":"23",
+         "Defense":"13",
+         "Guts":"3",
+         "Exp":"415",
+         "Money":"$26",
+         "Item":"Boiled egg",
+         "Location":"Threed"
+      }
+   },
+   {
+      "name":"Noose Man",
+      "data":{
+         "Comments":"This bad braid, this twine of terror isn't as much of a pain in the neck as it seems. Use PSI Fire to unravel its attack.",
+         "Hit points":"231",
+         "Psychic points":"0",
+         "Speed":"18",
+         "Offense":"47",
+         "Defense":"52",
+         "Guts":"5",
+         "Exp":"1990",
+         "Money":"$220",
+         "Item":"Carton of cream",
+         "Location":"Desert Gold Mine"
+      }
+   },
+   {
+      "name":"Nuclear Reactor Robot",
+      "data":{
+         "Comments":"This nuke will nuke everything in sight if it is defeated. The best strategy is to run from it. If it is with a companion, defeat the companion, then run. It also commonly uses an annoying 'refuel' move, which fully heals one enemy, making enemy parties much harder to defeat.",
+         "Hit points":"768",
+         "Psychic points":"0",
+         "Speed":"43",
+         "Offense":"147",
+         "Defense":"176",
+         "Location":"Cave of the Past"
+      }
+   },
+   {
+      "name":"Over Zealous Cop",
+      "data":{
+         "Comments":"Most cops are good guys, but a few men in blue have agendas of their own. Stay in the shadows and out of their way to stay out of trouble.",
+         "Hit points":"325",
+         "Psychic points":"0",
+         "Speed":"18",
+         "Offense":"69",
+         "Defense":"75",
+         "Guts":"7",
+         "Exp":"7448",
+         "Money":"$420",
+         "Item":"Double burger",
+         "Location":"Summers"
+      }
+   },
+   {
+      "name":"Petrified Royal Guard",
+      "data":{
+         "Hit points":"573",
+         "Psychic points":"0",
+         "Speed":"12",
+         "Offense":"106",
+         "Defense":"173",
+         "Location":"Pyramid"
+      }
+   },
+   {
+      "name":"Pitbull Slug",
+      "data":{
+         "Comments":"The Pitbull Slug, which you'll encounter in Deep Darkness, is as tenacious as its namesake. They're hard to see in the murky darkness, too.",
+         "Hit points":"217",
+         "Psychic points":"11",
+         "Speed":"2",
+         "Offense":"79",
+         "Defense":"77",
+         "Location":"Deep Darkness"
+      }
+   },
+   {
+      "name":"Plain Crocodile",
+      "data":{
+         "Comments":"Like the tough-skinned frog above, the Plain Crocodile won't go down without a fight. Hit this guy hard right from the start.",
+         "Hit points":"234",
+         "Psychic points":"0",
+         "Speed":"10",
+         "Offense":"40",
+         "Defense":"55",
+         "Guts":"1",
+         "Exp":"1928",
+         "Money":"$62",
+         "Item":"Meteornium",
+         "Location":"Grapefruit Falls"
+      }
+   },
+   {
+      "name":"Pogo Punk",
+      "data":{
+         "Comments":"There are several Pogo Punks loitering the streets, and they don't like it when you get in their way. Steer clear or prepare to fight.",
+         "Hit points":"35",
+         "Psychic points":"0",
+         "Speed":"3",
+         "Offense":"8",
+         "Defense":"10",
+         "Guts":"0",
+         "Exp":"15",
+         "Money":"$18",
+         "Item":"Hamburger",
+         "Location":"Onett"
+      }
+   },
+   {
+      "name":"Psychic Psycho",
+      "data":{
+         "Comments":"Another creature of the Fire Springs, the Psychic Psycho uses PSI Fire Beta to toast your arrival. Once again, Freeze will cool off the hot reception.",
+         "Hit points":"591",
+         "Psychic points":"252",
+         "Speed":"30",
+         "Offense":"124",
+         "Defense":"144",
+         "Location":"Fire Spring"
+      }
+   },
+   {
+      "name":"Putrid Moldyman",
+      "data":{
+         "Comments":"The stench of this enemy can bring tears to your eyes, which may make it difficult for you to fight back.",
+         "Hit points":"203",
+         "Psychic points":"0",
+         "Speed":"9",
+         "Offense":"36",
+         "Defense":"41",
+         "Guts":"5",
+         "Exp":"830",
+         "Money":"$53",
+         "Item":"Croissant",
+         "Location":"Threed"
+      }
+   },
+   {
+      "name":"Ramblin' Evil Mushroom",
+      "data":{
+         "Comments":"Evil Mushrooms sneak up on unsuspecting travelers and attack them with spores. Spores, which cause mushroom status (a confusion-like status that also makes walking around outside of battles more difficult) can only be removed by healers.",
+         "Hit points":"60",
+         "Psychic points":"0",
+         "Speed":"5",
+         "Offense":"15",
+         "Defense":"10",
+         "Guts":"5",
+         "Exp":"95",
+         "Money":"$15",
+         "Item":"Ketchup packet",
+         "Location":"Onett, Twoson"
+      }
+   },
+   {
+      "name":"Ranboob",
+      "data":{
+         "Comments":"This veggie villain protects its stem with PSI Shield. Use weapon attacks if you notice that the PSI Shield is being used.",
+         "Hit points":"232",
+         "Psychic points":"42",
+         "Speed":"20",
+         "Offense":"41",
+         "Defense":"63",
+         "Guts":"1",
+         "Exp":"2496",
+         "Money":"$158",
+         "Item":"Picnic lunch",
+         "Location":"Milky Well Hole"
+      }
+   },
+   {
+      "name":"Red Antoid",
+      "data":{
+         "Hit points":"112",
+         "Psychic points":"30",
+         "Speed":"10",
+         "Offense":"29",
+         "Defense":"27",
+         "Guts":"4",
+         "Exp":"1175",
+         "Money":"$35",
+         "Item":"Sugar packet",
+         "Location":"Grapefruit Falls"
+      }
+   },
+   {
+      "name":"Robo-Pump",
+      "data":{
+         "Comments":"The whispering of the Robo-Pump counts down to an explosion. You have three turns to take it out before it throws a bomb. Use your special PSI attack and Freeze, or attack it with your regular fighting options.",
+         "Hit points":"431",
+         "Psychic points":"0",
+         "Speed":"19",
+         "Offense":"70",
+         "Defense":"113",
+         "Exp":"4796",
+         "Money":"$349",
+         "Item":"Super bomb",
+         "Location":"Moonside, Dungeon Man"
+      }
+   },
+   {
+      "name":"Rowdy Mouse",
+      "data":{
+         "Comments":"The mice in the caves sometimes attack in a pack, sometimes attack solo. It doesn't matter how they mount their offenses, though, they're mean. They have high guts and therefore often inflict SMAAASH hits.",
+         "Hit points":"36",
+         "Psychic points":"0",
+         "Speed":"5",
+         "Offense":"7",
+         "Defense":"20",
+         "Guts":"225",
+         "Exp":"34",
+         "Money":"$9",
+         "Item":"Bread roll",
+         "Location":"Giant Step, Pond Cave"
+      }
+   },
+   {
+      "name":"Runaway Dog",
+      "data":{
+         "Comments":"Ness' dog King might have great manners, but none of the other dogs in town have graduated from obedience school. Watch out for them as you tour town.",
+         "Hit points":"21",
+         "Psychic points":"0",
+         "Speed":"26",
+         "Offense":"4",
+         "Defense":"5",
+         "Guts":"0",
+         "Exp":"4",
+         "Money":"$3",
+         "Item":"Bread roll",
+         "Location":"Onett, Twoson"
+      }
+   },
+   {
+      "name":"Scalding Coffee Cup",
+      "data":{
+         "Comments":"A cup of coffee in the Department Store may be a real grind. Don't let it splash you.",
+         "Hit points":"190",
+         "Psychic points":"0",
+         "Speed":"23",
+         "Offense":"55",
+         "Defense":"20",
+         "Location":"Fourside (Department Store), Dungeon Man"
+      }
+   },
+   {
+      "name":"Sentry Robot",
+      "data":{
+         "Comments":"You'll find Sentry Robots on the upper floor of the Monotoli Bldg. They take about 300 HP of damage.",
+         "Hit points":"372",
+         "Psychic points":"0",
+         "Speed":"17",
+         "Offense":"77",
+         "Defense":"105",
+         "Guts":"10",
+         "Exp":"5034",
+         "Money":"$392",
+         "Item":"Big bottle rocket",
+         "Location":"Fourside (Monotoli Building)"
+      }
+   },
+   {
+      "name":"Shattered Man",
+      "data":{
+         "Comments":"When you go upstairs to read the Hieroglyph in the museum, you'll run into a really old man wrapped in rags. He'll pop out of his coffin to attack you. When you defeat him, he'll leave behind some Mummy Wrap.",
+         "Hit points":"694",
+         "Psychic points":"0",
+         "Speed":"18",
+         "Offense":"72",
+         "Defense":"92",
+         "Guts":"25",
+         "Exp":"44690",
+         "Money":"$2630",
+         "Item":"Mummy Wrap",
+         "Location":"Summers (Cultural Museum)"
+      }
+   },
+   {
+      "name":"Skate Punk",
+      "data":{
+         "Comments":"The Skate Punks are also Sharks, and like the other gang members, they're always spoiling for fights. Fight them to build experience so you'll be ready for Frank.",
+         "Hit points":"31",
+         "Psychic points":"0",
+         "Speed":"5",
+         "Offense":"7",
+         "Defense":"8",
+         "Guts":"0",
+         "Exp":"12",
+         "Money":"$17",
+         "Item":"Pizza",
+         "Location":"Onett"
+      }
+   },
+   {
+      "name":"Skelpion",
+      "data":{
+         "Comments":"Like many denizens of the desert, can't abide PSI Thunder and Freeze.",
+         "Hit points":"137",
+         "Psychic points":"21",
+         "Speed":"37",
+         "Offense":"41",
+         "Defense":"23",
+         "Guts":"80",
+         "Exp":"1823",
+         "Money":"$140",
+         "Item":"Vial of serum",
+         "Location":"Dusty Dunes Desert"
+      }
+   },
+   {
+      "name":"Smelly Ghost",
+      "data":{
+         "Comments":"Protected by a garbage can, Smelly Ghost takes a lot of damage. He can also put up a fight.",
+         "Hit points":"194",
+         "Psychic points":"50",
+         "Speed":"10",
+         "Offense":"35",
+         "Defense":"89",
+         "Guts":"2",
+         "Exp":"606",
+         "Money":"$71",
+         "Item":"Broken iron",
+         "Location":"Threed"
+      }
+   },
+   {
+      "name":"Smilin' Sam",
+      "data":{
+         "HP":"161",
+         "PP":"55",
+         "Offense":"34",
+         "Defense":"44",
+         "Speed":"17",
+         "Guts":"16",
+         "Exp":"712",
+         "Money":"$48",
+         "Item":"Refreshing herb",
+         "Location":"Threed"
+      }
+   },
+   {
+      "name":"Smilin' Sphere",
+      "data":{
+         "Comments":"If other enemies are present when you attack this guy, expect him to blow up in your face and cause great pain and suffering.",
+         "Hit points":"233",
+         "Psychic points":"60",
+         "Speed":"17",
+         "Offense":"50",
+         "Defense":"65",
+         "Guts":"5",
+         "Exp":"2218",
+         "Money":"$191",
+         "Item":"Meteornium",
+         "Location":"Dusty Dunes Desert"
+      }
+   },
+   {
+      "name":"Soul Consuming Flame",
+      "data":{
+         "Comments":"This enemy burns for your soul, but if you use PSI Freeze, you'll melt its heart.",
+         "Hit points":"602",
+         "Psychic points":"0",
+         "Speed":"30",
+         "Offense":"131",
+         "Defense":"262",
+         "Location":"Fire Spring"
+      }
+   },
+   {
+      "name":"Spinning Robo",
+      "data":{
+         "Comments":"Most commonly found in Peaceful Rest Valley, Spinning Robos attack with fierce firepower. In groups of two or three, they can be deadly.",
+         "Hit points":"113",
+         "Psychic points":"17",
+         "Speed":"7",
+         "Offense":"21",
+         "Defense":"22",
+         "Guts":"5",
+         "Exp":"297",
+         "Money":"$21",
+         "Item":"Meteornium",
+         "Location":"Peaceful Rest Valley"
+      }
+   },
+   {
+      "name":"Spiteful Crow",
+      "data":{
+         "Comments":"Often drops a Cookie when defeated. Has the ability to steal items.",
+         "Hit points":"24",
+         "Psychic points":"0",
+         "Speed":"77",
+         "Offense":"5",
+         "Defense":"3",
+         "Guts":"0",
+         "Exp":"3",
+         "Money":"$5",
+         "Item":"Cookie",
+         "Location":"Onett, Peaceful Rest Valley(cabin area), Winters"
+      }
+   },
+   {
+      "name":"Squatter Demon",
+      "data":{
+         "Comments:":"Always attacks alone. Can use an attack that causes poison.",
+         "Hit points":"774",
+         "Psychic points":"60",
+         "Speed":"45",
+         "Offense":"158",
+         "Defense":"192",
+         "Location":"Cave of the Past"
+      }
+   },
+   {
+      "name":"Starman",
+      "data":{
+         "Comments":"The Starman often warps into the middle of the party to attack. This robot is the primary sentry in the Stonehenge base. Watch out for his beam weapon and PSI magnet attacks.",
+         "Hit points":"545",
+         "Psychic points":"155",
+         "Speed":"24",
+         "Offense":"103",
+         "Defense":"126",
+         "Location":"Stonehenge base"
+      }
+   },
+   {
+      "name":"Starman Super",
+      "data":{
+         "Comments":"This gold-plated robot is an enhanced version of the original Starman. It employs a lethal combination of beam and PSI magnet attacks. There is a one in 128 chance that the Starman Super drops the Sword of Kings. The Starman Super carries a transmitter and can call for assistance.",
+         "Hit points":"568",
+         "Psychic points":"310",
+         "Speed":"24",
+         "Offense":"112",
+         "Defense":"129",
+         "Location":"Stonehenge base"
+      }
+   },
+   {
+      "name":"Stinky Ghost",
+      "data":{
+         "Hit points":"444",
+         "Psychic points":"0",
+         "Speed":"18",
+         "Offense":"90",
+         "Defense":"179",
+         "Guts":"4",
+         "Exp":"13179",
+         "Money":"$541",
+         "Item":"Large Pizza",
+         "Location":"Fourside Sewers"
+      }
+   },
+   {
+      "name":"Strong Crocodile",
+      "data":{
+         "Comments":"Like the Armored Frog, this reptilian villain has thick skin. Use Bottle Rockets and PSI attacks to punch through its defenses.",
+         "Hit points":"417",
+         "Psychic points":"0",
+         "Speed":"17",
+         "Offense":"85",
+         "Defense":"131",
+         "Guts":"5",
+         "Exp":"10122",
+         "Money":"$495",
+         "Item":"Super bomb",
+         "Location":"Pond Cave"
+      }
+   },
+   {
+      "name":"Tangoo",
+      "data":{
+         "Comments":"Playing his magic pipe, Tangoo will try to mesmerize your party. Don't let him trick you! Pick a fight and put an end to the music.",
+         "Hit points":"371",
+         "Psychic points":"5",
+         "Speed":"19",
+         "Offense":"96",
+         "Defense":"99",
+         "Guts":"20",
+         "Exp":"14798",
+         "Money":"$572",
+         "Item":"Snake",
+         "Location":"Cave of the Pink Cloud"
+      }
+   },
+   {
+      "name":"Territorial Oak",
+      "data":{
+         "Comments":"Territorial Oaks are trouble. Attack with weapons or spells until they burst into flames.",
+         "Hit points":"145",
+         "Psychic points":"41",
+         "Speed":"5",
+         "Offense":"26",
+         "Defense":"30",
+         "Guts":"9",
+         "Exp":"356",
+         "Money":"$29",
+         "Item":"PSI caramel",
+         "Location":"Peaceful Rest Valley"
+      }
+   },
+   {
+      "name":"Thirsty Coil Snake",
+      "data":{
+         "Comments":"These reptiles slither into the picture one at a time. They are nothing to worry about.",
+         "Hit points":"270",
+         "Psychic points":"0",
+         "Offense":"52",
+         "Defense":"80",
+         "Speed":"18",
+         "Guts":"5",
+         "Exp":"2786",
+         "Money":"$276",
+         "Item":"Chick",
+         "Location":"Desert Gold Mine"
+      }
+   },
+   {
+      "name":"Thunder Mite",
+      "data":{
+         "Comments:":"Uses thunder attacks, so protect one person with the Franklin Badge and the others with pendants that protect against thunder.",
+         "Hit points":"293",
+         "Psychic points":"200",
+         "Speed":"20",
+         "Offense":"85",
+         "Defense":"83",
+         "Guts":"13",
+         "Exp":"10798",
+         "Money":"$430",
+         "Item":"Bottle of water",
+         "Location":"Cave of the Pink Cloud"
+      }
+   },
+   {
+      "name":"Tiny L'il Ghost",
+      "data":{
+         "Hit points":"90",
+         "Psychic points":"0",
+         "Speed":"100",
+         "Offense":"19",
+         "Defense":"7",
+         "Location":"",
+         "Note":"The Tiny L'il Ghost is an enemy that joins your party when infected with the \"Mini-Ghost\" status. It sometimes attacks you and tries to freeze you, but it also takes damage from PSI Fire and the likes."
+      }
+   },
+   {
+      "name":"Tough Guy",
+      "data":{
+         "Comments":"Summers, being a resort town and all, has lots of interesting sorts hanging out near the beach. One of the beach bums you'll meet is a guy in a Hawaiian shirt. He doesn't have anything to do other than get into trouble.",
+         "Hit points":"342",
+         "Psychic points":"0",
+         "Speed":"18",
+         "Offense":"69",
+         "Defense":"75",
+         "Guts":"20",
+         "Exp":"9310",
+         "Money":"$525",
+         "Item":"Chick",
+         "Location":"Summers"
+      }
+   },
+   {
+      "name":"Tough Mobile Sprout",
+      "data":{
+         "Hit points":"179",
+         "Psychic points":"13",
+         "Speed":"18",
+         "Offense":"33",
+         "Defense":"27",
+         "Guts":"6",
+         "Exp":"1865",
+         "Money":"$119",
+         "Item":"Sprig of parsley",
+         "Location":"Milky Well, Monkey Caves"
+      }
+   },
+   {
+      "name":"Trick or Trick Kid",
+      "data":{
+         "Comments":"Don't let the smile fool you, Pumpkin Boy is nobody's friend. He attacks with pumpkin seeds.",
+         "Hit points":"142",
+         "Psychic points":"0",
+         "Speed":"7",
+         "Offense":"30",
+         "Defense":"37",
+         "Guts":"12",
+         "Exp":"570",
+         "Money":"$47",
+         "Item":"Bomb",
+         "Location":"Threed"
+      }
+   },
+   {
+      "name":"Ultimate Octobot",
+      "data":{
+         "Comments":"This droid usually shows up as the weaker member of a party of two enemies. It's easy to destroy with conventional attacks.",
+         "Hit points":"768",
+         "Psychic points":"0",
+         "Speed":"43",
+         "Offense":"147",
+         "Defense":"176",
+         "Location":"Cave of the Past"
+      }
+   },
+   {
+      "name":"Unassuming Local Guy",
+      "data":{
+         "Comments":"Although he claims to be mellow, this man has a chip on his shoulder and something to prove. He'll chase you down for a fist fight at any opportunity.",
+         "Hit points":"73",
+         "Psychic points":"0",
+         "Speed":"5",
+         "Offense":"18",
+         "Defense":"13",
+         "Guts":"1",
+         "Exp":"146",
+         "Money":"$19",
+         "Item":"Toothbrush",
+         "Location":"Twoson, Happy Happy Village"
+      }
+   },
+   {
+      "name":"Uncontrollable Sphere",
+      "data":{
+         "Hit points":"577",
+         "Psychic points":"180",
+         "Speed":"27",
+         "Offense":"116",
+         "Defense":"134",
+         "Location":"Lumine Hall, Magicant"
+      }
+   },
+   {
+      "name":"Urban Zombie",
+      "data":{
+         "Comments":"Although more sophisticated than your average suburban zombie, this breed is still not much of a threat in Threed.",
+         "Hit points":"171",
+         "Psychic points":"0",
+         "Speed":"10",
+         "Offense":"31",
+         "Defense":"24",
+         "Guts":"15",
+         "Exp":"700",
+         "Money":"$58",
+         "Item":"Hamburger",
+         "Location":"Threed, Grapefruit Falls"
+      }
+   },
+   {
+      "name":"Violent Roach",
+      "data":{
+         "Comments":"A feisty cockroach waits in the tunnel to Saturn Valley. PSI Fire and Freeze will send him back to the cockroach hotel.",
+         "Hit points":"209",
+         "Psychic points":"0",
+         "Speed":"35",
+         "Offense":"30",
+         "Defense":"36",
+         "Guts":"9",
+         "Exp":"1757",
+         "Money":"$80",
+         "Item":"Secret herb",
+         "Location":"Grapefruit Falls"
+      }
+   },
+   {
+      "name":"Wetnosaur",
+      "data":{
+         "Comments":"You won't find the Wetnosaur as often as the Chomposaur, which is unfortunate since it is easier to defeat. A touch of PSI Fire should dry it up.",
+         "Hit points":"1030",
+         "Psychic points":"0",
+         "Speed":"17",
+         "Offense":"126",
+         "Defense":"172",
+         "Location":"Lost Underworld"
+      }
+   },
+   {
+      "name":"Whirling Robo",
+      "data":{
+         "Comments":"This dizzy mechanized fiend falls apart under most PSI attacks. Watch out for this robot's automated self-destruct sequence.",
+         "Hit points":"374",
+         "Psychic points":"36",
+         "Speed":"18",
+         "Offense":"78",
+         "Defense":"90",
+         "Location":"Winters"
+      }
+   },
+   {
+      "name":"Wild 'N Wooly Shambler",
+      "data":{
+         "Comments":"This is no wolf in sheep's clothing. Regular attacks will turn it into mutton.",
+         "Hit points":"722",
+         "Psychic points":"212",
+         "Speed":"144",
+         "Offense":"171",
+         "Defense":"38",
+         "Location":"Cave of the Past"
+      }
+   },
+   {
+      "name":"Wooly Shambler",
+      "data":{
+         "Hit points":"391",
+         "Psychic points":"140",
+         "Speed":"18",
+         "Offense":"81",
+         "Defense":"91",
+         "Location":"Winters"
+      }
+   },
+   {
+      "name":"Worthless Protoplasm",
+      "data":{
+         "Comments":"The name says it all. The wild strain of this Protoplasm escaped and now oozes about the forest of Winters. It is an extremely weak foe, easily mopped up.",
+         "Hit points":"38",
+         "Psychic points":"0",
+         "Speed":"27",
+         "Offense":"11",
+         "Defense":"21",
+         "Guts":"0",
+         "Exp":"17",
+         "Money":"$11",
+         "Item":"Cookie",
+         "Location":"Winters, Dungeon Man"
+      }
+   },
+   {
+      "name":"Yes Man Jr.",
+      "data":{
+         "Comments":"The Yes Men Jr. swing mean hoops. They're members of the Sharks gang, and they tend to hang with other members of the gang. You're in for a brawl.",
+         "Hit points":"33",
+         "Psychic points":"0",
+         "Speed":"4",
+         "Offense":"8",
+         "Defense":"9",
+         "Guts":"0",
+         "Exp":"13",
+         "Money":"$18",
+         "Item":"Bag of fries",
+         "Location":"Onett"
+      }
+   },
+   {
+      "name":"Zap Eel",
+      "data":{
+         "Comments":"Deep Darkness is also swimming with Zap Eels, which can put on impressive light shows when they strike their targets.",
+         "Hit points":"470",
+         "Psychic points":"0",
+         "Speed":"29",
+         "Offense":"97",
+         "Defense":"93",
+         "Location":"Deep Darkness"
+      }
+   },
+   {
+      "name":"Zombie Dog",
+      "data":{
+         "Comments":"This mongrel chomps onto anything that moves, and sometimes its bite contains poison.",
+         "Hit points":"210",
+         "Psychic points":"0",
+         "Speed":"30",
+         "Offense":"39",
+         "Defense":"51",
+         "Guts":"10",
+         "Exp":"1354",
+         "Money":"$54",
+         "Item":"Bottle rocket",
+         "Location":"Threed"
+      }
+   },
+   {
+      "name":"Zombie Possessor",
+      "data":{
+         "Comments":"The Possession Ghost may stay with you even though you've defeated it. In later battles, the Possession Ghost will renew his attack.",
+         "Hit points":"176",
+         "Psychic points":"0",
+         "Speed":"30",
+         "Offense":"28",
+         "Defense":"19",
+         "Guts":"9",
+         "Money":"$81",
+         "Item":"Secret herb",
+         "Location":"Threed"
+      }
+   },
+   {
+      "name":"Boogey Tent",
+      "data":{
+         "Hit points":"579",
+         "Psychic points":"0",
+         "Speed":"10",
+         "Offense":"56",
+         "Defense":"43",
+         "Guts":"16",
+         "Exp":"5500",
+         "Money":"$407",
+         "Location":"Threed"
+      }
+   },
+   {
+      "name":"Captain Strong",
+      "data":{
+         "Comments":"After you take out all of his henchmen, you'll come face-to-face with the wily Captain himself. Strong is what his name implies, so keep your energy up.",
+         "Hit points":"140",
+         "Psychic points":"0",
+         "Speed":"15",
+         "Offense":"20",
+         "Defense":"24",
+         "Guts":"8",
+         "Exp":"492",
+         "Money":"$159",
+         "Item":"Boiled egg",
+         "Location":"Onett (Police Station)"
+      }
+   },
+   {
+      "name":"Carbon Dog",
+      "data":{
+         "Comments":"Carbon Dog burns to roast you, but you can turn the rotisserie on it by using Freeze or strong weapon attacks like Jeff's Bottle Rockets.",
+         "Hit points":"1672",
+         "Psychic points":"0",
+         "Speed":"31",
+         "Offense":"159",
+         "Defense":"174",
+         "Location":"Fire Spring"
+      }
+   },
+   {
+      "name":"Clumsy Robot",
+      "data":{
+         "Comments":"It may look funny, but this robot won't give up. Look for some help from the Runaway Five.",
+         "Hit points":"962",
+         "Psychic points":"0",
+         "Speed":"83",
+         "Offense":"88",
+         "Defense":"137",
+         "Guts":"30",
+         "Exp":"32378",
+         "Money":"$2081",
+         "Location":"Fourside (Monotoli Building)"
+      }
+   },
+   {
+      "name":"Dept. Store Spook",
+      "data":{
+         "Comments":"After the alien hits the lights and captures Paula, head to the fourth floor to fight the green fiend. It uses Fire, Freeze and Brain Shock. You should use Jeff's Bottle Rockets.",
+         "Hit points":"610",
+         "Psychic points":"290",
+         "Speed":"19",
+         "Offense":"82",
+         "Defense":"135",
+         "Guts":"24",
+         "Exp":"24291",
+         "Money":"$1698",
+         "Location":"Fourside (Department Store)"
+      }
+   },
+   {
+      "name":"Diamond Dog",
+      "data":{
+         "Comments":"Carbon Dog becomes Diamond Dog after taking damage of several hundred HP. Now it's your turn to suffer. DD is hard. Use Multi-Bottle Rockets right away before it builds up its counter shield. Also, use shield killer.",
+         "Hit points":"3344",
+         "Psychic points":"154",
+         "Speed":"31",
+         "Offense":"167",
+         "Defense":"230",
+         "Location":"Fire Spring"
+      }
+   },
+   {
+      "name":"Electro Specter",
+      "data":{
+         "Comments":"The Electro Specter is composed of elements never before seen on Earth. Scientists speculate that the Electro Specter is a lethal combination of energy and molten metal, but no one has ever survived a close examination.",
+         "Hit points":"3092",
+         "Psychic points":"80",
+         "Speed":"29",
+         "Offense":"148",
+         "Defense":"203",
+         "Location":"Lumine Hall"
+      }
+   },
+   {
+      "name":"Everdred",
+      "data":{
+         "Hit points":"182",
+         "Psychic points":"0",
+         "Speed":"6",
+         "Offense":"25",
+         "Defense":"35",
+         "Guts":"10",
+         "Exp":"986",
+         "Money":"$171",
+         "Location":"Twoson(Burglin Park)"
+      }
+   },
+   {
+      "name":"Evil Mani Mani",
+      "data":{
+         "Comments":"The Statue puts up a better fight than Carpainter back in Happy Happy Village, but you should be able to beat it without difficulty. Just make sure you go into the battle fully powered up.",
+         "Hit points":"860",
+         "Psychic points":"88",
+         "Speed":"15",
+         "Offense":"86",
+         "Defense":"145",
+         "Guts":"1",
+         "Exp":"28139",
+         "Money":"$1852",
+         "Location":"Moonside"
+      }
+   },
+   {
+      "name":"Frank",
+      "data":{
+         "Comments":"Frank thinks he's one tough dude, but if you're fairly experienced, he won't give you much trouble. Be sure you're well-supplied when you face him.",
+         "HP":": 63",
+         "PP":": 0",
+         "Speed":": 7",
+         "Offense":": 12",
+         "Defense":": 17",
+         "Guts":": 5",
+         "Exp":": 50",
+         "Money":": $48"
+      }
+   },
+   {
+      "name":"Frankystein Mark II",
+      "data":{
+         "Comments":"When you defeat Frank, you may think that you've brought peace to Onett. Think again\u2013Frank has a surprise in store for you. It's his robotic buddy, Frankystein.",
+         "Hit points":"91",
+         "Psychic points":"0",
+         "Speed":"4",
+         "Offense":"15",
+         "Defense":"18",
+         "Guts":"0",
+         "Exp":"76",
+         "Money":"$31",
+         "Location":"Onett"
+      }
+   },
+   {
+      "name":"Giygas Part I (within Devil's Machine)",
+      "data":{
+         "Hit points":"9999",
+         "Psychic points":"999",
+         "Speed":"80",
+         "Offense":"255",
+         "Defense":"255",
+         "Location":"Cave of the Past"
+      }
+   },
+   {
+      "name":"Giygas Part II",
+      "data":{
+         "Hit points":"2000",
+         "Psychic points":"0",
+         "Speed":"80",
+         "Offense":"255",
+         "Defense":"255",
+         "Location":"Cave of the Past"
+      }
+   },
+   {
+      "name":"Giygas Part III (unstable defenses)",
+      "data":{
+         "Hit points":"9999",
+         "Psychic points":"0",
+         "Speed":"80",
+         "Offense":"255",
+         "Defense":"127",
+         "Location":"Cave of the Past"
+      }
+   },
+   {
+      "name":"Guardian Digger",
+      "data":{
+         "Comments":"The moles in the gold mine use PSI Shield to protect themselves, but you can attack them with Freeze and Flash.",
+         "Hit points":"386",
+         "Psychic points":"110",
+         "Speed":"17",
+         "Offense":"59",
+         "Defense":"129",
+         "Guts":"21",
+         "Exp":"17301",
+         "Money":"$1467",
+         "Location":"Desert Gold Mine"
+      }
+   },
+   {
+      "name":"Guardian General",
+      "data":{
+         "Comments":"The Sphinx won't cough up the Hawk Eye without a fight. You'll have to defeat the stone-like Guardian General in order to get the treasure.",
+         "Hit points":"831",
+         "Psychic points":"6",
+         "Speed":"21",
+         "Offense":"109",
+         "Defense":"214",
+         "Location":"Pyramid"
+      }
+   },
+   {
+      "name":"Heavily Armed Pokey",
+      "data":{
+         "Hit points":"1746",
+         "Psychic points":"999",
+         "Speed":"51",
+         "Offense":"150",
+         "Defense":"18",
+         "Guts":"45",
+         "Location":"Cave of the Past"
+      }
+   },
+   {
+      "name":"Kraken",
+      "data":{
+         "Comments":"When your party returns from Fourside, You'll be able to board a ship and set sail for Scaraba. The passage won't be peaceful, though. You'll have to battle Kraken, the sea beast.",
+         "Hit points":"1097",
+         "Psychic points":"176",
+         "Speed":"21",
+         "Offense":"105",
+         "Defense":"166",
+         "Location":"Open sea, Magicant (x3)"
+      }
+   },
+   {
+      "name":"Master Barf",
+      "data":{
+         "Comments":"The master of regurgitation has returned for a second battle. Master Barf has more hit points, so he'll be tougher than ever.",
+         "Hit points":"1319",
+         "Psychic points":"0",
+         "Speed":"24",
+         "Offense":"136",
+         "Defense":"177",
+         "Location":"Deep Darkness"
+      }
+   },
+   {
+      "name":"Master Belch",
+      "data":{
+         "Comments":"Belch's weakness for Fly Honey is legendary. After beating the Tent in Threed, you can find a jar of this stuff. Feed it to Belch right at the start of the fight. After a round or two, Belch will go nuts for the Honey and forget about attacking you. Keep battling him with your strongest attacks.",
+         "Hit points":"650",
+         "Psychic points":"0",
+         "Speed":"16",
+         "Offense":"50",
+         "Defense":"88",
+         "Guts":"20",
+         "Exp":"12509",
+         "Money":"$664",
+         "Location":"Belch's Factory"
+      }
+   },
+   {
+      "name":"Mini Barf",
+      "data":{
+         "Comments":"These pounds of muck emit a toxic stink that can blind even the most rugged hero. Use PSI Fire.",
+         "Hit points":"224",
+         "Psychic points":"0",
+         "Speed":"15",
+         "Offense":"42",
+         "Defense":"65",
+         "Guts":"7",
+         "Exp":"1978",
+         "Money":"$124",
+         "Item":"Bomb",
+         "Location":"Underground Path"
+      }
+   },
+   {
+      "name":"Mondo Mole",
+      "data":{
+         "Comments":"You've met other moles while wandering around in caves, but you've never seen one this big or brutal. Use Psi power to both attack and heal, and try to keep Paula in the pink until the end of this skirmish. It might take a couple tries to topple him.",
+         "Hit points":"498",
+         "Psychic points":"161",
+         "Speed":"9",
+         "Offense":"37",
+         "Defense":"50",
+         "Guts":"15",
+         "Exp":"5791",
+         "Money":"$400",
+         "Location":"Lilliput Steps"
+      }
+   },
+   {
+      "name":"Mr. Carpainter",
+      "data":{
+         "Comments":"There's no telling what pushed Carpainter off the deep end, but he has painted everything blue and started a twisted cult.",
+         "Hit points":"262",
+         "Psychic points":"70",
+         "Speed":"8",
+         "Offense":"33",
+         "Defense":"45",
+         "Guts":"13",
+         "Exp":"1412",
+         "Money":"$195",
+         "Location":"Happy Happy Village"
+      }
+   },
+   {
+      "name":"Ness's Nightmare",
+      "data":{
+         "Comments":"The Nightmare uses shields to protect itself and Recover to keep its HP full. Use Magic Pudding to outlast it and don't use regular attacks if the countershield is up.",
+         "Hit points":"1654",
+         "Psychic points":"882",
+         "Speed":"31",
+         "Offense":"172",
+         "Defense":"253",
+         "Location":"Magicant"
+      }
+   },
+   {
+      "name":"Plague Rat of Doom",
+      "data":{
+         "Comments":"The Plague Rat of Doom uses SMASH attacks frequently. Keep yourself healed up and in the fight. Use your top Fire and Flash powers.",
+         "Hit points":"1827",
+         "Psychic points":"60",
+         "Speed":"19",
+         "Offense":"71",
+         "Defense":"180",
+         "Location":"Fourside Sewers"
+      }
+   },
+   {
+      "name":"Shrooom!",
+      "data":{
+         "Comments":"This mutant mushroom is the muscle of this area. It is joined in battle by the regular Walking Mushrooms that you have already come to fear. The first two mushrooms often get help from their sporlings.",
+         "Hit points":"1700",
+         "Psychic points":"112",
+         "Speed":"18",
+         "Offense":"95",
+         "Defense":"154",
+         "Location":"Pond Cave"
+      }
+   },
+   {
+      "name":"Starman Deluxe",
+      "data":{
+         "Comments":"Starman Deluxe is a new Starman prototype. Because of the extensive time and research devoted to the development of this robot, only one Starman Deluxe exists. Watch out for the enhanced beam weapon this opponent carries.",
+         "Hit points":"1400",
+         "Psychic points":"418",
+         "Speed":"27",
+         "Offense":"143",
+         "Defense":"186",
+         "Location":"Stonehenge base"
+      }
+   },
+   {
+      "name":"Starman Junior",
+      "data":{
+         "Comments":"When you return to your homes with Pokey and Picky, you'll be ambushed by Starman Jr. You'll be glad that Buzz Buzz is still alive to help with the battle.",
+         "Hit points":"200",
+         "Psychic points":"999",
+         "Speed":"1",
+         "Offense":"11",
+         "Defense":"10",
+         "Guts":"0",
+         "Exp":"16",
+         "Money":"$20",
+         "Location":"Onett"
+      }
+   },
+   {
+      "name":"Thunder and Storm",
+      "data":{
+         "Comments":"These twin terrors attack with the power of the elements. Find shelter from the onslaught and use PSI powers to attack the two of them at once.",
+         "Hit points":"2065",
+         "Psychic points":"70",
+         "Speed":"21",
+         "Offense":"111",
+         "Defense":"171",
+         "Exp":"129026",
+         "Money":"$4796",
+         "Location":"Cave of the Pink Cloud"
+      }
+   },
+   {
+      "name":"Titanic Ant",
+      "data":{
+         "Comments":"The first major enemy you'll encounter on this journey is the Titanic Ant. To sink it, you'll have to use both PSI attacks and regular Bash attacks.",
+         "Hit points":"235",
+         "Psychic points":"102",
+         "Speed":"6",
+         "Offense":"19",
+         "Defense":"23",
+         "Guts":"9",
+         "Exp":"695",
+         "Money":"$150",
+         "Location":"Giant Step"
+      }
+   }
+]
