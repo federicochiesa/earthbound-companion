@@ -1,4 +1,4 @@
-[
+{"weapons":[
    {
       "name":"Baddest Beam",
       "data":{
@@ -427,7 +427,8 @@
          "Error rate":"1/16",
          "Offense up":"40"
       }
-   },
+   }],
+   "protection":[
    {
       "name":"Baseball cap",
       "data":{
@@ -827,7 +828,8 @@
          "Price":"$60",
          "Defense up":"0"
       }
-   },
+   }],
+   "goods":[
    {
       "name":"ATM card",
       "data":{
@@ -1693,7 +1695,8 @@
          "Location":"Delivered by Mach Pizza courier shortly after defeating the Boogey Tent",
          "Price":"N/A"
       }
-   },
+   }],
+   "food":[
    {
       "name":"Bag of fries",
       "data":{
@@ -2143,7 +2146,8 @@
          "Price":"$140",
          "Hit points up":"252 (Ness, Paula, Jeff), 6 (Poo)"
       }
-   },
+   }],
+   "condiments":[
    {
       "name":"Carton of cream",
       "data":{
@@ -2215,7 +2219,8 @@
          "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop)",
          "Price":"$4"
       }
-   },
+   }],
+   "medicine":[
    {
       "name":"Cold remedy",
       "data":{
@@ -2326,4 +2331,4 @@
          "Price":"$24"
       }
    }
-]
+]}

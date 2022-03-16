@@ -5,3 +5,12 @@ dropdowns.forEach((dd)=>{
         el.style.display = el.style.display==='block'?'none':'block'
     })
 })
+
+function showModal(body){
+    document.getElementById("infoModalBody").textContent = body;
+    new bootstrap.Modal(document.getElementById('infoModal')).show();
+}
+
+window.onload = function(){
+    document.getElementById("infoModalButton").onclick = function(){showModal("Posso");}
+}

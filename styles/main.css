@@ -29,7 +29,7 @@ nav {
     font-size: 2.5rem;
 }
 
-.nav-link {
+.nav-link, .dropdown-item {
     font-size: 1.5rem
 }
 
@@ -41,7 +41,7 @@ h3 {
     font-size: 2.5rem;
 }
 
-.description {
+.description, .modal-body {
     font-size: 1.5rem;
     line-height: 125%;
 }
@@ -56,3 +56,12 @@ table {
     border-radius:6px;
 }
 
+.img-button{
+    margin-top: 5px;
+    height: 45%;
+}
+
+.modal-title{
+    font-size: 2.5rem;
+    line-height: 80%;
+}

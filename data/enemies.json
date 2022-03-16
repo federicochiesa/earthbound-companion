@@ -1,4 +1,4 @@
-[
+{"enemies":[
    {
       "name":"Abstract Art",
       "data":{
@@ -1460,8 +1460,8 @@
    {
       "name":"Smilin' Sam",
       "data":{
-         "HP":"161",
-         "PP":"55",
+         "Hit points":"161",
+         "Psychic points":"55",
          "Offense":"34",
          "Defense":"44",
          "Speed":"17",
@@ -1914,7 +1914,8 @@
          "Item":"Secret herb",
          "Location":"Threed"
       }
-   },
+   }],
+   "bosses":[
    {
       "name":"Boogey Tent",
       "data":{
@@ -2044,14 +2045,14 @@
       "name":"Frank",
       "data":{
          "Comments":"Frank thinks he's one tough dude, but if you're fairly experienced, he won't give you much trouble. Be sure you're well-supplied when you face him.",
-         "HP":": 63",
-         "PP":": 0",
-         "Speed":": 7",
-         "Offense":": 12",
-         "Defense":": 17",
-         "Guts":": 5",
-         "Exp":": 50",
-         "Money":": $48"
+         "Hit points":"63",
+         "Psychic points":"0",
+         "Speed":"7",
+         "Offense":"12",
+         "Defense":"17",
+         "Guts":"5",
+         "Exp":"50",
+         "Money":"$48"
       }
    },
    {
@@ -2318,4 +2319,4 @@
          "Location":"Giant Step"
       }
    }
-]
+]}
