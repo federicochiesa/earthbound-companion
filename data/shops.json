@@ -1,4 +1,4 @@
-[
+{"shops":[
    {
       "name":"Mach Pizza",
       "data":[
@@ -609,4 +609,4 @@
          "Travel charm"
       ]
    }
-]
+]}

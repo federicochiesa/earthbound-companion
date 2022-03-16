@@ -34,7 +34,7 @@ window.onload = async function(){
             let newEntry = document.createElement("div");
             if (typeof(element.data["Comments"]) == "undefined") var comments = "";
             else var comments = element.data["Comments"];
-            newEntry.innerHTML = "<div class=\"row mb-4\">\
+            newEntry.innerHTML = "<div class=\"row mb-5\">\
                                     <div class=\"col-lg-2\">\
                                         <img src=\"/assets/sprites/abstracta.png\" class=\"img-item\">\
                                     </div>\
@@ -46,8 +46,8 @@ window.onload = async function(){
                                         <table class=\"table table-dark table-striped\">\
                                             <tbody>\
                                                 <tr>\
-                                                    <th scope=\"row\">HP</th>\
-                                                    <td>" + element.data["Hit points"] + "</td>\
+                                                    <th scope=\"row\">Price</th>\
+                                                    <td>" + element.data["Price"] + "</td>\
                                                 </tr>\
                                                 <tr>\
                                                     <th scope=\"row\">PP</th>\
@@ -79,7 +79,7 @@ window.onload = async function(){
 }
 
 async function getEnemiesData(){
-    let enemiesData = await fetch('../../data/enemies.json');
+    let enemiesData = await fetch('../../data/shops.json');
     enemiesData = enemiesData.json();
     return enemiesData;
 }

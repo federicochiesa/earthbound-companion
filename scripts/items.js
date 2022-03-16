@@ -34,7 +34,7 @@ window.onload = async function(){
             let newEntry = document.createElement("div");
             if (typeof(element.data["Comments"]) == "undefined") var comments = "";
             else var comments = element.data["Comments"];
-            newEntry.innerHTML = "<div class=\"row\">\
+            newEntry.innerHTML = "<div class=\"row mb-5\">\
                                     <div class=\"col-lg-2\">\
                                         <img src=\"/assets/sprites/abstracta.png\" class=\"img-item\">\
                                     </div>\
@@ -66,7 +66,7 @@ window.onload = async function(){
                                     </div>\
                                     <div class=\"col-lg-1\">\
                                         <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + element.name + "&quot;)\">\
-                                            <img src=\"../../assets/sprites/InfoMan.png\" class=\"img-button\" \>\
+                                            <img src=\"../../assets/sprites/info.png\" class=\"img-button\" \>\
                                         </a>\
                                         <a href=\"#/\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + element.name + "&quot;)\">\
                                             <img src=\"../../assets/sprites/Mappost.png\" class=\"img-button\" \>\
