@@ -22,6 +22,10 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }  
 
+function nameToImage(name){
+    return name.replace(/[ '.-]/g, "");
+}
+
 window.onload = async function(){
     let data = await getEnemiesData();
     let list = document.getElementById("dataList");
@@ -34,9 +38,10 @@ window.onload = async function(){
             let newEntry = document.createElement("div");
             if (typeof(element.data["Comments"]) == "undefined") var comments = "";
             else var comments = element.data["Comments"];
+            console.log(nameToImage(element.name))
             newEntry.innerHTML = "<div class=\"row mb-4\">\
                                     <div class=\"col-lg-2\">\
-                                        <img src=\"/assets/sprites/abstracta.png\" class=\"img-item\">\
+                                        <img src=\"/assets/sprites/" + nameToImage(element.name) + ".png\" class=\"img-item\">\
                                     </div>\
                                     <div class=\"col-lg-7\">\
                                         <h3 class=\"text-white\">" + element.name + "</h3>\

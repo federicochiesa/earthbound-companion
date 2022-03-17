@@ -1664,7 +1664,7 @@
       }
    },
    {
-      "name":"Tiny L'il Ghost",
+      "name":"Tiny Lil' Ghost",
       "data":{
          "Hit points":"90",
          "Psychic points":"0",
@@ -1672,7 +1672,7 @@
          "Offense":"19",
          "Defense":"7",
          "Location":"",
-         "Note":"The Tiny L'il Ghost is an enemy that joins your party when infected with the \"Mini-Ghost\" status. It sometimes attacks you and tries to freeze you, but it also takes damage from PSI Fire and the likes."
+         "Note":"The Tiny Lil' Ghost is an enemy that joins your party when infected with the \"Mini-Ghost\" status. It sometimes attacks you and tries to freeze you, but it also takes damage from PSI Fire and the likes."
       }
    },
    {

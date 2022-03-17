@@ -36,7 +36,7 @@ window.onload = async function(){
             else var comments = element.data["Comments"];
             newEntry.innerHTML = "<div class=\"row mb-5\">\
                                     <div class=\"col-lg-2\">\
-                                        <img src=\"/assets/sprites/abstracta.png\" class=\"img-item\">\
+                                        <img src=\"/assets/sprites/AbstractArt.png\" class=\"img-item\">\
                                     </div>\
                                     <div class=\"col-lg-7\">\
                                         <h3 class=\"text-white\">" + element.name + "</h3>\
