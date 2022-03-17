@@ -23,7 +23,7 @@ function capitalizeFirstLetter(string) {
 }  
 
 window.onload = async function(){
-    let data = await getEnemiesData();
+    let data = await getShopsData();
     let list = document.getElementById("dataList");
     for (let i = 0; i < Object.keys(data).length; i++){
         let title = document.createElement("div");
@@ -78,7 +78,7 @@ window.onload = async function(){
     }
 }
 
-async function getEnemiesData(){
+async function getShopsData(){
     let enemiesData = await fetch('../../data/shops.json');
     enemiesData = enemiesData.json();
     return enemiesData;

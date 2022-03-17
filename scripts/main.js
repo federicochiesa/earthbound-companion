@@ -6,11 +6,9 @@ dropdowns.forEach((dd)=>{
     })
 })
 
-function showModal(body){
-    document.getElementById("infoModalBody").textContent = body;
-    new bootstrap.Modal(document.getElementById('infoModal')).show();
-}
-
 window.onload = function(){
-    document.getElementById("infoModalButton").onclick = function(){showModal("Posso");}
+    setTimeout(function(){
+        const myToast = new bootstrap.Toast(document.getElementById("surveyToast"));
+        myToast.show();
+    }, 2000);
 }

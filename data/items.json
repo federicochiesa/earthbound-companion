@@ -1086,7 +1086,7 @@
    {
       "name":"Cup of Lifenoodles",
       "data":{
-         "Comments":"Same effect as Healing \u03a9.",
+         "Comments":"Same effect as Healing Omega.",
          "Description":"Revives a friend who is unconscious. In addition, it also works well on poison, nausea, colds, sunstroke, falling asleep, uncontrollable crying and feeling strange. This is effective when you have paralysis, or you have been diamondized.",
          "Location":"Peaceful Rest Valley (Gift Box), Talah Ramah's Cave (Chest), The Pyramid (Gift Box), Dungeon Man (Gift Box), Deep Darkness (Gift Box), Stonehenge base (Gift Box), Lumine Hall (Gift Box)",
          "Price":"Sells for $178"
@@ -2242,7 +2242,7 @@
    {
       "name":"Horn of life",
       "data":{
-         "Comments":"Completely cures unconsciousness and all other adverse conditions. The same effect as Healing \u03a9.",
+         "Comments":"Completely cures unconsciousness and all other adverse conditions. The same effect as Healing Omega.",
          "Description":"Revives a friend who is unconscious. In addition, it also works well with poison, nausea, colds, sunstroke, falling asleep, uncontrollable crying, and feeling strange. This is effective when you have paralysis, or if you have been diamondized.",
          "Location":"Saturn Valley (Drugstore), Lost Underworld (Grocery Store, Gift Box), the Fire Spring (Gift Box), dropped by Manly Fish's Brother(1/128 chance)",
          "Price":"$1780",
@@ -2270,7 +2270,7 @@
    {
       "name":"Refreshing herb",
       "data":{
-         "Comments":"Cures a cold, sunstroke, crying, poison, feeling strange and nausea. The same effect as Healing \u03b2.",
+         "Comments":"Cures a cold, sunstroke, crying, poison, feeling strange and nausea. The same effect as Healing Beta.",
          "Description":"It helps when you have been poisoned, or you are feeling nauseous. It also has other uses... colds, sunstroke, falling asleep, uncontrollable crying, and feeling strange.",
          "Location":"Threed (Drugstore), Saturn Valley (Drugstore), Dusty Dunes Desert (Drugstore), Fourside (Department Store)",
          "Price":"$80"
@@ -2289,7 +2289,7 @@
    {
       "name":"Secret herb",
       "data":{
-         "Comments":"Cures all bad conditions and wakes someone who is unconscious. The same effect as Healing \u03b3. Is a stronger version of the Refreshing herb.",
+         "Comments":"Cures all bad conditions and wakes someone who is unconscious. The same effect as Healing Gamma. Is a stronger version of the Refreshing herb.",
          "Description":"May revive a friend who is unconscious. In addition, it also works well on poison, nausea, colds, sunstroke, falling asleep, uncontrollable crying, and feeling strange. This is effective when you have paralysis, or you have been diamondized.",
          "Location":"Saturn Valley (Drugstore), Desert Gold Mine (Gift Box), Moonside (Gift Box), Winters (Dr. Andonuts' Lab), Toto (Grocery Store), Scaraba (Hassan's Shop, Grocery Store), Deep Darkness (Trading Company Employee), dropped by Violent Roach(1/128 chance)",
          "Price":"$380"
@@ -2325,7 +2325,7 @@
    {
       "name":"Wet towel",
       "data":{
-         "Comments":"This item is meant to cure sunstroke, but can also heal any other status Healing \u03b1 heals.",
+         "Comments":"This item is meant to cure sunstroke, but can also heal any other status Healing Alpha heals.",
          "Description":"It's great for those times that you get sunstroke.",
          "Location":"Dusty Dunes Desert (Drugstore), Talah Ramah's Cave (Chest), Scaraba (Hassan's Shop), Dungeon Man (Gift Box)",
          "Price":"$24"

@@ -23,7 +23,7 @@ function capitalizeFirstLetter(string) {
 }  
 
 window.onload = async function(){
-    let data = await getEnemiesData();
+    let data = await getItemsData();
     let list = document.getElementById("dataList");
     for (let i = 0; i < Object.keys(data).length; i++){
         let title = document.createElement("div");
@@ -35,10 +35,7 @@ window.onload = async function(){
             if (typeof(element.data["Comments"]) == "undefined") var comments = "";
             else var comments = element.data["Comments"];
             newEntry.innerHTML = "<div class=\"row mb-5\">\
-                                    <div class=\"col-lg-2\">\
-                                        <img src=\"/assets/sprites/AbstractArt.png\" class=\"img-item\">\
-                                    </div>\
-                                    <div class=\"col-lg-7\">\
+                                    <div class=\"col-lg-9\">\
                                         <h3 class=\"text-white\">" + element.name + "</h3>\
                                         <span class=\"text-white description\">" + comments + "</span>\
                                     </div>\
@@ -78,7 +75,7 @@ window.onload = async function(){
     }
 }
 
-async function getEnemiesData(){
+async function getItemsData(){
     let enemiesData = await fetch('../../data/items.json');
     enemiesData = enemiesData.json();
     return enemiesData;
