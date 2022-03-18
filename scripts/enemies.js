@@ -38,7 +38,6 @@ window.onload = async function(){
             let newEntry = document.createElement("div");
             if (typeof(element.data["Comments"]) == "undefined") var comments = "";
             else var comments = element.data["Comments"];
-            console.log(nameToImage(element.name))
             newEntry.innerHTML = "<div class=\"row mb-4\">\
                                     <div class=\"col-lg-2\">\
                                         <img src=\"/assets/sprites/" + nameToImage(element.name) + ".png\" class=\"img-item\">\
