@@ -154,3 +154,7 @@ table {
     border-image: url(../assets/border.png) 6 round;
     row-gap: 5ch;
 }
+
+.list-group > a{
+    font-size: 1.5rem;
+}

@@ -22,6 +22,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!-- Local stylesheets -->
         <link rel="stylesheet" href="../../styles/main.css">
+        <!-- Local scripts -->
+        <script src="../../scripts/maps.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark m-3">
@@ -68,7 +70,16 @@
               </div>
 		         </div>
              <div class="row">
-                <iframe src="../../mapframe/dist/index.html" style="height:70vh;"></iframe>
+               <div class="col-sm-3">
+                <div class="list-group" id="mapSelector">
+                  <a href="#/" onclick="updateMap(this.id);" id="onett" class="list-group-item list-group-item-action list-group-item-dark active">Onett</a>
+                  <a href="#/" onclick="updateMap(this.id);" id="twoson" class="list-group-item list-group-item-action list-group-item-dark">Twoson</a>
+                  <a href="#/" onclick="updateMap(this.id);" id="threed" class="list-group-item list-group-item-action list-group-item-dark">Threed</a>
+                  <a href="#/" onclick="updateMap(this.id);" id="fourside"class="list-group-item list-group-item-action list-group-item-dark">Fourside</a>
+                  <a href="#/" onclick="updateMap(this.id);" id="hhvBefore"class="list-group-item list-group-item-action list-group-item-dark">Happy Happy Village(Before)</a>
+                </div>
+              </div>
+                <iframe class="col-sm-9" id="mapiFrame" src="" style="height:70vh;"></iframe>
              </div>
           </div>
     </body>
