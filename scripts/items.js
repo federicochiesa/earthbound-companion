@@ -58,6 +58,99 @@ window.onload = async function(){
             let newEntry = document.createElement("div");
             if (typeof(element.data["Description"]) == "undefined") var description = "";
             else var description = element.data["Description"];
+
+            tableString = "";
+            console.log(Object.keys(data)[i]);
+            switch(Object.keys(data)[i]){
+                case "weapons":
+                    tableString = "<table class=\"table table-dark table-striped\">\
+                                        <tbody>\
+                                            <tr>\
+                                                <th scope=\"row\">Price</th>\
+                                                <td>" + element.data["Price"] + "</td>\
+                                            </tr>\
+                                            <tr>\
+                                                <th scope=\"row\">Error Rate</th>\
+                                                <td>" + element.data["Error rate"] + "</td>\
+                                            </tr>\
+                                            <tr>\
+                                                <th scope=\"row\">Offence Up</th>\
+                                                <td>" + element.data["Offense up"] + "</td>\
+                                            </tr>\
+                                        </tbody>\
+                                    </table>\"";
+                    break;
+                    case "protection": 
+                        tableString = "<table class=\"table table-dark table-striped\">\
+                                            <tbody>\
+                                                <tr>\
+                                                    <th scope=\"row\">Price</th>\
+                                                    <td>" + element.data["Price"] + "</td>\
+                                                </tr>\
+                                                <tr>\
+                                                    <th scope=\"row\">Defence Up</th>\
+                                                    <td>" + element.data["Defence up"] + "</td>\
+                                                </tr>\
+                                            </tbody>\
+                                        </table>\"";
+                        break;
+                    case "goods":
+                        tableString = "<table class=\"table table-dark table-striped\">\
+                                            <tbody>\
+                                                <tr>\
+                                                    <th scope=\"row\">Price</th>\
+                                                    <td>" + element.data["Price"] + "</td>\
+                                                </tr>\
+                                            </tbody>\
+                                        </table>\"";
+                        break;
+                    case "food":
+                        hpup = "0";
+                        ppup = "0";
+                        if(typeof(element.data["Hit points up"]) != "undefined") hpup = element.data["Hit points up"];
+                        if(typeof(element.data["Psychic points up"]) != "undefined") ppup = element.data["Psychic points up"];
+                        tableString = "<table class=\"table table-dark table-striped\">\
+                                            <tbody>\
+                                                <tr>\
+                                                    <th scope=\"row\">Price</th>\
+                                                    <td>" + element.data["Price"] + "</td>\
+                                                </tr>\
+                                                <tr>\
+                                                    <th scope=\"row\">HP up</th>\
+                                                    <td>" + hpup + "</td>\
+                                                </tr>\
+                                                <tr>\
+                                                    <th scope=\"row\">PP up</th>\
+                                                    <td>" + ppup + "</td>\
+                                                </tr>\
+                                            </tbody>\
+                                        </table>\"";
+                        break;
+                    case "condiments":
+                        tableString = "<table class=\"table table-dark table-striped\">\
+                                            <tbody>\
+                                                <tr>\
+                                                    <th scope=\"row\">Price</th>\
+                                                    <td>" + element.data["Price"] + "</td>\
+                                                </tr>\
+                                            </tbody>\
+                                        </table>\"";
+                        break;
+                    case "medicine":
+                        tableString = "<table class=\"table table-dark table-striped\">\
+                                            <tbody>\
+                                                <tr>\
+                                                    <th scope=\"row\">Price</th>\
+                                                    <td>" + element.data["Price"] + "</td>\
+                                                </tr>\
+                                            </tbody>\
+                                        </table>\"";
+                        break;
+                    
+
+
+            }
+
             newEntry.innerHTML = "<div class=\"row mb-5\">\
                                     <div class=\"col-lg-7\">\
                                         <h3 class=\"text-white\">" + element.name + "</h3>\
@@ -70,26 +163,7 @@ window.onload = async function(){
                                     <img src=\"../../assets/sprites/poo.png\" class=\"img-hero"+ poo +"\"\>\
                                     </div>\
                                     <div class=\"col-lg-2\">\
-                                        <table class=\"table table-dark table-striped\">\
-                                            <tbody>\
-                                                <tr>\
-                                                    <th scope=\"row\">Price</th>\
-                                                    <td>" + element.data["Price"] + "</td>\
-                                                </tr>\
-                                                <tr>\
-                                                    <th scope=\"row\">PP</th>\
-                                                    <td>" + element.data["Psychic points"] + "</td>\
-                                                </tr>\
-                                                <tr>\
-                                                    <th scope=\"row\">Attack</th>\
-                                                    <td>" + element.data["Offense up"] + "</td>\
-                                                </tr>\
-                                                <tr>\
-                                                    <th scope=\"row\">Defense</th>\
-                                                    <td>" + element.data["Defense"] + "</td>\
-                                                </tr>\
-                                            </tbody>\
-                                        </table>\
+                                       " + tableString +"\
                                     </div>\
                                     <div class=\"col-lg-1\">\
                                         <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + element.name + "&quot;)\">\
