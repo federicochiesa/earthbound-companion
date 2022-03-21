@@ -52,6 +52,17 @@ table {
 
 }
 
+.img-heroY{
+    height: 50px;
+    padding-right: 15px;
+}
+
+.img-heroN{
+    height: 50px;
+    padding-right: 15px;
+    opacity: 30%;
+}
+
 .img-button{
     margin-top: 5px;
     min-height: 40px;
@@ -64,6 +75,12 @@ table {
 }
 
 .col-lg-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-lg-5{
     display: flex;
     justify-content: center;
     align-items: center;

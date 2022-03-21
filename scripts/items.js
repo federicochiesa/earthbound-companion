@@ -31,13 +31,43 @@ window.onload = async function(){
         var elements = data[Object.keys(data)[i]];
         list.appendChild(title);
         for(const element of elements){
+            if (typeof(element.data["Description"]) == "undefined"){
+                ness = "Y";
+                paula = "Y";
+                jeff = "Y";
+                poo = "Y";
+            }else{
+                if (element.data["Description"].search(/ness/i) > -1) var ness = "Y";
+                else if (element.name.search(/bat/i) > -1) var ness = "Y";
+                else var ness = "N";
+                if (element.data["Description"].search(/paula/i) > -1) var paula = "Y";
+                else if (element.name.search(/pan/i) > -1) var ness = "Y";
+                else var paula = "N";
+                if (element.data["Description"].search(/jeff/i) > -1) var jeff = "Y";
+                else var jeff = "N";
+                if (element.data["Description"].search(/poo/i) > -1) var poo = "Y";
+                else var poo = "N";
+
+                if (ness == "N" && paula == "N" && poo == "N" && jeff == "N"){
+                    ness = "Y";
+                    paula = "Y";
+                    jeff = "Y";
+                    poo = "Y";
+                }
+            }
             let newEntry = document.createElement("div");
             if (typeof(element.data["Comments"]) == "undefined") var comments = "";
             else var comments = element.data["Comments"];
             newEntry.innerHTML = "<div class=\"row mb-5\">\
-                                    <div class=\"col-lg-9\">\
+                                    <div class=\"col-lg-7\">\
                                         <h3 class=\"text-white\">" + element.name + "</h3>\
                                         <span class=\"text-white description\">" + comments + "</span>\
+                                    </div>\
+                                    <div class=\"col-lg-2\">\
+                                    <img src=\"../../assets/sprites/ness.png\" class=\"img-hero"+ ness +"\" \>\
+                                    <img src=\"../../assets/sprites/paula.png\" class=\"img-hero"+ paula +"\" \>\
+                                    <img src=\"../../assets/sprites/jeff.png\" class=\"img-hero"+ jeff +"\" \>\
+                                    <img src=\"../../assets/sprites/poo.png\" class=\"img-hero"+ poo +"\"\>\
                                     </div>\
                                     <div class=\"col-lg-2\">\
                                         <table class=\"table table-dark table-striped\">\
@@ -52,7 +82,7 @@ window.onload = async function(){
                                                 </tr>\
                                                 <tr>\
                                                     <th scope=\"row\">Attack</th>\
-                                                    <td>" + element.data["Offense"] + "</td>\
+                                                    <td>" + element.data["Offense up"] + "</td>\
                                                 </tr>\
                                                 <tr>\
                                                     <th scope=\"row\">Defense</th>\

@@ -327,7 +327,7 @@
    {
       "name":"Stun Gun",
       "data":{
-         "Description:":"Jeff can equip this weapon.",
+         "Description":"Jeff can equip this weapon.",
          "Location":"Brick Road Maze (Gift Box)",
          "Price":"Sells for $150",
          "Error rate":"0",
