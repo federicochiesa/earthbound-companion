@@ -56,12 +56,12 @@ window.onload = async function(){
                 }
             }
             let newEntry = document.createElement("div");
-            if (typeof(element.data["Comments"]) == "undefined") var comments = "";
-            else var comments = element.data["Comments"];
+            if (typeof(element.data["Description"]) == "undefined") var description = "";
+            else var description = element.data["Description"];
             newEntry.innerHTML = "<div class=\"row mb-5\">\
                                     <div class=\"col-lg-7\">\
                                         <h3 class=\"text-white\">" + element.name + "</h3>\
-                                        <span class=\"text-white description\">" + comments + "</span>\
+                                        <span class=\"text-white description\">" + description + "</span>\
                                     </div>\
                                     <div class=\"col-lg-2\">\
                                     <img src=\"../../assets/sprites/ness.png\" class=\"img-hero"+ ness +"\" \>\
