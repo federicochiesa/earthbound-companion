@@ -88,8 +88,8 @@ window.onload = async function(){
                                                     <td>" + element.data["Price"] + "</td>\
                                                 </tr>\
                                                 <tr>\
-                                                    <th scope=\"row\">Defence Up</th>\
-                                                    <td>" + element.data["Defence up"] + "</td>\
+                                                    <th scope=\"row\">Defense Up</th>\
+                                                    <td>" + element.data["Defense up"] + "</td>\
                                                 </tr>\
                                             </tbody>\
                                         </table>\"";
