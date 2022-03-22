@@ -6,7 +6,6 @@ window.onload = function(){
 }
 
 function updateMap(id){
-    console.log(id);
     var list = document.querySelectorAll(".list-group-item");
     for (var i = 0; i < list.length; ++i) list[i].classList.remove('active');
     document.getElementById(id).classList.add("active");

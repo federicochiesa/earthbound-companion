@@ -1,37 +1,27 @@
-let dropdowns = document.querySelectorAll('.dropdown-toggle')
-dropdowns.forEach((dd)=>{
-    dd.addEventListener('click', function (_) {
-        var el = this.nextElementSibling
-        el.style.display = el.style.display==='block'?'none':'block'
-    })
-})
-
-async function foundPrice(object){
-    let data = await getItemsData();
+async function findPrice(object){
+    let data = await getData("items");
     for (let i = 0; i < Object.keys(data).length; i++){
         var elements = data[Object.keys(data)[i]];
         for(const element of elements){
             if(object.toUpperCase() == element.name.toUpperCase()){
-                console.log(element.data["Price"])
                 return element.data["Price"];
             }
         }
     }
-    return ""
+    return "";
 }
 
-async function showInfoModal(item, dati){
-    
+async function showInfoModal(item, data){
     document.getElementById("infoModalTitle").textContent = "More info: " + item;
     tableString = "<table class=\"table table-dark table-striped\">\
-                     <tbody>\ ";
+                    <tbody>";
     objects = [];
     obj = "";
     j = 0;
-    for(let i = 0; i < dati.length; i++){
-        if(dati[i] != ","){
-                obj += dati[i];
-                if(i+1 == dati.length){
+    for(let i = 0; i < data.length; i++){
+        if(data[i] != ","){
+                obj += data[i];
+                if(i+1 == data.length){
                     objects[j] = obj;
                     j++;
                     obj = "";
@@ -43,21 +33,19 @@ async function showInfoModal(item, dati){
             j++;
         }
     }
-
-    prices = []
+    prices = [];
     for(let i = 0; i < objects.length; i++)
-        prices[i] = await foundPrice(objects[i]);
-      
-
+        prices[i] = await findPrice(objects[i]);
     for(let i = 0; i < objects.length; i++){
             tableString += "<tr>\
-                                <th scope=\"row\"> <a href=\"/wiki/items\" style=\"text-decoration: none; color: inherit\" class=\"itemLink\">"+ objects[i] +"</a></th>\
+                                <th scope=\"row\">\
+                                    <a href=\"/wiki/items\" style=\"text-decoration: none; color: inherit\" class=\"itemLink\">"+ objects[i] +"</a>\
+                                </th>\
                                 <td>"+prices[i]+"</td>\
-                            </tr>\ "    
+                            </tr>"    
     }
-    tableString += "</tbody>\
-                    </table>"
-
+    tableString += "    </tbody>\
+                    </table>";
     document.getElementById("infoModalBody").innerHTML = tableString;
     new bootstrap.Modal(document.getElementById('infoModal')).show();
 }
@@ -70,24 +58,29 @@ function showMapModal(item){
 
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
-}  
+}
+
+function nameToImage(name){
+    return name.replace(/[ "()'\/.,-]/g, "");
+}
 
 window.onload = async function(){
-    let data = await getShopsData();
+    let data = await getData("shops");
     let list = document.getElementById("dataList");
     for (let i = 0; i < Object.keys(data).length; i++){
         let title = document.createElement("div");
         title.innerHTML = "<div class=\"row\"><div class=\"col\"><h1 class=\"text-white\">" + capitalizeFirstLetter(Object.keys(data)[i]) +"</h1></div></div>";
         var elements = data[Object.keys(data)[i]];
         list.appendChild(title);
-        for(let j = 0; j < elements.length; j++){
+        for(let j = 0; j < elements.length; j = j + 2){
+            console.log(nameToImage(elements[j].name),nameToImage(elements[j+1].name))
             let newEntry = document.createElement("div");
             if (typeof(elements[j].data["Comments"]) == "undefined") var comments = "";
             else var comments = elements[j].data["Comments"];
             newEntry.innerHTML = "<div class=\"row mb-3\"><div class=\"col me-2\">\
                                     <div class=\"row mb-5 cg\" >\
                                         <div class=\"col-lg-3\">\
-                                            <img src=\"/assets/" + elements[j].name + ".png\" class=\"shop-image\">\
+                                            <img src=\"/assets/buildings/" + nameToImage(elements[j].name) + ".png\" class=\"shop-image\">\
                                         </div>\
                                         <div class=\"col-lg-6\">\
                                             <h3 class=\"text-white\">" + elements[j].name + "</h3>\
@@ -110,7 +103,7 @@ window.onload = async function(){
                                     <div class=\"col ms-2\">\
                                     <div class=\"row mb-5 cg\">\
                                         <div class=\"col-lg-3\">\
-                                            <img src=\"/assets/" + elements[j+1].name + ".png\" class=\"shop-image\">\
+                                            <img src=\"/assets/buildings/" + nameToImage(elements[j+1].name) + ".png\" class=\"shop-image\">\
                                         </div>\
                                         <div class=\"col-lg-6\">\
                                             <h3 class=\"text-white\">" + elements[j+1].name + "</h3>\
@@ -131,21 +124,13 @@ window.onload = async function(){
                                      </div>\
                                     </div>\
                                     </div>";
-            j++;
             list.appendChild(newEntry);
-
         }
     }
 }
 
-async function getShopsData(){
-    let enemiesData = await fetch('../../data/shops.json');
-    enemiesData = enemiesData.json();
-    return enemiesData;
-}
-
-async function getItemsData(){
-    let enemiesData = await fetch('../../data/items.json');
-    enemiesData = enemiesData.json();
-    return enemiesData;
+async function getData(type){
+    let data = await fetch('../../data/' + type + '.json');
+    data = data.json();
+    return data;
 }

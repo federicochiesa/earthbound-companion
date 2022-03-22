@@ -1,11 +1,3 @@
-let dropdowns = document.querySelectorAll('.dropdown-toggle')
-dropdowns.forEach((dd)=>{
-    dd.addEventListener('click', function (_) {
-        var el = this.nextElementSibling
-        el.style.display = el.style.display==='block'?'none':'block'
-    })
-})
-
 function showInfoModal(item){
     document.getElementById("infoModalTitle").textContent = "More info: " + item;
     document.getElementById("infoModalBody").textContent = "This is a test info modal for " + item;

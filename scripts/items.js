@@ -1,11 +1,3 @@
-let dropdowns = document.querySelectorAll('.dropdown-toggle')
-dropdowns.forEach((dd)=>{
-    dd.addEventListener('click', function (_) {
-        var el = this.nextElementSibling
-        el.style.display = el.style.display==='block'?'none':'block'
-    })
-})
-
 function showInfoModal(item){
     document.getElementById("infoModalTitle").textContent = "More info: " + item;
     document.getElementById("infoModalBody").textContent = "This is a test info modal for " + item;
@@ -60,7 +52,6 @@ window.onload = async function(){
             else var description = element.data["Description"];
 
             tableString = "";
-            console.log(Object.keys(data)[i]);
             switch(Object.keys(data)[i]){
                 case "weapons":
                     tableString = "<table class=\"table table-dark table-striped\">\
