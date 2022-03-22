@@ -6,28 +6,54 @@ dropdowns.forEach((dd)=>{
     })
 })
 
-function showInfoModal(item, dati){
+async function foundPrice(object){
+    let data = await getItemsData();
+    for (let i = 0; i < Object.keys(data).length; i++){
+        var elements = data[Object.keys(data)[i]];
+        for(const element of elements){
+            if(object.toUpperCase() == element.name.toUpperCase()){
+                console.log(element.data["Price"])
+                return element.data["Price"];
+            }
+        }
+    }
+    return ""
+}
+
+async function showInfoModal(item, dati){
+    
     document.getElementById("infoModalTitle").textContent = "More info: " + item;
     tableString = "<table class=\"table table-dark table-striped\">\
                      <tbody>\ ";
+    objects = [];
     obj = "";
+    j = 0;
     for(let i = 0; i < dati.length; i++){
         if(dati[i] != ","){
                 obj += dati[i];
                 if(i+1 == dati.length){
-                    tableString += "<tr>\
-                                <th scope=\"row\">"+ obj +"</th>\
-                                <td> 10$ </td>\
-                            </tr>\ "
+                    objects[j] = obj;
+                    j++;
+                    obj = "";
                 }
             }
         else{
-            tableString += "<tr>\
-                                <th scope=\"row\">"+ obj +"</th>\
-                                <td> 10$ </td>\
-                            </tr>\ "
-            obj = ""
+            objects[j] = obj;
+            obj = "";
+            j++;
         }
+    }
+
+    prices = []
+    for(let i = 0; i < objects.length; i++)
+        prices[i] = await foundPrice(objects[i]);
+      
+
+    for(let i = 0; i < objects.length; i++){
+            tableString += "<tr>\
+                                <th scope=\"row\"> <a href=\"/wiki/items\" style=\"text-decoration: none; color: inherit\" class=\"itemLink\">"+ objects[i] +"</a></th>\
+                                <td>"+prices[i]+"</td>\
+                            </tr>\ "    
     }
     tableString += "</tbody>\
                     </table>"
@@ -114,6 +140,12 @@ window.onload = async function(){
 
 async function getShopsData(){
     let enemiesData = await fetch('../../data/shops.json');
+    enemiesData = enemiesData.json();
+    return enemiesData;
+}
+
+async function getItemsData(){
+    let enemiesData = await fetch('../../data/items.json');
     enemiesData = enemiesData.json();
     return enemiesData;
 }
