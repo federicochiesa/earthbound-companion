@@ -152,11 +152,11 @@ window.onload = async function(){
             }
 
             newEntry.innerHTML = "<div class=\"row mb-5\">\
-                                    <div class=\"col-lg-7\">\
+                                    <div class=\"col-lg-6\">\
                                         <h3 class=\"text-white\">" + element.name + "</h3>\
                                         <span class=\"text-white description\">" + description + "</span>\
                                     </div>\
-                                    <div class=\"col-lg-2\">\
+                                    <div class=\"col-lg-3\">\
                                     <img src=\"../../assets/sprites/ness.png\" class=\"img-hero"+ ness +"\" \>\
                                     <img src=\"../../assets/sprites/paula.png\" class=\"img-hero"+ paula +"\" \>\
                                     <img src=\"../../assets/sprites/jeff.png\" class=\"img-hero"+ jeff +"\" \>\
@@ -166,7 +166,7 @@ window.onload = async function(){
                                        " + tableString +"\
                                     </div>\
                                     <div class=\"col-lg-1 caput\">\
-                                        <div class=\"col\">\
+                                        <div class=\"col mini\">\
                                         <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + element.name + "&quot;)\">\
                                             <img src=\"../../assets/sprites/info.png\" class=\"img-button\" \>\
                                         </a>\

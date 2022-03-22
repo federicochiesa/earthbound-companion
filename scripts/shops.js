@@ -6,9 +6,33 @@ dropdowns.forEach((dd)=>{
     })
 })
 
-function showInfoModal(item){
+function showInfoModal(item, dati){
     document.getElementById("infoModalTitle").textContent = "More info: " + item;
-    document.getElementById("infoModalBody").textContent = "This is a test info modal for " + item;
+    tableString = "<table class=\"table table-dark table-striped\">\
+                     <tbody>\ ";
+    obj = "";
+    for(let i = 0; i < dati.length; i++){
+        if(dati[i] != ","){
+                obj += dati[i];
+                if(i+1 == dati.length){
+                    tableString += "<tr>\
+                                <th scope=\"row\">"+ obj +"</th>\
+                                <td> 10$ </td>\
+                            </tr>\ "
+                }
+            }
+        else{
+            tableString += "<tr>\
+                                <th scope=\"row\">"+ obj +"</th>\
+                                <td> 10$ </td>\
+                            </tr>\ "
+            obj = ""
+        }
+    }
+    tableString += "</tbody>\
+                    </table>"
+
+    document.getElementById("infoModalBody").innerHTML = tableString;
     new bootstrap.Modal(document.getElementById('infoModal')).show();
 }
 
@@ -37,7 +61,7 @@ window.onload = async function(){
             newEntry.innerHTML = "<div class=\"row mb-3\"><div class=\"col me-2\">\
                                     <div class=\"row mb-5 cg\" >\
                                         <div class=\"col-lg-3\">\
-                                            <img src=\"/assets/" + elements[j].name + ".png\" class=\"img-item\">\
+                                            <img src=\"/assets/" + elements[j].name + ".png\" class=\"shop-image\">\
                                         </div>\
                                         <div class=\"col-lg-6\">\
                                             <h3 class=\"text-white\">" + elements[j].name + "</h3>\
@@ -45,7 +69,7 @@ window.onload = async function(){
                                         </div>\
                                         <div class=\"col-lg-2 icons\">\
                                         <div class=\"ok caput\">\
-                                            <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + elements[j].name + "&quot;)\">\
+                                            <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + elements[j].name + "&quot;,&quot;" + elements[j].data + "&quot)\">\
                                                 <img src=\"../../assets/sprites/info.png\" class=\"img-button\" \>\
                                             </a>\
                                         </div>\
@@ -60,7 +84,7 @@ window.onload = async function(){
                                     <div class=\"col ms-2\">\
                                     <div class=\"row mb-5 cg\">\
                                         <div class=\"col-lg-3\">\
-                                            <img src=\"/assets/" + elements[j+1].name + ".png\" class=\"img-item\">\
+                                            <img src=\"/assets/" + elements[j+1].name + ".png\" class=\"shop-image\">\
                                         </div>\
                                         <div class=\"col-lg-6\">\
                                             <h3 class=\"text-white\">" + elements[j+1].name + "</h3>\
@@ -68,12 +92,12 @@ window.onload = async function(){
                                         </div>\
                                         <div class=\"col-lg-2 icons\">\
                                         <div class=\"ok caput\">\
-                                            <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + elements[j].name + "&quot;)\">\
+                                            <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + elements[j+1].name + "&quot;,&quot;" + elements[j+1].data + "&quot)\">\
                                                 <img src=\"../../assets/sprites/info.png\" class=\"img-button\" \>\
                                             </a>\
                                         </div>\
                                         <div class=\"ok caput\">\
-                                            <a href=\"#/\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + elements[j].name + "&quot;)\">\
+                                            <a href=\"#/\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + elements[j+1].name + "&quot;)\">\
                                                 <img src=\"../../assets/sprites/Mappost.png\" class=\"img-button\" \>\
                                             </a>\
                                         </div>\

@@ -103,6 +103,9 @@ table {
         min-height: 100px;
         max-height: 136px;
     }
+    .shop-image{
+        height:100px;
+    }
 }
 
 @media (max-width:1400px) {
@@ -115,6 +118,9 @@ table {
         min-height: 40px;
         height: 45px;
     }
+    .shop-image{
+        height:100px;
+    }
 }
 
 @media (max-width:1200px) {
@@ -126,6 +132,9 @@ table {
         margin-top: 5px;
         min-height: 40px;
         height: 40px;
+    }
+    .shop-image{
+        height:100px;
     }
 }
 
@@ -151,6 +160,18 @@ table {
         margin-top: -20px;
         margin-bottom: 20px;
     }
+
+    .mini{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2ch;
+    }
+
+    .shop-image{
+        margin-top: 20px;
+        height:100px;
+    }
     
 }
 
@@ -159,6 +180,11 @@ table {
         width: 100%;
         margin: 0 !important;
     }
+
+    .shop-image{
+        height: 200px;
+    }
+
 }
 
 .table{

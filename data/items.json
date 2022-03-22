@@ -14,7 +14,7 @@
       "data":{
          "Description":"Ness can equip this weapon. This item looks like it could have had cork put into the core!",
          "Location":"Summers (Drugstore), Scaraba (Convenience Store)",
-         "Price":"$3080 (Summers), $1380 (Scaraba)",
+         "Price":"$3080, $1380",
          "Error rate":"1/16",
          "Offense up":"54"
       }
