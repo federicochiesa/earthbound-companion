@@ -66,7 +66,7 @@ table {
 .img-button{
     margin-top: 5px;
     min-height: 40px;
-    height: 40%;
+    height: 50px;
 }
 
 .modal-title{
@@ -86,6 +86,11 @@ table {
     align-items: center;
 }
 
+.col-lg-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .img-item {
@@ -105,12 +110,22 @@ table {
         min-height: 80px;
         max-height: 90px;
     }
+    .img-button{
+        margin-top: 5px;
+        min-height: 40px;
+        height: 45px;
+    }
 }
 
 @media (max-width:1200px) {
     .img-item {
         min-height: 70px;
         max-height: 80px;
+    }
+    .img-button{
+        margin-top: 5px;
+        min-height: 40px;
+        height: 40px;
     }
 }
 
@@ -130,6 +145,13 @@ table {
     .col-lg-2{
         padding-top: 10px;
     }
+
+    .icons{
+        column-gap: 2ch;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+    
 }
 
 @media (max-width:576px) {
@@ -155,6 +177,23 @@ table {
     row-gap: 5ch;
 }
 
+.cg{
+    column-gap: 2ch;
+}
+
+.col-lg-6{
+    padding: 0 5px 0 5px;
+}
+
+.caput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    column-gap: 2ch;
+}
 .list-group > a{
     font-size: 1.5rem;
 }

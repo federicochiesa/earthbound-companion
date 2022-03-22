@@ -165,13 +165,15 @@ window.onload = async function(){
                                     <div class=\"col-lg-2\">\
                                        " + tableString +"\
                                     </div>\
-                                    <div class=\"col-lg-1\">\
+                                    <div class=\"col-lg-1 caput\">\
+                                        <div class=\"col\">\
                                         <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + element.name + "&quot;)\">\
                                             <img src=\"../../assets/sprites/info.png\" class=\"img-button\" \>\
                                         </a>\
                                         <a href=\"#/\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + element.name + "&quot;)\">\
                                             <img src=\"../../assets/sprites/Mappost.png\" class=\"img-button\" \>\
                                         </a>\
+                                        </div>\
                                     </div>\
                                 </div>";
             list.appendChild(newEntry);
