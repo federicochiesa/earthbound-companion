@@ -184,6 +184,9 @@ table {
     .shop-image{
         height: 200px;
     }
+    .col{
+        margin: 0 !important;
+    }
 
 }
 
