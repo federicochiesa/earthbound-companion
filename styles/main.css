@@ -253,12 +253,11 @@ a:hover{
     color: white!important;
 }
 
-li{
-    margin-top: 10px;
+#mapSelector>li{
+    margin-top: 15px;
 }
 
 .arrow{
     margin-right: 5px;
-    height: 0.7em; 
-    margin-bottom:4px;
+    height: 0.7em;
 }
