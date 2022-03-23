@@ -79,10 +79,10 @@ window.onload = async function(){
             else var comments = elements[j].data["Comments"];
             newEntry.innerHTML = "<div class=\"row mb-3\"><div class=\"col me-2\">\
                                     <div class=\"row mb-5 cg\" >\
-                                        <div class=\"col-lg-3\">\
+                                        <div class=\"col-lg-4\">\
                                             <img src=\"/assets/buildings/" + nameToImage(elements[j].name) + ".png\" class=\"shop-image\">\
                                         </div>\
-                                        <div class=\"col-lg-6\">\
+                                        <div class=\"col-lg-5\">\
                                             <h3 class=\"text-white\">" + elements[j].name + "</h3>\
                                             <span class=\"text-white description\">" + comments + "</span>\
                                         </div>\
@@ -102,10 +102,10 @@ window.onload = async function(){
                                     </div>\
                                     <div class=\"col ms-2\">\
                                     <div class=\"row mb-5 cg\">\
-                                        <div class=\"col-lg-3\">\
+                                        <div class=\"col-lg-4\">\
                                             <img src=\"/assets/buildings/" + nameToImage(elements[j+1].name) + ".png\" class=\"shop-image\">\
                                         </div>\
-                                        <div class=\"col-lg-6\">\
+                                        <div class=\"col-lg-5\">\
                                             <h3 class=\"text-white\">" + elements[j+1].name + "</h3>\
                                             <span class=\"text-white description\">" + comments + "</span>\
                                         </div>\
