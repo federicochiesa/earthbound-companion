@@ -1,13 +1,12 @@
 window.onload = function(){
-    document.getElementById("mapiFrame").src = "../../mapframe/dist/?region=onett"
-    var list = document.querySelectorAll(".list-group-item");
-    for (var i = 0; i < list.length; ++i) list[i].classList.remove('active');
-    document.getElementById("onett").classList.add("active");
+    updateMap("onett")
 }
 
 function updateMap(id){
-    var list = document.querySelectorAll(".list-group-item");
-    for (var i = 0; i < list.length; ++i) list[i].classList.remove('active');
-    document.getElementById(id).classList.add("active");
+    let arrows = document.querySelectorAll(".arrow");
+    for(let i = 0; i < arrows.length; arrows++){
+        arrows[i].setAttribute("style", "display: none;");
+    }
+    document.getElementById(id).style.display = "inline";
     document.getElementById("mapiFrame").src = "../../mapframe/dist/?region="+id;
 }
