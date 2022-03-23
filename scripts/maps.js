@@ -4,7 +4,7 @@ window.onload = function(){
 
 function updateMap(id){
     let arrows = document.querySelectorAll(".arrow");
-    for(let i = 0; i < arrows.length; arrows++){
+    for(let i = 0; i < arrows.length; i++){
         arrows[i].setAttribute("style", "display: none;");
     }
     document.getElementById(id + "Arrow").style.display = "inline";
