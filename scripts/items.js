@@ -142,7 +142,7 @@ window.onload = async function(){
 
             }
 
-            newEntry.innerHTML = "<div class=\"row mb-5\">\
+            newEntry.innerHTML = "<div class=\"row mb-5\" id=\""+nameToImage(element.name.toLowerCase())+"\">\
                                     <div class=\"col-lg-6\">\
                                         <h3 class=\"text-white\">" + element.name + "</h3>\
                                         <span class=\"text-white description\">" + description + "</span>\
@@ -176,4 +176,8 @@ async function getItemsData(){
     let enemiesData = await fetch('../../data/items.json');
     enemiesData = enemiesData.json();
     return enemiesData;
+}
+
+function nameToImage(name){
+    return name.replace(/[ "()'\/.,-]/g, "");
 }
