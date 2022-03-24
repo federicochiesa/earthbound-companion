@@ -249,7 +249,7 @@ a{
     color: white;
 }
 
-a:hover{
+#mapSelector>li>a:hover{
     color: white!important;
 }
 
