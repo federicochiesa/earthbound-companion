@@ -73,7 +73,6 @@ window.onload = async function(){
         var elements = data[Object.keys(data)[i]];
         list.appendChild(title);
         for(let j = 0; j < elements.length; j = j + 2){
-            console.log(nameToImage(elements[j].name),nameToImage(elements[j+1].name))
             let newEntry = document.createElement("div");
             if (typeof(elements[j].data["Comments"]) == "undefined") var comments = "";
             else var comments = elements[j].data["Comments"];

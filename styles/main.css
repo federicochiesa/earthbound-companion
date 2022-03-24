@@ -272,3 +272,7 @@ a{
     margin-right: 5px;
     height: 0.7em;
 }
+
+.dropdown-item.active, .dropdown-item:active{
+    background-color: #1a1a1a!important;
+}
