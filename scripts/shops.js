@@ -39,7 +39,7 @@ async function showInfoModal(item, data){
     for(let i = 0; i < objects.length; i++){
             tableString += "<tr>\
                                 <th scope=\"row\">\
-                                    <a href=\"/wiki/items\" style=\"text-decoration: none; color: inherit\" class=\"itemLink\">"+ objects[i] +"</a>\
+                                    <a href=\"/wiki/items#"+nameToImage(objects[i].toLowerCase())+"\" style=\"text-decoration: none; color: inherit\" class=\"itemLink\">"+ objects[i] +"</a>\
                                 </th>\
                                 <td>"+prices[i]+"</td>\
                             </tr>"    
@@ -132,4 +132,8 @@ async function getData(type){
     let data = await fetch('../../data/' + type + '.json');
     data = data.json();
     return data;
+}
+
+function nameToImage(name){
+    return name.replace(/[ "()'\/.,-]/g, "");
 }
