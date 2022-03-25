@@ -56,14 +56,6 @@ function showMapModal(item) {
     new bootstrap.Modal(document.getElementById('mapModal')).show();
 }
 
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-function nameToImage(name) {
-    return name.replace(/[ "()'\/.,-]/g, "");
-}
-
 window.onload = async function () {
     showSurveyToast();
     let data = await getData("shops");
@@ -127,14 +119,4 @@ window.onload = async function () {
             list.appendChild(newEntry);
         }
     }
-}
-
-async function getData(type) {
-    let data = await fetch('../../data/' + type + '.json');
-    data = data.json();
-    return data;
-}
-
-function nameToImage(name) {
-    return name.replace(/[ "()'\/.,-]/g, "");
 }

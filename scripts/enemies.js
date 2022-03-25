@@ -10,17 +10,9 @@ function showMapModal(item) {
     new bootstrap.Modal(document.getElementById('mapModal')).show();
 }
 
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-function nameToImage(name) {
-    return name.replace(/[ '.-]/g, "");
-}
-
 window.onload = async function () {
     showSurveyToast();
-    let data = await getEnemiesData();
+    let data = await getData("enemies");
     let list = document.getElementById("dataList");
     for (let i = 0; i < Object.keys(data).length; i++) {
         let title = document.createElement("div");
@@ -73,10 +65,4 @@ window.onload = async function () {
             list.appendChild(newEntry);
         }
     }
-}
-
-async function getEnemiesData() {
-    let enemiesData = await fetch('../../data/enemies.json');
-    enemiesData = enemiesData.json();
-    return enemiesData;
 }

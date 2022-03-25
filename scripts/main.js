@@ -26,3 +26,17 @@ function getCookie(cname) {
   }
   return "";
 } 
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function nameToImage(name) {
+  return name.replace(/[ "()'\/.,-]/g, "");
+}
+
+async function getData(type) {
+  let data = await fetch('../../data/' + type + '.json');
+  data = data.json();
+  return data;
+}
