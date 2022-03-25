@@ -1,34 +1,27 @@
-function showInfoModal(item){
+function showInfoModal(item) {
     document.getElementById("infoModalTitle").textContent = "More info: " + item;
     document.getElementById("infoModalBody").textContent = "This is a test info modal for " + item;
     new bootstrap.Modal(document.getElementById('infoModal')).show();
 }
 
-function showMapModal(item){
+function showMapModal(item) {
     document.getElementById("mapModalTitle").textContent = "Map: " + item;
     document.getElementById("mapModalBody").textContent = "This is a test map modal for " + item;
     new bootstrap.Modal(document.getElementById('mapModal')).show();
 }
 
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}  
-
-function nameToImage(name){
-    return name.replace(/[ '.-]/g, "");
-}
-
-window.onload = async function(){
-    let data = await getEnemiesData();
+window.onload = async function () {
+    showSurveyToast();
+    let data = await getData("enemies");
     let list = document.getElementById("dataList");
-    for (let i = 0; i < Object.keys(data).length; i++){
+    for (let i = 0; i < Object.keys(data).length; i++) {
         let title = document.createElement("div");
-        title.innerHTML = "<div class=\"row\"><div class=\"col\"><h1 class=\"text-white\">" + capitalizeFirstLetter(Object.keys(data)[i]) +"</h1></div></div>";
+        title.innerHTML = "<div class=\"row\"><div class=\"col\"><h1 class=\"text-white\">" + capitalizeFirstLetter(Object.keys(data)[i]) + "</h1></div></div>";
         var elements = data[Object.keys(data)[i]];
         list.appendChild(title);
-        for(const element of elements){
+        for (const element of elements) {
             let newEntry = document.createElement("div");
-            if (typeof(element.data["Comments"]) == "undefined") var comments = "";
+            if (typeof (element.data["Comments"]) == "undefined") var comments = "";
             else var comments = element.data["Comments"];
             newEntry.innerHTML = "<div class=\"row mb-4\">\
                                     <div class=\"col-lg-2\">\
@@ -72,10 +65,4 @@ window.onload = async function(){
             list.appendChild(newEntry);
         }
     }
-}
-
-async function getEnemiesData(){
-    let enemiesData = await fetch('../../data/enemies.json');
-    enemiesData = enemiesData.json();
-    return enemiesData;
 }

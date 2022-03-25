@@ -1,12 +1,13 @@
-window.onload = function(){
-    updateMap("onett")
+window.onload = function () {
+    showSurveyToast();
+    updateMap("onett");
 }
 
-function updateMap(id){
+function updateMap(id) {
     let arrows = document.querySelectorAll(".arrow");
-    for(let i = 0; i < arrows.length; i++){
+    for (let i = 0; i < arrows.length; i++) {
         arrows[i].setAttribute("style", "display: none;");
     }
     document.getElementById(id + "Arrow").style.display = "inline";
-    document.getElementById("mapiFrame").src = "../../mapframe/dist/?region="+id;
+    document.getElementById("mapiFrame").src = "../../mapframe/dist/?region=" + id;
 }

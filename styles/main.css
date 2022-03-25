@@ -474,3 +474,12 @@ optgroup {
     font-size:15px; 
     width: 30px;
 }
+
+.toast-header{
+    font-size: 1.5rem;
+}
+
+.toast-body {
+    font-size: 1.5rem;
+    line-height: 125%;
+}
