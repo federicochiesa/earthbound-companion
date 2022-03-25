@@ -65,6 +65,7 @@ function nameToImage(name) {
 }
 
 window.onload = async function () {
+    showSurveyToast();
     let data = await getData("shops");
     let list = document.getElementById("dataList");
     for (let i = 0; i < Object.keys(data).length; i++) {

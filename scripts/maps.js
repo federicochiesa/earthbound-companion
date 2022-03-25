@@ -1,5 +1,6 @@
 window.onload = function () {
-    updateMap("onett")
+    showSurveyToast();
+    updateMap("onett");
 }
 
 function updateMap(id) {

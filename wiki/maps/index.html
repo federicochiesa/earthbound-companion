@@ -26,6 +26,7 @@
   <!-- Local stylesheets -->
   <link rel="stylesheet" href="../../styles/main.css">
   <!-- Local scripts -->
+  <script src="../../scripts/main.js"></script>
   <script src="../../scripts/maps.js"></script>
 </head>
 <body>
@@ -120,5 +121,18 @@
       </div>
     </div>
   </div>
+  <div class="toast-container position-absolute p-3 bottom-0 end-0">
+		<div class="toast bg-dark text-white" id="surveyToast">
+		  <div class="toast-header bg-dark">
+			<strong class="me-auto">Info</strong>
+			<button type="button" onclick="setSurveyCookie()" class="btn-close btn-close-white" data-bs-dismiss="toast"
+			  aria-label="Close"></button>
+		  </div>
+		  <div class="toast-body">
+			Hey! Would you help us improve this website by taking a short usability survey?<br>We won't ask for your
+			personal data, we promise!
+		  </div>
+		</div>
+	  </div>
 </body>
 </html>

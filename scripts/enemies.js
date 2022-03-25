@@ -19,6 +19,7 @@ function nameToImage(name) {
 }
 
 window.onload = async function () {
+    showSurveyToast();
     let data = await getEnemiesData();
     let list = document.getElementById("dataList");
     for (let i = 0; i < Object.keys(data).length; i++) {

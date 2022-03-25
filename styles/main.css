@@ -459,5 +459,13 @@ select {
     background-color: transparent;
     border: none;
     color:white;
+}
 
+.toast-header{
+    font-size: 1.5rem;
+}
+
+.toast-body {
+    font-size: 1.5rem;
+    line-height: 125%;
 }
