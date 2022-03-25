@@ -459,5 +459,18 @@ select {
     background-color: transparent;
     border: none;
     color:white;
+    font-family: "appleKid" !important;
+    image-rendering: pixelated;
+}
 
+select:focus {
+    border-color: #1a1a1a;
+    color: white;
+    background-color: #1a1a1a;
+    
+}
+  
+optgroup {
+    font-size:15px; 
+    width: 30px;
 }
