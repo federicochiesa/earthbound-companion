@@ -196,7 +196,7 @@ table {
         
     }
 
-    .row > * {
+    .eqTestDiv > * {
         width: auto !important;
     }
 
