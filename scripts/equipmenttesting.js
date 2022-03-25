@@ -1,11 +1,10 @@
-async function getData(type){
+async function getData(type) {
     let data = await fetch('../../data/' + type + '.json');
     data = data.json();
     return data;
 }
 
-window.onload = async function(){
+window.onload = async function () {
     let data = await getData("stats");
     let list = document.getElementById("dataList");
-
 }
