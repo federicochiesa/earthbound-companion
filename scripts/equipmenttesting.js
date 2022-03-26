@@ -2,7 +2,7 @@ async function getData(type) {
     let data = await fetch('../../data/' + type + '.json');
     data = data.json();
     return data;
-  }
+}
 
 window.onload = async function () {
     let data = await getData("stats");
@@ -12,15 +12,10 @@ window.onload = async function () {
 
     updateStats(name, data)
 
-    //console.log(name.innerText)
-
     const selectElement = document.querySelector('#level');
-
     selectElement.addEventListener('change', (event) => {
         updateStats(name, data)
     });
-
-    
 }
 
 function updateStats(name, data){
@@ -52,6 +47,34 @@ function updateStats(name, data){
             }
         }
     }
+}
+
+async function changeCharacter(clicked_id){
+    let hero = document.getElementsByClassName("selected-hero")
+    let pics = document.getElementsByClassName("select-hero")
+    let name = document.getElementById("character");
+    
+
+
+    if(getComputedStyle(document.getElementById(clicked_id)).opacity == 0.3){
+        name.innerText = clicked_id.toUpperCase()
+    
+        for(let j = 0; j<pics.length; j++){
+            if(pics[j].id != clicked_id)
+                pics[j].style.opacity = 0.3
+            else 
+                pics[j].style.opacity = 1
+        }
+
+        hero[0].src = "../../assets/sprites/"+clicked_id+".png";
+
+        let data = await getData("stats");
+        let level = document.getElementById("level");
+        level.value = 1;
+        updateStats(name, data);
+        
+    }
+    
 }
 
 
