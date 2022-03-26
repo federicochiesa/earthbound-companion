@@ -13,6 +13,7 @@ window.onload = async function () {
 
     
     updateWeapons(name, items);
+    updateWeaponStats(name, items);
     updateBodyEquipments(name, items);
     updateArmsEquipments(name, items);
     updateOtherEquipments(name, items);
@@ -25,8 +26,44 @@ window.onload = async function () {
 
     const selectWeapon = document.querySelector('#weapon');
     selectWeapon.addEventListener('change', (event) => {
-        
+        updateWeaponStats(name, items)
     });
+}
+
+async function updateWeaponStats(name, items){
+    let w = document.getElementById("weapon");
+    let bonus = document.getElementById("bonus-attack")
+    let bonusg = document.getElementById("bonus-guts")
+    var weapons = items[Object.keys(items)[0]]
+    for(let i = 0; i < weapons.length; i++){
+        element = weapons[i];
+        if(w.value.toUpperCase() != "(NOTHING)"){
+            if(w.value.toUpperCase() == element.name.toUpperCase()){
+                if(name.innerText == "POO" && w.value.search(/kings/i) < 0){
+                    bonus.innerText = "- "+ element.data["Offense up"];
+                    bonus.style.color = "red";
+                    bonus.style.fontSize = "20px";
+                }
+                else{
+                    bonus.innerText = "+ "+ element.data["Offense up"];
+                    bonus.style.color = "green";
+                    bonus.style.fontSize = "20px";
+
+                    if(typeof(element.data["Guts up"]) != "undefined"){
+                        bonusg.innerText = "+ "+ element.data["Guts up"];
+                        bonusg.style.color = "green";
+                        bonusg.style.fontSize = "20px";
+                    }
+                    else{
+                        bonusg.innerText = "";
+                    }
+                }
+            }
+        }else{
+            bonus.innerText = "";
+            bonusg.innerText = "";
+        }
+    }
 }
 
 async function updateStats(name, data){
@@ -213,6 +250,11 @@ async function updateOtherEquipments(name, items){
     eqSel.innerHTML = eqString;
 }
 
+async function resetBonus(){
+    let offence_up = document.getElementById("bonus-attack");
+    offence_up.innerText = "";
+
+}
 
 async function changeCharacter(clicked_id){
     let items = await getData("items");
@@ -237,9 +279,12 @@ async function changeCharacter(clicked_id){
         let data = await getData("stats");
         let level = document.getElementById("level");
         level.value = 1;
-        
+
+
+        resetBonus();
         updateStats(name, data);
-        updateWeapons(name, items)
+        updateWeapons(name, items);
+        updateWeaponStats(name, items);
         updateBodyEquipments(name, items);
         updateArmsEquipments(name, items);
         updateOtherEquipments(name, items);

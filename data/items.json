@@ -154,7 +154,8 @@
          "Price":"Sells for $2980",
          "Error rate":"1/16",
          "Offense up":"100",
-         "Notes":"This item was erroneously stated to be dropped by the three Krakens in Magicant by the player's guide."
+         "Notes":"This item was erroneously stated to be dropped by the three Krakens in Magicant by the player's guide.",
+         "Guts up": "127"
       }
    },
    {
@@ -175,7 +176,8 @@
          "Location":"Lost Underworld (Grocery Store)",
          "Price":"$3480",
          "Error rate":"1/16",
-         "Offense up":"80"
+         "Offense up":"80",
+         "Guts up": "10"
       }
    },
    {
@@ -218,7 +220,8 @@
          "Location":"Dropped by Chomposaur in the Lost Underworld(1/128 chance)",
          "Price":"Sells for $4790",
          "Error rate":"1/4",
-         "Offense up":"50"
+         "Offense up":"50",
+         "Guts up": "100"
       }
    },
    {
