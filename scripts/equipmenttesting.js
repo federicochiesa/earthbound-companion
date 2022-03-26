@@ -13,6 +13,9 @@ window.onload = async function () {
 
     
     updateWeapons(name, items);
+    updateBodyEquipments(name, items);
+    updateArmsEquipments(name, items);
+    updateOtherEquipments(name, items);
     updateStats(name, data)
 
     const selectLevel = document.querySelector('#level');
@@ -57,7 +60,6 @@ async function updateStats(name, data){
     }
 }
 
-
 async function updateWeapons(name, items){
     let weaponSel = document.getElementById("weapon");
     var weaponString = "<optgroup label=\"Choose weapon:\">\
@@ -93,6 +95,125 @@ async function updateWeapons(name, items){
     weaponSel.innerHTML = weaponString;
 }
 
+async function updateBodyEquipments(name, items){
+    let eqSel = document.getElementById("bodyEquip");
+    var eqString = "<optgroup label=\"Choose Body Equipment:\">\
+                            <option>(Nothing)</option>\ ";
+    var eqs = items[Object.keys(items)[1]]
+    for(let i = 0; i < eqs.length; i++){
+        element = eqs[i];
+        
+        if (typeof (element.data["Description"]) == "undefined") {
+            eqString += "<option>"+element.name+"</option>\ ";
+        } else {
+            if(element.data["Description"].search(/body/i) > -1){
+                if (element.data["Description"].search(/ness/i) > -1) var ness = "Y";
+                else if (element.name.search(/bat/i) > -1) var ness = "Y";
+                else var ness = "N";
+                if (element.data["Description"].search(/paula/i) > -1) var paula = "Y";
+                else if (element.name.search(/pan/i) > -1) var ness = "Y";
+                else var paula = "N";
+                if (element.data["Description"].search(/jeff/i) > -1) var jeff = "Y";
+                else var jeff = "N";
+                if (element.data["Description"].search(/poo/i) > -1) var poo = "Y";
+                else var poo = "N";
+                if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
+                    eqString += "<option>"+element.name+"</option>\ ";
+                }
+                console.log(name.innerText);
+                if(name.innerText == "NESS" && ness == "Y") eqString += "<option>"+element.name+"</option>\ ";
+                else if(name.innerText == "PAULA" && paula == "Y") eqString += "<option>"+element.name+"</option>\ ";
+                else if(name.innerText == "JEFF" && jeff == "Y") eqString += "<option>"+element.name+"</option>\ ";
+                else if(name.innerText == "POO" && poo == "Y") eqString += "<option>"+element.name+"</option>\ ";
+            }
+        }
+        
+    }
+
+    eqString+= "</optgroup>";
+    eqSel.innerHTML = eqString;
+}
+
+async function updateArmsEquipments(name, items){
+    let eqSel = document.getElementById("armsEquip");
+    var eqString = "<optgroup label=\"Choose Arms Equipment:\">\
+                            <option>(Nothing)</option>\ ";
+    var eqs = items[Object.keys(items)[1]]
+    for(let i = 0; i < eqs.length; i++){
+        element = eqs[i];
+        
+        if (typeof (element.data["Description"]) == "undefined") {
+            eqString += "<option>"+element.name+"</option>\ ";
+        } else {
+            if(element.data["Description"].search(/arm/i) > -1){
+                if (element.data["Description"].search(/ness/i) > -1) var ness = "Y";
+                else if (element.name.search(/bat/i) > -1) var ness = "Y";
+                else var ness = "N";
+                if (element.data["Description"].search(/paula/i) > -1) var paula = "Y";
+                else if (element.name.search(/pan/i) > -1) var ness = "Y";
+                else var paula = "N";
+                if (element.data["Description"].search(/jeff/i) > -1) var jeff = "Y";
+                else var jeff = "N";
+                if (element.data["Description"].search(/poo/i) > -1) var poo = "Y";
+                else var poo = "N";
+                if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
+                    eqString += "<option>"+element.name+"</option>\ ";
+                }
+                console.log(name.innerText);
+                if(name.innerText == "NESS" && ness == "Y") eqString += "<option>"+element.name+"</option>\ ";
+                else if(name.innerText == "PAULA" && paula == "Y") eqString += "<option>"+element.name+"</option>\ ";
+                else if(name.innerText == "JEFF" && jeff == "Y") eqString += "<option>"+element.name+"</option>\ ";
+                else if(name.innerText == "POO" && poo == "Y") eqString += "<option>"+element.name+"</option>\ ";
+            }
+        }
+        
+    }
+
+    eqString+= "</optgroup>";
+    eqSel.innerHTML = eqString;
+}
+
+async function updateOtherEquipments(name, items){
+    let eqSel = document.getElementById("otherEquip");
+    var eqString = "<optgroup label=\"Choose Other Equipment:\">\
+                            <option>(Nothing)</option>\ ";
+    var eqs = items[Object.keys(items)[1]]
+    for(let i = 0; i < eqs.length; i++){
+        element = eqs[i];
+        
+        if (typeof (element.data["Description"]) == "undefined") {
+            eqString += "<option>"+element.name+"</option>\ ";
+        } else {
+            if(element.data["Description"].search(/arm/i) == -1  && 
+                element.data["Description"].search(/body/i) == -1){
+                if (element.data["Description"].search(/ness/i) > -1) var ness = "Y";
+                else if (element.name.search(/bat/i) > -1) var ness = "Y";
+                else var ness = "N";
+                if (element.data["Description"].search(/paula/i) > -1) var paula = "Y";
+                else if (element.name.search(/pan/i) > -1) var ness = "Y";
+                else var paula = "N";
+                if (element.data["Description"].search(/jeff/i) > -1) var jeff = "Y";
+                else var jeff = "N";
+                if (element.data["Description"].search(/poo/i) > -1) var poo = "Y";
+                else var poo = "N";
+                if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
+                    eqString += "<option>"+element.name+"</option>\ ";
+                }
+                console.log(name.innerText);
+                if(name.innerText == "NESS" && ness == "Y") eqString += "<option>"+element.name+"</option>\ ";
+                else if(name.innerText == "PAULA" && paula == "Y") eqString += "<option>"+element.name+"</option>\ ";
+                else if(name.innerText == "JEFF" && jeff == "Y") eqString += "<option>"+element.name+"</option>\ ";
+                else if(name.innerText == "POO" && poo == "Y") eqString += "<option>"+element.name+"</option>\ ";
+            }
+        }
+        
+    }
+
+    eqString+= "</optgroup>";
+    eqSel.innerHTML = eqString;
+}
+
+
 async function changeCharacter(clicked_id){
     let items = await getData("items");
     let hero = document.getElementsByClassName("selected-hero")
@@ -119,7 +240,9 @@ async function changeCharacter(clicked_id){
         
         updateStats(name, data);
         updateWeapons(name, items)
-        
+        updateBodyEquipments(name, items);
+        updateArmsEquipments(name, items);
+        updateOtherEquipments(name, items);
     }
     
 }
