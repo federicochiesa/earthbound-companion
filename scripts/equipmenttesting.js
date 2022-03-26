@@ -6,19 +6,27 @@ async function getData(type) {
 
 window.onload = async function () {
     let data = await getData("stats");
+    let items = await getData("items");
     let name = document.getElementById("character");
     let level = document.getElementById("level");
     level.value = 1;
 
+    
+    updateWeapons(name, items);
     updateStats(name, data)
 
-    const selectElement = document.querySelector('#level');
-    selectElement.addEventListener('change', (event) => {
+    const selectLevel = document.querySelector('#level');
+    selectLevel.addEventListener('change', (event) => {
         updateStats(name, data)
+    });
+
+    const selectWeapon = document.querySelector('#weapon');
+    selectWeapon.addEventListener('change', (event) => {
+        
     });
 }
 
-function updateStats(name, data){
+async function updateStats(name, data){
     for (let i = 0; i < Object.keys(data).length; i++) {
         if(Object.keys(data)[i] == name.innerText){
             let level = document.getElementById("level");
@@ -49,7 +57,44 @@ function updateStats(name, data){
     }
 }
 
+
+async function updateWeapons(name, items){
+    let weaponSel = document.getElementById("weapon");
+    var weaponString = "<optgroup label=\"Choose weapon:\">\
+                            <option>(Nothing)</option>\ ";
+    var weapons = items[Object.keys(items)[0]]
+    for(let i = 0; i < weapons.length; i++){
+        element = weapons[i];
+        if (typeof (element.data["Description"]) == "undefined") {
+            weaponString += "<option>"+element.name+"</option>\ ";
+        } else {
+            if (element.data["Description"].search(/ness/i) > -1) var ness = "Y";
+            else if (element.name.search(/bat/i) > -1) var ness = "Y";
+            else var ness = "N";
+            if (element.data["Description"].search(/paula/i) > -1) var paula = "Y";
+            else if (element.name.search(/pan/i) > -1) var ness = "Y";
+            else var paula = "N";
+            if (element.data["Description"].search(/jeff/i) > -1) var jeff = "Y";
+            else var jeff = "N";
+            if (element.data["Description"].search(/poo/i) > -1) var poo = "Y";
+            else var poo = "N";
+            if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
+                weaponString += "<option>"+element.name+"</option>\ ";
+            }
+            console.log(name.innerText);
+            if(name.innerText == "NESS" && ness == "Y") weaponString += "<option>"+element.name+"</option>\ ";
+            else if(name.innerText == "PAULA" && paula == "Y") weaponString += "<option>"+element.name+"</option>\ ";
+            else if(name.innerText == "JEFF" && jeff == "Y") weaponString += "<option>"+element.name+"</option>\ ";
+            else if(name.innerText == "POO" && poo == "Y") weaponString += "<option>"+element.name+"</option>\ ";
+        }
+    }
+
+    weaponString+= "</optgroup>";
+    weaponSel.innerHTML = weaponString;
+}
+
 async function changeCharacter(clicked_id){
+    let items = await getData("items");
     let hero = document.getElementsByClassName("selected-hero")
     let pics = document.getElementsByClassName("select-hero")
     let name = document.getElementById("character");
@@ -71,12 +116,13 @@ async function changeCharacter(clicked_id){
         let data = await getData("stats");
         let level = document.getElementById("level");
         level.value = 1;
+        
         updateStats(name, data);
+        updateWeapons(name, items)
         
     }
     
 }
-
 
   
   
