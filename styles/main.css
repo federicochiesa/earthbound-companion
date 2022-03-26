@@ -459,8 +459,8 @@ select {
     background-color: transparent;
     border: none;
     color:white;
-    font-family: "appleKid" !important;
-    image-rendering: pixelated;
+    size: 5 !important;
+    --form-select-font-family: "appleKid" !important;
 }
 
 select:focus {
@@ -469,17 +469,19 @@ select:focus {
     background-color: #1a1a1a;
     
 }
+
+select option:hover{
+    background-color: grey;
+}
+
+select optgroup option{
+    width: 20px !important;
+}
   
-optgroup {
+select optgroup {
     font-size:15px; 
-    width: 30px;
+    width: 10px !important;
+    font-family: "appleKid" !important;
+    image-rendering: pixelated !important;
 }
 
-.toast-header{
-    font-size: 1.5rem;
-}
-
-.toast-body {
-    font-size: 1.5rem;
-    line-height: 125%;
-}
