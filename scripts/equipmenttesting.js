@@ -64,9 +64,14 @@ async function updateWeaponStats(name, items) {
                     bonus.style.color = "green";
                     bonuse.style.fontSize = "20px";
                     let newBonuse = calcFraction(element.data["Error rate"]);
-                    if(newBonuse > calcFraction(document.getElementById("errorrate").innerText))
-                        bonuse.style.color = "red";
+                    let oldBonuse = calcFraction(document.getElementById("errorrate").innerText)
                     bonuse.innerText = element.data["Error rate"];
+                    if(newBonuse > oldBonuse)
+                        bonuse.style.color = "red";
+                    else if (newBonuse == oldBonuse){
+                        bonuse.innerText = "";
+                    }
+                    
 
                     if (typeof (element.data["Guts up"]) != "undefined") {
                         bonusg.innerText = "+ " + element.data["Guts up"];
