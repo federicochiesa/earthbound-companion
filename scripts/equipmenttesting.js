@@ -45,6 +45,7 @@ async function updateWeaponStats(name, items) {
     let w = document.getElementById("weapon");
     let bonus = document.getElementById("bonus-attack")
     let bonusg = document.getElementById("bonus-guts")
+    var bonuse = document.getElementById("bonus-errorrate");
     var weapons = items[Object.keys(items)[0]]
     for (let i = 0; i < weapons.length; i++) {
         element = weapons[i];
@@ -60,6 +61,13 @@ async function updateWeaponStats(name, items) {
                     bonus.style.color = "green";
                     bonus.style.fontSize = "20px";
 
+                    bonus.style.color = "green";
+                    bonuse.style.fontSize = "20px";
+                    let newBonuse = calcFraction(element.data["Error rate"]);
+                    if(newBonuse > calcFraction(document.getElementById("errorrate").innerText))
+                        bonuse.style.color = "red";
+                    bonuse.innerText = element.data["Error rate"];
+
                     if (typeof (element.data["Guts up"]) != "undefined") {
                         bonusg.innerText = "+ " + element.data["Guts up"];
                         bonusg.style.color = "green";
@@ -73,6 +81,7 @@ async function updateWeaponStats(name, items) {
         } else {
             bonus.innerText = "";
             bonusg.innerText = "";
+            bonuse.innerText = ""
         }
     }
 }
@@ -462,4 +471,13 @@ async function changeCharacter(clicked_id) {
         updateOtherEquipments(name, items);
         updateOtherStats(name, items);
     }
+}
+
+function calcFraction(fracString){
+    if(fracString.includes("/")){
+        var split = fracString.split("/");
+        var result = parseInt(split[0], 10) / parseInt(split[1], 10);
+        return result;
+        }
+    else return fracString;
 }
