@@ -461,6 +461,7 @@ select {
     color:white;
     size: 5 !important;
     --form-select-font-family: "appleKid" !important;
+    width: 100%;
 }
 
 select:focus {
