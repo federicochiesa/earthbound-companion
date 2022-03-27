@@ -448,7 +448,8 @@
          "Description":"To be equipped on Poo's arm. Helps protect from being hypnotized, and Luck goes up. Of course, Defense also goes up.",
          "Location":"Cave of the Pink Cloud (Gift Box)",
          "Price":"N/A",
-         "Defense up":"30"
+         "Defense up":"30",
+         "Luck up": "35"
       }
    },
    {
@@ -458,7 +459,8 @@
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck.",
          "Location":"Deep Darkness (Trading Company Employee)",
          "Price":"$6000",
-         "Defense up":"50"
+         "Defense up":"50",
+         "Luck up": "20"
       }
    },
    {
@@ -477,7 +479,8 @@
          "Description":"Must be equipped on your arm. It increases your Defense. Helps keep you from being hypnotized, and it also increases your Luck.",
          "Location":"The Fire Spring (Gift Box)",
          "Price":"Sells for $1790",
-         "Defense up":"70"
+         "Defense up":"70",
+         "Luck up": "20"
       }
    },
    {
@@ -487,7 +490,8 @@
          "Description":"Poo's body equipment. It increases his Defense.",
          "Location":"Lost Underworld (Gift Box)",
          "Price":"N/A",
-         "Defense up":"20"
+         "Defense up":"20",
+         "Speed up": "40"
       }
    },
    {
@@ -497,7 +501,8 @@
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck.",
          "Location":"Fourside (Department Store), Desert Gold Mine (Gift Box), Toto (Grocery Store)",
          "Price":"$2000",
-         "Defense up":"40"
+         "Defense up":"40",
+         "Luck up": "13"
       }
    },
    {
@@ -507,7 +512,8 @@
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck.",
          "Location":"Winters (Drugstore)",
          "Price":"$2500",
-         "Defense up":"45"
+         "Defense up":"45",
+         "Luck up": "16"
       }
    },
    {
@@ -517,7 +523,8 @@
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck.",
          "Location":"Dusty Dunes Desert (Drugstore), Fourside (Department Store)",
          "Price":"$1500",
-         "Defense up":"30"
+         "Defense up":"30",
+         "Luck up": "10"
       }
    },
    {
@@ -536,7 +543,8 @@
          "Description":"Must be equipped on your body. It protects you from paralysis attacks. It also increases your Speed.",
          "Location":"Scaraba (Convenience Store)",
          "Price":"$600",
-         "Defense up":"2"
+         "Defense up":"2",
+         "Speed up": "15"
       }
    },
    {
@@ -546,7 +554,8 @@
          "Description":"Miscellaneous equipment that can only be used by Paula. When equipped, Luck is increased.",
          "Location":"Fourside (Department Store)",
          "Price":"$389",
-         "Defense up":"40"
+         "Defense up":"40",
+         "Luck up": "15"
       }
    },
    {
@@ -556,7 +565,8 @@
          "Description":"Miscellaneous equipment that can only be used by Poo. It increases his Defense.",
          "Location":"Lumine Hall (Gift Box)",
          "Price":"N/A",
-         "Defense up":"20"
+         "Defense up":"20",
+         "Luck up": "30"
       }
    },
    {
@@ -595,7 +605,8 @@
          "Description":"Must be equipped on your arm. It increases your Defense. Helps keep you from being hypnotized, and it also increases your Luck.",
          "Location":"Magicant (Gift Box)",
          "Price":"Sells for $1980",
-         "Defense up":"80"
+         "Defense up":"80",
+         "Luck up": "30"
       }
    },
    {
@@ -624,7 +635,8 @@
          "Description":"Must be equipped on your body. It protects you from paralysis attacks. Also, it adds a bit of Speed.",
          "Location":"Lilliputian Footprints (Gift Box), Saturn Valley (Drugstore)",
          "Price":"$400",
-         "Defense up":"1"
+         "Defense up":"1",
+         "Speed up": "5"
       }
    },
    {
@@ -652,7 +664,8 @@
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck.",
          "Location":"Summers (Drugstore)",
          "Price":"$6000",
-         "Defense up":"50"
+         "Defense up":"50",
+         "Luck up": "20"
       }
    },
    {
@@ -671,7 +684,8 @@
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck. It's not money even though it's called a coin.",
          "Location":"",
          "Price":"$1000",
-         "Defense up":"47"
+         "Defense up":"47",
+         "Luck up": "18"
       }
    },
    {
@@ -691,7 +705,8 @@
          "Description":"Must be equipped on your arm. It increases your Defense. Helps you from being hypnotized, and it also increases your Luck.",
          "Location":"Stonehenge base (Gift Box)",
          "Price":"Sells for $1590",
-         "Defense up":"60"
+         "Defense up":"60",
+         "Luck up": "10"
       }
    },
    {
@@ -710,7 +725,8 @@
          "Description":"Must be equipped on your body. It protects you from paralysis attacks. It increases your Speed in a big way.",
          "Location":"Lumine Hall (Gift Box)",
          "Price":"Sells for $1800",
-         "Defense up":"3"
+         "Defense up":"3",
+         "Speed up": "40"
       }
    },
    {
@@ -750,7 +766,8 @@
          "Description":"Miscellaneous equipment that can only be used by Paula. When equipped, Luck is increased. Same as the one that Mr. Saturn wears on his head.",
          "Location":"Given to you by a Mr. Saturn after you defeat Starman Deluxe and shut down the Stonehenge base.",
          "Price":"Sells for $3980",
-         "Defense up":"90"
+         "Defense up":"90",
+         "Luck up": "40"
       }
    },
    {
@@ -770,7 +787,8 @@
          "Description":"Must be equipped as \"other.\" It increases your Defense and Luck.",
          "Location":"Lost Underworld (Grocery Store)",
          "Price":"$4000",
-         "Defense up":"70"
+         "Defense up":"70",
+         "Luck up": "30"
       }
    },
    {
@@ -789,7 +807,8 @@
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck.",
          "Location":"Deep Darkness (Gift Box)",
          "Price":"Sells for $6000",
-         "Defense up":"80"
+         "Defense up":"80",
+         "Luck up": "35"
       }
    },
    {
@@ -809,7 +828,8 @@
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck.",
          "Location: Tenda Village (Store":"",
          "Price":"$3500",
-         "Defense up":"60"
+         "Defense up":"60",
+         "Luck up": "25"
       }
    },
    {
@@ -819,7 +839,8 @@
          "Description":"Miscellaneous equipment that can only be used by Paula. When equipped, luck is increased.",
          "Location: Dungeon Man (Gift Box":"",
          "Price":"Sells for 3500",
-         "Defense up":"60"
+         "Defense up":"60",
+         "Luck up": "25"
       }
    },
    {

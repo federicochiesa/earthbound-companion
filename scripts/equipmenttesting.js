@@ -15,7 +15,9 @@ window.onload = async function () {
     updateWeapons(name, items);
     updateWeaponStats(name, items);
     updateBodyEquipments(name, items);
+    updateBodyStats(name, items)
     updateArmsEquipments(name, items);
+    updateArmsStats(name, items);
     updateOtherEquipments(name, items);
     updateStats(name, data)
 
@@ -26,7 +28,17 @@ window.onload = async function () {
 
     const selectWeapon = document.querySelector('#weapon');
     selectWeapon.addEventListener('change', (event) => {
-        updateWeaponStats(name, items)
+        updateWeaponStats(name, items);
+    });
+
+    const selectBody = document.querySelector('#bodyEquip');
+    selectBody.addEventListener('change', (event) => {
+        updateBodyStats(name, items);
+    });
+
+    const selectArms = document.querySelector('#armsEquip');
+    selectArms.addEventListener('change', (event) => {
+        updateArmsStats(name, items);
     });
 }
 
@@ -65,6 +77,108 @@ async function updateWeaponStats(name, items){
         }
     }
 }
+
+async function updateBodyStats(name, items){
+    let w = document.getElementById("bodyEquip");
+    let arm = document.getElementById("armsEquip");
+    let oth = document.getElementById("otherEquip");
+    let bonus = document.getElementById("bonus-defense")
+
+    var actualbonus = 0;
+    var weapons = items[Object.keys(items)[1]]
+    for(let i = 0; i < weapons.length; i++){
+        if(weapons[i].name.toUpperCase() == arm.value.toUpperCase() || weapons[i].name.toUpperCase() == oth.value.toUpperCase())
+            actualbonus += parseInt(weapons[i].data["Defense up"])
+    }
+    let bonusl = document.getElementById("bonus-luck")
+    let bonuss = document.getElementById("bonus-speed")
+    var weapons = items[Object.keys(items)[1]]
+    for(let i = 0; i < weapons.length; i++){
+        element = weapons[i];
+        if(w.value.toUpperCase() != "(NOTHING)"){
+            if(w.value.toUpperCase() == element.name.toUpperCase()){
+                if(name.innerText == "POO" && w.value.search(/kings/i) < 0){
+                    bonus.innerText = "- "+ element.data["Defense up"];
+                    bonus.style.color = "red";
+                    bonus.style.fontSize = "20px";
+                }
+                else{
+                    b = actualbonus + parseInt(element.data["Defense up"])
+                    if(b != 0)
+                        bonus.innerText = "+ "+ b.toString();
+                    bonus.style.color = "green";
+                    bonus.style.fontSize = "20px";
+
+                    if(typeof(element.data["Speed up"]) != "undefined"){
+                        bonuss.innerText = "+ "+ element.data["Speed up"];
+                        bonuss.style.color = "green";
+                        bonuss.style.fontSize = "20px";
+                    }
+                    else{
+                        bonuss.innerText = "";
+                    }
+                }
+            }
+        }else{
+            if(actualbonus != 0)
+                bonus.innerText = "+ "+ actualbonus.toString();
+            else bonus.innerText = "";
+            bonuss.innerText = "";
+        }
+    }
+}
+
+async function updateArmsStats(name, items){
+    let w = document.getElementById("armsEquip");
+    let bod = document.getElementById("bodyEquip");
+    let oth = document.getElementById("otherEquip");
+    let bonus = document.getElementById("bonus-defense")
+
+    var actualbonus = 0;
+    var weapons = items[Object.keys(items)[1]]
+    for(let i = 0; i < weapons.length; i++){
+        if(weapons[i].name.toUpperCase() == bod.value.toUpperCase() || weapons[i].name.toUpperCase() == oth.value.toUpperCase())
+            actualbonus += parseInt(weapons[i].data["Defense up"])
+    }
+
+    let bonusl = document.getElementById("bonus-luck")
+    var weapons = items[Object.keys(items)[1]]
+    for(let i = 0; i < weapons.length; i++){
+        element = weapons[i];
+        if(w.value.toUpperCase() != "(NOTHING)"){
+            if(w.value.toUpperCase() == element.name.toUpperCase()){
+                if(name.innerText == "POO" && w.value.search(/kings/i) < 0){
+                    bonus.innerText = "- "+ element.data["Defense up"];
+                    bonus.style.color = "red";
+                    bonus.style.fontSize = "20px";
+                }
+                else{
+                    b = actualbonus + parseInt(element.data["Defense up"])
+                    if(b != 0)
+                        bonus.innerText = "+ "+ b.toString();
+                    bonus.style.color = "green";
+                    bonus.style.fontSize = "20px";
+
+                    if(typeof(element.data["Luck up"]) != "undefined"){
+                        bonusl.innerText = "+ "+ element.data["Luck up"];
+                        bonusl.style.color = "green";
+                        bonusl.style.fontSize = "20px";
+                    }
+                    else{
+                        bonusl.innerText = "";
+                    }
+                   
+                }
+            }
+        }else{
+            if(actualbonus != 0)
+                bonus.innerText = "+ "+ actualbonus.toString();
+            else bonus.innerText = "";
+            bonusl.innerText = "";
+        }
+    }
+}
+
 
 async function updateStats(name, data){
     for (let i = 0; i < Object.keys(data).length; i++) {
@@ -120,7 +234,6 @@ async function updateWeapons(name, items){
             if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
                 weaponString += "<option>"+element.name+"</option>\ ";
             }
-            console.log(name.innerText);
             if(name.innerText == "NESS" && ness == "Y") weaponString += "<option>"+element.name+"</option>\ ";
             else if(name.innerText == "PAULA" && paula == "Y") weaponString += "<option>"+element.name+"</option>\ ";
             else if(name.innerText == "JEFF" && jeff == "Y") weaponString += "<option>"+element.name+"</option>\ ";
@@ -157,7 +270,6 @@ async function updateBodyEquipments(name, items){
                 if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
                     eqString += "<option>"+element.name+"</option>\ ";
                 }
-                console.log(name.innerText);
                 if(name.innerText == "NESS" && ness == "Y") eqString += "<option>"+element.name+"</option>\ ";
                 else if(name.innerText == "PAULA" && paula == "Y") eqString += "<option>"+element.name+"</option>\ ";
                 else if(name.innerText == "JEFF" && jeff == "Y") eqString += "<option>"+element.name+"</option>\ ";
@@ -196,7 +308,6 @@ async function updateArmsEquipments(name, items){
                 if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
                     eqString += "<option>"+element.name+"</option>\ ";
                 }
-                console.log(name.innerText);
                 if(name.innerText == "NESS" && ness == "Y") eqString += "<option>"+element.name+"</option>\ ";
                 else if(name.innerText == "PAULA" && paula == "Y") eqString += "<option>"+element.name+"</option>\ ";
                 else if(name.innerText == "JEFF" && jeff == "Y") eqString += "<option>"+element.name+"</option>\ ";
@@ -236,7 +347,6 @@ async function updateOtherEquipments(name, items){
                 if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
                     eqString += "<option>"+element.name+"</option>\ ";
                 }
-                console.log(name.innerText);
                 if(name.innerText == "NESS" && ness == "Y") eqString += "<option>"+element.name+"</option>\ ";
                 else if(name.innerText == "PAULA" && paula == "Y") eqString += "<option>"+element.name+"</option>\ ";
                 else if(name.innerText == "JEFF" && jeff == "Y") eqString += "<option>"+element.name+"</option>\ ";
@@ -286,7 +396,9 @@ async function changeCharacter(clicked_id){
         updateWeapons(name, items);
         updateWeaponStats(name, items);
         updateBodyEquipments(name, items);
+        updateBodyStats(name, items)
         updateArmsEquipments(name, items);
+        updateArmsStats(name, items)
         updateOtherEquipments(name, items);
     }
     
