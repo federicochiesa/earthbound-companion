@@ -435,7 +435,7 @@
    {
       "name":"Baseball cap",
       "data":{
-         "Description":"Must be equipped as \"other.\" It has the logo of your favorite baseball team.",
+         "Description":"Must be equipped as \"other.\" It has the logo of your favorite baseball team. Can only be equipped by Ness.",
          "Location":"Onett (Drugstore), Twoson (Department Store), Fourside (Department Store)",
          "Price":"$19",
          "Defense up":"5"

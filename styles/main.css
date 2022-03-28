@@ -7,13 +7,9 @@ body {
     font-family: "appleKid" !important;
     image-rendering: pixelated;
     line-height: 100% !important;
-    background-image: url(../assets/bgs/324.png) !important;
+    background-image: url(../assets/bgs/background.png) !important;
     background-repeat: repeat !important;
-}
-
-.main-body{
-    background-image: url(../assets/bgs/005.png) !important;
-    background-repeat: repeat !important;
+    background-color: #1a1a1a;
 }
 
 nav, #mapSelector, iframe{
