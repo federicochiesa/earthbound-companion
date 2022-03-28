@@ -9,7 +9,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function () {
     }
 }
 
-var save;
+var saves = [];
 var itemsLUT = ["(Nothing)", "Franklin badge", "Teddy bear", 
 "Super plush bear", "Broken machine", "Broken gadget", 
 "Broken air gun", "Broken spray can", "Broken laser", 
@@ -124,7 +124,10 @@ function updateThumbnail(dropZoneElement, file) {
                 fileByteArray.push(array[i]);
             }
         }
-        save = new GameSave(fileByteArray);
+        for (var i = 0; i < 3; i++){
+            let dataStart = i * hexToDec("A00");
+            saves[i] = new GameSave(fileByteArray.slice(dataStart, dataStart + hexToDec("500")));
+        }
     }
 }
 
