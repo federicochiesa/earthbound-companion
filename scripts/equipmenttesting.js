@@ -102,6 +102,8 @@ async function updateStats(name, data) {
                     hp.innerText = stats[j]["hp"]
                     let pp = document.getElementById("pp");
                     pp.innerText = stats[j]["pp"]
+                    let er = document.getElementById("errorrate");
+                    er.innerText = "0"
                 }
             }
         }

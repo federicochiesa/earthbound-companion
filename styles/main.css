@@ -538,3 +538,13 @@ select optgroup {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/></svg>");
 }
 
+.earthbound-image-div {
+    position: relative;
+}
+.earthbound-image-div span {
+    color: white;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    font-size: large;
+}
