@@ -10,85 +10,85 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function () {
 }
 
 var saves = [];
-var itemsLUT = ["(Nothing)", "Franklin badge", "Teddy bear", 
-"Super plush bear", "Broken machine", "Broken gadget", 
-"Broken air gun", "Broken spray can", "Broken laser", 
-"Broken iron", "Broken pipe", "Broken cannon", "Broken tube", 
-"Broken bazooka", "Broken trumpet", "Broken harmonica", 
-"Broken antenna", "Cracked bat", "Tee ball bat", 
-"Sand lot bat", "Minor league bat", "Mr. Baseball bat", 
-"Big league bat", "Hall of fame bat", "Magicant bat", 
-"Legendary bat", "Gutsy bat", "Casey bat", "Fry pan", 
-"Thick fry pan", "Deluxe fry pan", "Chef's fry pan", 
-"French fry pan", "Magic fry pan", "Holy fry pan", 
-"Sword of kings", "Pop gun", "Stun gun", "Toy air gun", 
-"Magnum air gun", "Zip gun", "Laser gun", "Hyper beam", 
-"Crusher beam", "Spectrum beam", "Death ray", "Baddest beam", 
-"Moon beam gun", "Gaia beam", "Yo-yo", "Slingshot", 
-"Bionic slingshot", "Trick yo-yo", "Combat yo-yo", 
-"Travel charm", "Great charm", "Crystal charm", 
-"Rabbit's foot", "Flame pendant", "Rain pendant", 
-"Night pendant", "Sea pendant", "Star pendant", 
-"Cloak of kings", "Cheap bracelet", "Copper bracelet", 
-"Silver bracelet", "Gold bracelet", "Platinum band", 
-"Diamond band", "Pixie's bracelet", "Cherub's band", 
-"Goddess band", "Bracer of kings", "Baseball cap", 
-"Holmes hat", "Mr. Baseball cap", "Hard hat", "Ribbon", 
-"Red ribbon", "Goddess ribbon", "Coin of slumber", 
-"Coin of defense", "Lucky coin", "Talisman coin", 
-"Shiny coin", "Souvenir coin", "Diadem of kings", 
-"Cookie", "Bag of fries", "Hamburger", "Boiled egg", 
-"Fresh Egg", "Picnic lunch", "Pasta di Summers", "Pizza", 
-"Chef's special", "Large pizza", "PSI caramel", 
-"Magic truffle", "Brain food lunch", "Rock candy", 
-"Croissant", "Bread roll", "Pak of bubble gum", 
-"Jar of Fly Honey", "Can of fruit juice", "Royal iced tea", 
-"Protein drink", "Kraken soup", "Bottle of water", 
-"Cold remedy", "Vial of serum", "IQ capsule", 
-"Guts capsule", "Speed capsule", "Vital capsule", 
-"Luck capsule", "Ketchup packet", "Sugar packet", 
-"Tin of Cocoa", "Carton of cream", "Sprig of parsley", 
-"Jar of hot sauce", "Salt packet", "Backstage pass", 
-"Jar of delisauce", "Wet towel", "Refreshing herb", 
-"Secret herb", "Horn of life", "Counter-PSI unit", 
-"Shield killer", "Bazooka", "Heavy bazooka", "HP-sucker", 
-"Hungry HP-sucker", "Xterminator spray", "Slime generator", 
-"Yogurt dispenser", "Ruler", "Snake bag", "Mummy wrap", 
-"Protractor", "Bottle rocket", "Big bottle rocket", 
-"Multi bottle rocket", "Bomb", "Super bomb", 
-"Insecticide spray", "Rust promoter", "Rust promoter DX", 
-"Pair of dirty socks", "Stag beetle", "Toothbrush", 
-"Handbag strap", "Pharaoh's curse", "Defense shower", 
-"Letter from mom", "Sudden guts pill", "Bag of Dragonite", 
-"Defense spray", "Piggy nose", "For Sale sign", 
-"Shyness book", "Picture postcard", "King banana", 
-"Letter from Tony", "Chick", "Chicken", "Key to the shack", 
-"Key to the cabin", "Bad key machine", "Temporary goods", 
-"Zombie paper", "Hawk eye", "Bicycle", "ATM card", 
-"Show ticket", "Letter from kids", "Wad of bills", 
-"Receiver phone", "Diamond", "Signed banana", 
-"Pencil eraser", "Hieroglyph copy", "Meteotite", 
-"Contact lens", "Hand-Aid", "Trout yogurt", "Banana", 
-"Calorie stick", "Key to the tower", "Meteorite piece", 
-"Earth pendant", "Neutralizer", "Sound Stone", "Exit mouse", 
-"Gelato de resort", "Snake", "Viper", "Brain stone", 
-"Town map", "Video relaxant", "Suporma", "Key to the locker", 
-"Insignificant item", "Magic tart", "Tiny ruby", 
-"Monkey's love", "Eraser eraser", "Tendakraut", 
-"T-rex's bat", "Big league bat", "Ultimate bat", 
-"Double beam", "Platinum band", "Diamond band", 
-"Defense ribbon", "Talisman ribbon", "Saturn ribbon", 
-"Coin of silence", "Charm coin", "Cup of noodles", 
-"Skip sandwich", "Skip sandwich DX", "Lucky sandwich", 
-"Lucky sandwich", "Lucky sandwich", "Lucky sandwich", 
-"Lucky sandwich", "Lucky sandwich", "Cup of coffee", 
-"Double burger", "Peanut cheese bar", "Piggy jelly", 
-"Bowl of rice gruel", "Bean croquette", "Molokheiya soup", 
-"Plain roll", "Kabob", "Plain yogurt", "Beef jerky", 
-"Mammoth burger", "Spicy jerky", "Luxury jerky", 
-"Bottle of DXwater", "Magic pudding", "Non-stick frypan", 
-"Mr. Saturn coin", "Meteornium", "Popsicle", 
-"Cup of Lifenoodles", "Carrot key", "-", "-" ];
+var itemsLUT = ["(Nothing)", "Franklin badge", "Teddy bear",
+    "Super plush bear", "Broken machine", "Broken gadget",
+    "Broken air gun", "Broken spray can", "Broken laser",
+    "Broken iron", "Broken pipe", "Broken cannon", "Broken tube",
+    "Broken bazooka", "Broken trumpet", "Broken harmonica",
+    "Broken antenna", "Cracked bat", "Tee ball bat",
+    "Sand lot bat", "Minor league bat", "Mr. Baseball bat",
+    "Big league bat", "Hall of fame bat", "Magicant bat",
+    "Legendary bat", "Gutsy bat", "Casey bat", "Fry pan",
+    "Thick fry pan", "Deluxe fry pan", "Chef's fry pan",
+    "French fry pan", "Magic fry pan", "Holy fry pan",
+    "Sword of kings", "Pop gun", "Stun gun", "Toy air gun",
+    "Magnum air gun", "Zip gun", "Laser gun", "Hyper beam",
+    "Crusher beam", "Spectrum beam", "Death ray", "Baddest beam",
+    "Moon beam gun", "Gaia beam", "Yo-yo", "Slingshot",
+    "Bionic slingshot", "Trick yo-yo", "Combat yo-yo",
+    "Travel charm", "Great charm", "Crystal charm",
+    "Rabbit's foot", "Flame pendant", "Rain pendant",
+    "Night pendant", "Sea pendant", "Star pendant",
+    "Cloak of kings", "Cheap bracelet", "Copper bracelet",
+    "Silver bracelet", "Gold bracelet", "Platinum band",
+    "Diamond band", "Pixie's bracelet", "Cherub's band",
+    "Goddess band", "Bracer of kings", "Baseball cap",
+    "Holmes hat", "Mr. Baseball cap", "Hard hat", "Ribbon",
+    "Red ribbon", "Goddess ribbon", "Coin of slumber",
+    "Coin of defense", "Lucky coin", "Talisman coin",
+    "Shiny coin", "Souvenir coin", "Diadem of kings",
+    "Cookie", "Bag of fries", "Hamburger", "Boiled egg",
+    "Fresh Egg", "Picnic lunch", "Pasta di Summers", "Pizza",
+    "Chef's special", "Large pizza", "PSI caramel",
+    "Magic truffle", "Brain food lunch", "Rock candy",
+    "Croissant", "Bread roll", "Pak of bubble gum",
+    "Jar of Fly Honey", "Can of fruit juice", "Royal iced tea",
+    "Protein drink", "Kraken soup", "Bottle of water",
+    "Cold remedy", "Vial of serum", "IQ capsule",
+    "Guts capsule", "Speed capsule", "Vital capsule",
+    "Luck capsule", "Ketchup packet", "Sugar packet",
+    "Tin of Cocoa", "Carton of cream", "Sprig of parsley",
+    "Jar of hot sauce", "Salt packet", "Backstage pass",
+    "Jar of delisauce", "Wet towel", "Refreshing herb",
+    "Secret herb", "Horn of life", "Counter-PSI unit",
+    "Shield killer", "Bazooka", "Heavy bazooka", "HP-sucker",
+    "Hungry HP-sucker", "Xterminator spray", "Slime generator",
+    "Yogurt dispenser", "Ruler", "Snake bag", "Mummy wrap",
+    "Protractor", "Bottle rocket", "Big bottle rocket",
+    "Multi bottle rocket", "Bomb", "Super bomb",
+    "Insecticide spray", "Rust promoter", "Rust promoter DX",
+    "Pair of dirty socks", "Stag beetle", "Toothbrush",
+    "Handbag strap", "Pharaoh's curse", "Defense shower",
+    "Letter from mom", "Sudden guts pill", "Bag of Dragonite",
+    "Defense spray", "Piggy nose", "For Sale sign",
+    "Shyness book", "Picture postcard", "King banana",
+    "Letter from Tony", "Chick", "Chicken", "Key to the shack",
+    "Key to the cabin", "Bad key machine", "Temporary goods",
+    "Zombie paper", "Hawk eye", "Bicycle", "ATM card",
+    "Show ticket", "Letter from kids", "Wad of bills",
+    "Receiver phone", "Diamond", "Signed banana",
+    "Pencil eraser", "Hieroglyph copy", "Meteotite",
+    "Contact lens", "Hand-Aid", "Trout yogurt", "Banana",
+    "Calorie stick", "Key to the tower", "Meteorite piece",
+    "Earth pendant", "Neutralizer", "Sound Stone", "Exit mouse",
+    "Gelato de resort", "Snake", "Viper", "Brain stone",
+    "Town map", "Video relaxant", "Suporma", "Key to the locker",
+    "Insignificant item", "Magic tart", "Tiny ruby",
+    "Monkey's love", "Eraser eraser", "Tendakraut",
+    "T-rex's bat", "Big league bat", "Ultimate bat",
+    "Double beam", "Platinum band", "Diamond band",
+    "Defense ribbon", "Talisman ribbon", "Saturn ribbon",
+    "Coin of silence", "Charm coin", "Cup of noodles",
+    "Skip sandwich", "Skip sandwich DX", "Lucky sandwich",
+    "Lucky sandwich", "Lucky sandwich", "Lucky sandwich",
+    "Lucky sandwich", "Lucky sandwich", "Cup of coffee",
+    "Double burger", "Peanut cheese bar", "Piggy jelly",
+    "Bowl of rice gruel", "Bean croquette", "Molokheiya soup",
+    "Plain roll", "Kabob", "Plain yogurt", "Beef jerky",
+    "Mammoth burger", "Spicy jerky", "Luxury jerky",
+    "Bottle of DXwater", "Magic pudding", "Non-stick frypan",
+    "Mr. Saturn coin", "Meteornium", "Popsicle",
+    "Cup of Lifenoodles", "Carrot key", "-", "-"];
 
 window.onload = function () {
     showSurveyToast();
@@ -124,7 +124,7 @@ function updateThumbnail(dropZoneElement, file) {
                 fileByteArray.push(array[i]);
             }
         }
-        for (var i = 0; i < 3; i++){
+        for (var i = 0; i < 3; i++) {
             let dataStart = i * hexToDec("A00");
             saves[i] = new GameSave(fileByteArray.slice(dataStart, dataStart + hexToDec("500")));
         }
@@ -186,33 +186,32 @@ class GameSave {
         for (var i = 0; i < 24; i++) {
             let ch = data[i + hexToDec("2C")];
             if (ch > 0)
-            this.playerName += getChar(ch);
+                this.playerName += getChar(ch);
         }
 
         for (i = 0; i < 6; i++) {
             let ch = data[i + hexToDec("44")];
             if (ch > 0)
-            this.petName += getChar(ch);
+                this.petName += getChar(ch);
         }
 
         for (i = 0; i < 6; i++) {
             let ch = data[i + hexToDec("4a")];
             if (ch > 0)
-            this.favFood += getChar(ch);
+                this.favFood += getChar(ch);
         }
-
 
         for (i = 0; i < 7; i++) {
             let ch = data[i + hexToDec("54")];
             if (ch > 0)
-            this.favThing += getChar(ch);
+                this.favThing += getChar(ch);
         }
 
         for (i = 0; i < 4; i++) {
             let subbuffer = [];
             for (var j = 0; j < hexToDec("5f"); j++)
                 subbuffer.push(data[(i * hexToDec("5f")) + hexToDec("1f9") + j]);
-                this.characters[i] = new PartyMember(subbuffer);
+            this.characters[i] = new PartyMember(subbuffer);
         }
 
         var flagCounter = 0;
@@ -223,9 +222,9 @@ class GameSave {
         }
 
         for (i = 0; i < 36; i++)
-                this.escargoItems[i] = itemsLUT[data[i + hexToDec("76")]];
+            this.escargoItems[i] = itemsLUT[data[i + hexToDec("76")]];
     }
-    getData(){
+    getData() {
         console.log(this);
     }
 }
@@ -248,9 +247,9 @@ class PartyMember {
         for (i = 0; i < 14; i++)
             this.items.push(itemsLUT[data[i + 35]]);
 
-        for (i = 0; i < 4; i++){
+        for (i = 0; i < 4; i++) {
             let index = data[i + 49];
-            if(index != 0){
+            if (index != 0) {
                 this.equip.push(this.items[index - 1]);
             }
             else this.equip.push("(Nothing)");
@@ -286,4 +285,3 @@ function getChar(char) {
     if (char < hexToDec("30")) return ""
     return String.fromCharCode(char - hexToDec("30"));
 }
-
