@@ -3,7 +3,13 @@ window.onload = async function () {
     let items = await getData("items");
     let name = document.getElementById("character");
     let level = document.getElementById("level");
+    let magiSwitch = document.getElementById("flexSwitchCheckDefault");
     level.value = 1;
+    if(name.innerText != "NESS") magiSwitch.disabled = true;
+    else{
+        magiSwitch.disabled = false;
+        magiSwitch.checked = false;
+    } 
 
     
     updateWeapons(name, items);
@@ -260,6 +266,7 @@ async function changeCharacter(clicked_id) {
     let pics = document.getElementsByClassName("select-hero")
     let name = document.getElementById("character");
 
+
     if (getComputedStyle(document.getElementById(clicked_id)).opacity == 0.3) {
         name.innerText = clicked_id.toUpperCase()
 
@@ -283,7 +290,16 @@ async function changeCharacter(clicked_id) {
         updateArmsEquipments(name, items);
         updateOtherEquipments(name, items);
         updateEquipmentStats(items);
+
+        let magiSwitch = document.getElementById("flexSwitchCheckDefault");
+        if(name.innerText != "NESS") magiSwitch.disabled = true;
+        else{
+            magiSwitch.disabled = false;
+            magiSwitch.checked = false;
+        } 
     }
+
+    
 }
 
 async function equip(clicked_id){
@@ -468,6 +484,22 @@ function applyEquippedBonuses(items){
 
     stats[5].innerText = equippedBonuses2[5];
     updateEquipmentStats("", items)
+
+    if(document.getElementById("flexSwitchCheckDefault").checked) applyMagicantBonus();
+}
+function applyMagicantBonus(){
+    sign = -1;
+    if(document.getElementById("flexSwitchCheckDefault").checked) sign = 1;
+
+    applyBonus(document.getElementById("speed"), sign*20);
+    applyBonus(document.getElementById("luck"), sign*20);
+    applyBonus(document.getElementById("guts"), sign*15);
+    applyBonus(document.getElementById("iq"), sign*15);
+    applyBonus(document.getElementById("vitality"), sign*10);
+
+    applyBonus(document.getElementById("hp"), sign*150);
+    applyBonus(document.getElementById("pp"), sign*320);
+
 }
 
 String.prototype.replaceAt = function(index, replacement) {
