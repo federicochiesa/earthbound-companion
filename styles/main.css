@@ -517,4 +517,6 @@ select optgroup {
     position: relative;
   }
 
-  
+  #homeImg{
+      margin-bottom: 50px;
+  }
