@@ -27,7 +27,7 @@ window.onload = async function () {
                 poo = "Y";
             } else {
                 if (element.data["Description"].search(/ness/i) > -1) var ness = "Y";
-                else if (element.name.search(/bat/i) > -1) var ness = "Y";
+                else if (element.name.search(/bat/i) > -1 && element.name.search(/combat/i) < 0) var ness = "Y";
                 else var ness = "N";
                 if (element.data["Description"].search(/paula/i) > -1) var paula = "Y";
                 else if (element.name.search(/pan/i) > -1) var ness = "Y";
