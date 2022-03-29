@@ -5,414 +5,71 @@ window.onload = async function () {
     let level = document.getElementById("level");
     level.value = 1;
 
+    
     updateWeapons(name, items);
-    updateWeaponStats(name, items);
     updateBodyEquipments(name, items);
-    updateBodyStats(name, items)
     updateArmsEquipments(name, items);
-    updateArmsStats(name, items);
     updateOtherEquipments(name, items);
-    updateOtherStats(name, items);
     updateStats(name, data)
 
     const selectLevel = document.querySelector('#level');
     selectLevel.addEventListener('change', (event) => {
         updateStats(name, data)
+        equip("all");
     });
 
     const selectWeapon = document.querySelector('#weapon');
     selectWeapon.addEventListener('change', (event) => {
-        updateWeaponStats(name, items);
+        updateEquipmentStats(name, items);
     });
 
     const selectBody = document.querySelector('#bodyEquip');
     selectBody.addEventListener('change', (event) => {
-        updateBodyStats(name, items);
+        updateEquipmentStats(name, items);
     });
 
     const selectArms = document.querySelector('#armsEquip');
     selectArms.addEventListener('change', (event) => {
-        updateArmsStats(name, items);
+        updateEquipmentStats(name, items);
     });
 
     const selectOther = document.querySelector('#otherEquip');
     selectOther.addEventListener('change', (event) => {
-        updateOtherStats(name, items);
+        updateEquipmentStats(name, items);
     });
 }
 
-async function updateWeaponStats(name, items) {
-    let w = document.getElementById("weapon");
-    let bonus = document.getElementById("bonus-attack")
-    let bonusg = document.getElementById("bonus-guts")
-    var bonuse = document.getElementById("bonus-errorrate");
-    var weapons = items[Object.keys(items)[0]]
-    for (let i = 0; i < weapons.length; i++) {
-        element = weapons[i];
-        if (w.value.toUpperCase() != "(NOTHING)") {
-            if (w.value.toUpperCase() == element.name.toUpperCase()) {
-                if (name.innerText == "POO" && w.value.search(/kings/i) < 0) {
-                    bonus.innerText = "- " + element.data["Offense up"];
-                    bonus.style.color = "red";
-                    bonus.style.fontSize = "20px";
-                }
-                else {
-                    bonus.innerText = "+" + element.data["Offense up"];
-                    bonus.style.color = "green";
-                    bonus.style.fontSize = "20px";
+async function updateEquipmentStats(name, items) {
+        currentBonuses = calcCurrentBonus(items);
+        equippedBonuses = calcEquippedBonus(items);
 
-                    bonus.style.color = "green";
-                    bonuse.style.fontSize = "20px";
-                    let newBonuse = calcFraction(element.data["Error rate"]);
-                    let oldBonuse = calcFraction(document.getElementById("errorrate").innerText)
-                    bonuse.innerText = element.data["Error rate"];
-                    if(newBonuse > oldBonuse)
-                        bonuse.style.color = "red";
-                    else if (newBonuse == oldBonuse){
-                        bonuse.innerText = "";
-                    }
-                    
+        let atkbonus = document.getElementById("bonus-attack");
+        let defbonus = document.getElementById("bonus-defense");
+        let gutsbonus = document.getElementById("bonus-guts");
+        let luckbonus = document.getElementById("bonus-luck");
+        let speedbonus = document.getElementById("bonus-speed");
+        let erbonus = document.getElementById("bonus-errorrate");
+        bonuses = [atkbonus, gutsbonus, defbonus, speedbonus, luckbonus, erbonus];
 
-                    if (typeof (element.data["Guts up"]) != "undefined") {
-                        bonusg.innerText = "+" + element.data["Guts up"];
-                        bonusg.style.color = "green";
-                        bonusg.style.fontSize = "20px";
-                    }
-                    else {
-                        bonusg.innerText = "";
-                    }
-                }
-            }
-        } else {
-            bonus.innerText = "";
-            bonusg.innerText = "";
-            bonuse.innerText = ""
+        for(let i = 0; i< currentBonuses.length - 1; i++){
+            bonus = currentBonuses[i] - equippedBonuses[i]
+            if(bonus > 0){
+                bonuses[i].innerText = "+" + bonus.toString();
+                bonuses[i].style.color = "green";
+            } else if(bonus < 0){
+                bonuses[i].innerText = bonus.toString();
+                bonuses[i].style.color = "red";
+            } else bonuses[i].innerText = "";
+
+            bonuses[i].style.fontSize = "20px";
         }
-    }
-}
 
-async function updateBodyStats(name, items) {
-    let w = document.getElementById("bodyEquip");
-    let arm = document.getElementById("armsEquip");
-    let oth = document.getElementById("otherEquip");
-    let bonus = document.getElementById("bonus-defense")
+        bonuses[5].innerText = currentBonuses[5];
+        if(calcFraction(currentBonuses[5]) > calcFraction(equippedBonuses[5])) bonuses[5].style.color = "red";
+        else if(calcFraction(currentBonuses[5]) < calcFraction(equippedBonuses[5])) bonuses[5].style.color = "green";
+        else bonuses[5].innerText = "";
+        bonuses[5].style.fontSize = "20px";
 
-    var actualbonus = 0;
-    var actualbonusPoo = 0;
-    var weapons = items[Object.keys(items)[1]]
-    for (let i = 0; i < weapons.length; i++) {
-        if (weapons[i].name.toUpperCase() == arm.value.toUpperCase() || weapons[i].name.toUpperCase() == oth.value.toUpperCase()){
-            actualbonus += parseInt(weapons[i].data["Defense up"]);
-            if(weapons[i].name.search(/kings/i) >= 0)
-                actualbonusPoo += parseInt(weapons[i].data["Defense up"]);
-            else 
-                actualbonusPoo -= parseInt(weapons[i].data["Defense up"]);
-        }
-    }
-
-
-    let bonuss = document.getElementById("bonus-speed");
-
-    var weapons = items[Object.keys(items)[1]]
-    for (let i = 0; i < weapons.length; i++) {
-        element = weapons[i];
-        if (w.value.toUpperCase() != "(NOTHING)") {
-            if (w.value.toUpperCase() == element.name.toUpperCase()) {
-                if (name.innerText == "POO") {
-                    if(w.value.search(/kings/i) < 0){
-                        def = 0;
-                        def -= parseInt(weapons[i].data["Defense up"]);
-                        if (typeof (element.data["Speed up"]) != "undefined") {
-                            bonuss.innerText = "-" + element.data["Speed up"];
-                            bonuss.style.color = "red";
-                            bonuss.style.fontSize = "20px";
-                        }
-                        else {
-                            bonuss.innerText = "";
-                        }
-                    }else{
-                        def = 0;
-                        def += parseInt(weapons[i].data["Defense up"]);
-                        if (typeof (element.data["Speed up"]) != "undefined") {
-                            bonuss.innerText = "+" + element.data["Speed up"];
-                            bonuss.style.color = "green";
-                            bonuss.style.fontSize = "20px";
-                        }
-                        else {
-                            bonuss.innerText = "";
-                        }
-                    }
-                    
-                    b = actualbonusPoo + def;
-                    if (b != 0){
-                        if(b > 0){
-                            bonus.innerText = "+" + b.toString();
-                            bonus.style.color = "green";
-                            bonus.style.fontSize = "20px";
-                        }
-                        else{
-                            bonus.innerText = b.toString();
-                            bonus.style.color = "red";
-                            bonus.style.fontSize = "20px";
-                        }
-                    }else{
-                        bonus.innerText = "";
-                    }
-                    
-                }
-                else {
-                    b = actualbonus + parseInt(element.data["Defense up"])
-                    if (b != 0)
-                        bonus.innerText = "+" + b.toString();
-                    bonus.style.color = "green";
-                    bonus.style.fontSize = "20px";
-
-                    if (typeof (element.data["Speed up"]) != "undefined") {
-                        bonuss.innerText = "+" + element.data["Speed up"];
-                        bonuss.style.color = "green";
-                        bonuss.style.fontSize = "20px";
-                    }
-                    else {
-                        bonuss.innerText = "";
-                    }
-                }
-            }
-        } else {
-            if (actualbonus != 0)
-                bonus.innerText = "+" + actualbonus.toString();
-            else bonus.innerText = "";
-            bonuss.innerText = "";
-        }
-    }
-}
-
-async function updateArmsStats(name, items) {
-    let w = document.getElementById("armsEquip");
-    let bod = document.getElementById("bodyEquip");
-    let oth = document.getElementById("otherEquip");
-    let bonus = document.getElementById("bonus-defense")
-
-    var actualbonus = 0;
-    var actualLbonus = 0;
-    var actualbonusPoo = 0;
-    var actualLbonusPoo = 0;
-    var weapons = items[Object.keys(items)[1]]
-    for (let i = 0; i < weapons.length; i++) {
-        if (weapons[i].name.toUpperCase() == bod.value.toUpperCase() || weapons[i].name.toUpperCase() == oth.value.toUpperCase()) {
-            actualbonus += parseInt(weapons[i].data["Defense up"]);
-            if(weapons[i].name.search(/kings/i) >= 0)
-                actualbonusPoo += parseInt(weapons[i].data["Defense up"]);
-            else 
-                actualbonusPoo -= parseInt(weapons[i].data["Defense up"]);
-            if (typeof(weapons[i].data["Luck up"]) != "undefined"){
-                actualLbonus += parseInt(weapons[i].data["Luck up"])
-                if(weapons[i].name.search(/kings/i) > -1)
-                    actualLbonusPoo += parseInt(weapons[i].data["Luck up"]);
-                else 
-                    actualLbonusPoo -= parseInt(weapons[i].data["Luck up"]);
-            }
-        }
-    }
-
-    let bonusl = document.getElementById("bonus-luck")
-    var weapons = items[Object.keys(items)[1]]
-    for (let i = 0; i < weapons.length; i++) {
-        element = weapons[i];
-        if (w.value.toUpperCase() != "(NOTHING)") {
-            if (w.value.toUpperCase() == element.name.toUpperCase()) {
-                if (name.innerText == "POO") {
-                    if(w.value.search(/kings/i) < 0){
-                        def = 0;
-                        def -= parseInt(weapons[i].data["Defense up"]);
-                        luck = 0;
-                        if (typeof(weapons[i].data["Luck up"]) != "undefined") {
-                            luck -=  parseInt(weapons[i].data["Luck up"])
-                        }
-                    }else{
-                        def = 0;
-                        def += parseInt(weapons[i].data["Defense up"]);
-                        luck = 0;
-                        if (typeof(weapons[i].data["Luck up"]) != "undefined") {
-                            luck +=  parseInt(weapons[i].data["Luck up"])
-                        }
-                    }
-                    
-                    b = actualbonusPoo + def;
-                    if (b != 0){
-                        if(b > 0){
-                            bonus.innerText = "+" + b.toString();
-                            bonus.style.color = "green";
-                            bonus.style.fontSize = "20px";
-                        }
-                        else{
-                            bonus.innerText = b.toString();
-                            bonus.style.color = "red";
-                            bonus.style.fontSize = "20px";
-                        }
-                    }else{
-                        bonus.innerText = "";
-                    }
-                    l = actualLbonusPoo + luck;
-                    if(l != 0){
-                        if(l < 0){
-                            bonusl.innerText = l.toString();
-                            bonusl.style.color = "red";
-                            bonusl.style.fontSize = "20px";
-                        }
-                        else{
-                            bonusl.innerText = "+" + l.toString();
-                            bonusl.style.color = "green";
-                            bonusl.style.fontSize = "20px";
-                        }
-                    }else
-                        bonusl.innerText = "";
-                    
-                }
-                else {
-                    b = actualbonus + parseInt(element.data["Defense up"])
-                    if (b != 0)
-                        bonus.innerText = "+" + b.toString();
-                    bonus.style.color = "green";
-                    bonus.style.fontSize = "20px";
-
-                    if (typeof (element.data["Luck up"]) != "undefined") {
-                        b = actualLbonus + parseInt(element.data["Luck up"])
-                        if (b != 0)
-                            bonusl.innerText = "+" + b.toString();
-                        bonusl.style.color = "green";
-                        bonusl.style.fontSize = "20px";
-                    }
-                    else {
-                        if (actualLbonus != 0)
-                            bonusl.innerText = "+" + actualLbonus.toString();
-                        else bonusl.innerText = "";
-                    }
-                }
-            }
-        } else {
-            if (actualbonus != 0)
-                bonus.innerText = "+" + actualbonus.toString();
-            else bonus.innerText = "";
-            if (actualLbonus != 0)
-                bonusl.innerText = "+" + actualLbonus.toString();
-            else bonusl.innerText = "";
-        }
-    }
-}
-
-async function updateOtherStats(name, items) {
-    let w = document.getElementById("otherEquip");
-    let bod = document.getElementById("bodyEquip");
-    let arm = document.getElementById("armsEquip");
-    let bonus = document.getElementById("bonus-defense")
-
-    var actualbonus = 0;
-    var actualLbonus = 0;
-    var actualbonusPoo = 0;
-    var actualLbonusPoo = 0;
-    var weapons = items[Object.keys(items)[1]]
-    for (let i = 0; i < weapons.length; i++) {
-        if (weapons[i].name.toUpperCase() == bod.value.toUpperCase() || weapons[i].name.toUpperCase() == arm.value.toUpperCase()) {
-            actualbonus += parseInt(weapons[i].data["Defense up"]);
-            if(weapons[i].name.search(/kings/i) >= 0)
-                actualbonusPoo += parseInt(weapons[i].data["Defense up"]);
-            else 
-                actualbonusPoo -= parseInt(weapons[i].data["Defense up"]);
-            if (typeof(weapons[i].data["Luck up"]) != "undefined"){
-                actualLbonus += parseInt(weapons[i].data["Luck up"])
-                if(weapons[i].name.search(/kings/i) > -1)
-                    actualLbonusPoo += parseInt(weapons[i].data["Luck up"]);
-                else 
-                    actualLbonusPoo -= parseInt(weapons[i].data["Luck up"]);
-            }
-        }
-    }
-
-    let bonusl = document.getElementById("bonus-luck")
-    var weapons = items[Object.keys(items)[1]]
-    for (let i = 0; i < weapons.length; i++) {
-        element = weapons[i];
-        if (w.value.toUpperCase() != "(NOTHING)") {
-            if (w.value.toUpperCase() == element.name.toUpperCase()) {
-                if (name.innerText == "POO") {
-                    if(w.value.search(/kings/i) < 0){
-                        def = 0;
-                        def -= parseInt(weapons[i].data["Defense up"]);
-                        luck = 0;
-                        if (typeof(weapons[i].data["Luck up"]) != "undefined") {
-                            luck -=  parseInt(weapons[i].data["Luck up"])
-                        }
-                    }else{
-                        def = 0;
-                        def += parseInt(weapons[i].data["Defense up"]);
-                        luck = 0;
-                        if (typeof(weapons[i].data["Luck up"]) != "undefined") {
-                            luck +=  parseInt(weapons[i].data["Luck up"])
-                        }
-                    }
-                    
-                    b = actualbonusPoo + def;
-                    if (b != 0){
-                        if(b > 0){
-                            bonus.innerText = "+" + b.toString();
-                            bonus.style.color = "green";
-                            bonus.style.fontSize = "20px";
-                        }
-                        else{
-                            bonus.innerText = b.toString();
-                            bonus.style.color = "red";
-                            bonus.style.fontSize = "20px";
-                        }
-                    }else{
-                        bonus.innerText = "";
-                    }
-                    l = actualLbonusPoo + luck;
-                    if(l != 0){
-                        if(l < 0){
-                            bonusl.innerText = l.toString();
-                            bonusl.style.color = "red";
-                            bonusl.style.fontSize = "20px";
-                        }
-                        else{
-                            bonusl.innerText = "+" + l.toString();
-                            bonusl.style.color = "green";
-                            bonusl.style.fontSize = "20px";
-                        }
-                    }else
-                        bonusl.innerText = "";
-                    
-                }
-                else {
-                    b = actualbonus + parseInt(element.data["Defense up"])
-                    if (b != 0)
-                        bonus.innerText = "+" + b.toString();
-                    bonus.style.color = "green";
-                    bonus.style.fontSize = "20px";
-
-                    if (typeof (element.data["Luck up"]) != "undefined") {
-                        b = actualLbonus + parseInt(element.data["Luck up"])
-                        if (b != 0)
-                            bonusl.innerText = "+" + b.toString();
-                        bonusl.style.color = "green";
-                        bonusl.style.fontSize = "20px";
-                    }
-                    else {
-                        if (actualLbonus != 0)
-                            bonusl.innerText = "+" + actualLbonus.toString();
-                        else bonusl.innerText = "";
-                    }
-
-                }
-            }
-        } else {
-            if (actualbonus != 0)
-                bonus.innerText = "+" + actualbonus.toString();
-            else bonus.innerText = "";
-            if (actualLbonus != 0)
-                bonusl.innerText = "+" + actualLbonus.toString();
-            else bonusl.innerText = "";
-        }
-    }
 }
 
 async function updateStats(name, data) {
@@ -591,8 +248,14 @@ async function updateOtherEquipments(name, items) {
 }
 
 async function resetBonus() {
-    let offence_up = document.getElementById("bonus-attack");
-    offence_up.innerText = "";
+    let k = document.getElementById("equipped-weapon");
+    k.innerText = "(Nothing)";
+    k = document.getElementById("equipped-body");
+    k.innerText = "(Nothing)";
+    k = document.getElementById("equipped-arms");
+    k.innerText = "(Nothing)";
+    k = document.getElementById("equipped-other");
+    k.innerText = "(Nothing)";
 }
 
 async function changeCharacter(clicked_id) {
@@ -630,6 +293,38 @@ async function changeCharacter(clicked_id) {
     }
 }
 
+async function equip(clicked_id){
+    let items = await getData("items");
+
+    switch(clicked_id){
+        case "arrowW":
+            w = document.getElementById("weapon");
+            eqW = document.getElementById("equipped-weapon");
+            applyAllBonuses(w, eqW, items);
+            break;
+        case "arrowB":
+            w = document.getElementById("bodyEquip");
+            eqW = document.getElementById("equipped-body");
+            applyAllBonuses(w, eqW, items);
+            break;
+        case "arrowA":
+            w = document.getElementById("armsEquip");
+            eqW = document.getElementById("equipped-arms");
+            applyAllBonuses(w, eqW, items);
+            break;
+        case "arrowO":
+            w = document.getElementById("otherEquip");
+            eqW = document.getElementById("equipped-other");
+            applyAllBonuses(w, eqW, items);
+            break;
+        case "all":
+            applyEquippedBonuses(items);
+            break;
+
+            
+    }
+}
+
 function calcFraction(fracString){
     if(fracString.includes("/")){
         var split = fracString.split("/");
@@ -637,4 +332,127 @@ function calcFraction(fracString){
         return result;
         }
     else return fracString;
+}
+
+function calcCurrentBonus(items){
+    let weapon = document.getElementById("weapon");
+    let body = document.getElementById("bodyEquip");
+    let arms = document.getElementById("armsEquip");
+    let other = document.getElementById("otherEquip");
+
+    var weapons = items[Object.keys(items)[0]]
+    var protections = items[Object.keys(items)[1]]
+
+    bonuses = [0, 0, 0, 0, 0, "0"];
+
+    for(let i = 0; i < weapons.length; i++){
+        if(weapons[i].name.toUpperCase() == weapon.value.toUpperCase()){
+            bonuses[0] = parseInt(weapons[i].data["Offense up"]);
+            bonuses[5] = weapons[i].data["Error rate"];
+            if(typeof(weapons[i].data["Guts up"]) != "undefined") bonuses[1] = parseInt(weapons[i].data["Guts up"]);
+        }
+    }
+
+    for(let i = 0; i < protections.length; i++){
+        if(protections[i].name.toUpperCase() == body.value.toUpperCase()){
+            bonuses[2] += parseInt(protections[i].data["Defense up"]);
+            if(typeof(protections[i].data["Speed up"]) != "undefined") bonuses[3] = parseInt(protections[i].data["Speed up"]);
+        }
+        if(protections[i].name.toUpperCase() == arms.value.toUpperCase()){
+            bonuses[2] += parseInt(protections[i].data["Defense up"]);
+            if(typeof(protections[i].data["Luck up"]) != "undefined") bonuses[4] += parseInt(protections[i].data["Luck up"]);
+        }
+        if(protections[i].name.toUpperCase() == other.value.toUpperCase()){
+            bonuses[2] += parseInt(protections[i].data["Defense up"]);
+            if(typeof(protections[i].data["Luck up"]) != "undefined") bonuses[4] += parseInt(protections[i].data["Luck up"]);
+        }
+    }
+
+    return bonuses;
+}
+
+function calcEquippedBonus(items){
+    let weapon = document.getElementById("equipped-weapon");
+    let body = document.getElementById("equipped-body");
+    let arms = document.getElementById("equipped-arms");
+    let other = document.getElementById("equipped-other");
+
+    var weapons = items[Object.keys(items)[0]]
+    var protections = items[Object.keys(items)[1]]
+
+    bonuses = [0, 0, 0, 0, 0, "0"];
+
+    for(let i = 0; i < weapons.length; i++){
+        if(weapons[i].name.toUpperCase() == weapon.innerText.toUpperCase()){
+            bonuses[0] = parseInt(weapons[i].data["Offense up"]);
+            bonuses[5] = weapons[i].data["Error rate"];
+            if(typeof(weapons[i].data["Guts up"]) != "undefined") bonuses[1] = parseInt(weapons[i].data["Guts up"]);
+        }
+    }
+
+    for(let i = 0; i < protections.length; i++){
+        if(protections[i].name.toUpperCase() == body.innerText.toUpperCase()){
+            bonuses[2] += parseInt(protections[i].data["Defense up"]);
+            if(typeof(protections[i].data["Speed up"]) != "undefined") bonuses[3] = parseInt(protections[i].data["Speed up"]);
+        }
+        if(protections[i].name.toUpperCase() == arms.innerText.toUpperCase()){
+            bonuses[2] += parseInt(protections[i].data["Defense up"]);
+            if(typeof(protections[i].data["Luck up"]) != "undefined") bonuses[4] += parseInt(protections[i].data["Luck up"]);
+        }
+        if(protections[i].name.toUpperCase() == other.innerText.toUpperCase()){
+            bonuses[2] += parseInt(protections[i].data["Defense up"]);
+            if(typeof(protections[i].data["Luck up"]) != "undefined") bonuses[4] += parseInt(protections[i].data["Luck up"]);
+        }
+    }
+
+    return bonuses;
+}
+
+function applyBonus(stat, bonus){
+    if(stat.innerText.search(/-/i) > -1){
+        values = stat.innerText.split("-");
+        stat.innerText = (parseInt(values[0])+bonus).toString() + "-" + (parseInt(values[1])+bonus).toString();
+    } else stat.innerText = (parseInt(stat.innerText)+bonus).toString();
+
+}
+
+function applyAllBonuses(w, eqW, items){
+    equippedBonuses = calcEquippedBonus(items);
+    eqW.innerText = w.value;
+    equippedBonuses2 = calcEquippedBonus(items);
+
+    let atk = document.getElementById("attack");
+    let def = document.getElementById("defense");
+    let guts = document.getElementById("guts");
+    let luck = document.getElementById("luck");
+    let speed = document.getElementById("speed");
+    let er = document.getElementById("errorrate");
+    stats = [atk, guts, def, speed, luck, er];
+
+    for(let i = 0; i< stats.length - 1; i++){
+        if(equippedBonuses2[i] != equippedBonuses[i]) applyBonus(stats[i], equippedBonuses2[i] - equippedBonuses[i])
+    }
+
+    stats[5].innerText = equippedBonuses2[5];
+    updateEquipmentStats("", items)
+}
+
+function applyEquippedBonuses(items){
+    equippedBonuses = [0, 0, 0, 0, 0, "0"];
+    equippedBonuses2 = calcEquippedBonus(items);
+
+    let atk = document.getElementById("attack");
+    let def = document.getElementById("defense");
+    let guts = document.getElementById("guts");
+    let luck = document.getElementById("luck");
+    let speed = document.getElementById("speed");
+    let er = document.getElementById("errorrate");
+    stats = [atk, guts, def, speed, luck, er];
+
+    for(let i = 0; i< stats.length - 1; i++){
+        if(equippedBonuses2[i] != equippedBonuses[i]) applyBonus(stats[i], equippedBonuses2[i] - equippedBonuses[i])
+    }
+
+    stats[5].innerText = equippedBonuses2[5];
+    updateEquipmentStats("", items)
 }
