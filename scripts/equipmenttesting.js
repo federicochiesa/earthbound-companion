@@ -416,10 +416,18 @@ function calcEquippedBonus(items){
 }
 
 function applyBonus(stat, bonus){
-    if(stat.innerText.search(/-/i) > -1){
+    if(stat.innerText.search(/-/i) > -1 && stat.innerText[0] != "-"){
         values = stat.innerText.split("-");
         stat.innerText = (parseInt(values[0])+bonus).toString() + "-" + (parseInt(values[1])+bonus).toString();
-    } else stat.innerText = (parseInt(stat.innerText)+bonus).toString();
+    } else if((stat.innerText.match(/-/g) || []).length > 1){
+        pos = stat.innerText.indexOf("-", 1)
+        console.log(pos)
+        stat.innerText = stat.innerText.replaceAt(pos, "$");
+        console.log(stat.innerText)
+        values = stat.innerText.split("$");
+        stat.innerText = (parseInt(values[0])+bonus).toString() + "-" + (parseInt(values[1])+bonus).toString();
+    }
+    else stat.innerText = (parseInt(stat.innerText)+bonus).toString();
 
 }
 function applyAllBonuses(w, eqW, items){
@@ -460,4 +468,8 @@ function applyEquippedBonuses(items){
 
     stats[5].innerText = equippedBonuses2[5];
     updateEquipmentStats("", items)
+}
+
+String.prototype.replaceAt = function(index, replacement) {
+    return this.substring(0, index) + replacement + this.substring(index + replacement.length);
 }
