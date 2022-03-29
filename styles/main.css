@@ -521,6 +521,9 @@ select optgroup {
     position: relative;
   }
 
+  #homeImg{
+      margin-bottom: 50px;
+  }
 .form-check{
     height: 10px;
 }
