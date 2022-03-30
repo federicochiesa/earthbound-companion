@@ -555,3 +555,23 @@ select optgroup {
     bottom: 30px;
     font-size: large;
 }
+
+
+
+.titleInBorder{
+    text-align: left;
+    margin-top: -15px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 25px;
+}
+
+.titleSpan{
+    background-color: #1a1a1a;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tableInfo{
+    border-width: 0px !important;
+}
