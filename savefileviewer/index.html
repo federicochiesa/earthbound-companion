@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Title and favicon tags -->
   <title>Earthbound Companion: Save File Viewer</title>
@@ -29,6 +30,7 @@
   <!-- Local stylesheets -->
   <link rel="stylesheet" href="../styles/main.css">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark m-3">
     <div class="container-fluid">
@@ -80,127 +82,116 @@
     </div>
     <div class="row tableStats caput titleContainer" style="background-color: magenta; margin-top: 20px;">
       <h1 class="titleInBorder"><span class="titleSpan">General info</span></h1>
-        <table class="text-white table tableInfo" style="width: 100%;">
-          <tbody>
-            <tr>
-              <th scope="row">
-                Hand Money
-              </th>
-              <td>:</td>
-              <td id="handMoneyValue"></td>
-              <th scope="row">
-                Favorite Food
-              </th>
-              <td>:</td>
-              <td id="favFoodValue"></td>
-              <th scope="row">
-                Pet Name
-              </th>
-              <td>:</td>
-              <td id="petNameValue"></td>
-            </tr>
-            <tr>
-              <th scope="row">
-                ATM Money
-              </th>
-              <td>:</td>
-              <td id="ATMMoneyValue"></td>
-              <th scope="row">
-                Favorite Thing
-              </th>
-              <td>:</td>
-              <td id="favThingValue"></td>
-              <th id="playerNameHeader" scope="row"></th>
-              <td id="playerNameColon"></td>
-              <td id="playerNameValue"></td>
-            </tr>
-          </tbody>
-        </table>
+      <table class="text-white table tableInfo" style="width: 100%;">
+        <tbody>
+          <tr>
+            <th scope="row">
+              Hand Money
+            </th>
+            <td>:</td>
+            <td id="handMoneyValue"></td>
+            <th scope="row">
+              Favorite Food
+            </th>
+            <td>:</td>
+            <td id="favFoodValue"></td>
+            <th scope="row">
+              Pet Name
+            </th>
+            <td>:</td>
+            <td id="petNameValue"></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              ATM Money
+            </th>
+            <td>:</td>
+            <td id="ATMMoneyValue"></td>
+            <th scope="row">
+              Favorite Thing
+            </th>
+            <td>:</td>
+            <td id="favThingValue"></td>
+            <th id="playerNameHeader" scope="row"></th>
+            <td id="playerNameColon"></td>
+            <td id="playerNameValue"></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="row tableStats caput titleContainer" style="background-color: magenta; margin-top: 20px;">
+    <div class="row tableStats caput titleContainer" style="margin-top: 20px;">
       <h1 class="titleInBorder"><span class="titleSpan">Ness</span></h1>
       <div class="row">
         <div class="col-sm-2 caput">
-            <img src="../../assets/sprites/ness.png" class="selected-hero">
+          <img src="../../assets/sprites/ness.png" class="selected-hero">
         </div>
         <div class="col-sm-5 caput">
           <table class="text-white table tableInfo">
             <tbody>
-                <tr>
-                    <th scope="row">Weapon</th>
-                    <td>:</td>
-                    <td><img  src="../assets/equip.png" class="eqArrow" ></td>
-                    <td class="levelChoice"><select id="weapon">
-                      <optgroup label="Choose weapon:"> 
-                        <option>(Nothing)</option>
-                      </optgroup>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Body</th>
-                    <td>:</td>
-                    <td><img src="../assets/equip.png" class="eqArrow"></td>
-                    <td class="levelChoice"><select id="bodyEquip">
-                      <optgroup label="Choose Body Equipment:"> 
-                        <option>(Nothing)</option>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Arms</th>
-                    <td>:</td>
-                    <td><img src="../assets/equip.png" class="eqArrow"></td>
-                    <td class="levelChoice"><select id="armsEquip">
-                      <optgroup label="Choose Arms Equipment:"> 
-                        <option>(Nothing)</option>
-                      </optgroup>
-                    </td>
-                </tr>
-                <tr>
-                  <th scope="row">Other</th>
-                  <td>:</td>
-                  <td><img src="../assets/equip.png" class="eqArrow"></td>
-                  <td class="levelChoice"><select id="otherEquip">
-                    <optgroup label="Choose other Equipment:"> 
-                      <option>(Nothing)</option>
-                    </optgroup>
-                  </td>
+              <tr>
+                <th scope="row">Weapon</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td class="levelChoice" id="weaponValue">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Body</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td class="levelChoice" id="bodyValue">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Arms</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td class="levelChoice" id="armsValue">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Other</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td class="levelChoice" id="otherValue">
+                </td>
               </tr>
             </tbody>
-        </table>
+          </table>
         </div>
         <div class="col-sm-5 caput">
           <table class="text-white table tableInfo tableInventory" style="width: 100%;">
-          <tbody>
-            <tr>
-              <td>obj 1</td>
-              <td>obj 2</td>
-            </tr>
-            <tr>
-              <td>obj 1</td>
-              <td>obj 2</td>
-            </tr>
-            <tr>
-              <td>obj 1</td>
-              <td>obj 2</td>
-            </tr>
-            <tr>
-              <td>obj 1</td>
-              <td>obj 2</td>
-            </tr>
-            <tr>
-              <td>obj 1</td>
-              <td>obj 2</td>
-            </tr>
-            <tr>
-              <td>obj 1</td>
-              <td>obj 2</td>
-            </tr>
-            <tr>
-              <td>obj 1</td>
-              <td>obj 2</td>
-            </tr>
-          </tbody>
-        </table>
+            <tbody>
+              <tr>
+                <td id="i0"></td>
+                <td id="i1"></td>
+              </tr>
+              <tr>
+                <td id="i2"></td>
+                <td id="i3"></td>
+              </tr>
+              <tr>
+                <td id="i4"></td>
+                <td id="i5"></td>
+              </tr>
+              <tr>
+                <td id="i6"></td>
+                <td id="i7"></td>
+              </tr>
+              <tr>
+                <td id="i8"></td>
+                <td id="i9"></td>
+              </tr>
+              <tr>
+                <td id="i10"></td>
+                <td id="i11"></td>
+              </tr>
+              <tr>
+                <td id="i12"></td>
+                <td id="i13"></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="row " style="margin-top: 10px; margin-bottom: 10px;">
@@ -208,78 +199,78 @@
           <tbody>
             <tr>
               <th scope="row">
-                Hand Money
+                Offense
               </th>
               <td>:</td>
-              <td>value</td>
+              <td id="stat0"></td>
               <th scope="row">
-                Favorite food
+                Defense
               </th>
               <td>:</td>
-              <td>value</td>
+              <td id="stat1"></td>
               <th scope="row">
-                Pet Name
+                Speed
               </th>
               <td>:</td>
-              <td>value</td>
+              <td id="stat2"></td>
             </tr>
             <tr>
               <th scope="row">
-                Hand Money
+                Guts
               </th>
               <td>:</td>
-              <td id="handMoneyValue"></td>
+              <td id="stat3"></td>
               <th scope="row">
-                Favorite Food
+                Luck
               </th>
               <td>:</td>
-              <td id="favFoodValue"></td>
+              <td id="stat4"></td>
               <th scope="row">
-                Pet Name
+                Vitality
               </th>
               <td>:</td>
-              <td id="petNameValue"></td>
+              <td id="stat5"></td>
             </tr>
             <tr>
               <th scope="row">
-                Hand Money
+                IQ
               </th>
               <td>:</td>
-              <td id="handMoneyValue"></td>
+              <td id="stat6"></td>
               <th scope="row">
-                Favorite Food
+                Error Rate
               </th>
               <td>:</td>
-              <td id="favFoodValue"></td>
+              <td id="errorRateValue"></td>
               <th scope="row">
-                Pet Name
+                Level
               </th>
               <td>:</td>
-              <td id="petNameValue"></td>
+              <td id="levelValue"></td>
             </tr>
             <tr>
               <th scope="row">
-                ATM Money
+                XP
               </th>
               <td>:</td>
-              <td>value</td>
+              <td id="XPValue"></td>
               <th scope="row">
-                Favorite Thing
+                HP
               </th>
               <td>:</td>
-              <td>value</td>
+              <td id="HPValue"></td>
               <th scope="row">
-                Player Name
+                PP
               </th>
               <td>:</td>
-              <td>value</td>
+              <td id="PPValue"></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
     <div class="row" style="background-color: yellow; margin-top: 20px;">
-      
+
     </div>
   </div>
   <div class="toast-container position-absolute p-3 bottom-0 end-0">
@@ -295,4 +286,5 @@
     </div>
   </div>
 </body>
+
 </html>

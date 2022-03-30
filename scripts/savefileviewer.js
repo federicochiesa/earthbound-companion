@@ -236,6 +236,21 @@ class GameSave {
         }
         document.getElementById("favThingValue").innerText = this.favThing;
         document.getElementById("favFoodValue").innerText = this.favFood;
+        document.getElementById("weaponValue").innerText = this.characters[0].equip[0];
+        document.getElementById("bodyValue").innerText = this.characters[0].equip[1];
+        document.getElementById("armsValue").innerText = this.characters[0].equip[2];
+        document.getElementById("otherValue").innerText = this.characters[0].equip[3];
+        let inventory = this.characters[0].items;
+        for(let i = 0; i < inventory.length; i++)
+            document.getElementById("i" + i).innerText = inventory[i];
+        let stats = this.characters[0].statsAfter;
+        for(let i = 0; i < stats.length; i++){
+            document.getElementById("stat" + i).innerText = stats[i];
+        }
+        document.getElementById("levelValue").innerText = this.characters[0].level;
+        document.getElementById("XPValue").innerText = this.characters[0].exp;
+        document.getElementById("HPValue").innerText = this.characters[0].currHP;
+        document.getElementById("PPValue").innerText = this.characters[0].currPP;
     }
 }
 
