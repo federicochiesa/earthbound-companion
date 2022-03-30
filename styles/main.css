@@ -570,6 +570,16 @@ select optgroup {
     font-family: "statusplz" !important;
 }
 
+.titleInBorder2{
+    text-align: left;
+    margin-top: -13px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 5px;
+    font-family: "statusplz" !important;
+}
+
+
 .titleSpan{
     background-color: #1a1a1a;
     padding-left: 5px;
@@ -580,4 +590,12 @@ select optgroup {
 .tableInfo{
     border-width: 0px !important;
     max-width: 100% !important;
+}
+
+.tableInventory td{
+    font-size: 20px;
+}
+
+.tableInventory{
+    width: 80% !important;
 }

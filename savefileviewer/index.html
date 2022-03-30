@@ -121,16 +121,89 @@
       <h1 class="titleInBorder"><span class="titleSpan">Ness</span></h1>
       <div class="row">
         <div class="col-sm-2 caput">
-            Ness image
+            <img src="../../assets/sprites/ness.png" class="selected-hero">
         </div>
-        <div class="col-sm-3 caput">
-            Ness equipment
+        <div class="col-sm-5 caput">
+          <table class="text-white table tableInfo">
+            <tbody>
+                <tr>
+                    <th scope="row">Weapon</th>
+                    <td>:</td>
+                    <td><img  src="../assets/equip.png" class="eqArrow" ></td>
+                    <td class="levelChoice"><select id="weapon">
+                      <optgroup label="Choose weapon:"> 
+                        <option>(Nothing)</option>
+                      </optgroup>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Body</th>
+                    <td>:</td>
+                    <td><img src="../assets/equip.png" class="eqArrow"></td>
+                    <td class="levelChoice"><select id="bodyEquip">
+                      <optgroup label="Choose Body Equipment:"> 
+                        <option>(Nothing)</option>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Arms</th>
+                    <td>:</td>
+                    <td><img src="../assets/equip.png" class="eqArrow"></td>
+                    <td class="levelChoice"><select id="armsEquip">
+                      <optgroup label="Choose Arms Equipment:"> 
+                        <option>(Nothing)</option>
+                      </optgroup>
+                    </td>
+                </tr>
+                <tr>
+                  <th scope="row">Other</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="otherEquip">
+                    <optgroup label="Choose other Equipment:"> 
+                      <option>(Nothing)</option>
+                    </optgroup>
+                  </td>
+              </tr>
+            </tbody>
+        </table>
         </div>
-        <div class="col-sm-7 caput">
-            Ness inventory
+        <div class="col-sm-5 caput">
+          <table class="text-white table tableInfo tableInventory" style="width: 100%;">
+          <tbody>
+            <tr>
+              <td>obj 1</td>
+              <td>obj 2</td>
+            </tr>
+            <tr>
+              <td>obj 1</td>
+              <td>obj 2</td>
+            </tr>
+            <tr>
+              <td>obj 1</td>
+              <td>obj 2</td>
+            </tr>
+            <tr>
+              <td>obj 1</td>
+              <td>obj 2</td>
+            </tr>
+            <tr>
+              <td>obj 1</td>
+              <td>obj 2</td>
+            </tr>
+            <tr>
+              <td>obj 1</td>
+              <td>obj 2</td>
+            </tr>
+            <tr>
+              <td>obj 1</td>
+              <td>obj 2</td>
+            </tr>
+          </tbody>
+        </table>
         </div>
       </div>
-      <div class="row">
+      <div class="row " style="margin-top: 10px; margin-bottom: 10px;">
         <table class="text-white table tableInfo" style="width: 100%;">
           <tbody>
             <tr>
@@ -149,6 +222,40 @@
               </th>
               <td>:</td>
               <td>value</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Hand Money
+              </th>
+              <td>:</td>
+              <td id="handMoneyValue"></td>
+              <th scope="row">
+                Favorite Food
+              </th>
+              <td>:</td>
+              <td id="favFoodValue"></td>
+              <th scope="row">
+                Pet Name
+              </th>
+              <td>:</td>
+              <td id="petNameValue"></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Hand Money
+              </th>
+              <td>:</td>
+              <td id="handMoneyValue"></td>
+              <th scope="row">
+                Favorite Food
+              </th>
+              <td>:</td>
+              <td id="favFoodValue"></td>
+              <th scope="row">
+                Pet Name
+              </th>
+              <td>:</td>
+              <td id="petNameValue"></td>
             </tr>
             <tr>
               <th scope="row">
@@ -172,7 +279,7 @@
       </div>
     </div>
     <div class="row" style="background-color: yellow; margin-top: 20px;">
-      Escargo
+      
     </div>
   </div>
   <div class="toast-container position-absolute p-3 bottom-0 end-0">
