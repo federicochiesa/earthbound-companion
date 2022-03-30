@@ -544,3 +544,14 @@ select optgroup {
 .hide{
     z-index: -9999;
 }
+
+.earthbound-image-div {
+    position: relative;
+}
+.earthbound-image-div span {
+    color: white;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    font-size: large;
+}

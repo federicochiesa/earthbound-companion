@@ -102,6 +102,8 @@ async function updateStats(name, data) {
                     hp.innerText = stats[j]["hp"]
                     let pp = document.getElementById("pp");
                     pp.innerText = stats[j]["pp"]
+                    let er = document.getElementById("errorrate");
+                    er.innerText = "0"
                 }
             }
         }
@@ -119,7 +121,7 @@ async function updateWeapons(name, items) {
             weaponString += "<option>" + element.name + "</option>\ ";
         } else {
             if (element.data["Description"].search(/ness/i) > -1) var ness = "Y";
-            else if (element.name.search(/bat/i) > -1) var ness = "Y";
+            else if (element.name.search(/bat/i) > -1 && element.name.search(/combat/i) < 0) var ness = "Y";
             else var ness = "N";
             if (element.data["Description"].search(/paula/i) > -1) var paula = "Y";
             else if (element.name.search(/pan/i) > -1) var ness = "Y";
