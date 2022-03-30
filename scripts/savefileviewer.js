@@ -128,6 +128,7 @@ function updateThumbnail(dropZoneElement, file) {
             let dataStart = i * hexToDec("A00");
             saves[i] = new GameSave(fileByteArray.slice(dataStart, dataStart + hexToDec("500")));
         }
+        saves[0].displayData(); //TODO: implement different slots
     }
 }
 
@@ -224,8 +225,17 @@ class GameSave {
         for (i = 0; i < 36; i++)
             this.escargoItems[i] = itemsLUT[data[i + hexToDec("76")]];
     }
-    getData() {
-        console.log(this);
+    displayData() {
+        document.getElementById("handMoneyValue").innerText = this.moneyHand + "$";
+        document.getElementById("ATMMoneyValue").innerText = this.moneyATM + "$";
+        document.getElementById("petNameValue").innerText = this.petName;
+        if(this.playerName != ""){
+            document.getElementById("playerNameValue").innerText = this.playerName;
+            document.getElementById("playerNameColon").innerText = ":";
+            document.getElementById("playerNameHeader").innerText = "Player Name"
+        }
+        document.getElementById("favThingValue").innerText = this.favThing;
+        document.getElementById("favFoodValue").innerText = this.favFood;
     }
 }
 
@@ -265,9 +275,6 @@ class PartyMember {
             this.statsAfter.push(data[21 + i]);
             this.statsBefore.push(data[28 + i]);
         }
-    }
-    getData() {
-        console.log(this);
     }
 }
 
