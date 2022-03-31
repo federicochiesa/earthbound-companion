@@ -95,7 +95,7 @@ window.onload = function () {
     initThumbnail(false);
 }
 
-function updateThumbnail(dropZoneElement, file) {
+function updateThumbnail(dropZoneElement, file, items) {
     let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
     document.getElementById("fileUploader").classList.add("drop-zone--over")
 
@@ -128,11 +128,12 @@ function updateThumbnail(dropZoneElement, file) {
             let dataStart = i * hexToDec("A00");
             saves[i] = new GameSave(fileByteArray.slice(dataStart, dataStart + hexToDec("500")));
         }
-        saves[0].displayData(); //TODO: implement different slots
+        saves[0].displayData(items); //TODO: implement different slots
     }
 }
 
-function initThumbnail() {
+async function initThumbnail() {
+    let items = await getData("items");
     document.getElementById("fileUploader").classList.remove("drop-zone--over")
     document.getElementById("fileUploader").innerHTML = "<span class=\"drop-zone__prompt\">Drop file here or click to upload</span>\
         <input type=\"file\" id=\"fileToUpload\" name=\"myFile\" class=\"drop-zone__input\">";
@@ -144,7 +145,7 @@ function initThumbnail() {
 
         inputElement.addEventListener("change", (e) => {
             if (inputElement.files.length) {
-                updateThumbnail(dropZoneElement, inputElement.files[0]);
+                updateThumbnail(dropZoneElement, inputElement.files[0], items);
             }
         });
 
@@ -163,12 +164,13 @@ function initThumbnail() {
             e.preventDefault();
             if (e.dataTransfer.files.length) {
                 inputElement.files = e.dataTransfer.files;
-                updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+                updateThumbnail(dropZoneElement, e.dataTransfer.files[0], items);
             }
         });
     });
     document.getElementById("fileToUpload").value = "";
     document.getElementById("fileUploader").removeAttribute("style");
+    
 }
 
 class GameSave {
@@ -225,7 +227,14 @@ class GameSave {
         for (i = 0; i < 36; i++)
             this.escargoItems[i] = itemsLUT[data[i + hexToDec("76")]];
     }
-    displayData() {
+    displayData(items) {
+        console.log(items)
+        var weapons = items[Object.keys(items)[0]]
+        for (let i = 0; i < weapons.length; i++) {
+            if(weapons[i].name.toUpperCase() == this.characters[0].equip[0].toUpperCase()){
+                document.getElementById("errorRateValue").innerText = weapons[i].data["Error rate"];
+            }
+        }
         document.getElementById("handMoneyValue").innerText = this.moneyHand + "$";
         document.getElementById("ATMMoneyValue").innerText = this.moneyATM + "$";
         document.getElementById("petNameValue").innerText = this.petName;
