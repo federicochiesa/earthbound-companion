@@ -95,7 +95,7 @@ window.onload = function () {
     initThumbnail(false);
 }
 
-function updateThumbnail(dropZoneElement, file, items) {
+function updateThumbnail(dropZoneElement, file) {
     let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
     document.getElementById("fileUploader").classList.add("drop-zone--over")
 
@@ -128,12 +128,11 @@ function updateThumbnail(dropZoneElement, file, items) {
             let dataStart = i * hexToDec("A00");
             saves[i] = new GameSave(fileByteArray.slice(dataStart, dataStart + hexToDec("500")));
         }
-        saves[0].displayData(items); //TODO: implement different slots
+        saves[0].displayData(); //TODO: implement different slots
     }
 }
 
 async function initThumbnail() {
-    let items = await getData("items");
     document.getElementById("fileUploader").classList.remove("drop-zone--over")
     document.getElementById("fileUploader").innerHTML = "<span class=\"drop-zone__prompt\">Drop file here or click to upload</span>\
         <input type=\"file\" id=\"fileToUpload\" name=\"myFile\" class=\"drop-zone__input\">";
@@ -145,7 +144,7 @@ async function initThumbnail() {
 
         inputElement.addEventListener("change", (e) => {
             if (inputElement.files.length) {
-                updateThumbnail(dropZoneElement, inputElement.files[0], items);
+                updateThumbnail(dropZoneElement, inputElement.files[0]);
             }
         });
 
@@ -164,13 +163,14 @@ async function initThumbnail() {
             e.preventDefault();
             if (e.dataTransfer.files.length) {
                 inputElement.files = e.dataTransfer.files;
-                updateThumbnail(dropZoneElement, e.dataTransfer.files[0], items);
+                updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
             }
         });
     });
     document.getElementById("fileToUpload").value = "";
     document.getElementById("fileUploader").removeAttribute("style");
-
+    if (typeof (saves[0]) != "undefined")
+        saves[0].resetData();
 }
 
 class GameSave {
@@ -227,7 +227,8 @@ class GameSave {
         for (i = 0; i < 36; i++)
             this.escargoItems[i] = itemsLUT[data[i + hexToDec("76")]];
     }
-    displayData(items) {
+    async displayData() {
+        let items = await getData("items");
         document.getElementById("handMoneyValue").innerText = this.moneyHand + "$";
         document.getElementById("ATMMoneyValue").innerText = this.moneyATM + "$";
         document.getElementById("petNameValue").innerText = this.petName;
@@ -265,8 +266,11 @@ class GameSave {
         }
         document.getElementById("escargo").style.display = "block";
         document.getElementById("generalInfo").style.display = "block";
+        for (let i = 0; i < 12; i++) {
+            document.getElementById("esc" + i).innerText = this.escargoItems[i]
+        }
     }
-    
+
     resetData() {
         document.getElementById("handMoneyValue").innerText = "";
         document.getElementById("ATMMoneyValue").innerText = "";
