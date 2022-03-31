@@ -14,7 +14,7 @@
       "data":{
          "Description":"Ness can equip this weapon. This item looks like it could have had cork put into the core!",
          "Location":"Summers (Drugstore), Scaraba (Convenience Store)",
-         "Price":"$3080(Summers), $1380(Scaraba)",
+         "Price":"$3080 (Summers), $1380 (Scaraba)",
          "Error rate":"1/16",
          "Offense up":"54"
       }
@@ -35,7 +35,7 @@
          "Comments":"Lots of power, but you'll whiff most of the time.",
          "Description":"Ness can equip this weapon. You can't help but swing this bat with all your might. There's a good chance that you may just whiff.",
          "Location":"Dropped by Master Barf",
-         "Price":"Sells for $38",
+         "Price":"$38",
          "Error rate":"3/4",
          "Offense up":"125",
          "Note":"This weapon is most likely a reference to the poem Casey At Bat, a poem about how a well-known baseball player makes incredibly strong swings, but misses all three pitches and is struck out."
@@ -88,7 +88,7 @@
       "data":{
          "Description":"Jeff can equip this weapon.",
          "Location":"Tenda Village (Garbage can)",
-         "Price":"Sells for $2300",
+         "Price":"$2300",
          "Error rate":"0",
          "Offense up":"90"
       }
@@ -108,7 +108,7 @@
       "data":{
          "Description":"Jeff can equip this weapon.",
          "Location":"Replaces a Broken Gadget in Jeff's inventory, after the item is repaired.",
-         "Price":"Sells for $1000",
+         "Price":"$1000",
          "Error rate":"0",
          "Offense up":"66"
       }
@@ -151,7 +151,7 @@
          "Comments":"Increases Guts by 127.",
          "Description":"Find it from the Bionic Kraken in the Cave of the Past.",
          "Location":"Dropped by Bionic Kraken(1/128 chance)",
-         "Price":"Sells for $2980",
+         "Price":"$2980",
          "Error rate":"1/16",
          "Offense up":"100",
          "Notes":"This item was erroneously stated to be dropped by the three Krakens in Magicant by the player's guide.",
@@ -163,7 +163,7 @@
       "data":{
          "Description":"Ness can equip this weapon.",
          "Location":"Tenda Village.",
-         "Price":"Sells for $1880",
+         "Price":"$1880",
          "Error rate":"1/16",
          "Offense up":"62"
       }
@@ -218,7 +218,7 @@
          "Comments":"Increases Guts by 100, but you'll miss more often, too.",
          "Description":"Get one from a Chomposaur, if you can. for Paula",
          "Location":"Dropped by Chomposaur in the Lost Underworld(1/128 chance)",
-         "Price":"Sells for $4790",
+         "Price":"$4790",
          "Error rate":"1/4",
          "Offense up":"50",
          "Guts up": "100"
@@ -260,7 +260,7 @@
       "data":{
          "Description":"Jeff can equip this weapon.",
          "Location":"The Fire Spring (Gift Box)",
-         "Price":"Sells for $4450",
+         "Price":"$4450",
          "Error rate":"0",
          "Offense up":"110"
       }
@@ -291,7 +291,7 @@
          "Comments":"Jeff's first weapon.",
          "Description":"Jeff can equip this weapon.",
          "Location":"Snow Wood Boarding School (Gift Box)",
-         "Price":"Sells for $55",
+         "Price":"$55",
          "Error rate":"0",
          "Offense up":"16"
       }
@@ -322,7 +322,7 @@
          "Comments":"Jeff must repair the Broken Cannon to obtain this weapon.",
          "Description":"Jeff can equip this weapon.",
          "Location":"Bought from the Scaraba Tool Shop",
-         "Price":"Sells for $1650",
+         "Price":"$1650",
          "Error rate":"0",
          "Offense up":"78"
       }
@@ -332,7 +332,7 @@
       "data":{
          "Description":"Jeff can equip this weapon.",
          "Location":"Brick Road Maze (Gift Box)",
-         "Price":"Sells for $150",
+         "Price":"$150",
          "Error rate":"0",
          "Offense up":"24"
       }
@@ -478,7 +478,7 @@
          "Comments":"Provides protection against Sleep. Increases Luck by 20.",
          "Description":"Must be equipped on your arm. It increases your Defense. Helps keep you from being hypnotized, and it also increases your Luck.",
          "Location":"The Fire Spring (Gift Box)",
-         "Price":"Sells for $1790",
+         "Price":"$1790",
          "Defense up":"70",
          "Luck up": "20"
       }
@@ -604,7 +604,7 @@
          "Comments":"Provides protection from Sleep. Increases Luck by 30.",
          "Description":"Must be equipped on your arm. It increases your Defense. Helps keep you from being hypnotized, and it also increases your Luck.",
          "Location":"Magicant (Gift Box)",
-         "Price":"Sells for $1980",
+         "Price":"$1980",
          "Defense up":"80",
          "Luck up": "30"
       }
@@ -615,7 +615,7 @@
          "Comments":"Paula's ultimate ribbon.",
          "Description":"Miscellaneous equipment that can only be used by Paula.",
          "Location":"Dropped by Ghost of Starman(1/128 chance)",
-         "Price":"Sells for $6980",
+         "Price":"$6980",
          "Defense up":"110"
       }
    },
@@ -673,7 +673,7 @@
       "data":{
          "Description":"Must be equipped as \"other.\" It is said to have been given to your friend by a famous player at the ballpark.",
          "Location":"Onett",
-         "Price":"Sells for $99",
+         "Price":"$99",
          "Defense up":"6"
       }
    },
@@ -704,7 +704,7 @@
          "Comments":"Provides protection from Sleep. Increases Luck by 10.",
          "Description":"Must be equipped on your arm. It increases your Defense. Helps you from being hypnotized, and it also increases your Luck.",
          "Location":"Stonehenge base (Gift Box)",
-         "Price":"Sells for $1590",
+         "Price":"$1590",
          "Defense up":"60",
          "Luck up": "10"
       }
@@ -724,7 +724,7 @@
          "Comments":"Speed increases by 40. Provides protection from Paralysis.",
          "Description":"Must be equipped on your body. It protects you from paralysis attacks. It increases your Speed in a big way.",
          "Location":"Lumine Hall (Gift Box)",
-         "Price":"Sells for $1800",
+         "Price":"$1800",
          "Defense up":"3",
          "Speed up": "40"
       }
@@ -765,7 +765,7 @@
          "Comments":"Can be used only by Paula. Increases her Luck by 40.",
          "Description":"Miscellaneous equipment that can only be used by Paula. When equipped, Luck is increased. Same as the one that Mr. Saturn wears on his head.",
          "Location":"Given to you by a Mr. Saturn after you defeat Starman Deluxe and shut down the Stonehenge base.",
-         "Price":"Sells for $3980",
+         "Price":"$3980",
          "Defense up":"90",
          "Luck up": "40"
       }
@@ -776,7 +776,7 @@
          "Comments":"Provides protection from Fire, Freeze and Flash.",
          "Description":"Must be equipped on your body. It protects you from fire, freeze and flash attacks.",
          "Location":"Lost Underworld (Gift Box)",
-         "Price":"Sells for $5000",
+         "Price":"$5000",
          "Defense up":"20"
       }
    },
@@ -806,7 +806,7 @@
          "Comments":"Increases Luck by 35.",
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck.",
          "Location":"Deep Darkness (Gift Box)",
-         "Price":"Sells for $6000",
+         "Price":"$6000",
          "Defense up":"80",
          "Luck up": "35"
       }
@@ -817,7 +817,7 @@
          "Comments":"Provides protection from Fire, Freeze, Flash and Paralysis. This is the best pendant item in the game, though its usefulness is limited by its rarity.",
          "Description":"Must be equipped on your body. It protects you from fire, freeze, flash and paralysis attacks.",
          "Location":"Dropped by Major Psychic Psycho(1/128 chance)",
-         "Price":"Sells for $7000",
+         "Price":"$7000",
          "Defense up":"30"
       }
    },
@@ -838,7 +838,7 @@
          "Comments":"Can be used only by Paula. Increases her Luck by 25.",
          "Description":"Miscellaneous equipment that can only be used by Paula. When equipped, luck is increased.",
          "Location: Dungeon Man (Gift Box":"",
-         "Price":"Sells for 3500",
+         "Price":"3500",
          "Defense up":"60",
          "Luck up": "25"
       }
@@ -887,7 +887,7 @@
          "Comments":"Use to turn into a dragon for a single attack against your enemies.",
          "Description":"If you sprinkle the powder on one of your friends during battle, that friend turns into a dragon and attacks all enemies. Gone after one use.",
          "Location":"Talah Ramah's Cave, Tenda Village Elder, The Fire Spring (Gift Box), Magicant (Gift Box)",
-         "Price":"Sells for $1000"
+         "Price":"$1000"
       }
    },
    {
@@ -896,7 +896,7 @@
          "Comments":"Used only by Jeff. Use to hit multiple enemies with a single attack.",
          "Description":"Items for Jeff. Damages an enemy when used during battle. Because of its explosive power, it may effect others besides the target creature. Can be used many times.",
          "Location":"Scaraba (Grocery Store)",
-         "Price":"Sells for $950"
+         "Price":"$950"
       }
    },
    {
@@ -1076,7 +1076,7 @@
          "Comments":"If kept for a while, becomes a Chicken.",
          "Description":"A chick that just hatched.",
          "Location":"Replaces a Fresh Egg in a character's inventory, after a certain amount of steps.",
-         "Price":"Sells for $25",
+         "Price":"$25",
          "Note":"Was rumored to cure Homesickness, but that proved to be false."
       }
    },
@@ -1086,7 +1086,7 @@
          "Comments":"Sell for big cash. Will escape if you try to use it.",
          "Description":"A real, live chicken. Don't eat it, please.",
          "Location":"Replaces a Chick in a character's inventory, after a certain amount of steps.",
-         "Price":"Sells for $110"
+         "Price":"$110"
       }
    },
    {
@@ -1113,7 +1113,7 @@
          "Comments":"Same effect as Healing Omega.",
          "Description":"Revives a friend who is unconscious. In addition, it also works well on poison, nausea, colds, sunstroke, falling asleep, uncontrollable crying and feeling strange. This is effective when you have paralysis, or you have been diamondized.",
          "Location":"Peaceful Rest Valley (Gift Box), Talah Ramah's Cave (Chest), The Pyramid (Gift Box), Dungeon Man (Gift Box), Deep Darkness (Gift Box), Stonehenge base (Gift Box), Lumine Hall (Gift Box)",
-         "Price":"Sells for $178"
+         "Price":"$178"
       }
    },
    {
@@ -1185,7 +1185,7 @@
          "Comments":"User fully recovers HP.",
          "Description":"A hand-made Band Aid. It heals your wounded body. Gone after one use.",
          "Location":"Given by Paula's mother.",
-         "Price":"Sells for $19"
+         "Price":"$19"
       }
    },
    {
@@ -1194,7 +1194,7 @@
          "Comments":"Freezes an enemy during battle.",
          "Description":"When used as a whip in battle, the enemy takes enough damage to stop moving for a short time. Gone after one use.",
          "Location":"Moonside (Gift Box), dropped by Cranky Lady, dropped by Extra Cranky Lady",
-         "Price":"Sells for $39"
+         "Price":"$39"
       }
    },
    {
@@ -1230,7 +1230,7 @@
          "Comments":"Used only by Jeff. Takes an enemy's HP and adds it to Jeff's.",
          "Description":"Items for Jeff. Sucks up some HP from the target creature. The more HP the enemy has, the more you get. Can be used many times.",
          "Location":"The Belch Base (Gift Box)",
-         "Price":"Sells for $800"
+         "Price":"$800"
       }
    },
    {
@@ -1257,7 +1257,7 @@
          "Comments":"Return to owner in Twoson hospital to receive a Magic truffle.",
          "Description":"It doesn't look like it would do much of anything, but...",
          "Location:":"Threed (Hospital 2nd floor)",
-         "Price":"Sells for $2"
+         "Price":"$2"
       }
    },
    {
@@ -1354,7 +1354,7 @@
          "Comments":"Sell for a moderate amount of money.",
          "Description":"It can be sold for a very high price. Nothing happens if you use it. A good explanation is kind of tough...",
          "Location":"Dropped by Plain Crocodile(1/128 chance), dropped by Smilin' Sphere(1/128 chance)",
-         "Price":"Sells for $2000",
+         "Price":"$2000",
          "Note":": This item can only be obtained in 1/128 drops."
       }
    },
@@ -1364,7 +1364,7 @@
          "Comments":"Sell for big money.",
          "Description":"It can be sold for a very high price. Nothing happens if you use it. A good explanation is kind of tough...",
          "Location":"Dropped by Hyper Spinning Robo(1/128 chance), dropped by Mechanical Octobot(1/128 chance), dropped by Military Octobot(1/128 chance), dropped by Whirling Robo(1/128 chance), dropped by Soul Consuming Flame, dropped by Evil Eye, dropped by Big Pile of Puke,",
-         "Price":"Sells for $4000"
+         "Price":"$4000"
       }
    },
    {
@@ -1382,7 +1382,7 @@
          "Comments":"Freezes an enemy during battle.",
          "Description":"If used as a whip during battle, the enemy will take some damage and stop moving for a while. Gone after one use.",
          "Location":"Dropped by Shattered Man, dropped by Fierce Shattered Man",
-         "Price":"Sells for $128"
+         "Price":"$128"
       }
    },
    {
@@ -1400,7 +1400,7 @@
          "Comments":"Freezes an enemy during battle.",
          "Description":"When used during battle, the enemy gets so nauseous from the ripe odor, they cannot fight. Gone after one use.",
          "Location":"Fourside",
-         "Price":"Sells for $2"
+         "Price":"$2"
       }
    },
    {
@@ -1427,7 +1427,7 @@
          "Comments":"Poisons one enemy during battle.",
          "Description":"An ectoplasmic ooze is disgorged out of the dreadful box, and the enemy may be poisoned. Gone after one use.",
          "Location":"The Pyramid (Gift Box)",
-         "Price":"Sells for $290"
+         "Price":"$290"
       }
    },
    {
@@ -1536,7 +1536,7 @@
          "Comments":"Used only by Jeff. Freezes an enemy during battle.",
          "Description":"Items for Jeff. Sprays a sticky substance that stops the enemy from moving. Can be used many times.",
          "Location":"Replaces a Broken iron in Jeff's inventory, after the item is repaired.",
-         "Price":"Sells for $420"
+         "Price":"$420"
       }
    },
    {
@@ -1608,7 +1608,7 @@
          "Comments":"No effect (plays a song about the Orange Kid, then breaks and disappears).",
          "Description":"Orange Kid's invention. The full name is the \"Super Orange Machine.\"",
          "Location":"Given by Orange Kid",
-         "Price":"Sells for $50",
+         "Price":"$50",
          "Note":": Is completely useless. If you have this, congratulations! You wasted your money."
       }
    },
@@ -1663,7 +1663,7 @@
          "Comments":"Most users recover 30 HP. Poo recovers 6 HP.",
          "Description":"A fashionable treat for snobby, haute cuisine people in some big cities. When eaten, you recover about 30 HP.",
          "Location":"Can be obtained from Electra in her room in the Monotoli Building",
-         "Price":"Sells for $48"
+         "Price":"$48"
       }
    },
    {
@@ -1698,7 +1698,7 @@
          "Comments":"Exterminates all insect-type monsters on battle screen. A mass and many-use version of the Insecticide Spray.",
          "Description":"Deals 200 points of damage to any bug when used during combat. Can be used many times.",
          "Location":"dropped by Mad Taxi(1/128 chance)",
-         "Price":"Sells for $315",
+         "Price":"$315",
          "Note":": Can only be gotten from the Mad Taxi as a 1/128 drop."
       }
    },
