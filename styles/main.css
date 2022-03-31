@@ -610,3 +610,6 @@ select optgroup {
 
     color: white;
 }
+.titleContainer{
+    display: none;
+}

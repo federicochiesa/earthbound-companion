@@ -261,9 +261,46 @@ class GameSave {
                     document.getElementById("c" + j + "errorRate").innerText = weapons[i].data["Error rate"];
                 }
             }
+            document.getElementById("c" + j).style.display = "block";
         }
+        document.getElementById("escargo").style.display = "block";
+        document.getElementById("generalInfo").style.display = "block";
+    }
+    
+    resetData() {
+        document.getElementById("handMoneyValue").innerText = "";
+        document.getElementById("ATMMoneyValue").innerText = "";
+        document.getElementById("petNameValue").innerText = "";
+        document.getElementById("playerNameValue").innerText = "";
+        document.getElementById("playerNameColon").innerText = "";
+        document.getElementById("playerNameHeader").innerText = ""
+        document.getElementById("favThingValue").innerText = "";
+        document.getElementById("favFoodValue").innerText = "";
+        for (let j = 0; j < 4; j++) {
+            document.getElementById("c" + j).style.display = "none";
+            document.getElementById("c" + j + "name").innerText = ""
+            document.getElementById("c" + j + "weapon").innerText = "";
+            document.getElementById("c" + j + "body").innerText = "";
+            document.getElementById("c" + j + "arms").innerText = "";
+            document.getElementById("c" + j + "other").innerText = "";
+            let inventory = this.characters[j].items;
+            for (let i = 0; i < inventory.length; i++)
+                document.getElementById("c" + j + "i" + i).innerText = "";
+            let stats = this.characters[j].statsAfter;
+            for (let i = 0; i < stats.length; i++) {
+                document.getElementById("c" + j + "stat" + i).innerText = "";
+            }
+            document.getElementById("c" + j + "level").innerText = "";
+            document.getElementById("c" + j + "xp").innerText = "";
+            document.getElementById("c" + j + "hp").innerText = "";
+            document.getElementById("c" + j + "pp").innerText = "";
+            document.getElementById("c" + j + "errorRate").innerText = "";
+        }
+        document.getElementById("escargo").style.display = "none";
+        document.getElementById("generalInfo").style.display = "none";
     }
 }
+
 
 class PartyMember {
     constructor(data) {
