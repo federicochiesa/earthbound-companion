@@ -429,7 +429,7 @@ a{
     margin: 5% 4% 5% 4%;
     background-color: #1a1a1a !important;
     border-style: solid;
-    border-width: 15px;
+    border-width: 20px;
     border-image: url(../assets/border.png) 480 round;
     border-radius: 25px;  
 
@@ -505,7 +505,7 @@ select optgroup {
     line-height: 100%;
     cursor: pointer;
     color: white;
-    border: 15px dashed #f0f0f0;
+    border: 20px dashed #f0f0f0;
     border-image: url(../assets/border-dashed.png) 480 round;
     border-radius: 20px;
   }
@@ -563,7 +563,7 @@ select optgroup {
 
 .titleInBorder{
     text-align: left;
-    margin-top: -13px;
+    margin-top: -15px;
     height: 20px;
     line-height: 20px;
     font-size: 20px;
@@ -572,7 +572,7 @@ select optgroup {
 
 .titleInBorder2{
     text-align: left;
-    margin-top: -13px;
+    margin-top: -15px;
     height: 20px;
     line-height: 20px;
     font-size: 15px;
