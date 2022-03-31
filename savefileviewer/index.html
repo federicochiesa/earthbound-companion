@@ -80,7 +80,8 @@
       <div class="drop-zone" id="fileUploader">
       </div>
     </div>
-    <div class="row tableStats caput titleContainer" style="background-color: magenta; margin-top: 20px;">
+    <!--TODO: add status bar for when save file is loaded-->
+    <div class="row tableStats caput titleContainer" style="margin-top: 20px;">
       <h1 class="titleInBorder"><span class="titleSpan">General info</span></h1>
       <table class="text-white table tableInfo" style="width: 100%;">
         <tbody>
@@ -119,14 +120,15 @@
         </tbody>
       </table>
     </div>
+
     <div class="row tableStats caput titleContainer" style="margin-top: 20px;">
-      <h1 class="titleInBorder"><span class="titleSpan">Ness</span></h1>
+      <h1 class="titleInBorder"><span class="titleSpan" id="c0name"></span></h1>
       <div class="row">
         <div class="col-sm-3 caput">
           <img src="../../assets/sprites/ness.png" class="selected-hero">
         </div>
         <div class="col-sm-4 caput">
-          <div class="row tableStats2 caput titleContainer" style="background-color: magenta; margin-top: 20px; margin-bottom: 20px;">
+          <div class="row tableStats2 caput titleContainer" style="margin-top: 20px; margin-bottom: 20px;">
             <h1 class="titleInBorder2"><span class="titleSpan">Equipments</span></h1>
           <table class="text-white table tableInfo" style="padding-bottom: 10px;">
             <tbody>
@@ -134,28 +136,28 @@
                 <th scope="row">Weapon</th>
                 <td>:</td>
                 <td><img src="../assets/equip.png" class="eqArrow"></td>
-                <td id="weaponValue">
+                <td id="c0weapon">
                 </td>
               </tr>
               <tr>
                 <th scope="row">Body</th>
                 <td>:</td>
                 <td><img src="../assets/equip.png" class="eqArrow"></td>
-                <td id="bodyValue">
+                <td id="c0body">
                 </td>
               </tr>
               <tr>
                 <th scope="row">Arms</th>
                 <td>:</td>
                 <td><img src="../assets/equip.png" class="eqArrow"></td>
-                <td id="armsValue">
+                <td id="c0arms">
                 </td>
               </tr>
               <tr>
                 <th scope="row">Other</th>
                 <td>:</td>
                 <td><img src="../assets/equip.png" class="eqArrow"></td>
-                <td id="otherValue">
+                <td id="c0other">
                 </td>
               </tr>
             </tbody>
@@ -163,37 +165,37 @@
           </div>
         </div>
         <div class="col-sm-5 caput">
-          <div class="row tableStats2 caput titleContainer" style="background-color: magenta; margin-top: 20px; margin-bottom: 20px;">
+          <div class="row tableStats2 caput titleContainer" style="margin-top: 20px; margin-bottom: 20px;">
             <h1 class="titleInBorder2"><span class="titleSpan">Inventory</span></h1>
               <table class="text-white table tableInfo" style="width: 100%; padding-bottom: 10px;">
                 <tbody>
                   <tr>
-                    <td id="i0"></td>
-                    <td id="i1"></td>
+                    <td id="c0i0"></td>
+                    <td id="c0i1"></td>
                   </tr>
                   <tr>
-                    <td id="i2"></td>
-                    <td id="i3"></td>
+                    <td id="c0i2"></td>
+                    <td id="c0i3"></td>
                   </tr>
                   <tr>
-                    <td id="i4"></td>
-                    <td id="i5"></td>
+                    <td id="c0i4"></td>
+                    <td id="c0i5"></td>
                   </tr>
                   <tr>
-                    <td id="i6"></td>
-                    <td id="i7"></td>
+                    <td id="c0i6"></td>
+                    <td id="c0i7"></td>
                   </tr>
                   <tr>
-                    <td id="i8"></td>
-                    <td id="i9"></td>
+                    <td id="c0i8"></td>
+                    <td id="c0i9"></td>
                   </tr>
                   <tr>
-                    <td id="i10"></td>
-                    <td id="i11"></td>
+                    <td id="c0i10"></td>
+                    <td id="c0i11"></td>
                   </tr>
                   <tr>
-                    <td id="i12"></td>
-                    <td id="i13"></td>
+                    <td id="c0i12"></td>
+                    <td id="c0i13"></td>
                   </tr>
                 </tbody>
               </table>
@@ -208,73 +210,545 @@
                 Offense
               </th>
               <td>:</td>
-              <td id="stat0"></td>
+              <td id="c0stat0"></td>
               <th scope="row">
                 Defense
               </th>
               <td>:</td>
-              <td id="stat1"></td>
+              <td id="c0stat1"></td>
               <th scope="row">
                 Speed
               </th>
               <td>:</td>
-              <td id="stat2"></td>
+              <td id="c0stat2"></td>
             </tr>
             <tr>
               <th scope="row">
                 Guts
               </th>
               <td>:</td>
-              <td id="stat3"></td>
+              <td id="c0stat3"></td>
               <th scope="row">
                 Luck
               </th>
               <td>:</td>
-              <td id="stat4"></td>
+              <td id="c0stat4"></td>
               <th scope="row">
                 Vitality
               </th>
               <td>:</td>
-              <td id="stat5"></td>
+              <td id="c0stat5"></td>
             </tr>
             <tr>
               <th scope="row">
                 IQ
               </th>
               <td>:</td>
-              <td id="stat6"></td>
+              <td id="c0stat6"></td>
               <th scope="row">
                 Error Rate
               </th>
               <td>:</td>
-              <td id="errorRateValue"></td>
+              <td id="c0errorRate"></td>
               <th scope="row">
                 Level
               </th>
               <td>:</td>
-              <td id="levelValue"></td>
+              <td id="c0level"></td>
             </tr>
             <tr>
               <th scope="row">
                 Experience
               </th>
               <td>:</td>
-              <td id="XPValue"></td>
+              <td id="c0xp"></td>
               <th scope="row">
                 Hit Points
               </th>
               <td>:</td>
-              <td id="HPValue"></td>
+              <td id="c0hp"></td>
               <th scope="row">
                 Psychic Points
               </th>
               <td>:</td>
-              <td id="PPValue"></td>
+              <td id="c0pp"></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
+
+    <div class="row tableStats caput titleContainer" style="margin-top: 20px;">
+      <h1 class="titleInBorder"><span class="titleSpan" id="c1name"></span></h1>
+      <div class="row">
+        <div class="col-sm-3 caput">
+          <img src="../../assets/sprites/paula.png" class="selected-hero">
+        </div>
+        <div class="col-sm-4 caput">
+          <div class="row tableStats2 caput titleContainer" style="margin-top: 20px; margin-bottom: 20px;">
+            <h1 class="titleInBorder2"><span class="titleSpan">Equipments</span></h1>
+          <table class="text-white table tableInfo" style="padding-bottom: 10px;">
+            <tbody>
+              <tr>
+                <th scope="row">Weapon</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c1weapon">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Body</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c1body">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Arms</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c1arms">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Other</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c1other">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+        <div class="col-sm-5 caput">
+          <div class="row tableStats2 caput titleContainer" style="margin-top: 20px; margin-bottom: 20px;">
+            <h1 class="titleInBorder2"><span class="titleSpan">Inventory</span></h1>
+              <table class="text-white table tableInfo" style="width: 100%; padding-bottom: 10px;">
+                <tbody>
+                  <tr>
+                    <td id="c1i0"></td>
+                    <td id="c1i1"></td>
+                  </tr>
+                  <tr>
+                    <td id="c1i2"></td>
+                    <td id="c1i3"></td>
+                  </tr>
+                  <tr>
+                    <td id="c1i4"></td>
+                    <td id="c1i5"></td>
+                  </tr>
+                  <tr>
+                    <td id="c1i6"></td>
+                    <td id="c1i7"></td>
+                  </tr>
+                  <tr>
+                    <td id="c1i8"></td>
+                    <td id="c1i9"></td>
+                  </tr>
+                  <tr>
+                    <td id="c1i10"></td>
+                    <td id="c1i11"></td>
+                  </tr>
+                  <tr>
+                    <td id="c1i12"></td>
+                    <td id="c1i13"></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+      <div class="row " style="margin-top: 10px; margin-bottom: 10px;">
+        <table class="text-white table tableInfo" style="width: 100%;">
+          <tbody>
+            <tr>
+              <th scope="row">
+                Offense
+              </th>
+              <td>:</td>
+              <td id="c1stat0"></td>
+              <th scope="row">
+                Defense
+              </th>
+              <td>:</td>
+              <td id="c1stat1"></td>
+              <th scope="row">
+                Speed
+              </th>
+              <td>:</td>
+              <td id="c1stat2"></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Guts
+              </th>
+              <td>:</td>
+              <td id="c1stat3"></td>
+              <th scope="row">
+                Luck
+              </th>
+              <td>:</td>
+              <td id="c1stat4"></td>
+              <th scope="row">
+                Vitality
+              </th>
+              <td>:</td>
+              <td id="c1stat5"></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                IQ
+              </th>
+              <td>:</td>
+              <td id="c1stat6"></td>
+              <th scope="row">
+                Error Rate
+              </th>
+              <td>:</td>
+              <td id="c1errorRate"></td>
+              <th scope="row">
+                Level
+              </th>
+              <td>:</td>
+              <td id="c1level"></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Experience
+              </th>
+              <td>:</td>
+              <td id="c1xp"></td>
+              <th scope="row">
+                Hit Points
+              </th>
+              <td>:</td>
+              <td id="c1hp"></td>
+              <th scope="row">
+                Psychic Points
+              </th>
+              <td>:</td>
+              <td id="c1pp"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <div class="row tableStats caput titleContainer" style="margin-top: 20px;">
+      <h1 class="titleInBorder"><span class="titleSpan" id="c2name"></span></h1>
+      <div class="row">
+        <div class="col-sm-3 caput">
+          <img src="../../assets/sprites/jeff.png" class="selected-hero">
+        </div>
+        <div class="col-sm-4 caput">
+          <div class="row tableStats2 caput titleContainer" style="margin-top: 20px; margin-bottom: 20px;">
+            <h1 class="titleInBorder2"><span class="titleSpan">Equipments</span></h1>
+          <table class="text-white table tableInfo" style="padding-bottom: 10px;">
+            <tbody>
+              <tr>
+                <th scope="row">Weapon</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c2weapon">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Body</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c2body">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Arms</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c2arms">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Other</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c2other">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+        <div class="col-sm-5 caput">
+          <div class="row tableStats2 caput titleContainer" style="margin-top: 20px; margin-bottom: 20px;">
+            <h1 class="titleInBorder2"><span class="titleSpan">Inventory</span></h1>
+              <table class="text-white table tableInfo" style="width: 100%; padding-bottom: 10px;">
+                <tbody>
+                  <tr>
+                    <td id="c2i0"></td>
+                    <td id="c2i1"></td>
+                  </tr>
+                  <tr>
+                    <td id="c2i2"></td>
+                    <td id="c2i3"></td>
+                  </tr>
+                  <tr>
+                    <td id="c2i4"></td>
+                    <td id="c2i5"></td>
+                  </tr>
+                  <tr>
+                    <td id="c2i6"></td>
+                    <td id="c2i7"></td>
+                  </tr>
+                  <tr>
+                    <td id="c2i8"></td>
+                    <td id="c2i9"></td>
+                  </tr>
+                  <tr>
+                    <td id="c2i10"></td>
+                    <td id="c2i11"></td>
+                  </tr>
+                  <tr>
+                    <td id="c2i12"></td>
+                    <td id="c2i13"></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+      <div class="row " style="margin-top: 10px; margin-bottom: 10px;">
+        <table class="text-white table tableInfo" style="width: 100%;">
+          <tbody>
+            <tr>
+              <th scope="row">
+                Offense
+              </th>
+              <td>:</td>
+              <td id="c2stat0"></td>
+              <th scope="row">
+                Defense
+              </th>
+              <td>:</td>
+              <td id="c2stat1"></td>
+              <th scope="row">
+                Speed
+              </th>
+              <td>:</td>
+              <td id="c2stat2"></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Guts
+              </th>
+              <td>:</td>
+              <td id="c2stat3"></td>
+              <th scope="row">
+                Luck
+              </th>
+              <td>:</td>
+              <td id="c2stat4"></td>
+              <th scope="row">
+                Vitality
+              </th>
+              <td>:</td>
+              <td id="c2stat5"></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                IQ
+              </th>
+              <td>:</td>
+              <td id="c2stat6"></td>
+              <th scope="row">
+                Error Rate
+              </th>
+              <td>:</td>
+              <td id="c2errorRate"></td>
+              <th scope="row">
+                Level
+              </th>
+              <td>:</td>
+              <td id="c2level"></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Experience
+              </th>
+              <td>:</td>
+              <td id="c2xp"></td>
+              <th scope="row">
+                Hit Points
+              </th>
+              <td>:</td>
+              <td id="c2hp"></td>
+              <th scope="row">
+                Psychic Points
+              </th>
+              <td>:</td>
+              <td id="c2pp"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row tableStats caput titleContainer" style="margin-top: 20px;">
+      <h1 class="titleInBorder"><span class="titleSpan" id="c3name"></span></h1>
+      <div class="row">
+        <div class="col-sm-3 caput">
+          <img src="../../assets/sprites/poo.png" class="selected-hero">
+        </div>
+        <div class="col-sm-4 caput">
+          <div class="row tableStats2 caput titleContainer" style="margin-top: 20px; margin-bottom: 20px;">
+            <h1 class="titleInBorder2"><span class="titleSpan">Equipments</span></h1>
+          <table class="text-white table tableInfo" style="padding-bottom: 10px;">
+            <tbody>
+              <tr>
+                <th scope="row">Weapon</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c3weapon">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Body</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c3body">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Arms</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c3arms">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Other</th>
+                <td>:</td>
+                <td><img src="../assets/equip.png" class="eqArrow"></td>
+                <td id="c3other">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+        <div class="col-sm-5 caput">
+          <div class="row tableStats2 caput titleContainer" style="margin-top: 20px; margin-bottom: 20px;">
+            <h1 class="titleInBorder2"><span class="titleSpan">Inventory</span></h1>
+              <table class="text-white table tableInfo" style="width: 100%; padding-bottom: 10px;">
+                <tbody>
+                  <tr>
+                    <td id="c3i0"></td>
+                    <td id="c3i1"></td>
+                  </tr>
+                  <tr>
+                    <td id="c3i2"></td>
+                    <td id="c3i3"></td>
+                  </tr>
+                  <tr>
+                    <td id="c3i4"></td>
+                    <td id="c3i5"></td>
+                  </tr>
+                  <tr>
+                    <td id="c3i6"></td>
+                    <td id="c3i7"></td>
+                  </tr>
+                  <tr>
+                    <td id="c3i8"></td>
+                    <td id="c3i9"></td>
+                  </tr>
+                  <tr>
+                    <td id="c3i10"></td>
+                    <td id="c3i11"></td>
+                  </tr>
+                  <tr>
+                    <td id="c3i12"></td>
+                    <td id="c3i13"></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+      <div class="row " style="margin-top: 10px; margin-bottom: 10px;">
+        <table class="text-white table tableInfo" style="width: 100%;">
+          <tbody>
+            <tr>
+              <th scope="row">
+                Offense
+              </th>
+              <td>:</td>
+              <td id="c3stat0"></td>
+              <th scope="row">
+                Defense
+              </th>
+              <td>:</td>
+              <td id="c3stat1"></td>
+              <th scope="row">
+                Speed
+              </th>
+              <td>:</td>
+              <td id="c3stat2"></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Guts
+              </th>
+              <td>:</td>
+              <td id="c3stat3"></td>
+              <th scope="row">
+                Luck
+              </th>
+              <td>:</td>
+              <td id="c3stat4"></td>
+              <th scope="row">
+                Vitality
+              </th>
+              <td>:</td>
+              <td id="c3stat5"></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                IQ
+              </th>
+              <td>:</td>
+              <td id="c3stat6"></td>
+              <th scope="row">
+                Error Rate
+              </th>
+              <td>:</td>
+              <td id="c3errorRate"></td>
+              <th scope="row">
+                Level
+              </th>
+              <td>:</td>
+              <td id="c3level"></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Experience
+              </th>
+              <td>:</td>
+              <td id="c3xp"></td>
+              <th scope="row">
+                Hit Points
+              </th>
+              <td>:</td>
+              <td id="c3hp"></td>
+              <th scope="row">
+                Psychic Points
+              </th>
+              <td>:</td>
+              <td id="c3pp"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
     <div class="row tableStats caput titleContainer" style="margin-top: 20px;">
       <div style="margin-bottom: 20px">
       <h1 class="titleInBorder"><span class="titleSpan">Escargo Express</span></h1>

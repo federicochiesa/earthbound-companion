@@ -170,7 +170,7 @@ async function initThumbnail() {
     });
     document.getElementById("fileToUpload").value = "";
     document.getElementById("fileUploader").removeAttribute("style");
-    
+
 }
 
 class GameSave {
@@ -228,38 +228,40 @@ class GameSave {
             this.escargoItems[i] = itemsLUT[data[i + hexToDec("76")]];
     }
     displayData(items) {
-        console.log(items)
-        var weapons = items[Object.keys(items)[0]]
-        for (let i = 0; i < weapons.length; i++) {
-            if(weapons[i].name.toUpperCase() == this.characters[0].equip[0].toUpperCase()){
-                document.getElementById("errorRateValue").innerText = weapons[i].data["Error rate"];
-            }
-        }
         document.getElementById("handMoneyValue").innerText = this.moneyHand + "$";
         document.getElementById("ATMMoneyValue").innerText = this.moneyATM + "$";
         document.getElementById("petNameValue").innerText = this.petName;
-        if(this.playerName != ""){
+        if (this.playerName != "") {
             document.getElementById("playerNameValue").innerText = this.playerName;
             document.getElementById("playerNameColon").innerText = ":";
             document.getElementById("playerNameHeader").innerText = "Player Name"
         }
         document.getElementById("favThingValue").innerText = this.favThing;
         document.getElementById("favFoodValue").innerText = this.favFood;
-        document.getElementById("weaponValue").innerText = this.characters[0].equip[0];
-        document.getElementById("bodyValue").innerText = this.characters[0].equip[1];
-        document.getElementById("armsValue").innerText = this.characters[0].equip[2];
-        document.getElementById("otherValue").innerText = this.characters[0].equip[3];
-        let inventory = this.characters[0].items;
-        for(let i = 0; i < inventory.length; i++)
-            document.getElementById("i" + i).innerText = inventory[i];
-        let stats = this.characters[0].statsAfter;
-        for(let i = 0; i < stats.length; i++){
-            document.getElementById("stat" + i).innerText = stats[i];
+        for (let j = 0; j < this.numPartyMembers; j++) {
+            document.getElementById("c" + j + "name").innerText = this.characters[j].name
+            document.getElementById("c" + j + "weapon").innerText = this.characters[j].equip[0];
+            document.getElementById("c" + j + "body").innerText = this.characters[j].equip[1];
+            document.getElementById("c" + j + "arms").innerText = this.characters[j].equip[2];
+            document.getElementById("c" + j + "other").innerText = this.characters[j].equip[3];
+            let inventory = this.characters[j].items;
+            for (let i = 0; i < inventory.length; i++)
+                document.getElementById("c" + j + "i" + i).innerText = inventory[i];
+            let stats = this.characters[j].statsAfter;
+            for (let i = 0; i < stats.length; i++) {
+                document.getElementById("c" + j + "stat" + i).innerText = stats[i];
+            }
+            document.getElementById("c" + j + "level").innerText = this.characters[j].level;
+            document.getElementById("c" + j + "xp").innerText = this.characters[j].exp;
+            document.getElementById("c" + j + "hp").innerText = this.characters[j].currHP;
+            document.getElementById("c" + j + "pp").innerText = this.characters[j].currPP;
+            var weapons = items[Object.keys(items)[0]]
+            for (let i = 0; i < weapons.length; i++) {
+                if (weapons[i].name.toUpperCase() == this.characters[j].equip[0].toUpperCase()) {
+                    document.getElementById("c" + j + "errorRate").innerText = weapons[i].data["Error rate"];
+                }
+            }
         }
-        document.getElementById("levelValue").innerText = this.characters[0].level;
-        document.getElementById("XPValue").innerText = this.characters[0].exp;
-        document.getElementById("HPValue").innerText = this.characters[0].currHP;
-        document.getElementById("PPValue").innerText = this.characters[0].currPP;
     }
 }
 
