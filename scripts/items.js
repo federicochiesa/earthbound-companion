@@ -147,7 +147,7 @@ window.onload = async function () {
                                     <div class=\"col-lg-2\">\
                                        " + tableString + "\
                                     </div>\
-                                    <div class=\"col-lg-1 caput\">\
+                                    <div class=\"col-lg-1 centering\">\
                                         <div class=\"col mini\">\
                                         <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + element.name + "&quot;)\">\
                                             <img src=\"../../assets/sprites/info.png\" class=\"img-button\" \>\

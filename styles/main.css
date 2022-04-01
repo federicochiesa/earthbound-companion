@@ -7,7 +7,7 @@
     font-family: "statusplz";
     src: url("../fonts/statusplz.woff");
 }
-
+/* General tags */
 body {
     font-family: "appleKid" !important;
     image-rendering: pixelated;
@@ -27,7 +27,7 @@ iframe {
     border-radius: 25px;
 }
 
-.navbar-brand {
+.navbar-brand, h3 {
     font-size: 2.5rem;
 }
 
@@ -40,8 +40,9 @@ h1 {
     font-size: 4rem;
 }
 
-h3 {
-    font-size: 2.5rem;
+td,
+th {
+    font-size: 1.75rem;
 }
 
 .description,
@@ -50,17 +51,11 @@ h3 {
     line-height: 125%;
 }
 
-td,
-th {
-    font-size: 1.75rem;
-}
-
 table {
     border-collapse: separate;
     border: solid black 1px;
     border-radius: 6px;
     align-items: center;
-
 }
 
 .img-heroY {
@@ -85,30 +80,11 @@ table {
     line-height: 80%;
 }
 
-.col-lg-2 {
+.col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.col-lg-5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-lg-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-lg-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .img-item {
     min-height: 100px;
@@ -125,8 +101,6 @@ table {
         height: 100px;
         padding: 10px 10px 10px 10px;
     }
-
-
 }
 
 @media (min-width: 991px) and (max-width: 1400px) {
@@ -142,7 +116,6 @@ table {
         height: 120px;
         padding: 10px 10px 10px 10px;
     }
-
 }
 
 @media (min-width: 990px) and (max-width: 1200px) {
@@ -286,7 +259,6 @@ table {
         align-items: center;
         column-gap: 2ch;
     }
-
 }
 
 @media (max-width:577px) {
@@ -322,7 +294,7 @@ table {
     row-gap: 5ch;
 }
 
-.cg {
+.cg, .icons {
     column-gap: 2ch;
 }
 
@@ -330,14 +302,10 @@ table {
     padding: 0 5px 0 5px;
 }
 
-.caput {
+.centering {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.icons {
-    column-gap: 2ch;
 }
 
 .list-group>a {
@@ -380,18 +348,15 @@ a {
 .select-hero {
     width: 100%;
     padding: 10px;
-
 }
 
 .select-div {
-
     width: 50%;
     background-color: #1a1a1a !important;
     border-style: solid;
     border-width: 15px;
     border-image: url(../assets/border.png) 480 round;
     border-radius: 25px;
-
     margin: 20px auto 20px auto;
     display: block;
 }
@@ -403,7 +368,6 @@ a {
 .selected-hero {
     width: 100%;
     padding: 10% 20% 5% 20%;
-
 }
 
 .nameText {
@@ -411,7 +375,7 @@ a {
     text-align: center;
 }
 
-.alooora {
+#character {
     margin-bottom: 0 !important;
 }
 
@@ -431,22 +395,10 @@ a {
     border-width: 15px;
     border-image: url(../assets/border.png) 480 round;
     border-radius: 25px;
-
     color: white;
 }
 
-.tableStats {
-    margin: 5% 4% 5% 4%;
-    background-color: #1a1a1a !important;
-    border-style: solid;
-    border-width: 20px;
-    border-image: url(../assets/border.png) 480 round;
-    border-radius: 25px;
-
-    color: white;
-}
-
-.table> :not(caption)>*>* {
+.table > :not(caption) > * > * {
     border-bottom-width: 0px !important;
 }
 
@@ -468,7 +420,6 @@ a {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
     padding-left: 4px !important;
-
 }
 
 select {
@@ -485,7 +436,6 @@ select:focus {
     border-color: #1a1a1a;
     color: white;
     background-color: #1a1a1a;
-
 }
 
 select option:hover {
@@ -524,10 +474,6 @@ select optgroup {
     border-image: url(../assets/border.png) 480 round;
     background-color: #1a1a1a;
     background-size: cover;
-}
-
-.drop-zone__input {
-    display: none;
 }
 
 .drop-zone__thumb {
@@ -580,16 +526,6 @@ select optgroup {
     font-family: "statusplz" !important;
 }
 
-.titleInBorder2 {
-    text-align: left;
-    margin-top: -15px;
-    height: 20px;
-    line-height: 20px;
-    font-size: 15px;
-    font-family: "statusplz" !important;
-}
-
-
 .titleSpan {
     background-color: #1a1a1a;
     padding-left: 5px;
@@ -613,15 +549,23 @@ select optgroup {
 .tableStats2 {
     margin: 5% 4% 5% 4%;
     background-color: #1a1a1a !important;
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
+    border: solid 2px white;
     border-radius: 25px;
+    color: white;
+}
 
+.tableStats {
+    margin: 5% 4% 5% 4%;
+    background-color: #1a1a1a !important;
+    border-style: solid;
+    border-width: 20px;
+    border-image: url(../assets/border.png) 480 round;
+    border-radius: 25px;
     color: white;
 }
 
 .titleContainer,
-.saveFileSelector {
+.saveFileSelector,
+.drop-zone__input {
     display: none;
 }
