@@ -23,7 +23,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+    </script>
   <!-- Local scripts -->
   <script src="../scripts/main.js"></script>
   <script src="../scripts/equipmenttesting.js"></script>
@@ -76,283 +76,186 @@
         <h1 class="text-white">Equipment Testing</h1>
       </div>
     </div>
-    <div class="row eqTestDiv" >
+    <div class="row eqTestDiv">
       <div class="col-sm-2 select-list">
         <div class="select-div">
-          <img onclick="changeCharacter(this.id)" id="ness" style="cursor: pointer;" src="../../assets/faces/ness.png" class="select-hero">
+          <img onclick="changeCharacter(this.id)" id="ness" style="cursor: pointer;" src="../../assets/faces/ness.png"
+            class="select-hero">
         </div>
         <div class="select-div">
-          <img onclick="changeCharacter(this.id)" id="paula" style="cursor: pointer; opacity: 30%;" src="../../assets/faces/paula.png" class="select-hero">
+          <img onclick="changeCharacter(this.id)" id="paula" style="cursor: pointer; opacity: 30%;"
+            src="../../assets/faces/paula.png" class="select-hero">
         </div>
         <div class="select-div">
-          <img onclick="changeCharacter(this.id)" id="jeff" style="cursor: pointer; opacity: 30%;" src="../../assets/faces/jeff.png" class="select-hero">
+          <img onclick="changeCharacter(this.id)" id="jeff" style="cursor: pointer; opacity: 30%;"
+            src="../../assets/faces/jeff.png" class="select-hero">
         </div>
         <div class="select-div">
-          <img onclick="changeCharacter(this.id)" id="poo"  style="cursor: pointer; opacity: 30%;" src="../../assets/faces/poo.png" class="select-hero">
+          <img onclick="changeCharacter(this.id)" id="poo" style="cursor: pointer; opacity: 30%;"
+            src="../../assets/faces/poo.png" class="select-hero">
         </div>
       </div>
       <div class="col-sm-4 selected-display centering">
         <div class="selected-div">
           <img src="../../assets/sprites/ness.png" class="selected-hero">
-          <div class="text-white nameText"><h3 id="character">NESS</h3></div>
+          <div class="text-white nameText">
+            <h3 id="character">NESS</h3>
+          </div>
         </div>
       </div>
       <div class="col-sm-6 tables-div">
         <div class="row" width="100%" style="margin-left:3%">
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" value="" id="flexSwitchCheckDefault" style="height: 20px;" onclick="applyMagicantBonus()">
-            <label class="form-check-label text-white" for="flexSwitchCheckDefault" style="font-size:1.5rem; height: 100%; display:flex; align-items:flex-end;">
+            <input class="form-check-input" type="checkbox" value="" id="flexSwitchCheckDefault" style="height: 20px;"
+              onclick="applyMagicantBonus()">
+            <label class="form-check-label text-white" for="flexSwitchCheckDefault"
+              style="font-size:1.5rem; height: 100%; display:flex; align-items:flex-end;">
               After Magicant
             </label>
           </div>
         </div>
-          <div class="row" width="100%">
-            <div class="col-sm-12">
-              <table class="table tableEquip">
-                <tbody>
-                    <tr>
-                        <th scope="row">Weapon</th>
-                        <td>:</td>
-                        <td><img  src="../assets/equip.png" class="eqArrow" ></td>
-                        <td id="equipped-weapon">(Nothing)</td>
-                        <td><img onclick="equip(this.id)" id="arrowW" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                        <td class="levelChoice"><select id="weapon">
-                          <optgroup label="Choose weapon:"> 
-                            <option>(Nothing)</option>
-                          </optgroup>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Body</th>
-                        <td>:</td>
-                        <td><img src="../assets/equip.png" class="eqArrow"></td>
-                        <td id="equipped-body">(Nothing)</td>
-                        <td><img  onclick="equip(this.id)" id="arrowB" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                        <td class="levelChoice"><select id="bodyEquip">
-                          <optgroup label="Choose Body Equipment:"> 
-                            <option>(Nothing)</option>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Arms</th>
-                        <td>:</td>
-                        <td><img src="../assets/equip.png" class="eqArrow"></td>
-                        <td id="equipped-arms">(Nothing)</td>
-                        <td><img onclick="equip(this.id)" id="arrowA" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                        <td class="levelChoice"><select id="armsEquip">
-                          <optgroup label="Choose Arms Equipment:"> 
-                            <option>(Nothing)</option>
-                          </optgroup>
-                        </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Other</th>
-                      <td>:</td>
-                      <td><img src="../assets/equip.png" class="eqArrow"></td>
-                      <td id="equipped-other">(Nothing)</td>
-                      <td><img onclick="equip(this.id)" id="arrowO" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                      <td class="levelChoice"><select id="otherEquip">
-                        <optgroup label="Choose other Equipment:"> 
-                          <option>(Nothing)</option>
-                        </optgroup>
-                      </td>
-                  </tr>
-                </tbody>
-            </table>
-            </div>
-          </div>
-          <div class="row" width="100%">
-            <table class="table tableStats">
+        <div class="row" width="100%">
+          <div class="col-sm-12">
+            <table class="table tableEquip">
               <tbody>
-                  <tr>
-                      <th scope="row">Level</th>
-                      <td>:</td>
-                      <td class="levelChoice" ><select id="level">
-                        <optgroup label="Choose level:"> 
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                          <option>6</option>
-                          <option>7</option>
-                          <option>8</option>
-                          <option>9</option>
-                          <option>10</option>
-                          <option>11</option>
-                          <option>12</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                          <option>16</option>
-                          <option>17</option>
-                          <option>18</option>
-                          <option>19</option>
-                          <option>20</option>
-                          <option>21</option>
-                          <option>22</option>
-                          <option>23</option>
-                          <option>24</option>
-                          <option>25</option>
-                          <option>26</option>
-                          <option>27</option>
-                          <option>28</option>
-                          <option>29</option>
-                          <option>30</option>
-                          <option>31</option>
-                          <option>32</option>
-                          <option>33</option>
-                          <option>34</option>
-                          <option>35</option>
-                          <option>36</option>
-                          <option>37</option>
-                          <option>38</option>
-                          <option>39</option>
-                          <option>40</option>
-                          <option>41</option>
-                          <option>42</option>
-                          <option>43</option>
-                          <option>44</option>
-                          <option>45</option>
-                          <option>46</option>
-                          <option>47</option>
-                          <option>48</option>
-                          <option>49</option>
-                          <option>50</option>
-                          <option>51</option>
-                          <option>52</option>
-                          <option>53</option>
-                          <option>54</option>
-                          <option>55</option>
-                          <option>56</option>
-                          <option>57</option>
-                          <option>58</option>
-                          <option>59</option>
-                          <option>60</option>
-                          <option>61</option>
-                          <option>62</option>
-                          <option>63</option>
-                          <option>64</option>
-                          <option>65</option>
-                          <option>66</option>
-                          <option>67</option>
-                          <option>68</option>
-                          <option>69</option>
-                          <option>70</option>
-                          <option>71</option>
-                          <option>72</option>
-                          <option>73</option>
-                          <option>74</option>
-                          <option>75</option>
-                          <option>76</option>
-                          <option>77</option>
-                          <option>78</option>
-                          <option>79</option>
-                          <option>80</option>
-                          <option>81</option>
-                          <option>82</option>
-                          <option>83</option>
-                          <option>84</option>
-                          <option>85</option>
-                          <option>86</option>
-                          <option>87</option>
-                          <option>88</option>
-                          <option>89</option>
-                          <option>90</option>
-                          <option>91</option>
-                          <option>92</option>
-                          <option>93</option>
-                          <option>94</option>
-                          <option>95</option>
-                          <option>96</option>
-                          <option>97</option>
-                          <option>98</option>
-                          <option>99</option>
-                        </optgroup> 
-                      </select></td>
-                      <td></td>
-
-                      <th scope="row">Guts</th>
-                      <td>:</td>
-                      <td id="guts">0</td>
-                      <td id="bonus-guts"></td>
-                  </tr>
-                  <tr>
-                      <th scope="row">Attack</th>
-                      <td>:</td>
-                      <td id="attack">0</td>
-                      <td id="bonus-attack"></td>
-
-                      <th scope="row">Vitality</th>
-                      <td>:</td>
-                      <td id="vitality">0</td>
-                      <td id="bonus-vitality"></td>
-                  </tr>
-                  <tr>
-                      <th scope="row">Defense</th>
-                      <td>:</td>
-                      <td id="defense">0</td>
-                      <td id="bonus-defense"></td>
-                      
-
-                      <th scope="row">IQ</th>
-                      <td>:</td>
-                      <td id="iq">0</td>
-                      <td id="bonus-iq"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Speed</th>
-                    <td>:</td>
-                    <td id="speed">0</td>
-                    <td id="bonus-speed"></td>
-
-                    <th scope="row">Luck</th>
-                    <td>:</td>
-                    <td id="luck">0</td>
-                    <td id="bonus-luck"></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">Error rate</th>
-                    <td>:</td>
-                    <td id="errorrate">0</td>
-                    <td id="bonus-errorrate"></td>
-
-                    <th scope="row"></th>
-                    <td>
-                    </td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">HP</th>
-                    <td>:</td>
-                    <td id="hp">0</td>
-                    <td id="bonus-hp"></td>
-
-                    <th scope="row">PP</th>
-                    <td>:</td>
-                    <td id="pp">0</td>
-                    <td id="bonus-pp"></td>
-                  </tr>
+                <tr>
+                  <th scope="row">Weapon</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-weapon">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowW" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="weapon">
+                      <optgroup label="Choose weapon:">
+                        <option>(Nothing)</option>
+                      </optgroup>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Body</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-body">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowB" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="bodyEquip">
+                      <optgroup label="Choose Body Equipment:">
+                        <option>(Nothing)</option>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Arms</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-arms">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowA" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="armsEquip">
+                      <optgroup label="Choose Arms Equipment:">
+                        <option>(Nothing)</option>
+                      </optgroup>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Other</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-other">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowO" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="otherEquip">
+                      <optgroup label="Choose other Equipment:">
+                        <option>(Nothing)</option>
+                      </optgroup>
+                  </td>
+                </tr>
               </tbody>
-          </table>
+            </table>
           </div>
+        </div>
+        <div class="row" width="100%">
+          <table class="table tableStats">
+            <tbody>
+              <tr>
+                <th scope="row">Level</th>
+                <td>:</td>
+                <td class="levelChoice"><select id="level">
+                    <optgroup label="Choose level:" id="levelSelect">
+                    </optgroup>
+                  </select></td>
+                <td></td>
+                <th scope="row">Guts</th>
+                <td>:</td>
+                <td id="guts">0</td>
+                <td id="bonus-guts"></td>
+              </tr>
+              <tr>
+                <th scope="row">Attack</th>
+                <td>:</td>
+                <td id="attack">0</td>
+                <td id="bonus-attack"></td>
+                <th scope="row">Vitality</th>
+                <td>:</td>
+                <td id="vitality">0</td>
+                <td id="bonus-vitality"></td>
+              </tr>
+              <tr>
+                <th scope="row">Defense</th>
+                <td>:</td>
+                <td id="defense">0</td>
+                <td id="bonus-defense"></td>
+                <th scope="row">IQ</th>
+                <td>:</td>
+                <td id="iq">0</td>
+                <td id="bonus-iq"></td>
+              </tr>
+              <tr>
+                <th scope="row">Speed</th>
+                <td>:</td>
+                <td id="speed">0</td>
+                <td id="bonus-speed"></td>
+                <th scope="row">Luck</th>
+                <td>:</td>
+                <td id="luck">0</td>
+                <td id="bonus-luck"></td>
+              </tr>
+              <tr>
+                <th scope="row">Error rate</th>
+                <td>:</td>
+                <td id="errorrate">0</td>
+                <td id="bonus-errorrate"></td>
+                <th scope="row"></th>
+                <td>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">HP</th>
+                <td>:</td>
+                <td id="hp">0</td>
+                <td id="bonus-hp"></td>
+                <th scope="row">PP</th>
+                <td>:</td>
+                <td id="pp">0</td>
+                <td id="bonus-pp"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-
     </div>
-  
-  <div class="toast-container position-absolute p-3 bottom-0 end-0">
-    <div class="toast bg-dark text-white" id="surveyToast">
-      <div class="toast-header bg-dark">
-        <strong class="me-auto">Info</strong>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-      <div class="toast-body">
-        Hey! Would you help us improve this website by taking a short usability survey?<br>We won't ask for your
-        personal data, we promise!
+    <div class="toast-container position-absolute p-3 bottom-0 end-0">
+      <div class="toast bg-dark text-white" id="surveyToast">
+        <div class="toast-header bg-dark">
+          <strong class="me-auto">Info</strong>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hey! Would you help us improve this website by taking a short usability survey?<br>We won't ask for your
+          personal data, we promise!
+        </div>
       </div>
     </div>
-  </div>
 </body>
 
 </html>
