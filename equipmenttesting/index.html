@@ -114,7 +114,7 @@
                         <th scope="row">Weapon</th>
                         <td>:</td>
                         <td><img  src="../assets/equip.png" class="eqArrow" ></td>
-                        <td id="equipped-weapon">(Nothing)</td>
+                        <td id="equipped-weapon" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
                         <td><img onclick="equip(this.id)" id="arrowW" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
                         <td class="levelChoice"><select id="weapon">
                           <optgroup label="Choose weapon:"> 
@@ -126,7 +126,7 @@
                         <th scope="row">Body</th>
                         <td>:</td>
                         <td><img src="../assets/equip.png" class="eqArrow"></td>
-                        <td id="equipped-body">(Nothing)</td>
+                        <td id="equipped-body" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
                         <td><img  onclick="equip(this.id)" id="arrowB" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
                         <td class="levelChoice"><select id="bodyEquip">
                           <optgroup label="Choose Body Equipment:"> 
@@ -137,7 +137,7 @@
                         <th scope="row">Arms</th>
                         <td>:</td>
                         <td><img src="../assets/equip.png" class="eqArrow"></td>
-                        <td id="equipped-arms">(Nothing)</td>
+                        <td id="equipped-arms" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
                         <td><img onclick="equip(this.id)" id="arrowA" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
                         <td class="levelChoice"><select id="armsEquip">
                           <optgroup label="Choose Arms Equipment:"> 
@@ -149,7 +149,7 @@
                       <th scope="row">Other</th>
                       <td>:</td>
                       <td><img src="../assets/equip.png" class="eqArrow"></td>
-                      <td id="equipped-other">(Nothing)</td>
+                      <td id="equipped-other" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
                       <td><img onclick="equip(this.id)" id="arrowO" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
                       <td class="levelChoice"><select id="otherEquip">
                         <optgroup label="Choose other Equipment:"> 

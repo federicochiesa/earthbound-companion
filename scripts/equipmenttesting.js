@@ -506,3 +506,9 @@ function applyMagicantBonus(){
 String.prototype.replaceAt = function(index, replacement) {
     return this.substring(0, index) + replacement + this.substring(index + replacement.length);
 }
+
+function searchItem(id){
+    let item = document.getElementById(id);
+    if(item.innerText.toUpperCase() != "(NOTHING)")
+        window.location.href = "../wiki/items/?item="+ nameToImage(item.innerText.toLowerCase());
+}

@@ -161,13 +161,16 @@ window.onload = async function () {
             list.appendChild(newEntry);
         }
     }
+
+    setTimeout(function(){
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const idToScroll = urlParams.get("item");
-    const yOffset = -100;
     if (idToScroll != null) {
         const element = document.getElementById(idToScroll);
-        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y });
+        const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
+        console.log(element.getBoundingClientRect().top)
+        window.scrollTo({ top: y});
     }
+}, 50);
 }
