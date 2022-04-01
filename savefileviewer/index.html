@@ -80,20 +80,24 @@
       <div class="drop-zone" id="fileUploader">
       </div>
     </div>
+    <div class="row">
+      <div id="emptyFileWarning">
+      </div>
+    </div>
     <!--TODO: add status bar for when save file is loaded-->
     <div class="row caput" style="margin-top: 20px; column-gap: 5%;">
-        <div class="col-sm-4 tableStats" style="text-align: center; margin: 0 !important; width: 20%;">
-          <div style="font-size: 30px; cursor: pointer;">
+        <div class="col-sm-4 tableStats saveFileSelector" style="text-align: center; margin: 0 !important; width: 20%;" id="savec0">
+          <div style="font-size: 30px; cursor: pointer;" onclick="selectSave(this.id)" id="save0">
             SAVE FILE 1
           </div>
         </div>
-        <div class="col-sm-4 tableStats" style="text-align: center; margin: 0 !important;  width: 20%;">
-          <div style="font-size: 30px; cursor: pointer; opacity: 0.3;">
+        <div class="col-sm-4 tableStats saveFileSelector" style="text-align: center; margin: 0 !important;  width: 20%;" id="savec1">
+          <div style="font-size: 30px; cursor: pointer; opacity: 0.3;" onclick="selectSave(this.id)" id="save1">
             SAVE FILE 2
           </div>
         </div>
-        <div class="col-sm-4 tableStats" style="text-align: center; margin: 0 !important;  width: 20%;">
-          <div  style="font-size: 30px; cursor: pointer; opacity: 0.3;">
+        <div class="col-sm-4 tableStats saveFileSelector" style="text-align: center; margin: 0 !important;  width: 20%;" id="savec2">
+          <div  style="font-size: 30px; cursor: pointer; opacity: 0.3;" onclick="selectSave(this.id)" id="save2">
             SAVE FILE 3
           </div>
         </div>

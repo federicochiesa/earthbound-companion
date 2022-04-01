@@ -613,3 +613,7 @@ select optgroup {
 .titleContainer{
     display: none;
 }
+
+.saveFileSelector{
+    display: none;
+}
