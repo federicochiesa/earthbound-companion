@@ -266,7 +266,7 @@ class GameSave {
         }
         document.getElementById("escargo").style.display = "block";
         document.getElementById("generalInfo").style.display = "block";
-        for (let i = 0; i < 12; i++) {
+        for (let i = 0; i < this.escargoItems.length; i++) {
             document.getElementById("esc" + i).innerText = this.escargoItems[i]
         }
     }
@@ -301,6 +301,9 @@ class GameSave {
             document.getElementById("c" + j + "errorRate").innerText = "";
         }
         document.getElementById("escargo").style.display = "none";
+        for(let i = 0; i < 35; i++){
+            document.getElementById("esc" + i).innerText = "(Nothing)"
+        }
         document.getElementById("generalInfo").style.display = "none";
     }
 }

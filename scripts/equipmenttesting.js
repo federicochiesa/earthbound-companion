@@ -10,7 +10,6 @@ window.onload = async function () {
         magiSwitch.disabled = false;
         magiSwitch.checked = false;
     } 
-
     
     updateWeapons(name, items);
     updateBodyEquipments(name, items);
