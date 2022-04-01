@@ -2,11 +2,9 @@ Element.prototype.remove = function () {
     this.parentElement.removeChild(this);
 }
 NodeList.prototype.remove = HTMLCollection.prototype.remove = function () {
-    for (var i = this.length - 1; i >= 0; i--) {
-        if (this[i] && this[i].parentElement) {
+    for (var i = this.length - 1; i >= 0; i--) 
+        if (this[i] && this[i].parentElement) 
             this[i].parentElement.removeChild(this[i]);
-        }
-    }
 }
 
 var saves = [];
@@ -120,24 +118,22 @@ function updateThumbnail(dropZoneElement, file) {
         if (evt.target.readyState == FileReader.DONE) {
             var arrayBuffer = evt.target.result,
                 array = new Uint8Array(arrayBuffer);
-            for (var i = 0; i < array.length; i++) {
+            for (var i = 0; i < array.length; i++) 
                 fileByteArray.push(array[i]);
-            }
         }
         for (var i = 0; i < 3; i++) {
             let dataStart = i * hexToDec("A00");
             saves[i] = new GameSave(fileByteArray.slice(dataStart, dataStart + hexToDec("500")));
         }
-        saves[0].displayData(); //TODO: implement different slots
+        saves[0].displayData();
     }
 }
 
 function selectSave(id){
     saves[0].resetData();
     saves[parseInt(id[4])].displayData();
-    for(let i = 0; i < 3; i++){
+    for(let i = 0; i < 3; i++)
         document.getElementById("save" + i).style.opacity = 0.3;
-    }
     document.getElementById(id).style.opacity = 1;
 }
 
@@ -147,11 +143,11 @@ async function initThumbnail() {
         <input type=\"file\" id=\"fileToUpload\" name=\"myFile\" class=\"drop-zone__input\">";
     document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
         const dropZoneElement = inputElement.closest(".drop-zone");
-        dropZoneElement.addEventListener("click", (e) => {
+        dropZoneElement.addEventListener("click", (_) => {
             inputElement.click();
         });
 
-        inputElement.addEventListener("change", (e) => {
+        inputElement.addEventListener("change", (_) => {
             if (inputElement.files.length) {
                 updateThumbnail(dropZoneElement, inputElement.files[0]);
             }
@@ -163,7 +159,7 @@ async function initThumbnail() {
         });
 
         ["dragleave", "dragend"].forEach((type) => {
-            dropZoneElement.addEventListener(type, (e) => {
+            dropZoneElement.addEventListener(type, (_) => {
                 dropZoneElement.classList.remove("drop-zone--over");
             });
         });
@@ -227,11 +223,9 @@ class GameSave {
         }
 
         var flagCounter = 0;
-        for (i = 0; i < 205; i++) {
-            for (j = 0; j < 8; j++) {
+        for (i = 0; i < 205; i++) 
+            for (j = 0; j < 8; j++) 
                 this.flags[flagCounter++] = ((data[i + hexToDec("433")] & (1 << j)) == 0) ? false : true;
-            }
-        }
 
         for (i = 0; i < 36; i++)
             this.escargoItems[i] = itemsLUT[data[i + hexToDec("76")]];
@@ -243,6 +237,9 @@ class GameSave {
         if(this.inGameTimer == 0){
             document.getElementById("emptyFileWarning").style.display = "block";
             return
+        }
+        else{
+            document.getElementById("emptyFileWarning").style.display = "none";
         }
         let items = await getData("items");
         document.getElementById("handMoneyValue").innerText = this.moneyHand + "$";
@@ -264,27 +261,23 @@ class GameSave {
             let inventory = this.characters[j].items;
             for (let i = 0; i < inventory.length; i++)
                 document.getElementById("c" + j + "i" + i).innerText = inventory[i];
-            let stats = this.characters[j].statsAfter;
-            for (let i = 0; i < stats.length; i++) {
+            let stats = this.characters[j].stats;
+            for (let i = 0; i < stats.length; i++) 
                 document.getElementById("c" + j + "stat" + i).innerText = stats[i];
-            }
             document.getElementById("c" + j + "level").innerText = this.characters[j].level;
             document.getElementById("c" + j + "xp").innerText = this.characters[j].exp;
             document.getElementById("c" + j + "hp").innerText = this.characters[j].currHP;
             document.getElementById("c" + j + "pp").innerText = this.characters[j].currPP;
             var weapons = items[Object.keys(items)[0]]
-            for (let i = 0; i < weapons.length; i++) {
-                if (weapons[i].name.toUpperCase() == this.characters[j].equip[0].toUpperCase()) {
+            for (let i = 0; i < weapons.length; i++) 
+                if (weapons[i].name.toUpperCase() == this.characters[j].equip[0].toUpperCase()) 
                     document.getElementById("c" + j + "errorRate").innerText = weapons[i].data["Error rate"];
-                }
-            }
             document.getElementById("c" + j).style.display = "block";
         }
         document.getElementById("escargo").style.display = "block";
         document.getElementById("generalInfo").style.display = "block";
-        for(let i = 0; i < this.escargoItems.length - 1; i++) {
+        for(let i = 0; i < this.escargoItems.length - 1; i++) 
             document.getElementById("esc" + i).innerText = this.escargoItems[i]
-        }
     }
 
     resetData() {
@@ -306,10 +299,9 @@ class GameSave {
             let inventory = this.characters[j].items;
             for (let i = 0; i < inventory.length; i++)
                 document.getElementById("c" + j + "i" + i).innerText = "";
-            let stats = this.characters[j].statsAfter;
-            for (let i = 0; i < stats.length; i++) {
-                document.getElementById("c" + j + "stat" + i).innerText = "";
-            }
+            let stats = this.characters[j].stats;
+            for (let i = 0; i < stats.length; i++)
+                document.getElementById("c" + j + "stat" + i).innerText = ""
             document.getElementById("c" + j + "level").innerText = "";
             document.getElementById("c" + j + "xp").innerText = "";
             document.getElementById("c" + j + "hp").innerText = "";
@@ -317,9 +309,8 @@ class GameSave {
             document.getElementById("c" + j + "errorRate").innerText = "";
         }
         document.getElementById("escargo").style.display = "none";
-        for(let i = 0; i < this.escargoItems.length - 1; i++){
+        for(let i = 0; i < this.escargoItems.length - 1; i++)
             document.getElementById("esc" + i).innerText = "(Nothing)"
-        }
         document.getElementById("generalInfo").style.display = "none";
         for(let i = 0; i < 3; i++)
             document.getElementById("savec" + i).style.display = "none";
@@ -347,22 +338,17 @@ class PartyMember {
 
         for (i = 0; i < 4; i++) {
             let index = data[i + 49];
-            if (index != 0) {
+            if (index != 0) 
                 this.equip.push(this.items[index - 1]);
-            }
             else this.equip.push("(Nothing)");
         }
 
         this.currHP = (data[70] << 8) + data[69];
         this.currPP = (data[76] << 8) + data[75];
 
-        //statsBefore are the ones without counting equipment, statsAfter are the ones with the equipment
-        this.statsBefore = [];
-        this.statsAfter = [];
-        for (i = 0; i < 7; i++) {
-            this.statsAfter.push(data[21 + i]);
-            this.statsBefore.push(data[28 + i]);
-        }
+        this.stats = [];
+        for (i = 0; i < 7; i++) 
+            this.stats.push(data[21 + i]);
     }
 }
 

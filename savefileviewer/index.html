@@ -80,11 +80,6 @@
       <div class="drop-zone" id="fileUploader">
       </div>
     </div>
-    <div class="row">
-      <div id="emptyFileWarning">
-      </div>
-    </div>
-    <!--TODO: add status bar for when save file is loaded-->
     <div class="row caput" style="margin-top: 20px; column-gap: 5%;">
         <div class="col-sm-4 tableStats saveFileSelector" style="text-align: center; margin: 0 !important; width: 20%;" id="savec0">
           <div style="font-size: 30px; cursor: pointer;" onclick="selectSave(this.id)" id="save0">
@@ -101,6 +96,11 @@
             SAVE FILE 3
           </div>
         </div>
+    </div>
+    <div class="row">
+      <div id="emptyFileWarning" style="display: none;" class="text-white">
+        <div class="drop-zone__thumb" style="text-align:center;line-height:70px;width:100%;height:70px;font-size:40px;">This save file is empty</div>
+      </div>
     </div>
     <div class="row tableStats caput titleContainer" style="margin-top: 20px;" id="generalInfo">
       <h1 class="titleInBorder"><span class="titleSpan">General info</span></h1>
