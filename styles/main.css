@@ -7,9 +7,7 @@
     font-family: "statusplz";
     src: url("../fonts/statusplz.woff");
 }
-
-
-
+/* General tags */
 body {
     font-family: "appleKid" !important;
     image-rendering: pixelated;
@@ -19,7 +17,9 @@ body {
     background-color: #050d13;
 }
 
-nav, #mapSelector, iframe{
+nav,
+#mapSelector,
+iframe {
     background-color: #1a1a1a !important;
     border-style: solid;
     border-width: 20px;
@@ -27,11 +27,12 @@ nav, #mapSelector, iframe{
     border-radius: 25px;
 }
 
-.navbar-brand {
+.navbar-brand, h3 {
     font-size: 2.5rem;
 }
 
-.nav-link, .dropdown-item {
+.nav-link,
+.dropdown-item {
     font-size: 1.5rem
 }
 
@@ -39,73 +40,51 @@ h1 {
     font-size: 4rem;
 }
 
-h3 {
-    font-size: 2.5rem;
+td,
+th {
+    font-size: 1.75rem;
 }
 
-.description, .modal-body {
+.description,
+.modal-body {
     font-size: 1.5rem;
     line-height: 125%;
 }
 
-td, th {
-    font-size: 1.75rem;
-}
-
 table {
-    border-collapse:separate;
-    border:solid black 1px;
-    border-radius:6px;
+    border-collapse: separate;
+    border: solid black 1px;
+    border-radius: 6px;
     align-items: center;
-
 }
 
-.img-heroY{
+.img-heroY {
     height: 50px;
     padding-right: 15px;
 }
 
-.img-heroN{
+.img-heroN {
     height: 50px;
     padding-right: 15px;
     opacity: 30%;
 }
 
-.img-button{
+.img-button {
     margin-top: 5px;
     min-height: 40px;
     height: 50px;
 }
 
-.modal-title{
+.modal-title {
     font-size: 2.5rem;
     line-height: 80%;
 }
 
-.col-lg-2{
+.col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.col-lg-5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-lg-4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-lg-3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .img-item {
     min-height: 100px;
@@ -117,46 +96,45 @@ table {
         min-height: 100px;
         max-height: 136px;
     }
-    .shop-image{
-        height: 100px;
-        padding:10px 10px 10px 10px;
-    }
 
-    
+    .shop-image {
+        height: 100px;
+        padding: 10px 10px 10px 10px;
+    }
 }
 
-
-@media (min-width: 991px) and (max-width: 1400px){
-    .shop-image{
+@media (min-width: 991px) and (max-width: 1400px) {
+    .shop-image {
         height: 85px;
         padding: 10px 10px 10px 10px;
     }
-    
+
 }
-@media (min-width: 578px) and (max-width: 990px){
-    .shop-image{
+
+@media (min-width: 578px) and (max-width: 990px) {
+    .shop-image {
         height: 120px;
         padding: 10px 10px 10px 10px;
     }
-
 }
 
-@media (min-width: 990px) and (max-width: 1200px){
-    .selected-div{
+@media (min-width: 990px) and (max-width: 1200px) {
+    .selected-div {
         margin-top: 30px;
     }
 
-    .select-hero{
+    .select-hero {
         padding: 5px !important;
     }
 }
 
-@media (max-width: 990px){
-    .eqTestDiv{
+@media (max-width: 990px) {
+    .eqTestDiv {
         display: flex;
         flex-direction: column;
     }
-    .select-list{
+
+    .select-list {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -164,26 +142,26 @@ table {
         column-gap: 10px;
     }
 
-    .selected-display{
+    .selected-display {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         column-gap: 10px;
 
-        flex: auto ;
-        margin: auto ;
+        flex: auto;
+        margin: auto;
     }
 
-    .tableEquip{
+    .tableEquip {
         margin: 0;
     }
 
-    .tableStats{
+    .tableStats {
         margin: 0;
     }
 
-    .select-div{
+    .select-div {
         background-color: #1a1a1a !important;
         border-style: solid;
         border-width: 15px;
@@ -193,21 +171,21 @@ table {
         width: 100% !important;
     }
 
-    .selected-hero{
+    .selected-hero {
         width: 300px !important;
     }
 
-    .select-hero{
-        width: 40px !important; 
+    .select-hero {
+        width: 40px !important;
         padding: 3px !important;
-        
+
     }
 
-    .eqTestDiv > * {
+    .eqTestDiv>* {
         width: auto !important;
     }
 
-    .tables-div{
+    .tables-div {
         margin-top: 10px;
         margin-bottom: 10px;
         display: flex;
@@ -218,7 +196,8 @@ table {
 
     }
 
-    .tableEquip, .tableStats{
+    .tableEquip,
+    .tableStats {
         margin: auto !important;
     }
 }
@@ -228,12 +207,13 @@ table {
         min-height: 80px;
         max-height: 90px;
     }
-    .img-button{
+
+    .img-button {
         margin-top: 5px;
         min-height: 40px;
         height: 45px;
     }
-    
+
 }
 
 @media (max-width:1200px) {
@@ -241,7 +221,8 @@ table {
         min-height: 70px;
         max-height: 80px;
     }
-    .img-button{
+
+    .img-button {
         margin-top: 5px;
         min-height: 40px;
         height: 40px;
@@ -254,56 +235,57 @@ table {
         max-height: 150px;
     }
 
-    .col-lg-1{
+    .col-lg-1 {
         padding-bottom: 10px;
         column-gap: 5ch;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .col-lg-2{
+
+    .col-lg-2 {
         padding-top: 10px;
     }
 
-    .icons{
+    .icons {
         column-gap: 2ch;
         margin-top: -20px;
         margin-bottom: 20px;
     }
 
-    .mini{
+    .mini {
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: 2ch;
     }
-    
 }
 
 @media (max-width:577px) {
-    nav.m-3{
+    nav.m-3 {
         width: 100%;
         margin: 0 !important;
     }
 
-    .shop-image{
+    .shop-image {
         width: 200px;
-        padding:10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
     }
-    .col{
+
+    .col {
         margin: 0 !important;
     }
 
 }
 
-.table{
+.table {
     margin-bottom: 0 !important;
     max-width: 600px;
     max-height: 200px;
 }
 
-
-.mb-4, .mb-5{
+.mb-4,
+.mb-5 {
     background-color: #1a1a1a;
     border-radius: 25px;
     border-style: solid;
@@ -312,160 +294,139 @@ table {
     row-gap: 5ch;
 }
 
-
-.cg{
+.cg, .icons {
     column-gap: 2ch;
 }
 
-.col-lg-6{
+.col-lg-6 {
     padding: 0 5px 0 5px;
 }
 
-.caput{
+.centering {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.icons{
-    column-gap: 2ch;
-}
-.list-group > a{
+.list-group>a {
     font-size: 1.5rem;
 }
 
-iframe{
-    padding:0 !important;
+iframe {
+    padding: 0 !important;
 }
 
-ul{ 
+ul {
     list-style-type: none;
-    padding:0!important;
+    padding: 0 !important;
     font-size: 1.5rem;
 }
 
-a{
-    text-decoration: none!important;
+a {
+    text-decoration: none !important;
     color: white;
 }
 
-#mapSelector>li>a:hover{
-    color: white!important;
+#mapSelector>li>a:hover {
+    color: white !important;
 }
 
-#mapSelector>li{
+#mapSelector>li {
     margin-top: 15px;
 }
 
-.arrow{
+.arrow {
     margin-right: 5px;
     height: 0.7em;
 }
 
-.dropdown-item.active, .dropdown-item:active{
-    background-color: #1a1a1a!important;
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #1a1a1a !important;
 }
 
-.select-hero{
-    width:100%;
+.select-hero {
+    width: 100%;
     padding: 10px;
-    
 }
 
-.select-div{
-
-    width:50%;
+.select-div {
+    width: 50%;
     background-color: #1a1a1a !important;
     border-style: solid;
     border-width: 15px;
     border-image: url(../assets/border.png) 480 round;
     border-radius: 25px;
-
     margin: 20px auto 20px auto;
-    display:block;
+    display: block;
 }
 
-.select-list{
+.select-list {
     margin: auto;
 }
 
-
-.selected-hero{
-    width:100%;
+.selected-hero {
+    width: 100%;
     padding: 10% 20% 5% 20%;
-    
 }
 
-.nameText{
-    width:100%;
+.nameText {
+    width: 100%;
     text-align: center;
 }
 
-.alooora{
+#character {
     margin-bottom: 0 !important;
 }
 
-.col-sm-4{
+.col-sm-4 {
     padding-left: 0;
     padding-right: 0;
 }
 
-.col-sm-2{
+.col-sm-2 {
     padding-right: 0;
 }
 
-.tableEquip{
+.tableEquip {
     margin: 3% 2% 3% 2%;
     background-color: #1a1a1a !important;
     border-style: solid;
     border-width: 15px;
     border-image: url(../assets/border.png) 480 round;
-    border-radius: 25px;  
-
-    color: white;
-}
-
-.tableStats{
-    margin: 5% 4% 5% 4%;
-    background-color: #1a1a1a !important;
-    border-style: solid;
-    border-width: 20px;
-    border-image: url(../assets/border.png) 480 round;
-    border-radius: 25px;  
-
+    border-radius: 25px;
     color: white;
 }
 
 .table > :not(caption) > * > * {
     border-bottom-width: 0px !important;
-  }
+}
 
-.eqArrow{
+.eqArrow {
     height: 0.5em;
 }
 
-.selected-div{
-    width:100%;
+.selected-div {
+    width: 100%;
     background-color: #1a1a1a !important;
     border-style: solid;
     border-width: 15px;
     border-image: url(../assets/border.png) 480 round;
     border-radius: 25px;
-    display:block;
+    display: block;
 }
 
-.levelChoice{
+.levelChoice {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
     padding-left: 4px !important;
-
 }
 
 select {
     word-wrap: normal;
     background-color: transparent;
     border: none;
-    color:white;
+    color: white;
     size: 5 !important;
     --form-select-font-family: "appleKid" !important;
     width: 100%;
@@ -475,19 +436,18 @@ select:focus {
     border-color: #1a1a1a;
     color: white;
     background-color: #1a1a1a;
-    
 }
 
-select option:hover{
+select option:hover {
     background-color: grey;
 }
 
-select optgroup option{
+select optgroup option {
     width: 20px !important;
 }
-  
+
 select optgroup {
-    font-size:15px; 
+    font-size: 15px;
     width: 10px !important;
     font-family: "appleKid" !important;
     image-rendering: pixelated !important;
@@ -508,30 +468,26 @@ select optgroup {
     border: 20px dashed #f0f0f0;
     border-image: url(../assets/border-dashed.png) 480 round;
     border-radius: 20px;
-  }
-  
-  .drop-zone--over {
+}
+
+.drop-zone--over {
     border-image: url(../assets/border.png) 480 round;
     background-color: #1a1a1a;
     background-size: cover;
-  }
-  
-  .drop-zone__input {
-    display: none;
-  }
-  
-  .drop-zone__thumb {
+}
+
+.drop-zone__thumb {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    
     position: relative;
-  }
+}
 
-  #homeImg{
-      margin-bottom: 50px;
-  }
-.form-check{
+#homeImg {
+    margin-bottom: 50px;
+}
+
+.form-check {
     height: 10px;
 }
 
@@ -541,6 +497,7 @@ select optgroup {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
 }
+
 .form-switch .form-check-input:checked {
     background-color: #7357ed;
     border-color: #7357ed;
@@ -551,6 +508,7 @@ select optgroup {
 .earthbound-image-div {
     position: relative;
 }
+
 .earthbound-image-div span {
     color: white;
     position: absolute;
@@ -559,9 +517,7 @@ select optgroup {
     font-size: large;
 }
 
-
-
-.titleInBorder{
+.titleInBorder {
     text-align: left;
     margin-top: -15px;
     height: 20px;
@@ -570,50 +526,46 @@ select optgroup {
     font-family: "statusplz" !important;
 }
 
-.titleInBorder2{
-    text-align: left;
-    margin-top: -15px;
-    height: 20px;
-    line-height: 20px;
-    font-size: 15px;
-    font-family: "statusplz" !important;
-}
-
-
-.titleSpan{
+.titleSpan {
     background-color: #1a1a1a;
     padding-left: 5px;
     padding-right: 3px;
     padding-top: 2px;
 }
 
-.tableInfo{
+.tableInfo {
     border-width: 0px !important;
     max-width: 100% !important;
 }
 
-.tableInventory td{
+.tableInventory td {
     font-size: 20px;
 }
 
-.tableInventory{
+.tableInventory {
     width: 80% !important;
 }
 
-.tableStats2{
+.tableStats2 {
+    margin: 5% 4% 5% 4%;
+    background-color: #1a1a1a !important;
+    border: solid 2px white;
+    border-radius: 25px;
+    color: white;
+}
+
+.tableStats {
     margin: 5% 4% 5% 4%;
     background-color: #1a1a1a !important;
     border-style: solid;
-    border-width: 2px;
-    border-color: white;
-    border-radius: 25px;  
-
+    border-width: 20px;
+    border-image: url(../assets/border.png) 480 round;
+    border-radius: 25px;
     color: white;
 }
-.titleContainer{
-    display: none;
-}
 
-.saveFileSelector{
+.titleContainer,
+.saveFileSelector,
+.drop-zone__input {
     display: none;
 }

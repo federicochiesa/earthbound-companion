@@ -1,4 +1,10 @@
 window.onload = async function () {
+    let optionGroup = document.getElementById("levelSelect");
+    for(let i = 0; i < 99; i++){
+        let option = document.createElement("option");
+        option.innerText = i+1;
+        optionGroup.appendChild(option);
+    }
     let data = await getData("stats");
     let items = await getData("items");
     let name = document.getElementById("character");
@@ -18,28 +24,28 @@ window.onload = async function () {
     updateStats(name, data)
 
     const selectLevel = document.querySelector('#level');
-    selectLevel.addEventListener('change', (event) => {
+    selectLevel.addEventListener('change', (_) => {
         updateStats(name, data)
         equip("all");
     });
 
     const selectWeapon = document.querySelector('#weapon');
-    selectWeapon.addEventListener('change', (event) => {
+    selectWeapon.addEventListener('change', (_) => {
         updateEquipmentStats(items);
     });
 
     const selectBody = document.querySelector('#bodyEquip');
-    selectBody.addEventListener('change', (event) => {
+    selectBody.addEventListener('change', (_) => {
         updateEquipmentStats(items);
     });
 
     const selectArms = document.querySelector('#armsEquip');
-    selectArms.addEventListener('change', (event) => {
+    selectArms.addEventListener('change', (_) => {
         updateEquipmentStats(items);
     });
 
     const selectOther = document.querySelector('#otherEquip');
-    selectOther.addEventListener('change', (event) => {
+    selectOther.addEventListener('change', (_) => {
         updateEquipmentStats(items);
     });
 }
@@ -111,14 +117,13 @@ async function updateStats(name, data) {
 
 async function updateWeapons(name, items) {
     let weaponSel = document.getElementById("weapon");
-    var weaponString = "<optgroup label=\"Choose weapon:\">\
-                            <option>(Nothing)</option>\ ";
+    var weaponString = "<optgroup label=\"Choose weapon:\"><option>(Nothing)</option>\ ";
     var weapons = items[Object.keys(items)[0]]
     for (let i = 0; i < weapons.length; i++) {
         element = weapons[i];
-        if (typeof (element.data["Description"]) == "undefined") {
+        if (typeof (element.data["Description"]) == "undefined") 
             weaponString += "<option>" + element.name + "</option>\ ";
-        } else {
+        else {
             if (element.data["Description"].search(/ness/i) > -1) var ness = "Y";
             else if (element.name.search(/bat/i) > -1 && element.name.search(/combat/i) < 0) var ness = "Y";
             else var ness = "N";
@@ -129,9 +134,7 @@ async function updateWeapons(name, items) {
             else var jeff = "N";
             if (element.data["Description"].search(/poo/i) > -1) var poo = "Y";
             else var poo = "N";
-            if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
-                weaponString += "<option>" + element.name + "</option>\ ";
-            }
+            if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") weaponString += "<option>" + element.name + "</option>\ ";
             if (name.innerText == "NESS" && ness == "Y") weaponString += "<option>" + element.name + "</option>\ ";
             else if (name.innerText == "PAULA" && paula == "Y") weaponString += "<option>" + element.name + "</option>\ ";
             else if (name.innerText == "JEFF" && jeff == "Y") weaponString += "<option>" + element.name + "</option>\ ";
@@ -143,15 +146,14 @@ async function updateWeapons(name, items) {
 }
 async function updateBodyEquipments(name, items) {
     let eqSel = document.getElementById("bodyEquip");
-    var eqString = "<optgroup label=\"Choose Body Equipment:\">\
-                            <option>(Nothing)</option>\ ";
+    var eqString = "<optgroup label=\"Choose Body Equipment:\"><option>(Nothing)</option>\ ";
     var eqs = items[Object.keys(items)[1]]
     for (let i = 0; i < eqs.length; i++) {
         element = eqs[i];
 
-        if (typeof (element.data["Description"]) == "undefined") {
+        if (typeof (element.data["Description"]) == "undefined")
             eqString += "<option>" + element.name + "</option>\ ";
-        } else {
+        else {
             if (element.data["Description"].search(/body/i) > -1) {
                 if (element.data["Description"].search(/ness/i) > -1) var ness = "Y";
                 else if (element.name.search(/bat/i) > -1) var ness = "Y";
@@ -163,32 +165,26 @@ async function updateBodyEquipments(name, items) {
                 else var jeff = "N";
                 if (element.data["Description"].search(/poo/i) > -1) var poo = "Y";
                 else var poo = "N";
-                if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
-                    eqString += "<option>" + element.name + "</option>\ ";
-                }
+                if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") eqString += "<option>" + element.name + "</option>\ ";
                 if (name.innerText == "NESS" && ness == "Y") eqString += "<option>" + element.name + "</option>\ ";
                 else if (name.innerText == "PAULA" && paula == "Y") eqString += "<option>" + element.name + "</option>\ ";
                 else if (name.innerText == "JEFF" && jeff == "Y") eqString += "<option>" + element.name + "</option>\ ";
                 else if (name.innerText == "POO" && poo == "Y") eqString += "<option>" + element.name + "</option>\ ";
             }
         }
-
     }
-
     eqString += "</optgroup>";
     eqSel.innerHTML = eqString;
 }
 async function updateArmsEquipments(name, items) {
     let eqSel = document.getElementById("armsEquip");
-    var eqString = "<optgroup label=\"Choose Arms Equipment:\">\
-                            <option>(Nothing)</option>\ ";
+    var eqString = "<optgroup label=\"Choose Arms Equipment:\"><option>(Nothing)</option>\ ";
     var eqs = items[Object.keys(items)[1]]
     for (let i = 0; i < eqs.length; i++) {
         element = eqs[i];
-
-        if (typeof (element.data["Description"]) == "undefined") {
+        if (typeof (element.data["Description"]) == "undefined") 
             eqString += "<option>" + element.name + "</option>\ ";
-        } else {
+        else {
             if (element.data["Description"].search(/arm/i) > -1) {
                 if (element.data["Description"].search(/ness/i) > -1) var ness = "Y";
                 else if (element.name.search(/bat/i) > -1) var ness = "Y";
@@ -200,9 +196,7 @@ async function updateArmsEquipments(name, items) {
                 else var jeff = "N";
                 if (element.data["Description"].search(/poo/i) > -1) var poo = "Y";
                 else var poo = "N";
-                if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
-                    eqString += "<option>" + element.name + "</option>\ ";
-                }
+                if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") eqString += "<option>" + element.name + "</option>\ ";
                 if (name.innerText == "NESS" && ness == "Y") eqString += "<option>" + element.name + "</option>\ ";
                 else if (name.innerText == "PAULA" && paula == "Y") eqString += "<option>" + element.name + "</option>\ ";
                 else if (name.innerText == "JEFF" && jeff == "Y") eqString += "<option>" + element.name + "</option>\ ";
@@ -215,15 +209,13 @@ async function updateArmsEquipments(name, items) {
 }
 async function updateOtherEquipments(name, items) {
     let eqSel = document.getElementById("otherEquip");
-    var eqString = "<optgroup label=\"Choose Other Equipment:\">\
-                            <option>(Nothing)</option>\ ";
+    var eqString = "<optgroup label=\"Choose Other Equipment:\"><option>(Nothing)</option>\ ";
     var eqs = items[Object.keys(items)[1]]
     for (let i = 0; i < eqs.length; i++) {
         element = eqs[i];
-
-        if (typeof (element.data["Description"]) == "undefined") {
+        if (typeof (element.data["Description"]) == "undefined") 
             eqString += "<option>" + element.name + "</option>\ ";
-        } else {
+        else {
             if (element.data["Description"].search(/arm/i) == -1 &&
                 element.data["Description"].search(/body/i) == -1) {
                 if (element.data["Description"].search(/ness/i) > -1) var ness = "Y";
@@ -236,9 +228,7 @@ async function updateOtherEquipments(name, items) {
                 else var jeff = "N";
                 if (element.data["Description"].search(/poo/i) > -1) var poo = "Y";
                 else var poo = "N";
-                if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") {
-                    eqString += "<option>" + element.name + "</option>\ ";
-                }
+                if (ness == "N" && paula == "N" && poo == "N" && jeff == "N") eqString += "<option>" + element.name + "</option>\ ";
                 if (name.innerText == "NESS" && ness == "Y") eqString += "<option>" + element.name + "</option>\ ";
                 else if (name.innerText == "PAULA" && paula == "Y") eqString += "<option>" + element.name + "</option>\ ";
                 else if (name.innerText == "JEFF" && jeff == "Y") eqString += "<option>" + element.name + "</option>\ ";
@@ -266,11 +256,8 @@ async function changeCharacter(clicked_id) {
     let hero = document.getElementsByClassName("selected-hero")
     let pics = document.getElementsByClassName("select-hero")
     let name = document.getElementById("character");
-
-
     if (getComputedStyle(document.getElementById(clicked_id)).opacity == 0.3) {
         name.innerText = clicked_id.toUpperCase()
-
         for (let j = 0; j < pics.length; j++) {
             if (pics[j].id != clicked_id)
                 pics[j].style.opacity = 0.3
@@ -305,7 +292,6 @@ async function changeCharacter(clicked_id) {
 
 async function equip(clicked_id){
     let items = await getData("items");
-
     switch(clicked_id){
         case "arrowW":
             w = document.getElementById("weapon");
@@ -330,8 +316,6 @@ async function equip(clicked_id){
         case "all":
             applyEquippedBonuses(items);
             break;
-
-            
     }
 }
 
@@ -428,7 +412,6 @@ function calcEquippedBonus(items){
             if(typeof(protections[i].data["Luck up"]) != "undefined") bonuses[4] += sign*parseInt(protections[i].data["Luck up"]);
         }
     }
-
     return bonuses;
 }
 
@@ -460,9 +443,8 @@ function applyAllBonuses(w, eqW, items){
     let er = document.getElementById("errorrate");
     stats = [atk, guts, def, speed, luck, er];
 
-    for(let i = 0; i< stats.length - 1; i++){
+    for(let i = 0; i< stats.length - 1; i++)
         if(equippedBonuses2[i] != equippedBonuses[i]) applyBonus(stats[i], equippedBonuses2[i] - equippedBonuses[i])
-    }
 
     stats[5].innerText = equippedBonuses2[5];
     updateEquipmentStats(items)
@@ -479,9 +461,8 @@ function applyEquippedBonuses(items){
     let er = document.getElementById("errorrate");
     stats = [atk, guts, def, speed, luck, er];
 
-    for(let i = 0; i< stats.length - 1; i++){
+    for(let i = 0; i< stats.length - 1; i++)
         if(equippedBonuses2[i] != equippedBonuses[i]) applyBonus(stats[i], equippedBonuses2[i] - equippedBonuses[i])
-    }
 
     stats[5].innerText = equippedBonuses2[5];
     updateEquipmentStats("", items)
@@ -497,10 +478,8 @@ function applyMagicantBonus(){
     applyBonus(document.getElementById("guts"), sign*15);
     applyBonus(document.getElementById("iq"), sign*15);
     applyBonus(document.getElementById("vitality"), sign*10);
-
     applyBonus(document.getElementById("hp"), sign*150);
     applyBonus(document.getElementById("pp"), sign*320);
-
 }
 
 String.prototype.replaceAt = function(index, replacement) {
