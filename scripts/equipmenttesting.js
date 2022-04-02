@@ -1,4 +1,5 @@
 window.onload = async function () {
+    showSurveyToast();
     let optionGroup = document.getElementById("levelSelect");
     for(let i = 0; i < 99; i++){
         let option = document.createElement("option");

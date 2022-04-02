@@ -114,63 +114,67 @@
             </label>
           </div>
         </div>
-          <div class="row" width="100%">
-            <div class="col-sm-12">
-              <table class="table tableEquip">
-                <tbody>
-                    <tr>
-                        <th scope="row">Weapon</th>
-                        <td>:</td>
-                        <td><img  src="../assets/equip.png" class="eqArrow" ></td>
-                        <td id="equipped-weapon" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
-                        <td><img onclick="equip(this.id)" id="arrowW" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                        <td class="levelChoice"><select id="weapon">
-                          <optgroup label="Choose weapon:"> 
-                            <option>(Nothing)</option>
-                          </optgroup>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Body</th>
-                        <td>:</td>
-                        <td><img src="../assets/equip.png" class="eqArrow"></td>
-                        <td id="equipped-body" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
-                        <td><img  onclick="equip(this.id)" id="arrowB" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                        <td class="levelChoice"><select id="bodyEquip">
-                          <optgroup label="Choose Body Equipment:"> 
-                            <option>(Nothing)</option>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Arms</th>
-                        <td>:</td>
-                        <td><img src="../assets/equip.png" class="eqArrow"></td>
-                        <td id="equipped-arms" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
-                        <td><img onclick="equip(this.id)" id="arrowA" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                        <td class="levelChoice"><select id="armsEquip">
-                          <optgroup label="Choose Arms Equipment:"> 
-                            <option>(Nothing)</option>
-                          </optgroup>
-                        </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Other</th>
-                      <td>:</td>
-                      <td><img src="../assets/equip.png" class="eqArrow"></td>
-                      <td id="equipped-other" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
-                      <td><img onclick="equip(this.id)" id="arrowO" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                      <td class="levelChoice"><select id="otherEquip">
-                        <optgroup label="Choose other Equipment:"> 
-                          <option>(Nothing)</option>
-                        </optgroup>
-                      </td>
-                  </tr>
-                </tbody>
+        <div class="row" width="100%">
+          <div class="col-sm-12">
+            <table class="table tableEquip">
+              <tbody>
+                <tr>
+                  <th scope="row">Weapon</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-weapon" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowW" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="weapon">
+                      <optgroup label="Choose weapon:">
+                        <option>(Nothing)</option>
+                      </optgroup>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Body</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-body" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowB" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="bodyEquip">
+                      <optgroup label="Choose Body Equipment:">
+                        <option>(Nothing)</option>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Arms</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-arms" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowA" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="armsEquip">
+                      <optgroup label="Choose Arms Equipment:">
+                        <option>(Nothing)</option>
+                      </optgroup>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Other</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-other" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowO" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="otherEquip">
+                      <optgroup label="Choose other Equipment:">
+                        <option>(Nothing)</option>
+                      </optgroup>
+                  </td>
+                </tr>
+              </tbody>
             </table>
-            </div>
           </div>
-          <div class="row" width="100%">
-            <table class="table tableStats">
+        </div>
+        <div class="row" width="100%">
+          <table class="table tableStats">
             <tbody>
               <tr>
                 <th scope="row">Level</th>
@@ -240,18 +244,19 @@
         </div>
       </div>
     </div>
-    <div class="toast-container">
-      <div class="toast bg-dark text-white" role="alert" aria-live="assertive" aria-atomic="true" id="surveyToast">
-        <div class="toast-body">
-          Hey! Would you help us improve this website by taking a short usability survey?<br>We won't ask for your
-          personal data, we promise!
-        </div>
-        <div class="mb-2 me-2 d-flex justify-content-end">
-        <button type="button" onclick="setSurveyCookie()" class="btn btn-secondary btn-sm me-2" data-bs-dismiss="toast">Don't ask again</button>
-        <button type="button" class="btn btn-light btn-sm" onclick="window.location.href = &quot;https://docs.google.com/forms/d/1gTPUuU9rI2ghVn-WRfypgAV2GOOJQItU4Ueio89xn28&quot;">OK!</button>
-        </div>
+  </div>
+  <div class="toast-container">
+    <div class="toast bg-dark text-white" role="alert" aria-live="assertive" aria-atomic="true" id="surveyToast">
+      <div class="toast-body">
+        Hey! Would you help us improve this website by taking a short usability survey?<br>We won't ask for your
+        personal data, we promise!
+      </div>
+      <div class="mb-2 me-2 d-flex justify-content-end">
+      <button type="button" onclick="setSurveyCookie()" class="btn btn-secondary btn-sm me-2" data-bs-dismiss="toast">Don't ask again</button>
+      <button type="button" class="btn btn-light btn-sm" onclick="window.location.href = &quot;https://docs.google.com/forms/d/1gTPUuU9rI2ghVn-WRfypgAV2GOOJQItU4Ueio89xn28&quot;">OK!</button>
       </div>
     </div>
+  </div>
 </body>
 
 </html>
