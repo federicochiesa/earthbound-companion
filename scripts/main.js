@@ -1,7 +1,7 @@
 function showSurveyToast() {
   if (getCookie("survey") == "") {
     setTimeout(function () {
-      const myToast = new bootstrap.Toast(document.getElementById("surveyToast"));
+      const myToast = new bootstrap.Toast(document.getElementById("surveyToast"), {"autohide": false});
       myToast.show();
     }, 2000);
   }

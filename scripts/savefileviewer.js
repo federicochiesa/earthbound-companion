@@ -1,6 +1,7 @@
 Element.prototype.remove = function () {
     this.parentElement.removeChild(this);
 }
+
 NodeList.prototype.remove = HTMLCollection.prototype.remove = function () {
     for (var i = this.length - 1; i >= 0; i--) 
         if (this[i] && this[i].parentElement) 
@@ -90,7 +91,7 @@ var itemsLUT = ["(Nothing)", "Franklin badge", "Teddy bear",
 
 window.onload = function () {
     showSurveyToast();
-    initThumbnail(false);
+    initThumbnail();
 }
 
 function updateThumbnail(dropZoneElement, file) {
@@ -102,7 +103,7 @@ function updateThumbnail(dropZoneElement, file) {
 
     if (!thumbnailElement) {
         thumbnailElement = document.createElement("div");
-        thumbnailElement.innerHTML = "<div class=\"drop-zone__thumb\" style=\"text-align:center;line-height:70px;width:100%;height:70px;font-size:40px;\">Uploaded file: " + file.name + " <span onclick=\"initThumbnail()\">Reset?</span></div>"
+        thumbnailElement.innerHTML = "<div class=\"drop-zone__thumb\" style=\"text-align:center;line-height:70px;width:100%;height:70px;font-size:40px;\">Uploaded file: " + file.name + " <span onclick=\"initThumbnail()\">Reset?</span></div>";
         dropZoneElement.appendChild(thumbnailElement);
     }
     var old_element = document.getElementById("fileUploader");
@@ -238,9 +239,8 @@ class GameSave {
             document.getElementById("emptyFileWarning").style.display = "block";
             return
         }
-        else{
+        else
             document.getElementById("emptyFileWarning").style.display = "none";
-        }
         let items = await getData("items");
         document.getElementById("handMoneyValue").innerText = this.moneyHand + "$";
         document.getElementById("ATMMoneyValue").innerText = this.moneyATM + "$";
