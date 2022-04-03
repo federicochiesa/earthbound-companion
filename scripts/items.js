@@ -60,7 +60,7 @@ window.onload = async function () {
                                                 <td>" + element.data["Error rate"] + "</td>\
                                             </tr>\
                                             <tr>\
-                                                <th scope=\"row\">Offence Up</th>\
+                                                <th scope=\"row\">Offense Up</th>\
                                                 <td>" + element.data["Offense up"] + "</td>\
                                             </tr>\
                                         </tbody>\
@@ -149,9 +149,6 @@ window.onload = async function () {
                                     </div>\
                                     <div class=\"col-lg-1 centering\">\
                                         <div class=\"col mini\">\
-                                        <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + element.name + "&quot;)\">\
-                                            <img src=\"../../assets/sprites/info.png\" class=\"img-button\" \>\
-                                        </a>\
                                         <a href=\"#/\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + element.name + "&quot;)\">\
                                             <img src=\"../../assets/sprites/Mappost.png\" class=\"img-button\" \>\
                                         </a>\
