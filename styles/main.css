@@ -168,9 +168,7 @@ table {
         margin: auto;
     }
 
-    .adjustTableOnPhone {
-        margin: 0 !important;
-    }
+    
 
     .select-div {
         background-color: #1a1a1a !important;
@@ -205,6 +203,10 @@ table {
         justify-content: center;
         row-gap: 10px;
 
+    }
+
+    .adjustTableOnPhone{
+        margin: 10px auto 10px auto !important;
     }
 
 }
@@ -554,7 +556,7 @@ select optgroup {
 }
 
 .tableStats2 {
-    margin: 5% 4% 5% 4%;
+    margin: 3%;
     background-color: #1a1a1a !important;
     border: solid 2px white;
     border-radius: 25px;
@@ -562,10 +564,10 @@ select optgroup {
 }
 
 .tableStats {
-    margin: 5% 4% 5% 4%;
+    margin: 3%;
     background-color: #1a1a1a !important;
     border-style: solid;
-    border-width: 20px;
+    border-width: 15px;
     border-image: url(../assets/border.png) 480 round;
     border-radius: 25px;
     color: white;

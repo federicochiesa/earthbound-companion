@@ -23,7 +23,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+  </script>
   <!-- Local scripts -->
   <script src="../scripts/main.js"></script>
   <script src="../scripts/equipmenttesting.js"></script>
@@ -114,128 +114,131 @@
             </label>
           </div>
         </div>
-          <div class="row" width="100%">
-            <div class="col-sm-12">
-              <table class="table tableEquip adjustTableOnPhone">
-                <tbody>
-                    <tr>
-                        <th scope="row">Weapon</th>
-                        <td>:</td>
-                        <td><img  src="../assets/equip.png" class="eqArrow" ></td>
-                        <td id="equipped-weapon" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
-                        <td><img onclick="equip(this.id)" id="arrowW" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                        <td class="levelChoice"><select id="weapon">
-                          <optgroup label="Choose weapon:"> 
-                            <option>(Nothing)</option>
-                          </optgroup>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Body</th>
-                        <td>:</td>
-                        <td><img src="../assets/equip.png" class="eqArrow"></td>
-                        <td id="equipped-body" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
-                        <td><img  onclick="equip(this.id)" id="arrowB" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                        <td class="levelChoice"><select id="bodyEquip">
-                          <optgroup label="Choose Body Equipment:"> 
-                            <option>(Nothing)</option>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Arms</th>
-                        <td>:</td>
-                        <td><img src="../assets/equip.png" class="eqArrow"></td>
-                        <td id="equipped-arms" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
-                        <td><img onclick="equip(this.id)" id="arrowA" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                        <td class="levelChoice"><select id="armsEquip">
-                          <optgroup label="Choose Arms Equipment:"> 
-                            <option>(Nothing)</option>
-                          </optgroup>
-                        </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Other</th>
-                      <td>:</td>
-                      <td><img src="../assets/equip.png" class="eqArrow"></td>
-                      <td id="equipped-other" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
-                      <td><img onclick="equip(this.id)" id="arrowO" style="cursor: pointer;" src="../assets/equipmentArrow.png" class="eqArrow"></td>
-                      <td class="levelChoice"><select id="otherEquip">
-                        <optgroup label="Choose other Equipment:"> 
-                          <option>(Nothing)</option>
-                        </optgroup>
-                      </td>
-                  </tr>
-                </tbody>
+        <div class="row" width="100%">
+          <div class="col-sm-12">
+            <table class="table tableEquip adjustTableOnPhone">
+              <tbody>
+                <tr>
+                  <th scope="row">Weapon</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-weapon" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowW" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="weapon">
+                      <optgroup label="Choose weapon:">
+                        <option>(Nothing)</option>
+                      </optgroup>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Body</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-body" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowB" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="bodyEquip">
+                      <optgroup label="Choose Body Equipment:">
+                        <option>(Nothing)</option>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Arms</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-arms" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowA" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="armsEquip">
+                      <optgroup label="Choose Arms Equipment:">
+                        <option>(Nothing)</option>
+                      </optgroup>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Other</th>
+                  <td>:</td>
+                  <td><img src="../assets/equip.png" class="eqArrow"></td>
+                  <td id="equipped-other" onclick="searchItem(this.id)" style="cursor: pointer;">(Nothing)</td>
+                  <td><img onclick="equip(this.id)" id="arrowO" style="cursor: pointer;"
+                      src="../assets/equipmentArrow.png" class="eqArrow"></td>
+                  <td class="levelChoice"><select id="otherEquip">
+                      <optgroup label="Choose other Equipment:">
+                        <option>(Nothing)</option>
+                      </optgroup>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table tableEquip adjustTableOnPhone">
+              <tbody>
+                <tr>
+                  <th scope="row">Level</th>
+                  <td>:</td>
+                  <td class="levelChoice"><select id="level">
+                      <optgroup label="Choose level:" id="levelSelect">
+                      </optgroup>
+                    </select></td>
+                  <td></td>
+                  <th scope="row">Guts</th>
+                  <td>:</td>
+                  <td id="guts">0</td>
+                  <td id="bonus-guts"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Attack</th>
+                  <td>:</td>
+                  <td id="attack">0</td>
+                  <td id="bonus-attack"></td>
+                  <th scope="row">Vitality</th>
+                  <td>:</td>
+                  <td id="vitality">0</td>
+                  <td id="bonus-vitality"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Defense</th>
+                  <td>:</td>
+                  <td id="defense">0</td>
+                  <td id="bonus-defense"></td>
+                  <th scope="row">IQ</th>
+                  <td>:</td>
+                  <td id="iq">0</td>
+                  <td id="bonus-iq"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Speed</th>
+                  <td>:</td>
+                  <td id="speed">0</td>
+                  <td id="bonus-speed"></td>
+                  <th scope="row">Luck</th>
+                  <td>:</td>
+                  <td id="luck">0</td>
+                  <td id="bonus-luck"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Error rate</th>
+                  <td>:</td>
+                  <td id="errorrate">0</td>
+                  <td id="bonus-errorrate"></td>
+                  <th scope="row"></th>
+                  <td>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">HP</th>
+                  <td>:</td>
+                  <td id="hp">0</td>
+                  <td id="bonus-hp"></td>
+                  <th scope="row">PP</th>
+                  <td>:</td>
+                  <td id="pp">0</td>
+                  <td id="bonus-pp"></td>
+                </tr>
+              </tbody>
             </table>
           </div>
-          <div class="row" width="100%">
-            <table class="table tableStats adjustTableOnPhone">
-            <tbody>
-              <tr>
-                <th scope="row">Level</th>
-                <td>:</td>
-                <td class="levelChoice"><select id="level">
-                    <optgroup label="Choose level:" id="levelSelect">
-                    </optgroup>
-                  </select></td>
-                <td></td>
-                <th scope="row">Guts</th>
-                <td>:</td>
-                <td id="guts">0</td>
-                <td id="bonus-guts"></td>
-              </tr>
-              <tr>
-                <th scope="row">Attack</th>
-                <td>:</td>
-                <td id="attack">0</td>
-                <td id="bonus-attack"></td>
-                <th scope="row">Vitality</th>
-                <td>:</td>
-                <td id="vitality">0</td>
-                <td id="bonus-vitality"></td>
-              </tr>
-              <tr>
-                <th scope="row">Defense</th>
-                <td>:</td>
-                <td id="defense">0</td>
-                <td id="bonus-defense"></td>
-                <th scope="row">IQ</th>
-                <td>:</td>
-                <td id="iq">0</td>
-                <td id="bonus-iq"></td>
-              </tr>
-              <tr>
-                <th scope="row">Speed</th>
-                <td>:</td>
-                <td id="speed">0</td>
-                <td id="bonus-speed"></td>
-                <th scope="row">Luck</th>
-                <td>:</td>
-                <td id="luck">0</td>
-                <td id="bonus-luck"></td>
-              </tr>
-              <tr>
-                <th scope="row">Error rate</th>
-                <td>:</td>
-                <td id="errorrate">0</td>
-                <td id="bonus-errorrate"></td>
-                <th scope="row"></th>
-                <td>
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">HP</th>
-                <td>:</td>
-                <td id="hp">0</td>
-                <td id="bonus-hp"></td>
-                <th scope="row">PP</th>
-                <td>:</td>
-                <td id="pp">0</td>
-                <td id="bonus-pp"></td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
@@ -247,8 +250,10 @@
         personal data, we promise!
       </div>
       <div class="mb-2 me-2 d-flex justify-content-end">
-      <button type="button" onclick="setSurveyCookie()" class="btn btn-secondary btn-sm me-2" data-bs-dismiss="toast">Don't ask again</button>
-      <button type="button" class="btn btn-light btn-sm" onclick="window.location.href = &quot;https://docs.google.com/forms/d/1gTPUuU9rI2ghVn-WRfypgAV2GOOJQItU4Ueio89xn28&quot;">OK!</button>
+        <button type="button" onclick="setSurveyCookie()" class="btn btn-secondary btn-sm me-2"
+          data-bs-dismiss="toast">Don't ask again</button>
+        <button type="button" class="btn btn-light btn-sm"
+          onclick="window.location.href = &quot;https://docs.google.com/forms/d/1gTPUuU9rI2ghVn-WRfypgAV2GOOJQItU4Ueio89xn28&quot;">OK!</button>
       </div>
     </div>
   </div>
