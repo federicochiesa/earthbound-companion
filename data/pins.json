@@ -1,21 +1,98 @@
 {
-    "onett":  [
-            {
-                "x": "8700",
-                "y": "7550",
-                "type": "shop"
-            },
-            {
-                "x": "5000",
-                "y": "5000",
-                "type": "enemy"
-            }
-        ],
-    "twoson":[
-            {
-                "x": "200",
-                "y": "2000",
-                "type": "present"
-            }
-        ]
+    "onett": [
+        {
+            "x": "8700",
+            "y": "7550",
+            "type": "shop"
+        },
+        {
+            "x": "5000",
+            "y": "5000",
+            "type": "enemy"
+        }
+    ],
+    "twoson": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "hhv": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "threed": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "winters": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "saturnvalley": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "fourside": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "moonside": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "summers": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "dalaam": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "scaraba": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "lostunderworld": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "giygas": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ]
 }
