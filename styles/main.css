@@ -153,12 +153,8 @@ table {
         margin: auto;
     }
 
-    .tableEquip {
-        margin: 0;
-    }
-
-    .tableStats {
-        margin: 0;
+    .adjustTableOnPhone {
+        margin: 0 !important;
     }
 
     .select-div {
@@ -196,10 +192,6 @@ table {
 
     }
 
-    .tableEquip,
-    .tableStats {
-        margin: auto !important;
-    }
 }
 
 @media (max-width:1400px) {
@@ -569,3 +561,14 @@ select optgroup {
 .drop-zone__input {
     display: none;
 }
+
+@media (min-width: 0px) and (max-width: 770px) {
+    .titleContainer, .single{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
