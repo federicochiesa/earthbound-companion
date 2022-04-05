@@ -50,7 +50,7 @@ async function getEnemyInfo(enemy) {
                 if(typeof(element.data["Item"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">Item</th>\
-                    <td>" + element.data["Item"] + "</td>\
+                    <td><a href=\"/wiki/items/?item="+ nameToImage(element.data["Item"].toLowerCase()) + "\" style=\"text-decoration: none; color: inherit\" class=\"itemLink\">"+ element.data["Item"] + "</a></td>\
                         </tr>"
                 if(typeof(element.data["Exp"]) != "undefined")
                     returnString += "<tr>\

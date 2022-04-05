@@ -40,3 +40,11 @@ async function getData(type) {
   data = data.json();
   return data;
 }
+
+function searchOnSite(){
+  let label = document.getElementById("searchForm").submit();
+  console.log(label);
+
+
+}
+

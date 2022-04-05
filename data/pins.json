@@ -1,14 +1,58 @@
 {
     "onett": [
         {
-            "x": "8700",
-            "y": "7550",
-            "type": "shop"
+            "x": "5530",
+            "y": "4953",
+            "type": "shop",
+            "name": "Onett Burger Shop"
         },
         {
-            "x": "5000",
-            "y": "5000",
-            "type": "enemy"
+            "x": "5067",
+            "y": "5119",
+            "type": "shop",
+            "name": "Onett Drugstore"
+        },
+        {
+            "x": "5957",
+            "y": "2968",
+            "type": "shop",
+            "name": "Onett Bakery"
+        },
+        {
+            "x": "4523",
+            "y": "2987",
+            "type": "shop",
+            "name": "Mach Pizza"
+        },
+        {
+            "x": "4700",
+            "y": "2660",
+            "type": "enemy",
+            "name": "Pogo Punk"
+        },
+        {
+            "x": "4889",
+            "y": "2504",
+            "type": "enemy",
+            "name": "Skate Punk"
+        },
+        {
+            "x": "5788",
+            "y": "4783",
+            "type": "present",
+            "name": "Hamburger"
+        },
+        {
+            "x": "6515",
+            "y": "6526",
+            "type": "present",
+            "name": "Baseball Cap"
+        },
+        {
+            "x": "6069",
+            "y": "7245",
+            "type": "present",
+            "name": "Hamburger"
         }
     ],
     "twoson": [

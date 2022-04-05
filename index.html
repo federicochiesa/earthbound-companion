@@ -60,9 +60,9 @@
             <a class="nav-link" href="/savefileviewer/">Save file viewer</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
+        <form class="d-flex" method="post" id="searchForm" >
+          <input class="form-control me-2" name="submit" type="submit" value="Submit" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" onclick="searchOnSite()">Search</button>
         </form>
       </div>
     </div>

@@ -2052,7 +2052,8 @@
          "Defense":"17",
          "Guts":"5",
          "Exp":"50",
-         "Money":"$48"
+         "Money":"$48",
+         "Location": "Onett"
       }
    },
    {
