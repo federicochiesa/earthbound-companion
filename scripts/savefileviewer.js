@@ -119,7 +119,7 @@ function updateThumbnail(dropZoneElement, file) {
         if (evt.target.readyState == FileReader.DONE) {
             var arrayBuffer = evt.target.result,
                 array = new Uint8Array(arrayBuffer);
-            for (var i = 0; i < array.length; i++) 
+            for (var i = 0; i < array.length; i++)
                 fileByteArray.push(array[i]);
         }
         for (var i = 0; i < 3; i++) {
@@ -131,7 +131,7 @@ function updateThumbnail(dropZoneElement, file) {
 }
 
 function selectSave(id){
-    saves[0].resetData();
+    GameSave.resetData();
     saves[parseInt(id[4])].displayData();
     for(let i = 0; i < 3; i++)
         document.getElementById("save" + i).style.opacity = 0.3;
@@ -176,7 +176,7 @@ async function initThumbnail() {
     document.getElementById("fileToUpload").value = "";
     document.getElementById("fileUploader").removeAttribute("style");
     if (typeof (saves[0]) != "undefined")
-        saves[0].resetData();
+        GameSave.resetData();
 }
 
 class GameSave {
@@ -280,7 +280,7 @@ class GameSave {
             document.getElementById("esc" + i).innerText = this.escargoItems[i]
     }
 
-    resetData() {
+    static resetData() {
         document.getElementById("handMoneyValue").innerText = "";
         document.getElementById("ATMMoneyValue").innerText = "";
         document.getElementById("petNameValue").innerText = "";
@@ -296,11 +296,9 @@ class GameSave {
             document.getElementById("c" + j + "body").innerText = "";
             document.getElementById("c" + j + "arms").innerText = "";
             document.getElementById("c" + j + "other").innerText = "";
-            let inventory = this.characters[j].items;
-            for (let i = 0; i < inventory.length; i++)
+            for (let i = 0; i < 14; i++)
                 document.getElementById("c" + j + "i" + i).innerText = "";
-            let stats = this.characters[j].stats;
-            for (let i = 0; i < stats.length; i++)
+            for (let i = 0; i < 7; i++)
                 document.getElementById("c" + j + "stat" + i).innerText = ""
             document.getElementById("c" + j + "level").innerText = "";
             document.getElementById("c" + j + "xp").innerText = "";
@@ -309,7 +307,7 @@ class GameSave {
             document.getElementById("c" + j + "errorRate").innerText = "";
         }
         document.getElementById("escargo").style.display = "none";
-        for(let i = 0; i < this.escargoItems.length - 1; i++)
+        for(let i = 0; i < 35; i++)
             document.getElementById("esc" + i).innerText = "(Nothing)"
         document.getElementById("generalInfo").style.display = "none";
         for(let i = 0; i < 3; i++)
