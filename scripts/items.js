@@ -160,14 +160,45 @@ window.onload = async function () {
     }
 
     setTimeout(function(){
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const idToScroll = urlParams.get("item");
-    if (idToScroll != null) {
-        const element = document.getElementById(idToScroll);
-        const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
-        console.log(element.getBoundingClientRect().top)
-        window.scrollTo({ top: y});
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const idToScroll = urlParams.get("item");
+        if (idToScroll != null) {
+            const element = document.getElementById(idToScroll);
+            const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
+            console.log(element.getBoundingClientRect().top)
+            window.scrollTo({ top: y});
+        }
+    }, 50);
+
+    pages = ["items", "enemies", "shops"]
+    data = []
+    
+    setTimeout(async function(){
+        for(let j = 0; j < pages.length; j++)
+            data[j] = await getData(pages[j]);
+    }, 50);
+    
+    const searchButton = document.getElementById("searchButton");
+    searchButton.addEventListener('click', (_) =>{
+        searchOnSite(data);
+    });
+}
+
+async function searchOnSite(data){
+    let label = document.getElementById("searchLabel").value;
+    
+    pages = ["items", "enemies", "shops"]
+    
+    for(let j = 0; j < pages.length; j++){
+        d = data[j]
+        for (let i = 0; i < Object.keys(d).length; i++) {
+            var elements = d[Object.keys(d)[i]];
+            for(let k = 0; k < elements.length; k++){
+                console.log(nameToImage(elements[k].name.toLowerCase()))
+                if(nameToImage(elements[k].name.toLowerCase()) == nameToImage(label.toLowerCase()))
+                    window.location.href = "../"+ pages[j] +"/?item="+ nameToImage(label.toLowerCase());
+            }
+        }
     }
-}, 50);
 }

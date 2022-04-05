@@ -70,7 +70,7 @@ window.onload = async function () {
             if (typeof (elements[j].data["Comments"]) == "undefined") var comments = "";
             else var comments = elements[j].data["Comments"];
             newEntry.innerHTML = "<div class=\"row mb-3\"><div class=\"col me-2\">\
-                                    <div class=\"row mb-5 cg\" >\
+                                    <div class=\"row mb-5 cg\" id=\"" + nameToImage(elements[j].name.toLowerCase()) + "\">\
                                         <div class=\"col-lg-4\">\
                                             <img src=\"/assets/buildings/" + nameToImage(elements[j].name) + ".png\" class=\"shop-image\">\
                                         </div>\
@@ -93,7 +93,7 @@ window.onload = async function () {
                                      </div>\
                                     </div>\
                                     <div class=\"col ms-2\">\
-                                    <div class=\"row mb-5 cg\">\
+                                    <div class=\"row mb-5 cg\" id=\"" + nameToImage(elements[j+1].name.toLowerCase()) + "\">\
                                         <div class=\"col-lg-4\">\
                                             <img src=\"/assets/buildings/" + nameToImage(elements[j + 1].name) + ".png\" class=\"shop-image\">\
                                         </div>\
@@ -117,6 +117,50 @@ window.onload = async function () {
                                     </div>\
                                     </div>";
             list.appendChild(newEntry);
+        }
+    }
+
+    setTimeout(function(){
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const idToScroll = urlParams.get("item");
+        if (idToScroll != null) {
+            const element = document.getElementById(idToScroll);
+            const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
+            console.log(element.getBoundingClientRect().top)
+            window.scrollTo({ top: y});
+        }
+    }, 50);
+
+    pages = ["items", "enemies", "shops"]
+    data = []
+    
+    setTimeout(async function(){
+        for(let j = 0; j < pages.length; j++)
+            data[j] = await getData(pages[j]);
+    }, 50);
+    
+    const searchButton = document.getElementById("searchButton");
+    searchButton.addEventListener('click', (_) =>{
+        searchOnSite(data);
+    });
+}
+
+
+async function searchOnSite(data){
+    let label = document.getElementById("searchLabel").value;
+    
+    pages = ["items", "enemies", "shops"]
+    
+    for(let j = 0; j < pages.length; j++){
+        d = data[j]
+        for (let i = 0; i < Object.keys(d).length; i++) {
+            var elements = d[Object.keys(d)[i]];
+            for(let k = 0; k < elements.length; k++){
+                console.log(nameToImage(elements[k].name.toLowerCase()))
+                if(nameToImage(elements[k].name.toLowerCase()) == nameToImage(label.toLowerCase()))
+                    window.location.href = "../"+ pages[j] +"/?item="+ nameToImage(label.toLowerCase());
+            }
         }
     }
 }

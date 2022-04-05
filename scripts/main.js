@@ -41,10 +41,3 @@ async function getData(type) {
   return data;
 }
 
-function searchOnSite(){
-  let label = document.getElementById("searchForm").submit();
-  console.log(label);
-
-
-}
-
