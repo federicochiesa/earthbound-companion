@@ -34,7 +34,7 @@ body {
 
 nav,
 #mapSelector,
-iframe {
+iframe, #legend {
     background-color: #1a1a1a !important;
     border-style: solid;
     border-width: 20px;
@@ -283,6 +283,10 @@ table {
 
     .col {
         margin: 0 !important;
+    }
+
+    #legend{
+        margin-right: 0px;
     }
 
 }
