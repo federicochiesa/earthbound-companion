@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "appleKid";
+    src: url("../fonts/apple_kid.woff");
+}
+
+body, .popover{
+    background-color: #1a1a1a !important;
+}
+
+.popover-arrow::after{
+    border-top-color: #1a1a1a !important;
+}
+
+.popover-body{
+    color: white !important;
+    font-family: "appleKid";
+    font-size: 1.5rem;
+    line-height: 100%;
+}
