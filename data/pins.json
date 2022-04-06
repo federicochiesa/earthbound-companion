@@ -25,6 +25,24 @@
             "name": "Mach Pizza"
         },
         {
+            "x": "4565",
+            "y": "6175",
+            "type": "enemy",
+            "name": "Runaway Dog"
+        },
+        {
+            "x": "5800",
+            "y": "6170",
+            "type": "enemy",
+            "name": "Coil Snake"
+        },
+        {
+            "x": "5165",
+            "y": "5930",
+            "type": "enemy",
+            "name": "Spiteful Crow"
+        },
+        {
             "x": "4700",
             "y": "2660",
             "type": "enemy",
