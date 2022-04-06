@@ -105,28 +105,14 @@ window.onload = function () {
     searchButton.addEventListener('click', (_) =>{
         searchOnSite(data);
     });
-
 }
 
-
 function updateThumbnail(dropZoneElement, file) {
-    let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
-    document.getElementById("fileUploader").classList.add("drop-zone--over")
-
-    if (dropZoneElement.querySelector(".drop-zone__prompt"))
-        dropZoneElement.querySelector(".drop-zone__prompt").remove();
-
-    if (!thumbnailElement) {
-        thumbnailElement = document.createElement("div");
-        thumbnailElement.innerHTML = "<div class=\"drop-zone__thumb\" style=\"text-align:center;line-height:70px;width:100%;height:70px;font-size:40px;\">Uploaded file: " + file.name + " <span onclick=\"initThumbnail()\">Reset?</span></div>";
-        dropZoneElement.appendChild(thumbnailElement);
-    }
-    var old_element = document.getElementById("fileUploader");
-    var new_element = old_element.cloneNode(true);
-    old_element.parentNode.replaceChild(new_element, old_element);
-
-    document.getElementById("fileToUpload").remove();
-    document.getElementById("fileUploader").style.cursor = "auto";
+    document.getElementById("fileUploader").style.display = "none";
+    document.getElementById("loadedFileBanner").style.display = "flex";
+    document.getElementById("loadedFileBanner").classList.add("drop-zone--over");
+    document.getElementById("loadedFileBanner").classList.add("drop-zone");
+    document.getElementById("loadedFileBanner").innerHTML = "<span class=\"drop-zone__prompt\">Loaded file: \"" + file.name + "\", click to unload file</span>"
     var reader = new FileReader();
     var fileByteArray = [];
     reader.readAsArrayBuffer(file);
@@ -154,8 +140,9 @@ function selectSave(id){
 }
 
 async function initThumbnail() {
+    document.getElementById("loadedFileBanner").style.display = "none";
     document.getElementById("fileUploader").classList.remove("drop-zone--over")
-    document.getElementById("fileUploader").innerHTML = "<span class=\"drop-zone__prompt\">Drop file here or click to upload</span>\
+    document.getElementById("fileUploader").innerHTML = "<span class=\"drop-zone__prompt\">Drop file here or click to load save file</span>\
         <input type=\"file\" id=\"fileToUpload\" name=\"myFile\" class=\"drop-zone__input\">";
     document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
         const dropZoneElement = inputElement.closest(".drop-zone");
@@ -190,6 +177,7 @@ async function initThumbnail() {
     });
     document.getElementById("fileToUpload").value = "";
     document.getElementById("fileUploader").removeAttribute("style");
+    document.getElementById("fileUploader").style.display = "flex";
     if (typeof (saves[0]) != "undefined")
         GameSave.resetData();
 }
