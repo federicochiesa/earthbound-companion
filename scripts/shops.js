@@ -130,7 +130,7 @@ window.onload = async function () {
             console.log(element.getBoundingClientRect().top)
             window.scrollTo({ top: y});
         }
-    }, 50);
+    }, 100);
 
     pages = ["items", "enemies", "shops"]
     data = []
