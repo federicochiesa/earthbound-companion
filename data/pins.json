@@ -55,6 +55,18 @@
             "name": "Skate Punk"
         },
         {
+            "x": "5063",
+            "y": "3103",
+            "type": "boss",
+            "name": "Frank"
+        },
+        {
+            "x": "5200",
+            "y": "3155",
+            "type": "boss",
+            "name": "Frankenstein Mark II"
+        },
+        {
             "x": "5788",
             "y": "4783",
             "type": "present",
