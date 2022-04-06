@@ -593,3 +593,10 @@ select optgroup {
     
 }
 
+.itemLink {
+    text-decoration: underline !important;
+}
+
+.itemLink:hover {
+    color: white !important;
+}

@@ -39,7 +39,7 @@ async function showInfoModal(item, data) {
     for (let i = 0; i < objects.length; i++) {
         tableString += "<tr>\
                                 <th scope=\"row\">\
-                                    <a href=\"/wiki/items/?item="+ nameToImage(objects[i].toLowerCase()) + "\" style=\"text-decoration: none; color: inherit\" class=\"itemLink\">" + objects[i] + "</a>\
+                                    <a href=\"/wiki/items/?item="+ nameToImage(objects[i].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + objects[i] + "</a>\
                                 </th>\
                                 <td>"+ prices[i] + "</td>\
                             </tr>"
