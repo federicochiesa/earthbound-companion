@@ -143,10 +143,9 @@ window.onload = async function () {
     pages = ["items", "enemies", "shops"]
     data = []
     
-    setTimeout(async function(){
-        for(let j = 0; j < pages.length; j++)
-            data[j] = await getData(pages[j]);
-    }, 50);
+    
+    for(let j = 0; j < pages.length; j++)
+        data[j] = await getData(pages[j]);
     
     const searchButton = document.getElementById("searchButton");
     searchButton.addEventListener('click', (_) =>{
@@ -169,8 +168,10 @@ async function searchOnSite(data){
             var elements = d[Object.keys(d)[i]];
             for(let k = 0; k < elements.length; k++){
                 console.log(nameToImage(elements[k].name.toLowerCase()))
-                if(nameToImage(elements[k].name.toLowerCase()) == nameToImage(label.toLowerCase()))
-                    window.location.href = "../"+ pages[j] +"/?item="+ nameToImage(label.toLowerCase());
+                if(nameToImage(elements[k].name.toLowerCase()).search(nameToImage(label.toLowerCase())) > -1){
+                    window.location.href = "../"+ pages[j] +"/?item="+ nameToImage(elements[k].name.toLowerCase());
+                    break;
+                }
             }
         }
     }
