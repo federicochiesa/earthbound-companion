@@ -43,6 +43,8 @@ async function getData(type) {
 
 async function searchOnSite(data){
   let label = document.getElementById("searchLabel").value;
+  let searchButton = document.getElementById("searchButton");
+  var popover = new bootstrap.Popover(searchButton, {content: "Nothing found. Did you type that right?"});
   
   pages = ["items", "enemies", "shops"]
   
@@ -59,4 +61,6 @@ async function searchOnSite(data){
           }
       }
   }
+  popover.show();
+  setTimeout(function(){popover.hide()}, 2000);
 }
