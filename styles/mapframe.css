@@ -16,4 +16,5 @@ body, .popover{
     font-family: "appleKid";
     font-size: 1.5rem;
     line-height: 100%;
+    padding: 0.5rem !important;
 }

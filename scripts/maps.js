@@ -1,6 +1,14 @@
 window.onload = function () {
     showSurveyToast();
     updateMap("onett");
+    //Go to selected map in query URL(if any)
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const mapToShow = urlParams.get("map");
+    if(mapToShow != null)
+        updateMap(mapToShow);
+    //Add click event listener on popovers
+    const iframe = document.getElementById("mapiFrame");
 }
 
 function updateMap(id) {
@@ -23,4 +31,8 @@ function updateMap(id) {
     searchButton.addEventListener('click', (_) =>{
         searchOnSite(data);
     });
+}
+
+function checkForPopover(){
+
 }
