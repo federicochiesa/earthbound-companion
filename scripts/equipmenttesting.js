@@ -49,23 +49,19 @@ window.onload = async function () {
     selectOther.addEventListener('change', (_) => {
         updateEquipmentStats(items);
     });
-
-    pages = ["items", "enemies", "shops"]
-    data = []
-    
-    setTimeout(async function(){
-        for(let j = 0; j < pages.length; j++)
-            data[j] = await getData(pages[j]);
-    }, 50);
     
     const searchButton = document.getElementById("searchButton");
     searchButton.addEventListener('click', (_) =>{
-        searchOnSite(data);
+        searchOnSite(datax);
     });
+
+    pages = ["items", "enemies", "shops"]
+    datax = []
+
+    for(let j = 0; j < pages.length; j++)
+        datax[j] = await getData(pages[j]);
     
-      
-
-
+    
 }
 
 
