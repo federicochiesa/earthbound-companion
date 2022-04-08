@@ -31,6 +31,15 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+function capitalizeFirstLetters(string) {
+  let words = string.split(" ");
+  finalString = ""
+  for(w of words)
+    finalString += (capitalizeFirstLetter(w) + " ");
+  finS = finalString.slice(0,-1);
+  return finS;
+}
+
 function nameToImage(name) {
   return name.replace(/[ "()'\/.,-]/g, "");
 }

@@ -13,6 +13,7 @@ async function showMapModal(item) {
 async function getItemLocation(item) {
     let data = await getData("items");
     let datae = await getData("enemies");
+    let datam = await getData("pins");
 
     for (let i = 0; i < Object.keys(data).length; i++) {
         let elements = data[Object.keys(data)[i]];
@@ -28,15 +29,20 @@ async function getItemLocation(item) {
                     l = locs[j]
                     for (const e of enemies) {
                         if (locs[j].search(e.name) > -1) {
-                            l = locs[j].replace(e.name, "<a href=\"/wiki/enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                            l = l.replace(e.name, "<a href=\"/wiki/enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
                         }
                     }
                     for (let x = 0; x < Object.keys(data).length; x++) {
                         let items = data[Object.keys(data)[x]];
                         for (const k of items) {
                             if (locs[j].search(k.name) > -1) {
-                                l = locs[j].replace(k.name, "<a href=\"/wiki/items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
+                                l = l.replace(k.name, "<a href=\"/wiki/items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
                             }
+                        }
+                    }
+                    for (const map of Object.keys(datam)){
+                        if(locs[j].search(capitalizeFirstLetters(map)) > -1){
+                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"/wiki/maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
                         }
                     }
                     
