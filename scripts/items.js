@@ -4,10 +4,34 @@ function showInfoModal(item) {
     new bootstrap.Modal(document.getElementById('infoModal')).show();
 }
 
-function showMapModal(item) {
-    document.getElementById("mapModalTitle").textContent = "Map: " + item;
-    document.getElementById("mapModalBody").textContent = "This is a test map modal for " + item;
+async function showMapModal(item) {
+    document.getElementById("mapModalTitle").textContent = "Location for: " + item;
+    document.getElementById("mapModalBody").innerHTML = await getItemLocation(item);
     new bootstrap.Modal(document.getElementById('mapModal')).show();
+}
+
+async function getItemLocation(item) {
+    let data = await getData("items");
+    for (let i = 0; i < Object.keys(data).length; i++) {
+        let elements = data[Object.keys(data)[i]];
+        for (const element of elements) {
+            if (element.name == item) {
+                const locs = element.data["Location"].split(", ");
+                let returnString = "<table class=\"table table-dark table-striped\">\
+                <tbody>\ ";
+                
+                for(let j = 0; j < locs.length; j++){
+                    returnString += " <tr>\
+                                        <td>" + locs[j] + "</td>\
+                                     </tr>\ ";
+                }
+
+                returnString += "</tbody>\
+                            </table>";
+                return returnString;
+            }
+        }
+    }
 }
 
 window.onload = async function () {
@@ -62,9 +86,16 @@ window.onload = async function () {
                                             <tr>\
                                                 <th scope=\"row\">Offense Up</th>\
                                                 <td>" + element.data["Offense up"] + "</td>\
-                                            </tr>\
-                                        </tbody>\
+                                            </tr>\ ";
+
+                    if(typeof(element.data["Guts up"]) != "undefined")
+                        tableString += "<tr>\
+                                        <th scope=\"row\">Guts Up</th>\
+                                         <td>" + element.data["Guts up"] + "</td>\
+                                        </tr>\ ";
+                    tableString += "</tbody>\
                                     </table>\"";
+
                     break;
                 case "protection":
                     tableString = "<table class=\"table table-dark table-striped\">\
@@ -76,9 +107,20 @@ window.onload = async function () {
                                                 <tr>\
                                                     <th scope=\"row\">Defense Up</th>\
                                                     <td>" + element.data["Defense up"] + "</td>\
-                                                </tr>\
-                                            </tbody>\
-                                        </table>\"";
+                                                </tr>\ ";
+
+                    if(typeof(element.data["Speed up"]) != "undefined")
+                    tableString += "<tr>\
+                                    <th scope=\"row\">Speed Up</th>\
+                                        <td>" + element.data["Speed up"] + "</td>\
+                                    </tr>\ ";
+                    if(typeof(element.data["Luck up"]) != "undefined")
+                    tableString += "<tr>\
+                                    <th scope=\"row\">Luck Up</th>\
+                                        <td>" + element.data["Luck up"] + "</td>\
+                                    </tr>\ ";
+                    tableString += "</tbody>\
+                                </table>\"";
                     break;
                 case "goods":
                     tableString = "<table class=\"table table-dark table-striped\">\
