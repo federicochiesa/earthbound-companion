@@ -107,7 +107,7 @@
       "name":"Double Beam",
       "data":{
          "Description":"Jeff can equip this weapon.",
-         "Location":"Replaces a Broken Gadget in Jeff's inventory, after the item is repaired.",
+         "Location":"Replaces a Broken Gadget in Jeff's inventory after the item is repaired.",
          "Price":"$1000",
          "Error rate":"0",
          "Offense up":"66"
@@ -947,7 +947,7 @@
    {
       "name":"Broken Antenna",
       "data":{
-         "Comments":"Can be repaired by Jeff, to produce a Gaia Beam. Requires 65 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Gaia Beam. Requires 65 IQ to fix.",
          "Description":"A piece of broken equipment that looks like a satellite dish. That genius Jeff should be able to fix it sometime.",
          "Location":"Dropped by Uncontrollable Sphere(1/128 chance)",
          "Price":"N/A"
@@ -956,7 +956,7 @@
    {
       "name":"Broken bazooka",
       "data":{
-         "Comments":"Can be repaired by Jeff, to produce a Heavy bazooka. Requires 45 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Heavy bazooka. Requires 45 IQ to fix.",
          "Description":"A broken bazooka. That genius Jeff should be able to fix it sometime.",
          "Location":"Fourside Sewer (Gift Box)",
          "Price":"N/A"
@@ -965,7 +965,7 @@
    {
       "name":"Broken Cannon",
       "data":{
-         "Comments":"Can be repaired by Jeff, to produce a Spectrum Beam. Requires 32 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Spectrum Beam. Requires 32 IQ to fix.",
          "Description":"A broken beam cannon. That genius Jeff should be able to fix it sometime.",
          "Location":"Scaraba (Convenience Store)",
          "Price":"N/A"
@@ -974,7 +974,7 @@
    {
       "name":"Broken Gadget",
       "data":{
-         "Comments":"Can be repaired by Jeff, to produce a Double Beam. Requires 34 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Double Beam. Requires 34 IQ to fix.",
          "Description":"There's no way of knowing its original use. It's just some kind of broken mechanism. That genius Jeff should be able to fix it sometime.",
          "Location":"Fourside (Street Salesman),",
          "Price":"N/A"
@@ -983,7 +983,7 @@
    {
       "name":"Broken Harmonica",
       "data":{
-         "Comments":"Can be repaired by Jeff, to produce a Baddest Beam. Requires 55 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Baddest Beam. Requires 55 IQ to fix.",
          "Description":"A broken device that looks like a harmonica. That genius Jeff should be able to fix it sometime.",
          "Location":"Stonehenge base (Gift Box)",
          "Price":"N/A"
@@ -992,7 +992,7 @@
    {
       "name":"Broken iron",
       "data":{
-         "Comments":"Can be repaired by Jeff, to produce a Slime generator. Requires 10 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Slime generator. Requires 10 IQ to fix.",
          "Description":"A contraption that looks like an iron. That genius Jeff should be able to fix it sometime.",
          "Location":"Twoson (Burglin Park), Brick Road Maze (Gift Box), Fourside (Street Salesman), Fourside Sewer (Gift Box)",
          "Price":"$149"
@@ -1001,7 +1001,7 @@
    {
       "name":"Broken Laser",
       "data":{
-         "Comments":"Can be repaired by Jeff, to produce a Laser Gun. Requires 24 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Laser Gun. Requires 24 IQ to fix.",
          "Description":"A broken laser gun. That genius Jeff should be able to fix it sometime.",
          "Location":"The Belch Base (Gift Box)",
          "Price":"N/A"
@@ -1019,7 +1019,7 @@
    {
       "name":"Broken pipe",
       "data":{
-         "Comments:":"Can be repaired by Jeff, to produce a Shield killer. Requires 30 IQ to fix.",
+         "Comments:":"Can be repaired by Jeff to produce a Shield killer. Requires 30 IQ to fix.",
          "Description":"It looks like a busted water pipe. That genius Jeff should be able to fix it sometime.",
          "Location":"Found in Dr. Andounts lab 2nd floor",
          "Price":"N/A"
@@ -1028,7 +1028,7 @@
    {
       "name":"Broken spray can",
       "data":{
-         "Comments":"Can be repaired by Jeff, to produce a Defense spray. Requires 1 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Defense spray. Requires 1 IQ to fix.",
          "Description":"A broken spray can. That genius Jeff should be able to fix it sometime.",
          "Location":"Twoson (Burglin Park), Saturn Valley (Garbage), Fourside Sewer (Gift Box)",
          "Price":"$189"
@@ -1037,7 +1037,7 @@
    {
       "name":"Broken Air Gun",
       "data":{
-         "Comments":"Can be repaired by Jeff, to produce a Magnum Air Gun. Requires 12 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Magnum Air Gun. Requires 12 IQ to fix.",
          "Description":"A broken air gun. That genius Jeff should be able to fix it sometime.",
          "Location":"Snow Wood Boarding School (Gift Box)",
          "Price":"N/A"
@@ -1046,7 +1046,7 @@
    {
       "name":"Broken trumpet",
       "data":{
-         "Comments":"Can be repaired by Jeff, to produce a Defense shower. Requires 40 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Defense shower. Requires 40 IQ to fix.",
          "Description":"A broken apparatus that is shaped like a trumpet. That genius Jeff should be able to fix it sometime.",
          "Location":"Stonehenge base (Gift Box)",
          "Price":"N/A"
@@ -1055,7 +1055,7 @@
    {
       "name":"Broken tube",
       "data":{
-         "Comments":"Can be repaired by Jeff, to produce a Hungry HP-sucker. Requires 36 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Hungry HP-sucker. Requires 36 IQ to fix.",
          "Description":"A broken tube-shaped item. That genius Jeff should be able to fix it sometime.",
          "Location:":"Monkey Caves",
          "Price":"N/A"
@@ -1121,7 +1121,7 @@
       "data":{
          "Comments":"Used only by Jeff. Increases the Defense of all allies.",
          "Description":"Increases the Defense of all the friends. It is most effective if you use this power multiple times to \"layer\" the effect. Can be used many times.",
-         "Location:":"Replaces a Broken Trumpet in Jeff's inventory, after the item is repaired.",
+         "Location:":"Replaces a Broken Trumpet in Jeff's inventory after the item is repaired.",
          "Price":"N/A"
       }
    },
@@ -1211,7 +1211,7 @@
       "data":{
          "Comments":"Very powerful weapon used only by Jeff. Can be used multiple times.",
          "Description":"Items for Jeff. Really dishes out a lot of damage to the enemy during a battle. Because of its explosive power it may effect others besides the target creature. Can be used many times.",
-         "Location":"Replaces a Broken bazooka in Jeff's inventory, after the item is repaired.",
+         "Location":"Replaces a Broken bazooka in Jeff's inventory after the item is repaired.",
          "Price":"N/A"
       }
    },
@@ -1238,7 +1238,7 @@
       "data":{
          "Comments":"Used only by Jeff. Takes HP from all enemies and adds them to Jeff's HP.",
          "Description":"Items for Jeff. Sucks up some HP from all the enemies. The more HP the enemies have, the more you get. Can be used many times.",
-         "Location":"Replaces a Broken Tube in Jeff's inventory, after the item is repaired.",
+         "Location":"Replaces a Broken Tube in Jeff's inventory after the item is repaired.",
          "Price":"N/A"
       }
    },
@@ -1499,7 +1499,7 @@
       "data":{
          "Comments":"Used only by Jeff. Destroys an enemy's Shield.",
          "Description":"Items for Jeff. Breaks through the enemy's shield during battle. Can be used many times.",
-         "Location":"Replaces a Broken pipe in Jeff's inventory, after the item has been repaired.",
+         "Location":"Replaces a Broken pipe in Jeff's inventory after the item has been repaired.",
          "Price":"N/A"
       }
    },
@@ -1535,7 +1535,7 @@
       "data":{
          "Comments":"Used only by Jeff. Freezes an enemy during battle.",
          "Description":"Items for Jeff. Sprays a sticky substance that stops the enemy from moving. Can be used many times.",
-         "Location":"Replaces a Broken iron in Jeff's inventory, after the item is repaired.",
+         "Location":"Replaces a Broken iron in Jeff's inventory after the item is repaired.",
          "Price":"$420"
       }
    },
