@@ -3,7 +3,7 @@
       "name":"Baddest Beam",
       "data":{
          "Description":"Jeff can equip this weapon.",
-         "Location":"Replaces the Broken Harmonica in Jeff's inventory, after the item has been repaired.",
+         "Location":"Replaces the Broken Harmonica in Jeff's inventory after the item has been repaired.",
          "Price":"N/A",
          "Error rate":"0",
          "Offense up":"98"
