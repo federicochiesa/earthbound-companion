@@ -50,10 +50,60 @@ async function showInfoModal(item, data) {
     new bootstrap.Modal(document.getElementById('infoModal')).show();
 }
 
-function showMapModal(item) {
-    document.getElementById("mapModalTitle").textContent = "Map: " + item;
-    document.getElementById("mapModalBody").textContent = "This is a test map modal for " + item;
+async function showMapModal(item) {
+    document.getElementById("mapModalTitle").textContent = "Location for: " + item;
+    document.getElementById("mapModalBody").innerHTML = await getItemLocation(item);
     new bootstrap.Modal(document.getElementById('mapModal')).show();
+}
+
+async function getItemLocation(item) {
+    let data = await getData("shops");
+    let datai = await getData("items");
+    let datae = await getData("enemies");
+    let datam = await getData("maps");
+
+    for (let i = 0; i < Object.keys(data).length; i++) {
+        let elements = data[Object.keys(data)[i]];
+        for (const element of elements) {
+            if (element.name == item) {
+                var locs = element["Location"].split(", ");
+                let returnString = "<table class=\"table table-dark table-striped\">\
+                <tbody>\ ";
+
+                let enemies = datae[Object.keys(datae)[0]];
+                
+                for(let j = 0; j < locs.length; j++){
+                    l = locs[j]
+                    for (const e of enemies) {
+                        if (locs[j].search(e.name) > -1) {
+                            l = l.replace(e.name, "<a href=\"/wiki/enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                        }
+                    }
+                    for (let x = 0; x < Object.keys(datai).length; x++) {
+                        let items = datai[Object.keys(datai)[x]];
+                        for (const k of items) {
+                            if (locs[j].search(k.name) > -1) {
+                                l = l.replace(k.name, "<a href=\"/wiki/items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
+                            }
+                        }
+                    }
+                    for (const map of Object.keys(datam)){
+                        if(locs[j].search(capitalizeFirstLetters(map)) > -1){
+                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"/wiki/maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
+                        }
+                    }
+                    
+                    returnString += " <tr>\
+                                        <td>" + l + "</td>\
+                                     </tr>\ ";
+                }
+
+                returnString += "</tbody>\
+                            </table>";
+                return returnString;
+            }
+        }
+    }
 }
 
 window.onload = async function () {
