@@ -64,7 +64,7 @@
             "x": "5200",
             "y": "3155",
             "type": "boss",
-            "name": "Frankenstein Mark II"
+            "name": "Frankystein Mark II"
         },
         {
             "x": "5788",
@@ -92,7 +92,7 @@
             "type": "present"
         }
     ],
-    "happy happy village": [
+    "hhv": [
         {
             "x": "200",
             "y": "2000",
@@ -155,7 +155,7 @@
             "type": "present"
         }
     ],
-    "lost underworld": [
+    "lostunderworld": [
         {
             "x": "200",
             "y": "2000",

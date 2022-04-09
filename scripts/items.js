@@ -13,7 +13,7 @@ async function showMapModal(item) {
 async function getItemLocation(item) {
     let data = await getData("items");
     let datae = await getData("enemies");
-    let datam = await getData("pins");
+    let datam = await getData("maps");
 
     for (let i = 0; i < Object.keys(data).length; i++) {
         let elements = data[Object.keys(data)[i]];

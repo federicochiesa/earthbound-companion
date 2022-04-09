@@ -12,7 +12,7 @@ async function showMapModal(item) {
 
 async function getItemLocation(item) {
     let data = await getData("enemies");
-    let datam = await getData("pins");
+    let datam = await getData("maps");
     let datae = await getData("items")
     
     for (let i = 0; i < Object.keys(data).length; i++) {
@@ -92,10 +92,10 @@ async function getEnemyInfo(enemy) {
                     <th scope=\"row\">Guts</th>\
                     <td>" + element.data["Guts"] + "</td>\
                         </tr>"
-                if(typeof(element.data["Item"]) != "undefined")
+                if(typeof(element.data["Drops"]) != "undefined")
                     returnString += "<tr>\
-                    <th scope=\"row\">Item</th>\
-                    <td><a href=\"/wiki/items/?item="+ nameToImage(element.data["Item"].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ element.data["Item"] + "</a></td>\
+                    <th scope=\"row\">Drops</th>\
+                    <td><a href=\"/wiki/items/?item="+ nameToImage(element.data["Drops"].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ element.data["Drops"] + "</a></td>\
                         </tr>"
                 if(typeof(element.data["Exp"]) != "undefined")
                     returnString += "<tr>\

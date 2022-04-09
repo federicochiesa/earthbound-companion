@@ -11,7 +11,7 @@
          "Guts":"7",
          "Exp":"4361",
          "Money":"$255",
-         "Item":"Refreshing herb",
+         "Drops":"Refreshing herb",
          "Location":"Moonside"
       }
    },
@@ -27,7 +27,7 @@
          "Guts":"50",
          "Exp":"130",
          "Money":"$32",
-         "Item":"Protein drink",
+         "Drops":"Protein drink",
          "Location":"Twoson"
       }
    },
@@ -43,7 +43,7 @@
          "Guts":"50",
          "Exp":"2373",
          "Money":"$268",
-         "Item":"Protein drink",
+         "Drops":"Protein drink",
          "Location":"Fourside"
       }
    },
@@ -59,7 +59,7 @@
          "Guts":"3",
          "Exp":"4933",
          "Money":"$296",
-         "Item":"Jar of hot sauce",
+         "Drops":"Jar of hot sauce",
          "Location":"Brick Road Maze"
       }
    },
@@ -86,7 +86,7 @@
          "Guts":"5",
          "Exp":"1566",
          "Money":"$77",
-         "Item":"Broken spray can",
+         "Drops":"Broken spray can",
          "Location":"Grapefruit Falls"
       }
    },
@@ -114,7 +114,7 @@
          "Guts":"0",
          "Exp":"27",
          "Money":"$6",
-         "Item":"Bomb",
+         "Drops":"Bomb",
          "Location":"Giant Step"
       }
    },
@@ -130,7 +130,7 @@
          "Guts":"5",
          "Exp":"4108",
          "Money":"$172",
-         "Item":"Wet towel",
+         "Drops":"Wet towel",
          "Location":"Dusty Dunes Desert"
       }
    },
@@ -167,7 +167,7 @@
          "Speed":"42",
          "Offense":"155",
          "Defense":"195",
-         "Drops:":"Gutsy Bat",
+         "Drops":"Gutsy Bat",
          "Location":"Cave of the Past"
       }
    },
@@ -183,7 +183,7 @@
          "Guts":"3",
          "Exp":"37",
          "Money":"$7",
-         "Item":"Cookie",
+         "Drops":"Cookie",
          "Location":"Giant Step"
       }
    },
@@ -202,7 +202,7 @@
    {
       "name":"Caveboy",
       "data":{
-         "Comments":"Caveboy is a nasty Neanderthal with a spiked club. He looks mean\u2013and he is mean. Use a powerful attack to send him back to the stone age. It often drops picnic lunches, very useful HP-recovering items, so be sure to defeat some of them.",
+         "Comments":"Caveboy is a nasty Neanderthal with a spiked club. He looks mean\u2013and he is mean. Use a powerful attack to send him back to the stone age. It often drops picnic lunches, very useful HP-recovering Dropss, so be sure to defeat some of them.",
          "Hit points":"314",
          "Psychic points":"0",
          "Speed":"79",
@@ -211,7 +211,7 @@
          "Guts":"0",
          "Exp":"618",
          "Money":"$17",
-         "Item":"Picnic lunch, Double burger",
+         "Drops":"Picnic lunch, Double burger",
          "Location":"Winters, Stonehenge area"
       }
    },
@@ -224,7 +224,7 @@
          "Speed":"17",
          "Offense":"139",
          "Defense":"183",
-         "Drops:":"Magic Fry Pan",
+         "Drops":"Magic Fry Pan",
          "Location":"Lost Underworld"
       }
    },
@@ -240,7 +240,7 @@
          "Guts":"0",
          "Exp":"1",
          "Money":"$4",
-         "Item":"Cookie",
+         "Drops":"Cookie",
          "Location":"Onett, Twoson, Threed(saved)"
       }
    },
@@ -256,7 +256,7 @@
          "Guts":"5",
          "Exp":"14792",
          "Money":"$574",
-         "Item":"Bottle of water",
+         "Drops":"Bottle of water",
          "Location":"Cave of the Pink Cloud"
       }
    },
@@ -283,7 +283,7 @@
          "Guts":"7",
          "Exp":"86",
          "Money":"$18",
-         "Item":"Hamburger",
+         "Drops":"Hamburger",
          "Location":"Onett (Police Station), Twoson"
       }
    },
@@ -299,7 +299,7 @@
          "Guts":"3",
          "Exp":"200",
          "Money":"$17",
-         "Item":"Handbag strap",
+         "Drops":"Handbag strap",
          "Location":"Twoson"
       }
    },
@@ -315,7 +315,7 @@
          "Guts":"5",
          "Exp":"3618",
          "Money":"$244",
-         "Item":"Big bottle rocket",
+         "Drops":"Big bottle rocket",
          "Location":"Fourside, Summers"
       }
    },
@@ -331,7 +331,7 @@
          "Guts":"24",
          "Exp":"3011",
          "Money":"$130",
-         "Item":"Picnic lunch",
+         "Drops":"Picnic lunch",
          "Location":"Dusty Dunes Desert"
       }
    },
@@ -376,7 +376,7 @@
          "Guts":"5",
          "Exp":"2503",
          "Money":"$314",
-         "Item":"PSI caramel",
+         "Drops":"PSI caramel",
          "Location":"Moonside, Dungeon Man"
       }
    },
@@ -392,7 +392,7 @@
          "Guts":"225",
          "Exp":"9225",
          "Money":"$406",
-         "Item":"Rust promoter DX",
+         "Drops":"Rust promoter DX",
          "Location":"Fourside Sewers"
       }
    },
@@ -420,7 +420,7 @@
          "Guts":"2",
          "Exp":"3740",
          "Money":"$114",
-         "Item":"Sudden guts pill",
+         "Drops":"Sudden guts pill",
          "Location":"Dusty Dunes Desert"
       }
    },
@@ -459,7 +459,7 @@
          "Guts":"8",
          "Exp":"4178",
          "Money":"$371",
-         "Item":"Double burger",
+         "Drops":"Double burger",
          "Location":"Pond Cave"
       }
    },
@@ -487,7 +487,7 @@
          "Guts":"5",
          "Exp":"4321",
          "Money":"$346",
-         "Item":"Sudden guts pill",
+         "Drops":"Sudden guts pill",
          "Location":"Moonside"
       }
    },
@@ -538,7 +538,7 @@
          "Guts":"5",
          "Exp":"3651",
          "Money":"$134",
-         "Item":"Handbag strap",
+         "Drops":"Handbag strap",
          "Location":"Fourside"
       }
    },
@@ -552,7 +552,7 @@
          "Defense":"24",
          "Exp":"700",
          "Money":"$58",
-         "Item":"Skip sandwich",
+         "Drops":"Skip sandwich",
          "Location":"Grapefruit Falls"
       }
    },
@@ -578,7 +578,7 @@
          "Defense":"33",
          "Exp":"10543",
          "Money":"$432",
-         "Item":"Secret herb",
+         "Drops":"Secret herb",
          "Location":"Fourside Sewers"
       }
    },
@@ -618,7 +618,7 @@
          "Guts":"5",
          "Exp":"1311",
          "Money":"$93",
-         "Item":"PSI caramel",
+         "Drops":"PSI caramel",
          "Location":"Belch's Factory"
       }
    },
@@ -657,7 +657,7 @@
          "Guts":"5",
          "Exp":"3980",
          "Money":"$304",
-         "Item":"Double burger",
+         "Drops":"Double burger",
          "Location":"Desert Gold Mine"
       }
    },
@@ -685,7 +685,7 @@
          "Guts":"0",
          "Exp":"20",
          "Money":"$9",
-         "Item":"Salt packet",
+         "Drops":"Salt packet",
          "Location":"Winters"
       }
    },
@@ -713,7 +713,7 @@
          "Guts":"5",
          "Exp":"520",
          "Money":"$45",
-         "Item":"Tin of cocoa",
+         "Drops":"Tin of cocoa",
          "Location":"Threed"
       }
    },
@@ -777,7 +777,7 @@
          "Guts":"20",
          "Exp":"353",
          "Money":"$33",
-         "Item":"PSI caramel"
+         "Drops":"PSI caramel"
       }
    },
    {
@@ -792,7 +792,7 @@
          "Guts":"7",
          "Exp":"10354",
          "Money":"$528",
-         "Item":"Jar of delisauce",
+         "Drops":"Jar of delisauce",
          "Location":"Cave of the Pink Cloud"
       }
    },
@@ -831,7 +831,7 @@
          "Guts":"13",
          "Exp":"223",
          "Money":"$14",
-         "Item":"Skip sandwich",
+         "Drops":"Skip sandwich",
          "Location":"Peaceful Rest Valley"
       }
    },
@@ -858,7 +858,7 @@
          "Defense":"24",
          "Exp":"41",
          "Money":"$12",
-         "Item":"Fresh Egg",
+         "Drops":"Fresh Egg",
          "Location":"Brick Road Maze, Saturn Valley, Desert Gold Mine"
       }
    },
@@ -874,7 +874,7 @@
          "Guts":"5",
          "Exp":"2336",
          "Money":"$216",
-         "Item":"Xterminator spray",
+         "Drops":"Xterminator spray",
          "Location":"Fourside, Summers"
       }
    },
@@ -887,7 +887,7 @@
          "Speed":"31",
          "Offense":"145",
          "Defense":"152",
-         "Item:":"Star Pendant (1/128)",
+         "Drops":"Star Pendant (1/128)",
          "Location":"Fire Spring"
       }
    },
@@ -962,7 +962,7 @@
          "Guts":"1",
          "Exp":"609",
          "Money":"$49",
-         "Item":"Teddy bear",
+         "Drops":"Teddy bear",
          "Location":"Lilliput Steps"
       }
    },
@@ -977,7 +977,7 @@
          "Guts":"1",
          "Exp":"8884",
          "Money":"$440",
-         "Item":"Super plush bear",
+         "Drops":"Super plush bear",
          "Location":"Winters"
       }
    },
@@ -1005,7 +1005,7 @@
          "Guts":"5",
          "Exp":"133",
          "Money":"$13",
-         "Item":"Croissant",
+         "Drops":"Croissant",
          "Location":"Twoson, Peaceful Rest Valley"
       }
    },
@@ -1021,7 +1021,7 @@
          "Guts":"2",
          "Exp":"456",
          "Money":"$36",
-         "Item":"Croissant",
+         "Drops":"Croissant",
          "Location":"Lilliput Steps, Dusty Dunes Desert, Deep Darkness, Summers"
       }
    },
@@ -1060,7 +1060,7 @@
          "Guts":"4",
          "Exp":"1116",
          "Money":"$84",
-         "Item":"Pizza",
+         "Drops":"Pizza",
          "Location":"Belch's Factory"
       }
    },
@@ -1076,7 +1076,7 @@
          "Guts":"4",
          "Exp":"304",
          "Money":"$30",
-         "Item":"Jar of hot sauce",
+         "Drops":"Jar of hot sauce",
          "Location":"Happy Happy Village cave"
       }
    },
@@ -1092,7 +1092,7 @@
          "Guts":"20",
          "Exp":"3748",
          "Money":"$341",
-         "Item":"Sudden guts pill",
+         "Drops":"Sudden guts pill",
          "Location":"Fourside (Department Store)"
       }
    },
@@ -1108,7 +1108,7 @@
          "Guts":"12",
          "Exp":"2736",
          "Money":"$310",
-         "Item":"Pizza",
+         "Drops":"Pizza",
          "Location":"Fourside (Department Store), Dungeon Man"
       }
    },
@@ -1124,7 +1124,7 @@
          "Guts":"10",
          "Exp":"160",
          "Money":"$23",
-         "Item":"Ruler",
+         "Drops":"Ruler",
          "Location":"Twoson"
       }
    },
@@ -1140,7 +1140,7 @@
          "Guts":"3",
          "Exp":"415",
          "Money":"$26",
-         "Item":"Boiled egg",
+         "Drops":"Boiled egg",
          "Location":"Threed"
       }
    },
@@ -1156,7 +1156,7 @@
          "Guts":"5",
          "Exp":"1990",
          "Money":"$220",
-         "Item":"Carton of cream",
+         "Drops":"Carton of cream",
          "Location":"Desert Gold Mine"
       }
    },
@@ -1184,7 +1184,7 @@
          "Guts":"7",
          "Exp":"7448",
          "Money":"$420",
-         "Item":"Double burger",
+         "Drops":"Double burger",
          "Location":"Summers"
       }
    },
@@ -1223,7 +1223,7 @@
          "Guts":"1",
          "Exp":"1928",
          "Money":"$62",
-         "Item":"Meteornium",
+         "Drops":"Meteornium",
          "Location":"Grapefruit Falls"
       }
    },
@@ -1239,7 +1239,7 @@
          "Guts":"0",
          "Exp":"15",
          "Money":"$18",
-         "Item":"Hamburger",
+         "Drops":"Hamburger",
          "Location":"Onett"
       }
    },
@@ -1267,7 +1267,7 @@
          "Guts":"5",
          "Exp":"830",
          "Money":"$53",
-         "Item":"Croissant",
+         "Drops":"Croissant",
          "Location":"Threed"
       }
    },
@@ -1283,7 +1283,7 @@
          "Guts":"5",
          "Exp":"95",
          "Money":"$15",
-         "Item":"Ketchup packet",
+         "Drops":"Ketchup packet",
          "Location":"Onett, Twoson"
       }
    },
@@ -1299,7 +1299,7 @@
          "Guts":"1",
          "Exp":"2496",
          "Money":"$158",
-         "Item":"Picnic lunch",
+         "Drops":"Picnic lunch",
          "Location":"Milky Well Hole"
       }
    },
@@ -1314,7 +1314,7 @@
          "Guts":"4",
          "Exp":"1175",
          "Money":"$35",
-         "Item":"Sugar packet",
+         "Drops":"Sugar packet",
          "Location":"Grapefruit Falls"
       }
    },
@@ -1329,7 +1329,7 @@
          "Defense":"113",
          "Exp":"4796",
          "Money":"$349",
-         "Item":"Super bomb",
+         "Drops":"Super bomb",
          "Location":"Moonside, Dungeon Man"
       }
    },
@@ -1345,7 +1345,7 @@
          "Guts":"225",
          "Exp":"34",
          "Money":"$9",
-         "Item":"Bread roll",
+         "Drops":"Bread roll",
          "Location":"Giant Step, Pond Cave"
       }
    },
@@ -1361,7 +1361,7 @@
          "Guts":"0",
          "Exp":"4",
          "Money":"$3",
-         "Item":"Bread roll",
+         "Drops":"Bread roll",
          "Location":"Onett, Twoson"
       }
    },
@@ -1389,7 +1389,7 @@
          "Guts":"10",
          "Exp":"5034",
          "Money":"$392",
-         "Item":"Big bottle rocket",
+         "Drops":"Big bottle rocket",
          "Location":"Fourside (Monotoli Building)"
       }
    },
@@ -1405,7 +1405,7 @@
          "Guts":"25",
          "Exp":"44690",
          "Money":"$2630",
-         "Item":"Mummy Wrap",
+         "Drops":"Mummy Wrap",
          "Location":"Summers (Cultural Museum)"
       }
    },
@@ -1421,7 +1421,7 @@
          "Guts":"0",
          "Exp":"12",
          "Money":"$17",
-         "Item":"Pizza",
+         "Drops":"Pizza",
          "Location":"Onett"
       }
    },
@@ -1437,7 +1437,7 @@
          "Guts":"80",
          "Exp":"1823",
          "Money":"$140",
-         "Item":"Vial of serum",
+         "Drops":"Vial of serum",
          "Location":"Dusty Dunes Desert"
       }
    },
@@ -1453,7 +1453,7 @@
          "Guts":"2",
          "Exp":"606",
          "Money":"$71",
-         "Item":"Broken iron",
+         "Drops":"Broken iron",
          "Location":"Threed"
       }
    },
@@ -1468,7 +1468,7 @@
          "Guts":"16",
          "Exp":"712",
          "Money":"$48",
-         "Item":"Refreshing herb",
+         "Drops":"Refreshing herb",
          "Location":"Threed"
       }
    },
@@ -1484,7 +1484,7 @@
          "Guts":"5",
          "Exp":"2218",
          "Money":"$191",
-         "Item":"Meteornium",
+         "Drops":"Meteornium",
          "Location":"Dusty Dunes Desert"
       }
    },
@@ -1512,14 +1512,14 @@
          "Guts":"5",
          "Exp":"297",
          "Money":"$21",
-         "Item":"Meteornium",
+         "Drops":"Meteornium",
          "Location":"Peaceful Rest Valley"
       }
    },
    {
       "name":"Spiteful Crow",
       "data":{
-         "Comments":"Often drops a Cookie when defeated. Has the ability to steal items.",
+         "Comments":"Often drops a Cookie when defeated. Has the ability to steal Dropss.",
          "Hit points":"24",
          "Psychic points":"0",
          "Speed":"77",
@@ -1528,7 +1528,7 @@
          "Guts":"0",
          "Exp":"3",
          "Money":"$5",
-         "Item":"Cookie",
+         "Drops":"Cookie",
          "Location":"Onett, Peaceful Rest Valley(cabin area), Winters"
       }
    },
@@ -1565,7 +1565,8 @@
          "Speed":"24",
          "Offense":"112",
          "Defense":"129",
-         "Location":"Stonehenge base"
+         "Location":"Stonehenge base",
+         "Drops": "Sword of Kings"
       }
    },
    {
@@ -1579,7 +1580,7 @@
          "Guts":"4",
          "Exp":"13179",
          "Money":"$541",
-         "Item":"Large Pizza",
+         "Drops":"Large Pizza",
          "Location":"Fourside Sewers"
       }
    },
@@ -1595,7 +1596,7 @@
          "Guts":"5",
          "Exp":"10122",
          "Money":"$495",
-         "Item":"Super bomb",
+         "Drops":"Super bomb",
          "Location":"Pond Cave"
       }
    },
@@ -1611,7 +1612,7 @@
          "Guts":"20",
          "Exp":"14798",
          "Money":"$572",
-         "Item":"Snake",
+         "Drops":"Snake",
          "Location":"Cave of the Pink Cloud"
       }
    },
@@ -1627,7 +1628,7 @@
          "Guts":"9",
          "Exp":"356",
          "Money":"$29",
-         "Item":"PSI caramel",
+         "Drops":"PSI caramel",
          "Location":"Peaceful Rest Valley"
       }
    },
@@ -1643,7 +1644,7 @@
          "Guts":"5",
          "Exp":"2786",
          "Money":"$276",
-         "Item":"Chick",
+         "Drops":"Chick",
          "Location":"Desert Gold Mine"
       }
    },
@@ -1659,7 +1660,7 @@
          "Guts":"13",
          "Exp":"10798",
          "Money":"$430",
-         "Item":"Bottle of water",
+         "Drops":"Bottle of water",
          "Location":"Cave of the Pink Cloud"
       }
    },
@@ -1687,7 +1688,7 @@
          "Guts":"20",
          "Exp":"9310",
          "Money":"$525",
-         "Item":"Chick",
+         "Drops":"Chick",
          "Location":"Summers"
       }
    },
@@ -1702,7 +1703,7 @@
          "Guts":"6",
          "Exp":"1865",
          "Money":"$119",
-         "Item":"Sprig of parsley",
+         "Drops":"Sprig of parsley",
          "Location":"Milky Well, Monkey Caves"
       }
    },
@@ -1718,7 +1719,7 @@
          "Guts":"12",
          "Exp":"570",
          "Money":"$47",
-         "Item":"Bomb",
+         "Drops":"Bomb",
          "Location":"Threed"
       }
    },
@@ -1746,7 +1747,7 @@
          "Guts":"1",
          "Exp":"146",
          "Money":"$19",
-         "Item":"Toothbrush",
+         "Drops":"Toothbrush",
          "Location":"Twoson, Happy Happy Village"
       }
    },
@@ -1758,7 +1759,8 @@
          "Speed":"27",
          "Offense":"116",
          "Defense":"134",
-         "Location":"Lumine Hall, Magicant"
+         "Location":"Lumine Hall, Magicant",
+         "Drops": "Broken Antenna"
       }
    },
    {
@@ -1773,7 +1775,7 @@
          "Guts":"15",
          "Exp":"700",
          "Money":"$58",
-         "Item":"Hamburger",
+         "Drops":"Hamburger",
          "Location":"Threed, Grapefruit Falls"
       }
    },
@@ -1789,7 +1791,7 @@
          "Guts":"9",
          "Exp":"1757",
          "Money":"$80",
-         "Item":"Secret herb",
+         "Drops":"Secret herb",
          "Location":"Grapefruit Falls"
       }
    },
@@ -1852,7 +1854,7 @@
          "Guts":"0",
          "Exp":"17",
          "Money":"$11",
-         "Item":"Cookie",
+         "Drops":"Cookie",
          "Location":"Winters, Dungeon Man"
       }
    },
@@ -1868,7 +1870,7 @@
          "Guts":"0",
          "Exp":"13",
          "Money":"$18",
-         "Item":"Bag of fries",
+         "Drops":"Bag of fries",
          "Location":"Onett"
       }
    },
@@ -1896,7 +1898,7 @@
          "Guts":"10",
          "Exp":"1354",
          "Money":"$54",
-         "Item":"Bottle rocket",
+         "Drops":"Bottle rocket",
          "Location":"Threed"
       }
    },
@@ -1911,7 +1913,7 @@
          "Defense":"19",
          "Guts":"9",
          "Money":"$81",
-         "Item":"Secret herb",
+         "Drops":"Secret herb",
          "Location":"Threed"
       }
    }],
@@ -1942,7 +1944,7 @@
          "Guts":"8",
          "Exp":"492",
          "Money":"$159",
-         "Item":"Boiled egg",
+         "Drops":"Boiled egg",
          "Location":"Onett (Police Station)"
       }
    },
@@ -2194,7 +2196,7 @@
          "Guts":"7",
          "Exp":"1978",
          "Money":"$124",
-         "Item":"Bomb",
+         "Drops":"Bomb",
          "Location":"Underground Path"
       }
    },
