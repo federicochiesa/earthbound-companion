@@ -24,10 +24,16 @@ async function getItemLocation(item) {
                 <tbody>\ ";
 
                 let enemies = data[Object.keys(data)[0]];
+                let bosses = data[Object.keys(data)[1]];
                 
                 for(let j = 0; j < locs.length; j++){
                     l = locs[j]
                     for (const e of enemies) {
+                        if (locs[j].search(e.name) > -1) {
+                            l = l.replace(e.name, "<a href=\"/wiki/enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                        }
+                    }
+                    for (const e of bosses) {
                         if (locs[j].search(e.name) > -1) {
                             l = l.replace(e.name, "<a href=\"/wiki/enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
                         }
