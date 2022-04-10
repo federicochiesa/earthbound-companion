@@ -155,7 +155,21 @@
             "type": "present"
         }
     ],
+    "tendavillage": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
     "lostunderworld": [
+        {
+            "x": "200",
+            "y": "2000",
+            "type": "present"
+        }
+    ],
+    "magicant": [
         {
             "x": "200",
             "y": "2000",
