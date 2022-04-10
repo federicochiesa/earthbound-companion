@@ -62,10 +62,12 @@
 						<a class="nav-link" href="../../savefileviewer/">Save file viewer</a>
 					</li>
 				</ul>
-				<form class="d-flex" onsubmit="return false">
-					<input class="form-control me-2" id = "searchLabel" type="search" placeholder="Search" aria-label="Search">
-          			<button class="btn btn-outline-light" id = "searchButton" type="button">Search</button>
-				</form>
+				<form class="d-flex" autocomplete="off" onsubmit="return false">
+					<div class="autocomplete" style="margin-right: 10px;">
+					  <input class="form-control me-2" id = "searchLabel" type="search" placeholder="Search" aria-label="Search" >
+					</div>
+					<button class="btn btn-outline-light" id = "searchButton" type="button">Search</button>
+				  </form>
 			</div>
 		</div>
 	</nav>
