@@ -129,7 +129,7 @@ window.onload = async function () {
             newEntry.innerHTML = "<div class=\"row mb-3\"><div class=\"col me-2\">\
                                     <div class=\"row mb-5 cg\" id=\"" + nameToImage(elements[j].name.toLowerCase()) + "\">\
                                         <div class=\"col-lg-4\">\
-                                            <img src=\"/assets/buildings/" + nameToImage(elements[j].name) + ".png\" class=\"shop-image\">\
+                                            <img src=\"../../assets/buildings/" + nameToImage(elements[j].name) + ".png\" class=\"shop-image\">\
                                         </div>\
                                         <div class=\"col-lg-5\">\
                                             <h3 class=\"text-white\">" + elements[j].name + "</h3>\
