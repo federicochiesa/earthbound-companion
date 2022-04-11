@@ -39,7 +39,7 @@ async function showInfoModal(item, data) {
     for (let i = 0; i < objects.length; i++) {
         tableString += "<tr>\
                                 <th scope=\"row\">\
-                                    <a href=\"/wiki/items/?item="+ nameToImage(objects[i].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + objects[i] + "</a>\
+                                    <a href=\"../items/?item="+ nameToImage(objects[i].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + objects[i] + "</a>\
                                 </th>\
                                 <td>"+ prices[i] + "</td>\
                             </tr>"
@@ -78,25 +78,25 @@ async function getItemLocation(item) {
                     l = locs[j]
                     for (const e of enemies) {
                         if (locs[j].search(e.name) > -1) {
-                            l = l.replace(e.name, "<a href=\"/wiki/enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                            l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
                         }
                     }
                     for (const e of bosses) {
                         if (locs[j].search(e.name) > -1) {
-                            l = l.replace(e.name, "<a href=\"/wiki/enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                            l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
                         }
                     }
                     for (let x = 0; x < Object.keys(datai).length; x++) {
                         let items = datai[Object.keys(datai)[x]];
                         for (const k of items) {
                             if (locs[j].search(k.name) > -1) {
-                                l = l.replace(k.name, "<a href=\"/wiki/items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
+                                l = l.replace(k.name, "<a href=\"../items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
                             }
                         }
                     }
                     for (const map of Object.keys(datam)){
                         if(locs[j].search(capitalizeFirstLetters(map)) > -1){
-                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"/wiki/maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
+                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"../maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
                         }
                     }
                     
@@ -152,7 +152,7 @@ window.onload = async function () {
                                     <div class=\"col ms-2\">\
                                     <div class=\"row mb-5 cg\" id=\"" + nameToImage(elements[j+1].name.toLowerCase()) + "\">\
                                         <div class=\"col-lg-4\">\
-                                            <img src=\"/assets/buildings/" + nameToImage(elements[j + 1].name) + ".png\" class=\"shop-image\">\
+                                            <img src=\"../../assets/buildings/" + nameToImage(elements[j + 1].name) + ".png\" class=\"shop-image\">\
                                         </div>\
                                         <div class=\"col-lg-5\">\
                                             <h3 class=\"text-white\">" + elements[j + 1].name + "</h3>\
