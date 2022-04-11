@@ -583,14 +583,8 @@ select optgroup {
     display: none;
 }
 
-@media (min-width: 0px) and (max-width: 770px) {
-    .titleContainer, .single{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
+#save0, #save1, #save2{
+    line-height: 100%;
 }
 
 .itemLink {

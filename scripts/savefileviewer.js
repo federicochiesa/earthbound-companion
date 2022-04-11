@@ -3,8 +3,8 @@ Element.prototype.remove = function () {
 }
 
 NodeList.prototype.remove = HTMLCollection.prototype.remove = function () {
-    for (var i = this.length - 1; i >= 0; i--) 
-        if (this[i] && this[i].parentElement) 
+    for (var i = this.length - 1; i >= 0; i--)
+        if (this[i] && this[i].parentElement)
             this[i].parentElement.removeChild(this[i]);
 }
 
@@ -92,34 +92,36 @@ var itemsLUT = ["(Nothing)", "Franklin badge", "Teddy bear",
 window.onload = function () {
     showSurveyToast();
     initThumbnail();
-  
+
+    window.onresize = resizeTables;
+
     pages = ["items", "enemies", "shops", "maps"]
     data = []
     names = []
-    
-    setTimeout(async function(){
-        for(let j = 0; j < pages.length; j++){
+
+    setTimeout(async function () {
+        for (let j = 0; j < pages.length; j++) {
             data[j] = await getData(pages[j]);
             d = data[j]
-            if(j < 3){
+            if (j < 3) {
                 for (let i = 0; i < Object.keys(d).length; i++) {
                     var elements = d[Object.keys(d)[i]];
-                    for(let k = 0; k < elements.length; k++){
+                    for (let k = 0; k < elements.length; k++) {
                         names.push(elements[k].name)
                     }
                 }
-            }else{
+            } else {
                 for (const map of Object.keys(d))
                     names.push(capitalizeFirstLetters(map));
             }
         }
-        
+
     }, 100);
 
     autocomplete(document.getElementById("searchLabel"), names)
-    
+
     const searchButton = document.getElementById("searchButton");
-    searchButton.addEventListener('click', (_) =>{
+    searchButton.addEventListener('click', (_) => {
         searchOnSite(data);
     });
 }
@@ -148,10 +150,10 @@ function updateThumbnail(dropZoneElement, file) {
     }
 }
 
-function selectSave(id){
+function selectSave(id) {
     GameSave.resetData();
     saves[parseInt(id[4])].displayData();
-    for(let i = 0; i < 3; i++)
+    for (let i = 0; i < 3; i++)
         document.getElementById("save" + i).style.opacity = 0.3;
     document.getElementById(id).style.opacity = 1;
 }
@@ -244,8 +246,8 @@ class GameSave {
         }
 
         var flagCounter = 0;
-        for (i = 0; i < 205; i++) 
-            for (j = 0; j < 8; j++) 
+        for (i = 0; i < 205; i++)
+            for (j = 0; j < 8; j++)
                 this.flags[flagCounter++] = ((data[i + hexToDec("433")] & (1 << j)) == 0) ? false : true;
 
         for (i = 0; i < 36; i++)
@@ -253,9 +255,9 @@ class GameSave {
         this.inGameTimer = (data[hexToDec("1f7")] << 24) + (data[hexToDec("1f6")] << 16) + (data[hexToDec("1f5")] << 8) + data[hexToDec("1f4")];
     }
     async displayData() {
-        for(let i = 0; i < 3; i++)
+        for (let i = 0; i < 3; i++)
             document.getElementById("savec" + i).style.display = "block";
-        if(this.inGameTimer == 0){
+        if (this.inGameTimer == 0) {
             document.getElementById("emptyFileWarning").style.display = "block";
             return
         }
@@ -282,21 +284,21 @@ class GameSave {
             for (let i = 0; i < inventory.length; i++)
                 document.getElementById("c" + j + "i" + i).innerText = inventory[i];
             let stats = this.characters[j].stats;
-            for (let i = 0; i < stats.length; i++) 
+            for (let i = 0; i < stats.length; i++)
                 document.getElementById("c" + j + "stat" + i).innerText = stats[i];
             document.getElementById("c" + j + "level").innerText = this.characters[j].level;
             document.getElementById("c" + j + "xp").innerText = this.characters[j].exp;
             document.getElementById("c" + j + "hp").innerText = this.characters[j].currHP;
             document.getElementById("c" + j + "pp").innerText = this.characters[j].currPP;
             var weapons = items[Object.keys(items)[0]]
-            for (let i = 0; i < weapons.length; i++) 
-                if (weapons[i].name.toUpperCase() == this.characters[j].equip[0].toUpperCase()) 
+            for (let i = 0; i < weapons.length; i++)
+                if (weapons[i].name.toUpperCase() == this.characters[j].equip[0].toUpperCase())
                     document.getElementById("c" + j + "errorRate").innerText = weapons[i].data["Error rate"];
             document.getElementById("c" + j).style.display = "block";
         }
         document.getElementById("escargo").style.display = "block";
         document.getElementById("generalInfo").style.display = "block";
-        for(let i = 0; i < this.escargoItems.length - 1; i++) 
+        for (let i = 0; i < this.escargoItems.length - 1; i++)
             document.getElementById("esc" + i).innerText = this.escargoItems[i]
     }
 
@@ -327,10 +329,10 @@ class GameSave {
             document.getElementById("c" + j + "errorRate").innerText = "";
         }
         document.getElementById("escargo").style.display = "none";
-        for(let i = 0; i < 35; i++)
+        for (let i = 0; i < 35; i++)
             document.getElementById("esc" + i).innerText = "(Nothing)"
         document.getElementById("generalInfo").style.display = "none";
-        for(let i = 0; i < 3; i++)
+        for (let i = 0; i < 3; i++)
             document.getElementById("savec" + i).style.display = "none";
     }
 }
@@ -356,7 +358,7 @@ class PartyMember {
 
         for (i = 0; i < 4; i++) {
             let index = data[i + 49];
-            if (index != 0) 
+            if (index != 0)
                 this.equip.push(this.items[index - 1]);
             else this.equip.push("(Nothing)");
         }
@@ -365,7 +367,7 @@ class PartyMember {
         this.currPP = (data[76] << 8) + data[75];
 
         this.stats = [];
-        for (i = 0; i < 7; i++) 
+        for (i = 0; i < 7; i++)
             this.stats.push(data[21 + i]);
     }
 }
@@ -383,4 +385,348 @@ function hexToDec(data) {
 function getChar(char) {
     if (char < hexToDec("30")) return ""
     return String.fromCharCode(char - hexToDec("30"));
+}
+
+function resizeTables() {
+    if (document.getElementsByClassName("smallTable").length == 0 && window.innerWidth < 992) {
+        document.getElementById("generalInfoTable").innerHTML = "<tbody class=\"smallTable\">\
+        <tr>\
+          <th scope=\"row\">\
+            Hand Money\
+          </th>\
+          <td>:</td>\
+          <td id=\"handMoneyValue\"></td>\
+          <th scope=\"row\">\
+            ATM Money\
+          </th>\
+          <td>:</td>\
+          <td id=\"ATMMoneyValue\"></td>\
+        </tr>\
+        <tr>\
+          <th scope=\"row\">\
+            Favorite Food\
+          </th>\
+          <td>:</td>\
+          <td id=\"favFoodValue\"></td>\
+          <th scope=\"row\">\
+            Favorite Thing\
+          </th>\
+          <td>:</td>\
+          <td id=\"favThingValue\"></td>\
+        </tr>\
+        <tr>\
+            <th scope=\"row\">\
+            Pet Name\
+            </th>\
+            <td>:</td>\
+            <td id=\"petNameValue\"></td>\
+            <th id=\"playerNameHeader\" scope=\"row\"></th>\
+            <td id=\"playerNameColon\"></td>\
+            <td id=\"playerNameValue\"></td>\
+        </tr>\
+      </tbody>"
+        document.getElementById("escargoTable").innerHTML = "<tbody style=\"display: table !important; width:100% !important\">\
+            <tr>\
+              <td id=\"esc0\">(Nothing)</td>\
+              <td id=\"esc1\">(Nothing)</td>\
+              <td id=\"esc2\">(Nothing)</td>\
+              </tr>\
+              <tr>\
+              <td id=\"esc3\">(Nothing)</td>\
+              <td id=\"esc4\">(Nothing)</td>\
+              <td id=\"esc5\">(Nothing)</td>\
+              </tr>\
+              <tr>\
+              <td id=\"esc6\">(Nothing)</td>\
+              <td id=\"esc7\">(Nothing)</td>\
+              <td id=\"esc8\">(Nothing)</td>\
+              </tr>\
+              <tr>\
+              <td id=\"esc9\">(Nothing)</td>\
+              <td id=\"esc10\">(Nothing)</td>\
+              <td id=\"esc11\">(Nothing)</td>\
+              </tr>\
+              <tr>\
+              <td id=\"esc12\">(Nothing)</td>\
+              <td id=\"esc13\">(Nothing)</td>\
+              <td id=\"esc14\">(Nothing)</td>\
+              </tr>\
+              <tr>\
+              <td id=\"esc15\">(Nothing)</td>\
+              <td id=\"esc16\">(Nothing)</td>\
+              <td id=\"esc17\">(Nothing)</td>\
+              </tr>\
+              <tr>\
+              <td id=\"esc18\">(Nothing)</td>\
+              <td id=\"esc19\">(Nothing)</td>\
+              <td id=\"esc20\">(Nothing)</td>\
+              </tr>\
+              <tr>\
+              <td id=\"esc21\">(Nothing)</td>\
+              <td id=\"esc22\">(Nothing)</td>\
+              <td id=\"esc23\">(Nothing)</td>\
+              </tr>\
+              <tr>\
+              <td id=\"esc24\">(Nothing)</td>\
+              <td id=\"esc25\">(Nothing)</td>\
+              <td id=\"esc26\">(Nothing)</td>\
+              </tr>\
+              <tr>\
+              <td id=\"esc27\">(Nothing)</td>\
+              <td id=\"esc28\">(Nothing)</td>\
+              <td id=\"esc29\">(Nothing)</td>\
+              </tr>\
+              <tr>\
+              <td id=\"esc30\">(Nothing)</td>\
+              <td id=\"esc31\">(Nothing)</td>\
+              <td id=\"esc32\">(Nothing)</td>\
+              </tr>\
+              <tr>\
+              <td id=\"esc33\">(Nothing)</td>\
+              <td id=\"esc34\">(Nothing)</td>\
+            </tr>\
+          </tbody>";
+
+          for (let i = 0; i < 3; i++) {
+            document.getElementById("c" + i + "statsTable").innerHTML = "<tbody>\
+            <tr>\
+              <th scope=\"row\">\
+                Offense\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat0\"></td>\
+              <th scope=\"row\">\
+                Defense\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat1\"></td>\
+              </tr>\
+              <tr>\
+              <th scope=\"row\">\
+                Speed\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat2\"></td>\
+              <th scope=\"row\">\
+                Guts\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat3\"></td>\
+              </tr>\
+              <tr>\
+              <th scope=\"row\">\
+                Luck\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat4\"></td>\
+              <th scope=\"row\">\
+                Vitality\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat5\"></td>\
+              </tr>\
+              <tr>\
+              <th scope=\"row\">\
+                IQ\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat6\"></td>\
+              <th scope=\"row\">\
+                Error Rate\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "errorRate\"></td>\
+              </tr>\
+              <tr>\
+              <th scope=\"row\">\
+                Level\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "level\"></td>\
+              <th scope=\"row\">\
+                Experience\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "xp\"></td>\
+              </tr>\
+              <tr>\
+              <th scope=\"row\">\
+                Hit Points\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "hp\"></td>\
+              <th scope=\"row\">\
+                Psychic Points\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "pp\"></td>\
+            </tr>\
+          </tbody>"
+
+            if (document.getElementById("save" + i).style.opacity != 0.3)
+                saves[i].displayData();
+        }
+    }
+    else if (document.getElementsByClassName("largeTable").length == 0 && window.innerWidth > 992) {
+        document.getElementById("generalInfoTable").innerHTML = "<tbody class=\"largeTable\">\
+        <tr>\
+          <th scope=\"row\">\
+            Hand Money\
+          </th>\
+          <td>:</td>\
+          <td id=\"handMoneyValue\"></td>\
+          <th scope=\"row\">\
+            Favorite Food\
+          </th>\
+          <td>:</td>\
+          <td id=\"favFoodValue\"></td>\
+          <th scope=\"row\">\
+            Pet Name\
+          </th>\
+          <td>:</td>\
+          <td id=\"petNameValue\"></td>\
+        </tr>\
+        <tr>\
+          <th scope=\"row\">\
+            ATM Money\
+          </th>\
+          <td>:</td>\
+          <td id=\"ATMMoneyValue\"></td>\
+          <th scope=\"row\">\
+            Favorite Thing\
+          </th>\
+          <td>:</td>\
+          <td id=\"favThingValue\"></td>\
+          <th id=\"playerNameHeader\" scope=\"row\"></th>\
+          <td id=\"playerNameColon\"></td>\
+          <td id=\"playerNameValue\"></td>\
+        </tr>\
+      </tbody>"
+        document.getElementById("escargoTable").innerHTML = "<tbody style=\"display: table !important; width:100% !important\">\
+            <tr>\
+              <td id=\"esc0\">(Nothing)</td>\
+              <td id=\"esc1\">(Nothing)</td>\
+              <td id=\"esc2\">(Nothing)</td>\
+              <td id=\"esc3\">(Nothing)</td>\
+              <td id=\"esc4\">(Nothing)</td>\
+            </tr>\
+            <tr>\
+              <td id=\"esc5\">(Nothing)</td>\
+              <td id=\"esc6\">(Nothing)</td>\
+              <td id=\"esc7\">(Nothing)</td>\
+              <td id=\"esc8\">(Nothing)</td>\
+              <td id=\"esc9\">(Nothing)</td>\
+            </tr>\
+            <tr>\
+              <td id=\"esc10\">(Nothing)</td>\
+              <td id=\"esc11\">(Nothing)</td>\
+              <td id=\"esc12\">(Nothing)</td>\
+              <td id=\"esc13\">(Nothing)</td>\
+              <td id=\"esc14\">(Nothing)</td>\
+            </tr>\
+            <tr>\
+              <td id=\"esc15\">(Nothing)</td>\
+              <td id=\"esc16\">(Nothing)</td>\
+              <td id=\"esc17\">(Nothing)</td>\
+              <td id=\"esc18\">(Nothing)</td>\
+              <td id=\"esc19\">(Nothing)</td>\
+            </tr>\
+            <tr>\
+              <td id=\"esc20\">(Nothing)</td>\
+              <td id=\"esc21\">(Nothing)</td>\
+              <td id=\"esc22\">(Nothing)</td>\
+              <td id=\"esc23\">(Nothing)</td>\
+              <td id=\"esc24\">(Nothing)</td>\
+            </tr>\
+            <tr>\
+              <td id=\"esc25\">(Nothing)</td>\
+              <td id=\"esc26\">(Nothing)</td>\
+              <td id=\"esc27\">(Nothing)</td>\
+              <td id=\"esc28\">(Nothing)</td>\
+              <td id=\"esc29\">(Nothing)</td>\
+            </tr>\
+            <tr>\
+              <td id=\"esc30\">(Nothing)</td>\
+              <td id=\"esc31\">(Nothing)</td>\
+              <td id=\"esc32\">(Nothing)</td>\
+              <td id=\"esc33\">(Nothing)</td>\
+              <td id=\"esc34\">(Nothing)</td>\
+            </tr>\
+          </tbody>";
+        for (let i = 0; i < 3; i++) {
+            document.getElementById("c" + i + "statsTable").innerHTML = "<tbody>\
+            <tr>\
+              <th scope=\"row\">\
+                Offense\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat0\"></td>\
+              <th scope=\"row\">\
+                Defense\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat1\"></td>\
+              <th scope=\"row\">\
+                Speed\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat2\"></td>\
+            </tr>\
+            <tr>\
+              <th scope=\"row\">\
+                Guts\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat3\"></td>\
+              <th scope=\"row\">\
+                Luck\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat4\"></td>\
+              <th scope=\"row\">\
+                Vitality\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat5\"></td>\
+            </tr>\
+            <tr>\
+              <th scope=\"row\">\
+                IQ\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "stat6\"></td>\
+              <th scope=\"row\">\
+                Error Rate\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "errorRate\"></td>\
+              <th scope=\"row\">\
+                Level\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "level\"></td>\
+            </tr>\
+            <tr>\
+              <th scope=\"row\">\
+                Experience\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "xp\"></td>\
+              <th scope=\"row\">\
+                Hit Points\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "hp\"></td>\
+              <th scope=\"row\">\
+                Psychic Points\
+              </th>\
+              <td>:</td>\
+              <td id=\"c" + i + "pp\"></td>\
+            </tr>\
+          </tbody>"
+
+            if (document.getElementById("save" + i).style.opacity != 0.3)
+                saves[i].displayData();
+        }
+    }
 }
