@@ -244,7 +244,7 @@ window.onload = async function () {
         }
     }, 50);
 
-    pages = ["items", "enemies", "shops"]
+    pages = ["items", "enemies", "shops", "maps"]
     data = []
     names = []
     
@@ -252,14 +252,22 @@ window.onload = async function () {
         for(let j = 0; j < pages.length; j++){
             data[j] = await getData(pages[j]);
             d = data[j]
-            for (let i = 0; i < Object.keys(d).length; i++) {
-                var elements = d[Object.keys(d)[i]];
-                for(let k = 0; k < elements.length; k++){
-                    names.push(elements[k].name)
+            if(j < 3){
+                for (let i = 0; i < Object.keys(d).length; i++) {
+                    var elements = d[Object.keys(d)[i]];
+                    for(let k = 0; k < elements.length; k++){
+                        names.push(elements[k].name)
+                    }
                 }
+            }else{
+                for (const map of Object.keys(d))
+                    names.push(capitalizeFirstLetters(map));
             }
         }
+        
     }, 100);
+
+
 
     autocomplete(document.getElementById("searchLabel"), names)
     

@@ -79,21 +79,31 @@ async function searchOnSite(data){
   let searchButton = document.getElementById("searchButton");
   var popover = new bootstrap.Popover(searchButton, {content: "Nothing found. Did you type that right?"});
   
-  pages = ["items", "enemies", "shops"]
+  pages = ["items", "enemies", "shops", "maps"]
   
   for(let j = 0; j < pages.length; j++){
       d = data[j]
-      for (let i = 0; i < Object.keys(d).length; i++) {
-          var elements = d[Object.keys(d)[i]];
-          for(let k = 0; k < elements.length; k++){
-              console.log(nameToImage(elements[k].name.toLowerCase()))
-              if(nameToImage(elements[k].name.toLowerCase()) == nameToImage(label.toLowerCase())){
-                  window.location.href = "/wiki/"+ pages[j] +"/?item="+ nameToImage(elements[k].name.toLowerCase());
-                  break;
-              }
+      if(j < 3){
+        for (let i = 0; i < Object.keys(d).length; i++) {
+            var elements = d[Object.keys(d)[i]];
+            for(let k = 0; k < elements.length; k++){
+                console.log(nameToImage(elements[k].name.toLowerCase()))
+                if(nameToImage(elements[k].name.toLowerCase()) == nameToImage(label.toLowerCase())){
+                    window.location.href = "/wiki/"+ pages[j] +"/?item="+ nameToImage(elements[k].name.toLowerCase());
+                    break;
+                }
+            }
+        }
+      }else{
+        for(const map of Object.keys(d)){
+          if(nameToImage(map.toLowerCase()) == nameToImage(label.toLowerCase())){
+            window.location.href = "/wiki/"+ pages[j] +"/?map="+ nameToImage(map.toLowerCase());
+            break;
           }
+        }
       }
   }
+
   popover.show();
   setTimeout(function(){popover.hide()}, 2000);
 }
@@ -129,7 +139,7 @@ function autocomplete(inp, arr) {
           /*execute a function when someone clicks on the item value (DIV element):*/
               b.addEventListener("click", function(e) {
               /*insert the value for the autocomplete text field:*/
-              inp.value = this.getElementsByTagName("input")[0].value;
+              inp.value = this.innerText;
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
               closeAllLists();
