@@ -186,7 +186,6 @@ window.onload = async function () {
         if (idToScroll != null) {
             const element = document.getElementById(idToScroll);
             const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
-            console.log(element.getBoundingClientRect().top)
             window.scrollTo({ top: y});
         }
     }, 50);

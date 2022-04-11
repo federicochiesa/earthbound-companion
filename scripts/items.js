@@ -239,7 +239,6 @@ window.onload = async function () {
         if (idToScroll != null) {
             const element = document.getElementById(idToScroll);
             const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
-            console.log(element.getBoundingClientRect().top)
             window.scrollTo({ top: y});
         }
     }, 50);
@@ -255,11 +254,11 @@ window.onload = async function () {
             if(j < 3){
                 for (let i = 0; i < Object.keys(d).length; i++) {
                     var elements = d[Object.keys(d)[i]];
-                    for(let k = 0; k < elements.length; k++){
+                    for(let k = 0; k < elements.length; k++)
                         names.push(elements[k].name)
-                    }
                 }
-            }else{
+            }
+            else{
                 for (const map of Object.keys(d))
                     names.push(capitalizeFirstLetters(map));
             }
