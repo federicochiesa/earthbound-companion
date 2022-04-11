@@ -93,8 +93,6 @@ window.onload = function () {
     showSurveyToast();
     initThumbnail();
 
-    window.onresize = resizeTables;
-
     pages = ["items", "enemies", "shops", "maps"]
     data = []
     names = []
@@ -126,7 +124,7 @@ window.onload = function () {
     });
 }
 
-function updateThumbnail(dropZoneElement, file) {
+function updateThumbnail(_, file) {
     document.getElementById("fileUploader").style.display = "none";
     document.getElementById("loadedFileBanner").style.display = "flex";
     document.getElementById("loadedFileBanner").classList.add("drop-zone--over");
@@ -148,6 +146,7 @@ function updateThumbnail(dropZoneElement, file) {
         }
         saves[0].displayData();
     }
+    window.onresize = resizeTables;
 }
 
 function selectSave(id) {
@@ -199,6 +198,7 @@ async function initThumbnail() {
     document.getElementById("fileUploader").style.display = "flex";
     if (typeof (saves[0]) != "undefined")
         GameSave.resetData();
+    window.onresize = null;
 }
 
 class GameSave {
@@ -487,7 +487,7 @@ function resizeTables() {
             </tr>\
           </tbody>";
 
-          for (let i = 0; i < 3; i++) {
+          for (let i = 0; i < 4; i++) {
             document.getElementById("c" + i + "statsTable").innerHTML = "<tbody>\
             <tr>\
               <th scope=\"row\">\
@@ -562,10 +562,11 @@ function resizeTables() {
               <td id=\"c" + i + "pp\"></td>\
             </tr>\
           </tbody>"
-
+          }
+          for(let i = 0; i < 3; i++)
             if (document.getElementById("save" + i).style.opacity != 0.3)
                 saves[i].displayData();
-        }
+        
     }
     else if (document.getElementsByClassName("largeTable").length == 0 && window.innerWidth > 992) {
         document.getElementById("generalInfoTable").innerHTML = "<tbody class=\"largeTable\">\
@@ -653,7 +654,7 @@ function resizeTables() {
               <td id=\"esc34\">(Nothing)</td>\
             </tr>\
           </tbody>";
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 4; i++) {
             document.getElementById("c" + i + "statsTable").innerHTML = "<tbody>\
             <tr>\
               <th scope=\"row\">\
@@ -724,9 +725,10 @@ function resizeTables() {
               <td id=\"c" + i + "pp\"></td>\
             </tr>\
           </tbody>"
-
+        }
+        for(let i = 0; i < 3; i++)
             if (document.getElementById("save" + i).style.opacity != 0.3)
                 saves[i].displayData();
-        }
+        
     }
 }
