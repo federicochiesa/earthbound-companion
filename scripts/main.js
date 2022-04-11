@@ -108,7 +108,7 @@ async function searchOnSite(data){
   setTimeout(function(){popover.hide()}, 2000);
 }
 
-function autocomplete(inp, arr) {
+async function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
   var currentFocus;
@@ -138,9 +138,14 @@ function autocomplete(inp, arr) {
           /*insert a input field that will hold the current array item's value:*/
           b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
           /*execute a function when someone clicks on the item value (DIV element):*/
-              b.addEventListener("click", function(e) {
+              b.addEventListener("click", async function(e) {
+                pages = ["items", "enemies", "shops", "maps"]
+                let data=[]
+                for(let j = 0; j < pages.length; j++)
+                  data[j] = await getData(pages[j]);
               /*insert the value for the autocomplete text field:*/
               inp.value = this.innerText;
+              searchOnSite(data)
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
               closeAllLists();
