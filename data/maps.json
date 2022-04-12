@@ -228,6 +228,16 @@
             }
         ]
     },
+    "dusty dunes desert": {
+        "name": "dustydunesdesert",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
     "fourside": {
         "name": "fourside",
         "pins": [
