@@ -640,3 +640,19 @@ input[type=submit] {
   background-color: DodgerBlue !important;
   color: #ffffff;
 }
+
+.single{
+    margin: 0;
+}
+
+@media (min-width: 0px) and (max-width: 992px){
+    .single{
+        flex-direction: column;
+        justify-content: center;
+         align-items: center;
+    }
+
+    #inventory, #equipments{
+        width: 100%;
+    }
+}
