@@ -73,17 +73,30 @@ async function getItemLocation(item) {
                 let enemies = datae[Object.keys(datae)[0]];
                 let bosses = datae[Object.keys(datae)[1]];
                 
+                let specialEnemies = ["Arachnid!!!", "Bionic Kraken", "Final Starman", "Ghost of Starman", "Great Crested Booka", "Cute Li'l UFO",
+                "Hyper Spinning Robo", "Major Psychic Psycho", "Manly Fish's Brother", "Mighty Bear Seven", "Starman Super", "Tough Mobile Sprout",
+                "Wild 'N Wooly Shambler", "Frankystein Mark II", "Giygas Part III (unstable defenses)", "Starman Deluxe", "Starman Junior"]
                 
+                let foundSE = false
+
                 for(let j = 0; j < locs.length; j++){
                     l = locs[j]
-                    for (const e of enemies) {
-                        if (locs[j].search(e.name) > -1) {
-                            l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                    for(const se of specialEnemies){
+                        if (locs[j].search(se) > -1) {
+                            foundSE = true;
+                            l = l.replace(se, "<a href=\"../enemies/?item="+ nameToImage(se.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ se + "</a>");
                         }
                     }
-                    for (const e of bosses) {
-                        if (locs[j].search(e.name) > -1) {
-                            l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                    if(!foundSE){
+                        for (const e of enemies) {
+                            if (locs[j].search(e.name) > -1) {
+                                l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                            }
+                        }
+                        for (const e of bosses) {
+                            if (locs[j].search(e.name) > -1) {
+                                l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                            }
                         }
                     }
                     for (let x = 0; x < Object.keys(datai).length; x++) {
