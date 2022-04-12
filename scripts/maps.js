@@ -9,15 +9,6 @@ window.onload = function () {
         updateMap(mapToShow);
     //Add click event listener on popovers
     const iframe = document.getElementById("mapiFrame");
-}
-
-function updateMap(id) {
-    let arrows = document.querySelectorAll(".arrow");
-    for (let i = 0; i < arrows.length; i++) {
-        arrows[i].setAttribute("style", "display: none;");
-    }
-    document.getElementById(id + "Arrow").style.display = "inline";
-    document.getElementById("mapiFrame").src = "../../mapframe/dist/?region=" + id;
 
     pages = ["items", "enemies", "shops", "maps"]
     data = []
@@ -47,6 +38,17 @@ function updateMap(id) {
     searchButton.addEventListener('click', (_) =>{
         searchOnSite(data);
     });
+
+
+}
+
+function updateMap(id) {
+    let arrows = document.querySelectorAll(".arrow");
+    for (let i = 0; i < arrows.length; i++) {
+        arrows[i].setAttribute("style", "display: none;");
+    }
+    document.getElementById(id + "Arrow").style.display = "inline";
+    document.getElementById("mapiFrame").src = "../../mapframe/dist/?region=" + id;
 }
 
 function checkForPopover(){
