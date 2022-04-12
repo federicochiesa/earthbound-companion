@@ -455,9 +455,7 @@ function applyBonus(stat, bonus){
         stat.innerText = (parseInt(values[0])+bonus).toString() + "-" + (parseInt(values[1])+bonus).toString();
     } else if((stat.innerText.match(/-/g) || []).length > 1){
         pos = stat.innerText.indexOf("-", 1)
-        console.log(pos)
         stat.innerText = stat.innerText.replaceAt(pos, "$");
-        console.log(stat.innerText)
         values = stat.innerText.split("$");
         stat.innerText = (parseInt(values[0])+bonus).toString() + "-" + (parseInt(values[1])+bonus).toString();
     }

@@ -30,25 +30,25 @@ async function getItemLocation(item) {
                     l = locs[j]
                     for (const e of enemies) {
                         if (locs[j].search(e.name) > -1) {
-                            l = l.replace(e.name, "<a href=\"/wiki/enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                            l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
                         }
                     }
                     for (const e of bosses) {
                         if (locs[j].search(e.name) > -1) {
-                            l = l.replace(e.name, "<a href=\"/wiki/enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                            l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
                         }
                     }
                     for (let x = 0; x < Object.keys(datae).length; x++) {
                         let items = datae[Object.keys(datae)[x]];
                         for (const k of items) {
                             if (locs[j].search(k.name) > -1) {
-                                l = l.replace(k.name, "<a href=\"/wiki/items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
+                                l = l.replace(k.name, "<a href=\"../items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
                             }
                         }
                     }
                     for (const map of Object.keys(datam)){
                         if(locs[j].search(capitalizeFirstLetters(map)) > -1){
-                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"/wiki/maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
+                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"../maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
                         }
                     }
                     
@@ -101,7 +101,7 @@ async function getEnemyInfo(enemy) {
                 if(typeof(element.data["Drops"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">Drops</th>\
-                    <td><a href=\"/wiki/items/?item="+ nameToImage(element.data["Drops"].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ element.data["Drops"] + "</a></td>\
+                    <td><a href=\"../items/?item="+ nameToImage(element.data["Drops"].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ element.data["Drops"] + "</a></td>\
                         </tr>"
                 if(typeof(element.data["Exp"]) != "undefined")
                     returnString += "<tr>\
@@ -138,7 +138,7 @@ window.onload = async function () {
             else var comments = element.data["Comments"];
             newEntry.innerHTML = "<div class=\"row mb-4\" id=\"" + nameToImage(element.name.toLowerCase()) + "\">\
                                     <div class=\"col-lg-2\">\
-                                        <img src=\"/assets/sprites/" + nameToImage(element.name) + ".png\" class=\"img-item\">\
+                                        <img src=\"../../assets/sprites/" + nameToImage(element.name) + ".png\" class=\"img-item\">\
                                     </div>\
                                     <div class=\"col-lg-7\">\
                                         <h3 class=\"text-white\">" + element.name + "</h3>\
@@ -186,7 +186,6 @@ window.onload = async function () {
         if (idToScroll != null) {
             const element = document.getElementById(idToScroll);
             const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
-            console.log(element.getBoundingClientRect().top)
             window.scrollTo({ top: y});
         }
     }, 50);

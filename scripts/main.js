@@ -62,7 +62,6 @@ async function searchOnSite2(data){
       for (let i = 0; i < Object.keys(d).length; i++) {
           var elements = d[Object.keys(d)[i]];
           for(let k = 0; k < elements.length; k++){
-              console.log(nameToImage(elements[k].name.toLowerCase()))
               if(nameToImage(elements[k].name.toLowerCase()).search(nameToImage(label.toLowerCase())) > -1){
                   window.location.href = "/wiki/"+ pages[j] +"/?item="+ nameToImage(elements[k].name.toLowerCase());
                   break;
@@ -87,7 +86,6 @@ async function searchOnSite(data){
         for (let i = 0; i < Object.keys(d).length; i++) {
             var elements = d[Object.keys(d)[i]];
             for(let k = 0; k < elements.length; k++){
-                console.log(nameToImage(elements[k].name.toLowerCase()))
                 if(nameToImage(elements[k].name.toLowerCase()) == nameToImage(label.toLowerCase())){
                     window.location.href = "/wiki/"+ pages[j] +"/?item="+ nameToImage(elements[k].name.toLowerCase());
                     break;

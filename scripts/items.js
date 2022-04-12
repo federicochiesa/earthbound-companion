@@ -30,25 +30,25 @@ async function getItemLocation(item) {
                     l = locs[j]
                     for (const e of enemies) {
                         if (locs[j].search(e.name) > -1) {
-                            l = l.replace(e.name, "<a href=\"/wiki/enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                            l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
                         }
                     }
                     for (const e of bosses) {
                         if (locs[j].search(e.name) > -1) {
-                            l = l.replace(e.name, "<a href=\"/wiki/enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                            l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
                         }
                     }
                     for (let x = 0; x < Object.keys(data).length; x++) {
                         let items = data[Object.keys(data)[x]];
                         for (const k of items) {
                             if (locs[j].search(k.name) > -1) {
-                                l = l.replace(k.name, "<a href=\"/wiki/items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
+                                l = l.replace(k.name, "<a href=\"../items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
                             }
                         }
                     }
                     for (const map of Object.keys(datam)){
                         if(locs[j].search(capitalizeFirstLetters(map)) > -1){
-                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"/wiki/maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
+                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"../maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
                         }
                     }
                     
@@ -239,7 +239,6 @@ window.onload = async function () {
         if (idToScroll != null) {
             const element = document.getElementById(idToScroll);
             const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
-            console.log(element.getBoundingClientRect().top)
             window.scrollTo({ top: y});
         }
     }, 50);
@@ -255,11 +254,11 @@ window.onload = async function () {
             if(j < 3){
                 for (let i = 0; i < Object.keys(d).length; i++) {
                     var elements = d[Object.keys(d)[i]];
-                    for(let k = 0; k < elements.length; k++){
+                    for(let k = 0; k < elements.length; k++)
                         names.push(elements[k].name)
-                    }
                 }
-            }else{
+            }
+            else{
                 for (const map of Object.keys(d))
                     names.push(capitalizeFirstLetters(map));
             }
