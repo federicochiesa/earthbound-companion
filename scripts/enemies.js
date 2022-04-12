@@ -25,17 +25,31 @@ async function getItemLocation(item) {
 
                 let enemies = data[Object.keys(data)[0]];
                 let bosses = data[Object.keys(data)[1]];
+
+                let specialEnemies = ["Arachnid!!!", "Bionic Kraken", "Final Starman", "Ghost of Starman", "Great Crested Booka", "Cute Li'l UFO",
+                "Hyper Spinning Robo", "Major Psychic Psycho", "Manly Fish's Brother", "Mighty Bear Seven", "Starman Super", "Tough Mobile Sprout",
+                "Wild 'N Wooly Shambler", "Frankystein Mark II", "Giygas Part III (unstable defenses)", "Starman Deluxe", "Starman Junior"]
                 
+                let foundSE = false;
+
                 for(let j = 0; j < locs.length; j++){
                     l = locs[j]
-                    for (const e of enemies) {
-                        if (locs[j].search(e.name) > -1) {
-                            l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                    for(const se of specialEnemies){
+                        if (locs[j].search(se) > -1) {
+                            foundSE = true;
+                            l = l.replace(se, "<a href=\"../enemies/?item="+ nameToImage(se.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ se + "</a>");
                         }
                     }
-                    for (const e of bosses) {
-                        if (locs[j].search(e.name) > -1) {
-                            l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                    if(!foundSE){
+                        for (const e of enemies) {
+                            if (locs[j].search(e.name) > -1) {
+                                l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                            }
+                        }
+                        for (const e of bosses) {
+                            if (locs[j].search(e.name) > -1) {
+                                l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                            }
                         }
                     }
                     for (let x = 0; x < Object.keys(datae).length; x++) {
@@ -166,13 +180,15 @@ window.onload = async function () {
                                             </tbody>\
                                         </table>\
                                     </div>\
-                                    <div class=\"col-lg-1\">\
+                                    <div class=\"col-lg-1 centering\">\
+                                        <div class=\"col-lg infobox\" >\
                                         <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + element.name + "&quot;)\">\
                                             <img src=\"../../assets/sprites/info.png\" class=\"img-button\" \>\
                                         </a>\
                                         <a href=\"#/\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + element.name + "&quot;)\">\
                                             <img src=\"../../assets/sprites/Mappost.png\" class=\"img-button\" \>\
                                         </a>\
+                                        </div>\
                                     </div>\
                                 </div>";
             list.appendChild(newEntry);

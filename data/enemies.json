@@ -913,7 +913,8 @@
          "Speed":"24",
          "Offense":"114",
          "Defense":"123",
-         "Location":"Deep Darkness"
+         "Location":"Deep Darkness",
+         "Drops": "Horn of life"
       }
    },
    {

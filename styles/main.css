@@ -655,4 +655,9 @@ input[type=submit] {
     #inventory, #equipments{
         width: 100%;
     }
+
+    .infobox{
+        column-gap:20px;
+        display: flex;
+    }
 }

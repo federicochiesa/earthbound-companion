@@ -2268,7 +2268,7 @@
       "data":{
          "Comments":"Completely cures unconsciousness and all other adverse conditions. The same effect as Healing Omega.",
          "Description":"Revives a friend who is unconscious. In addition, it also works well with poison, nausea, colds, sunstroke, falling asleep, uncontrollable crying, and feeling strange. This is effective when you have paralysis, or if you have been diamondized.",
-         "Location":"Saturn Valley (Drugstore), Lost Underworld (Grocery Store, Gift Box), the Fire Spring (Gift Box), dropped by Manly Fish's Brother(1/128 chance)",
+         "Location":"Saturn Valley (Drugstore), Lost Underworld (Gift Box in Grocery Store), the Fire Spring (Gift Box), dropped by Manly Fish's Brother(1/128 chance)",
          "Price":"$1780",
          "Note":": Possibly the hardest 1/128 item to get."
       }
@@ -2315,7 +2315,7 @@
       "data":{
          "Comments":"Cures all bad conditions and wakes someone who is unconscious. The same effect as Healing Gamma. Is a stronger version of the Refreshing herb.",
          "Description":"May revive a friend who is unconscious. In addition, it also works well on poison, nausea, colds, sunstroke, falling asleep, uncontrollable crying, and feeling strange. This is effective when you have paralysis, or you have been diamondized.",
-         "Location":"Saturn Valley (Drugstore), Desert Gold Mine (Gift Box), Moonside (Gift Box), Winters (Dr. Andonuts' Lab), Toto (Grocery Store), Scaraba (Hassan's Shop, Grocery Store), Deep Darkness (Trading Company Employee), dropped by Violent Roach(1/128 chance)",
+         "Location":"Saturn Valley (Drugstore), Desert Gold Mine (Gift Box), Moonside (Gift Box), Winters (Dr. Andonuts' Lab), Toto (Grocery Store), Scaraba (Hassan's Shop or Grocery Store), Deep Darkness (Trading Company Employee), dropped by Violent Roach(1/128 chance)",
          "Price":"$380"
       }
    },
