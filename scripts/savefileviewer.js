@@ -292,9 +292,12 @@ class GameSave {
             document.getElementById("c" + j + "hp").innerText = this.characters[j].currHP;
             document.getElementById("c" + j + "pp").innerText = this.characters[j].currPP;
             var weapons = items[Object.keys(items)[0]]
-            for (let i = 0; i < weapons.length; i++)
-                if (weapons[i].name.toUpperCase() == this.characters[j].equip[0].toUpperCase())
-                    document.getElementById("c" + j + "errorRate").innerText = weapons[i].data["Error rate"];
+            if(this.characters[j].equip[0].toUpperCase() != "(NOTHING)"){
+              for (let i = 0; i < weapons.length; i++)
+                  if (weapons[i].name.toUpperCase() == this.characters[j].equip[0].toUpperCase())
+                      document.getElementById("c" + j + "errorRate").innerText = weapons[i].data["Error rate"];
+            } else document.getElementById("c" + j + "errorRate").innerText = "0";
+
             document.getElementById("c" + j).style.display = "block";
         }
         document.getElementById("escargo").style.display = "block";
@@ -405,12 +408,12 @@ function resizeTables() {
         </tr>\
         <tr>\
           <th scope=\"row\">\
-            Favorite Food\
+            Fav. Food\
           </th>\
           <td>:</td>\
           <td id=\"favFoodValue\"></td>\
           <th scope=\"row\">\
-            Favorite Thing\
+            Fav. Thing\
           </th>\
           <td>:</td>\
           <td id=\"favThingValue\"></td>\
