@@ -88,6 +88,16 @@
             }
         ]
     },
+    "giant step": {
+        "name": "giantstep",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
     "twoson": {
         "name": "twoson",
         "pins": [
@@ -98,8 +108,28 @@
             }
         ]
     },
+    "peaceful rest valley": {
+        "name": "peacefulrestvalley",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
     "happy happy village": {
         "name": "happyhappyvillage",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "lilliput steps": {
+        "name": "lilliputsteps",
         "pins": [
             {
                 "x": "200",
@@ -128,6 +158,46 @@
             }
         ]
     },
+    "brick roads maze": {
+        "name": "brickroadsmaze",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "rainy circle": {
+        "name": "rainycircle",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "grapefruit falls": {
+        "name": "grapefruitfalls",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "cave to saturn valley": {
+        "name": "cavetosaturnvalley",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
     "saturn valley": {
         "name": "saturnvalley",
         "pins": [
@@ -138,8 +208,38 @@
             }
         ]
     },
+    "belch base": {
+        "name": "belchbase",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "milky well": {
+        "name": "milkywell",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
     "fourside": {
         "name": "fourside",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "desert gold mine": {
+        "name": "desertgoldmine",
         "pins": [
             {
                 "x": "200",
@@ -188,8 +288,48 @@
             }
         ]
     },
+    "pyramid": {
+        "name": "pyramid",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "dungeon man": {
+        "name": "dungeonman",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "deep darkness": {
+        "name": "deepdarkness",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
     "tenda village": {
         "name": "tendavillage",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "lumine hall": {
+        "name": "luminehall",
         "pins": [
             {
                 "x": "200",
@@ -218,6 +358,37 @@
             }
         ]
     },
+    "sea of eden": {
+        "name": "seaofeden",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "cave to the past": {
+        "name": "cavetothepast",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "cave of the past": {
+        "name": "caveofthepast",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+
     "giygas": {
         "name": "giygas",
         "pins": [
