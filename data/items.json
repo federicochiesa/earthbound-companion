@@ -593,7 +593,7 @@
       "data":{
          "Comments":"Provides protection from Fire.",
          "Description":"Must be equipped on your body. It protects you from fire attacks.",
-         "Location":"Talah Ramah's Cave (Chest), Saturn Valley (Drugstore) (after obtaining the Meteorite piece)",
+         "Location":"Monkey Cave (Chest), Saturn Valley (Drugstore) (after obtaining the Meteorite piece)",
          "Price":"$3000",
          "Defense up":"15"
       }
@@ -886,7 +886,7 @@
       "data":{
          "Comments":"Use to turn into a dragon for a single attack against your enemies.",
          "Description":"If you sprinkle the powder on one of your friends during battle, that friend turns into a dragon and attacks all enemies. Gone after one use.",
-         "Location":"Talah Ramah's Cave, Tenda Village Elder, The Fire Spring (Gift Box), Magicant (Gift Box)",
+         "Location":"Monkey Cave, Tenda Village Elder, The Fire Spring (Gift Box), Magicant (Gift Box)",
          "Price":"$1000"
       }
    },
@@ -1112,7 +1112,7 @@
       "data":{
          "Comments":"Same effect as Healing Omega.",
          "Description":"Revives a friend who is unconscious. In addition, it also works well on poison, nausea, colds, sunstroke, falling asleep, uncontrollable crying and feeling strange. This is effective when you have paralysis, or you have been diamondized.",
-         "Location":"Peaceful Rest Valley (Gift Box), Talah Ramah's Cave (Chest), The Pyramid (Gift Box), Dungeon Man (Gift Box), Deep Darkness (Gift Box), Stonehenge base (Gift Box), Lumine Hall (Gift Box)",
+         "Location":"Peaceful Rest Valley (Gift Box), Monkey Cave (Chest), The Pyramid (Gift Box), Dungeon Man (Gift Box), Deep Darkness (Gift Box), Stonehenge base (Gift Box), Lumine Hall (Gift Box)",
          "Price":"$178"
       }
    },
@@ -1310,7 +1310,7 @@
       "data":{
          "Comments":"Moves monkey from a doorway in the Monkey Cave.",
          "Description":"A king-sized banana. Not edible.",
-         "Location":"Talah Ramah's Cave",
+         "Location":"Monkey Cave",
          "Price":"N/A",
          "Note":"is a reference to giant prize bananas from the Donkey Kong Country game."
       }
@@ -1390,7 +1390,7 @@
       "data":{
          "Comments":"Used only by Jeff. Removes all buffs and debuffs, including shields (but not status effects) from all allies and enemies.",
          "Description":"Items for Jeff. When used during battle, this item resets the abilities of all creatures (friend or enemy) to their normal levels. Any changes that had taken place due to PSI and such is neutralized. It also neutralizes all shields (friend or enemy) that were in effect. (Remember, the abilities that I am talking about are Offense, Defense, Guts, etc.)",
-         "Location":"Talah Ramah's Cave (Chest)",
+         "Location":"Monkey Cave (Chest)",
          "Price":"N/A"
       }
    },
@@ -1453,7 +1453,7 @@
       "data":{
          "Comments":"No effect (used to \"get an angle up on things\" in battle). However, there is one grammatical error, if you use the protractor as Paula, it will still say Now, \u201che\u201d can fairly figure out the angle of various things.",
          "Description":"You can even use this during battle! Can be used many times.",
-         "Location":"Saturn Valley (Garbage), Fourside (Department Store), Talah Ramah's Cave (Chest).",
+         "Location":"Saturn Valley (Garbage), Fourside (Department Store), Monkey Cave (Chest).",
          "Price":"$2"
       }
    },
@@ -1472,7 +1472,7 @@
       "data":{
          "Comments":"No effect (used to \"size things up\" in battle). However, unlike the protractor, if Paula uses this, it will say she instead of he.",
          "Description":"You can even use this during battle! Can be used many times.",
-         "Location":"Twoson (Burglin Park), Talah Ramah's Cave (Chest), dropped by New Age Retro Hippie",
+         "Location":"Twoson (Burglin Park), Monkey Cave (Chest), dropped by New Age Retro Hippie",
          "Price":"$2"
       }
    },
@@ -1707,7 +1707,7 @@
       "data":{
          "Comments":"Give to Electra to gain access to the 48th floor of the Monotoli Building.",
          "Description":"Items for Jeff. Invented by Apple Kid. If used during combat, some damage will be dealt to the enemy, though its not understood why this happens... it's just yogurt after all... Can be used many times.",
-         "Location":"Talah Ramah's Cave",
+         "Location":"Monkey Cave",
          "Price":"N/A"
       }
    },
@@ -1806,7 +1806,7 @@
       "data":{
          "Comments":"Increases both HP and PP. A very good healing item that is useful up to the end of the game.",
          "Description":"When eaten, you recover about 300 HP and about 50 PP.",
-         "Location":"Talah Ramah's Cave (Chest), Dalaam (Restaurant), Lost Underworld (Gift Box), dropped by Conducting Spirit(1/128 chance), dropped by Starman(1/128 chance)",
+         "Location":"Monkey Cave (Chest), Dalaam (Restaurant), Lost Underworld (Gift Box), dropped by Conducting Spirit(1/128 chance), dropped by Starman(1/128 chance)",
          "Price":"$800",
          "Hit points up":"300 (Ness, Paula, Jeff), Full recovery (Poo)",
          "Psychic points up":"50 (Ness, Paula) 0 (Jeff), Full recovery (Poo)"
@@ -1904,7 +1904,7 @@
       "data":{
          "Comments":"Keep it until it hatches and becomes a Chicken.",
          "Description":"When eaten, you recover about 80 HP. So fresh, it's still warm.",
-         "Location":"Twoson (Burglin Park), Happy Happy Village (Self-Service Shop), Talah Ramah's Cave, Winters (Dr. Andonuts' Lab), Scaraba (Delicacy Shop)",
+         "Location":"Twoson (Burglin Park), Happy Happy Village (Self-Service Shop), Monkey Cave, Winters (Dr. Andonuts' Lab), Scaraba (Delicacy Shop)",
          "Price":"$12",
          "Hit points up":"84 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1924,7 +1924,7 @@
       "data":{
          "Comments":"Very handy in Onett and Twoson.",
          "Description":"When eaten, you recover about 50 HP. 100% beef.",
-         "Location":"Onett (Burger Shop, Garbage, Gift Box), The Caves at Giant Step (Gift Box), Twoson (Department Store), Fourside (Department Store), Talah Ramah's Cave (Chest)",
+         "Location":"Onett (Burger Shop, Garbage, Gift Box), The Caves at Giant Step (Gift Box), Twoson (Department Store), Fourside (Department Store), Monkey Cave (Chest)",
          "Price":"$14",
          "Hit points up":"48 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -2055,7 +2055,7 @@
       "data":{
          "Comments":"Use in the Dusty Dunes Desert.",
          "Description":"When eaten, you recover abut 80 HP. There's even a slice of your favorite cake!",
-         "Location":"Winters (Drugstore, Dr. Andonuts' Lab), Dusty Dunes Desert (Drugstore), Fourside (Department Store), Desert Gold Mine (Gift Box), Talah Ramah's Cave (Chest)",
+         "Location":"Winters (Drugstore, Dr. Andonuts' Lab), Dusty Dunes Desert (Drugstore), Fourside (Department Store), Desert Gold Mine (Gift Box), Monkey Cave (Chest)",
          "Price":"$24",
          "Hit points up":"84 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -2075,7 +2075,7 @@
       "data":{
          "Comments":"Mmmm! Delivered piping Hot!",
          "Description":"When eaten, you recover about 120 HP.",
-         "Location":"Talah Ramah's Cave (Chest), Dungeon Man (Gift Box), dropped by Skate Punk(1/128 chance), ordered from Mach Pizza",
+         "Location":"Monkey Cave (Chest), Dungeon Man (Gift Box), dropped by Skate Punk(1/128 chance), ordered from Mach Pizza",
          "Price":"$48",
          "Hit points up":"300 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -2115,7 +2115,7 @@
       "data":{
          "Comments":"Refreshing!",
          "Description":"For building a stronger, healthier body. It gives you a blast of nourishment when you are fatigued. If you drink this, you recover about 80 HP.",
-         "Location":"Grapefruit Falls (Gift Box), Fourside (Department Store), Moonside (Gift Box), Talah Ramah's Cave (Chest), Scaraba (Hassan's Shop), Deep Darkness (Trading Company Employee), dropped by Annoying Old Party Man",
+         "Location":"Grapefruit Falls (Gift Box), Fourside (Department Store), Moonside (Gift Box), Monkey Cave (Chest), Scaraba (Hassan's Shop), Deep Darkness (Trading Company Employee), dropped by Annoying Old Party Man",
          "Price":"$38",
          "Hit points up":"84 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -2351,7 +2351,7 @@
       "data":{
          "Comments":"This item is meant to cure sunstroke, but can also heal any other status Healing Alpha heals.",
          "Description":"It's great for those times that you get sunstroke.",
-         "Location":"Dusty Dunes Desert (Drugstore), Talah Ramah's Cave (Chest), Scaraba (Hassan's Shop), Dungeon Man (Gift Box)",
+         "Location":"Dusty Dunes Desert (Drugstore), Monkey Cave (Chest), Scaraba (Hassan's Shop), Dungeon Man (Gift Box)",
          "Price":"$24"
       }
    }
