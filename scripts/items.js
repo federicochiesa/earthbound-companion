@@ -33,6 +33,7 @@ async function getItemLocation(item) {
                 let foundSE = false;
                 
                 for(let j = 0; j < locs.length; j++){
+                    foundSE = false;
                     l = locs[j]
                     for(const se of specialEnemies){
                         if (locs[j].search(se) > -1) {
