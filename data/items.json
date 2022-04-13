@@ -331,7 +331,7 @@
       "name":"Stun Gun",
       "data":{
          "Description":"Jeff can equip this weapon.",
-         "Location":"Brick Road Maze (Gift Box)",
+         "Location":"Brick Road's Maze (Gift Box)",
          "Price":"$150",
          "Error rate":"0",
          "Offense up":"24"
@@ -633,7 +633,7 @@
       "data":{
          "Comments":"Speed increases by 5.",
          "Description":"Must be equipped on your body. It protects you from paralysis attacks. Also, it adds a bit of Speed.",
-         "Location":"Lilliputian Footprints (Gift Box), Saturn Valley (Drugstore)",
+         "Location":"Lilliput Steps (Gift Box), Saturn Valley (Drugstore)",
          "Price":"$400",
          "Defense up":"1",
          "Speed up": "5"
@@ -848,7 +848,7 @@
       "data":{
          "Comments":"Provides protection from Paralysis.",
          "Description":"Must be equipped on your body. It protects you from paralysis attacks.",
-         "Location":"Onett (Travelling Entertainers) Twoson (Burglin Park), Peaceful Rest Valley (Gift Box), Saturn Valley (Drugstore)",
+         "Location":"Onett (Travelling Entertainers), Twoson (Burglin Park), Peaceful Rest Valley (Gift Box), Saturn Valley (Drugstore)",
          "Price":"$60",
          "Defense up":"0"
       }

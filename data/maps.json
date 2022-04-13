@@ -158,8 +158,8 @@
             }
         ]
     },
-    "brick roads maze": {
-        "name": "brickroadsmaze",
+    "brick road maze": {
+        "name": "brickroadmaze",
         "pins": [
             {
                 "x": "200",
