@@ -298,6 +298,16 @@
             }
         ]
     },
+    "fourside sewers": {
+        "name": "foursidesewers",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
     "scaraba": {
         "name": "scaraba",
         "pins": [
@@ -340,6 +350,16 @@
     },
     "tenda village": {
         "name": "tendavillage",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
+    "stonehenge base": {
+        "name": "stonehengebase",
         "pins": [
             {
                 "x": "200",
@@ -418,7 +438,6 @@
             }
         ]
     },
-
     "giygas": {
         "name": "giygas",
         "pins": [
