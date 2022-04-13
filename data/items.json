@@ -149,7 +149,7 @@
       "name":"Gutsy Bat",
       "data":{
          "Comments":"Increases Guts by 127.",
-         "Description":"Find it from the Bionic Kraken in the Cave of the Past.",
+         "Description":"Find it from the Bionic Kraken in the Cave Of The Past.",
          "Location":"Dropped by Bionic Kraken(1/128 chance)",
          "Price":"$2980",
          "Error rate":"1/16",
@@ -195,7 +195,7 @@
       "data":{
          "Comments":"Jeff must repair the Broken laser to obtain this weapon.",
          "Description":"Jeff can equip this weapon.",
-         "Location":"Found in Belch's Factory",
+         "Location":"Found in Belch Base",
          "Price":"N/A",
          "Error rate":"0",
          "Offense up":"48"
@@ -206,7 +206,7 @@
       "data":{
          "Comments:":"Ness's ultimate weapon",
          "Description":"Ness can equip this weapon.",
-         "Location":"Cave of the Past (Gift Box)",
+         "Location":"Cave Of The Past (Gift Box)",
          "Price":"N/A",
          "Error rate":"1/16",
          "Offense up":"110"
@@ -331,7 +331,7 @@
       "name":"Stun Gun",
       "data":{
          "Description":"Jeff can equip this weapon.",
-         "Location":"Brick Road's Maze (Gift Box)",
+         "Location":"Brick Road Maze (Gift Box)",
          "Price":"$150",
          "Error rate":"0",
          "Offense up":"24"
