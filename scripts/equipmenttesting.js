@@ -299,7 +299,7 @@ async function changeCharacter(clicked_id) {
                 pics[j].style.opacity = 1
         }
 
-        hero[0].src = "../../assets/sprites/" + clicked_id + ".png";
+        hero[0].src = "../assets/sprites/" + clicked_id + ".png";
 
         let data = await getData("stats");
         let level = document.getElementById("level");
