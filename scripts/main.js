@@ -1,3 +1,5 @@
+var appPath = ""
+
 function showSurveyToast() {
   if (getCookie("survey") == "") {
     setTimeout(function () {
@@ -45,40 +47,28 @@ function nameToImage(name) {
 }
 
 async function getData(type) {
-  let data = await fetch('../../data/' + type + '.json');
+  let appRoot = window.location.href.replace(getAppPath(),'');
+  let data = await fetch(appRoot + appPath + '/data/' + type + '.json');
   data = data.json();
   return data;
 }
 
-async function searchOnSite2(data){
-  let label = document.getElementById("searchLabel").value;
-  let searchButton = document.getElementById("searchButton");
-  var popover = new bootstrap.Popover(searchButton, {content: "Nothing found. Did you type that right?"});
-  
-  pages = ["items", "enemies", "shops"]
-  
-  for(let j = 0; j < pages.length; j++){
-      d = data[j]
-      for (let i = 0; i < Object.keys(d).length; i++) {
-          var elements = d[Object.keys(d)[i]];
-          for(let k = 0; k < elements.length; k++){
-              if(nameToImage(elements[k].name.toLowerCase()).search(nameToImage(label.toLowerCase())) > -1){
-                  window.location.href = "/wiki/"+ pages[j] +"/?item="+ nameToImage(elements[k].name.toLowerCase());
-                  break;
-              }
-          }
-      }
+function getAppPath() {
+  var pathArray = location.pathname.split('/');
+  var appPath = "/";
+  for(var i=1; i<pathArray.length-1; i++) {
+      appPath += pathArray[i] + "/";
   }
-  popover.show();
-  setTimeout(function(){popover.hide()}, 2000);
+  return appPath;
 }
 
 async function searchOnSite(data){
   let label = document.getElementById("searchLabel").value;
   let searchButton = document.getElementById("searchButton");
   var popover = new bootstrap.Popover(searchButton, {content: "Nothing found. Did you type that right?"});
-  
+  let appRoot = window.location.href.replace(getAppPath(),'');
   pages = ["items", "enemies", "shops", "maps"]
+  let found = false
   
   for(let j = 0; j < pages.length; j++){
       d = data[j]
@@ -87,7 +77,8 @@ async function searchOnSite(data){
             var elements = d[Object.keys(d)[i]];
             for(let k = 0; k < elements.length; k++){
                 if(nameToImage(elements[k].name.toLowerCase()) == nameToImage(label.toLowerCase())){
-                    window.location.href = "/wiki/"+ pages[j] +"/?item="+ nameToImage(elements[k].name.toLowerCase());
+                    found = true;
+                    window.location.href = appRoot + appPath + "/wiki/"+ pages[j] +"/?item="+ nameToImage(elements[k].name.toLowerCase());
                     break;
                 }
             }
@@ -95,15 +86,17 @@ async function searchOnSite(data){
       }else{
         for(const map of Object.keys(d)){
           if(nameToImage(map.toLowerCase()) == nameToImage(label.toLowerCase())){
-            window.location.href = "/wiki/"+ pages[j] +"/?map="+ nameToImage(map.toLowerCase());
+            found = true;
+            window.location.href = appRoot + appPath + "/wiki/"+ pages[j] +"/?map="+ nameToImage(map.toLowerCase());
             break;
           }
         }
       }
-  }
-
-  popover.show();
-  setTimeout(function(){popover.hide()}, 2000);
+    }
+    if(!found){
+      popover.show();
+      setTimeout(function(){popover.hide()}, 2000);
+    }
 }
 
 async function autocomplete(inp, arr) {
