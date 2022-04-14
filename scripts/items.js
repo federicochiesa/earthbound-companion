@@ -241,7 +241,7 @@ window.onload = async function () {
                                     </div>\
                                     <div class=\"col-lg-1 centering\">\
                                         <div class=\"col mini\">\
-                                        <a href=\"#\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + element.name + "&quot;)\">\
+                                        <a href=\"#/\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + element.name + "&quot;)\">\
                                             <img src=\"../../assets/sprites/Mappost.png\" class=\"img-button\" \>\
                                         </a>\
                                         </div>\

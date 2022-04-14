@@ -67,7 +67,7 @@ async function searchOnSite(data){
             for(let k = 0; k < elements.length; k++){
                 if(nameToImage(elements[k].name.toLowerCase()) == nameToImage(label.toLowerCase())){
                     found = true;
-                    window.location.href = appRoot + appPath + "/wiki/"+ pages[j] +"/?item="+ nameToImage(elements[k].name.toLowerCase());
+                    window.location.href = appRoot + "/wiki/"+ pages[j] +"/?item="+ nameToImage(elements[k].name.toLowerCase());
                     break;
                 }
             }
@@ -76,7 +76,7 @@ async function searchOnSite(data){
         for(const map of Object.keys(d)){
           if(nameToImage(map.toLowerCase()) == nameToImage(label.toLowerCase())){
             found = true;
-            window.location.href = appRoot + appPath + "/wiki/"+ pages[j] +"/?map="+ nameToImage(map.toLowerCase());
+            window.location.href = appRoot + "/wiki/"+ pages[j] +"/?map="+ nameToImage(map.toLowerCase());
             break;
           }
         }

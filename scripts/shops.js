@@ -151,12 +151,12 @@ window.onload = async function () {
                                         </div>\
                                         <div class=\"col-lg-2 icons\">\
                                         <div class=\"ok centering\">\
-                                            <a href=\"#\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + elements[j].name + "&quot;,&quot;" + elements[j].data + "&quot)\">\
+                                            <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + elements[j].name + "&quot;,&quot;" + elements[j].data + "&quot)\">\
                                                 <img src=\"../../assets/sprites/info.png\" class=\"img-button\" \>\
                                             </a>\
                                         </div>\
                                         <div class=\"ok centering\">\
-                                            <a href=\"#\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + elements[j].name + "&quot;)\">\
+                                            <a href=\"#/\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + elements[j].name + "&quot;)\">\
                                                 <img src=\"../../assets/sprites/Mappost.png\" class=\"img-button\" \>\
                                             </a>\
                                         </div>\
@@ -174,12 +174,12 @@ window.onload = async function () {
                                         </div>\
                                         <div class=\"col-lg-2 icons\">\
                                         <div class=\"ok centering\">\
-                                            <a href=\"#\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + elements[j + 1].name + "&quot;,&quot;" + elements[j + 1].data + "&quot)\">\
+                                            <a href=\"#/\" id=\"infoModalButton\" onclick=\"showInfoModal(&quot;" + elements[j + 1].name + "&quot;,&quot;" + elements[j + 1].data + "&quot)\">\
                                                 <img src=\"../../assets/sprites/info.png\" class=\"img-button\" \>\
                                             </a>\
                                         </div>\
                                         <div class=\"ok centering\">\
-                                            <a href=\"#\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + elements[j + 1].name + "&quot;)\">\
+                                            <a href=\"#/\" id=\"mapModalButton\" onclick=\"showMapModal(&quot;" + elements[j + 1].name + "&quot;)\">\
                                                 <img src=\"../../assets/sprites/Mappost.png\" class=\"img-button\" \>\
                                             </a>\
                                         </div>\
