@@ -1,4 +1,4 @@
-var appPath = ""
+var appRoot = "http://localhost:5500"
 
 function showSurveyToast() {
   if (getCookie("survey") == "") {
@@ -47,26 +47,15 @@ function nameToImage(name) {
 }
 
 async function getData(type) {
-  let appRoot = window.location.href.replace(getAppPath(),'');
-  let data = await fetch(appRoot + appPath + '/data/' + type + '.json');
+  let data = await fetch(appRoot + '/data/' + type + '.json');
   data = data.json();
   return data;
-}
-
-function getAppPath() {
-  var pathArray = location.pathname.split('/');
-  var appPath = "/";
-  for(var i=1; i<pathArray.length-1; i++) {
-      appPath += pathArray[i] + "/";
-  }
-  return appPath;
 }
 
 async function searchOnSite(data){
   let label = document.getElementById("searchLabel").value;
   let searchButton = document.getElementById("searchButton");
   var popover = new bootstrap.Popover(searchButton, {content: "Nothing found. Did you type that right?"});
-  let appRoot = window.location.href.replace(getAppPath(),'');
   pages = ["items", "enemies", "shops", "maps"]
   let found = false
   
