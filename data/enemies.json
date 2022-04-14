@@ -12,6 +12,7 @@
          "Exp":"4361",
          "Money":"$255",
          "Drops":"Refreshing herb",
+         "Drops rate":"4/128",
          "Location":"Moonside"
       }
    },
@@ -28,7 +29,9 @@
          "Exp":"130",
          "Money":"$32",
          "Drops":"Protein drink",
-         "Location":"Twoson"
+         "Drops rate":"1/8",
+         "Location":"Twoson",
+         "Vulnerable to": "PSI Fire and PSI Freeze"
       }
    },
    {
@@ -44,6 +47,7 @@
          "Exp":"2373",
          "Money":"$268",
          "Drops":"Protein drink",
+         "Drops rate": "8/128",
          "Location":"Fourside"
       }
    },
@@ -60,6 +64,7 @@
          "Exp":"4933",
          "Money":"$296",
          "Drops":"Jar of hot sauce",
+         "Drops rate": "16/128",
          "Location":"Brick Road Maze"
       }
    },
@@ -71,7 +76,13 @@
          "Speed":"20",
          "Offense":"87",
          "Defense":"86",
-         "Location":"Scaraba"
+         "Guts":"4",
+         "Exp":"10449",
+         "Money":"$412",
+         "Drops":"Beef Jerky",
+         "Drops rate": "4/128",
+         "Location":"The Pyramid (Scaraba)",
+         "Vulnerable to": "PSI Fire, PSI Freeze and Insecticide Spray"
       }
    },
    {
@@ -87,7 +98,9 @@
          "Exp":"1566",
          "Money":"$77",
          "Drops":"Broken spray can",
-         "Location":"Grapefruit Falls"
+         "Drops rate": "16/128",
+         "Location":"Grapefruit Falls",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -99,7 +112,14 @@
          "Speed":"25",
          "Offense":"119",
          "Defense":"133",
-         "Location":"Stonehenge base"
+         "Guts":"8",
+         "Luck": "12",
+         "Drops":"Super bomb",
+         "Drops rate": "8/128",
+         "Exp":"26937",
+         "Money":"$730",
+         "Location":"Stonehenge base",
+         "Vulnerable to": "PSI Freeze"
       }
    },
    {
@@ -115,6 +135,7 @@
          "Exp":"27",
          "Money":"$6",
          "Drops":"Bomb",
+         "Drops rate":"1/128",
          "Location":"Giant Step"
       }
    },
@@ -131,7 +152,9 @@
          "Exp":"4108",
          "Money":"$172",
          "Drops":"Wet towel",
-         "Location":"Dusty Dunes Desert"
+         "Drops rate":"4/128",
+         "Location":"Dusty Dunes Desert",
+         "Vulnerable to": "Paralysis"
       }
    },
    {
@@ -142,8 +165,13 @@
          "Psychic points":"15",
          "Speed":"59",
          "Offense":"86",
-         "Defense":"97",
-         "Location":"Scaraba, Dungeon Man, Magicant"
+         "Defense":"87",
+         "Guts":"1",
+         "Exp":"8257",
+         "Money":"$426",
+         "Location":"Scaraba, Dungeon Man, Magicant",
+         "Drops": "Can of fruit juice, Royal iced tea, Protein drink, Kraken soup, Bottle of water, Cold remedy, Vial of serum",
+         "Drops rate":"1/7 (every droppable item)"
       }
    },
    {
@@ -155,7 +183,14 @@
          "Speed":"16",
          "Offense":"120",
          "Defense":"158",
-         "Location":"Deep Darkness"
+         "Guts":"26",
+         "IQ": "32",
+         "Exp":"19659",
+         "Money":"$728",
+         "Location":"Deep Darkness",
+         "Drops": "Meteotite",
+         "Drops rate":"2/128",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
@@ -167,7 +202,12 @@
          "Speed":"42",
          "Offense":"155",
          "Defense":"195",
+         "Guts":"1",
+         "IQ": "32",
+         "Exp":"50308",
+         "Money":"$960",
          "Drops":"Gutsy Bat",
+         "Drops rate":"1/128",
          "Location":"Cave Of The Past "
       }
    },
@@ -184,7 +224,8 @@
          "Exp":"37",
          "Money":"$7",
          "Drops":"Cookie",
-         "Location":"Giant Step"
+         "Drops rate":"1/4",
+         "Location":"Giant Step, Onett (path to Twoson), Grapefruit Falls"
       }
    },
    {
@@ -196,7 +237,14 @@
          "Speed":"31",
          "Offense":"135",
          "Defense":"215",
-         "Location":"Magicant"
+         "Guts":"15",
+         "IQ":"8",
+         "Exp":"14941",
+         "Money":"$641",
+         "Drops":"Super bomb",
+         "Drops rate":"4/128",
+         "Location":"Magicant",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
@@ -212,7 +260,9 @@
          "Exp":"618",
          "Money":"$17",
          "Drops":"Picnic lunch, Double burger",
-         "Location":"Winters, Stonehenge area"
+         "Drops rate": "1 for Picnic Lunch and 4/128 for Double Burger",
+         "Location":"Winters, Stonehenge area",
+         "Vulnerable to": "PSI Fire"
       }
    },
    {
@@ -224,8 +274,11 @@
          "Speed":"17",
          "Offense":"139",
          "Defense":"183",
+         "Guts":"3",
          "Drops":"Magic Fry Pan",
-         "Location":"Lost Underworld"
+         "Drops rate":"1/128",
+         "Location":"Lost Underworld",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
@@ -238,10 +291,13 @@
          "Offense":"3",
          "Defense":"4",
          "Guts":"0",
+         "Luck":"6",
          "Exp":"1",
          "Money":"$4",
          "Drops":"Cookie",
-         "Location":"Onett, Twoson, Threed(saved)"
+         "Drops rate":"1/32",
+         "Location":"Onett, Twoson, Threed(saved)",
+         "Vulnerable to":"PSI Freeze, Hypnosis and Paralysis"
       }
    },
    {
@@ -257,6 +313,7 @@
          "Exp":"14792",
          "Money":"$574",
          "Drops":"Bottle of water",
+         "Drops rate":"1/32",
          "Location":"Cave of the Pink Cloud"
       }
    },
@@ -268,7 +325,13 @@
          "Speed":"26",
          "Offense":"130",
          "Defense":"139",
+         "Guts":"5",
+         "IQ":"8",
+         "Exp":"30390",
+         "Money":"$804",
+         "Drops": "Brain food lunch",
          "Location":"Lumine Hall"
+         
       }
    },
    {
@@ -284,6 +347,7 @@
          "Exp":"86",
          "Money":"$18",
          "Drops":"Hamburger",
+         "Drops rate":"1/8",
          "Location":"Onett (Police Station), Twoson"
       }
    },
@@ -300,7 +364,9 @@
          "Exp":"200",
          "Money":"$17",
          "Drops":"Handbag strap",
-         "Location":"Twoson"
+         "Drops rate":"2/128",
+         "Location":"Twoson",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -316,7 +382,9 @@
          "Exp":"3618",
          "Money":"$244",
          "Drops":"Big bottle rocket",
-         "Location":"Fourside, Summers"
+         "Drops rate":"2/128",
+         "Location":"Fourside, Summers",
+         "Vulnerable to":"Hypnosis and PSI Freeze"
       }
    },
    {
@@ -346,6 +414,7 @@
          "Defense":"16",
          "Guts":"0",
          "Exp":"30384",
+         "Money":"$0",
          "Location":"Dusty Dunes Desert"
       }
    },
@@ -361,6 +430,7 @@
          "Guts":"1",
          "Exp":"1519",
          "Money":"$110",
+         "Drops":"Pizza, Cookie, Hamburger, Boiled Egg,Fresh Egg, Picnic Lunch, Bag of French Fries",
          "Location":"Dusty Dunes Desert"
       }
    },
@@ -377,6 +447,7 @@
          "Exp":"2503",
          "Money":"$314",
          "Drops":"PSI caramel",
+         "Drops rate":"1/128",
          "Location":"Moonside, Dungeon Man"
       }
    },
@@ -393,7 +464,8 @@
          "Exp":"9225",
          "Money":"$406",
          "Drops":"Rust promoter DX",
-         "Location":"Fourside Sewers"
+         "Location":"Fourside Sewers",
+         "Vulnerable to": "PSI Fire"
       }
    },
    {
@@ -405,7 +477,13 @@
          "Speed":"26",
          "Offense":"102",
          "Defense":"111",
-         "Location":"Deep Darkness"
+         "Guts":"5",
+         "Exp":"15171",
+         "Money":"$724",
+         "Drops":"Spicy Jerky",
+         "Drops rate":"2/128",
+         "Location":"Deep Darkness",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -421,7 +499,9 @@
          "Exp":"3740",
          "Money":"$114",
          "Drops":"Sudden guts pill",
-         "Location":"Dusty Dunes Desert"
+         "Drops rate":"2/128",
+         "Location":"Dusty Dunes Desert",
+         "Vulnerable to":"Paralysis"
       }
    },
    {
@@ -432,7 +512,13 @@
          "Speed":"40",
          "Offense":"82",
          "Defense":"57",
-         "Location":"Scaraba"
+         "Guts":"80",
+         "Exp":"9908",
+         "Money":"$609",
+         "Drops":"Ketchup packet",
+         "Drops rate":"1/8",
+         "Location":"Scaraba",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -444,13 +530,20 @@
          "Speed":"17",
          "Offense":"124",
          "Defense":"140",
-         "Location":"Lost Underworld"
+         "Guts":"1",
+         "IQ":"8",
+         "Exp":"24180",
+         "Money":"$836",
+         "Drops":"Skip sandwich DX",
+         "Drops rate":"8/128",
+         "Location":"Lost Underworld",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
       "name":"Elder Batty",
       "data":{
-         "Comments":"This bat has a weakness to PSI Flash like its weaker cousin, Mr. Batty.",
+         "Comments":"This bat has a weakness to PSI PSI Flash like its weaker cousin, Mr. Batty.",
          "Hit points":"294",
          "Psychic points":"0",
          "Speed":"33",
@@ -460,7 +553,9 @@
          "Exp":"4178",
          "Money":"$371",
          "Drops":"Double burger",
-         "Location":"Pond Cave"
+         "Drops rate":"4/128",
+         "Location":"Rainy Circle",
+         "Vulnerable to": "PSI Fire, PSI Freeze, PSI Flash, Paralysis and Brainshock"
       }
    },
    {
@@ -472,7 +567,13 @@
          "Speed":"40",
          "Offense":"140",
          "Defense":"156",
-         "Location":"Magicant"
+         "Guts":"5",
+         "Exp":"17705",
+         "Money":"$791",
+         "Location":"Magicant",
+         "Drops":"Sudden guts pill",
+         "Drops rate":"4/128",
+         "Vulnerable to":"PSI Flash"
       }
    },
    {
@@ -485,10 +586,13 @@
          "Offense":"60",
          "Defense":"81",
          "Guts":"5",
+         "IQ":"4",
          "Exp":"4321",
          "Money":"$346",
          "Drops":"Sudden guts pill",
-         "Location":"Moonside"
+         "Drops rate":"1/128",
+         "Location":"Moonside",
+         "Vulnerable to": "PSI Freeze and Brainshock"
       }
    },
    {
@@ -500,7 +604,14 @@
          "Speed":"22",
          "Offense":"103",
          "Defense":"101",
-         "Location":"Deep Darkness"
+         "Guts":"9",
+         "IQ":"39",
+         "Exp":"15075",
+         "Money":"$579",
+         "Drops":"Multi bottle rocket",
+         "Drops rate":"4/128",
+         "Location":"Deep Darkness",
+         "Vulnerable to":"Paralysis"
       }
    },
    {
@@ -512,7 +623,14 @@
          "Speed":"30",
          "Offense":"121",
          "Defense":"136",
-         "Location":"Fire Spring"
+         "Guts":"7",
+         "IQ":"16",
+         "Exp":"35737",
+         "Money":"$853",
+         "Drops":"Luxury Jerky",
+         "Drops rate":"1/64",
+         "Location":"Fire Spring",
+         "Vulnerable to":"PSI Fire, PSI Flash and Hypnosis"
       }
    },
    {
@@ -524,7 +642,15 @@
          "Speed":"38",
          "Offense":"141",
          "Defense":"162",
-         "Location":"Onett(invaded)"
+         "Guts":"25",
+         "IQ":"16",
+         "Exp":"11594",
+         "Money":"$896",
+         "Drops": "Meteotite",
+         "Drops rate":"1/16",
+         "Location":"Onett(invaded)",
+         "Vulnerable to": "PSI Freeze"
+         
       }
    },
    {
@@ -539,7 +665,9 @@
          "Exp":"3651",
          "Money":"$134",
          "Drops":"Handbag strap",
-         "Location":"Fourside"
+         "Drops rate":"16/128",
+         "Location":"Fourside",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -550,10 +678,13 @@
          "Speed":"10",
          "Offense":"31",
          "Defense":"24",
+         "Guts":"15",
          "Exp":"700",
          "Money":"$58",
          "Drops":"Skip sandwich",
-         "Location":"Grapefruit Falls"
+         "Drops rate":"8/128",
+         "Location":"Grapefruit Falls, Belch Base",
+         "Vulnerable to":"PSI Fire and PSI Flash"
       }
    },
    {
@@ -565,7 +696,14 @@
          "Speed":"12",
          "Offense":"101",
          "Defense":"116",
-         "Location":"Pyramid"
+         "Guts":"5",
+         "Exp":"700",
+         "Money":"$58",
+         "Location":"Pyramid",
+         "Drops": "Mummy Wrap, Skip Sandwich",
+         "Drops rate":"1/2 for Mummy Wrap and 1/16 for Skip Sandwich",
+         "Vulnerable to":"Paralysis"
+         
       }
    },
    {
@@ -576,10 +714,13 @@
          "Speed":"77",
          "Offense":"84",
          "Defense":"33",
+         "Guts":"9",
          "Exp":"10543",
          "Money":"$432",
          "Drops":"Secret herb",
-         "Location":"Fourside Sewers"
+         "Drops rate":"1/16",
+         "Location":"Fourside Sewers",
+         "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
    },
    {
@@ -591,6 +732,11 @@
          "Speed":"47",
          "Offense":"178",
          "Defense":"187",
+         "Guts":"25",
+         "Exp":"61929",
+         "Money":"$915",
+         "Drops":"PSI Caramel",
+         "Drops rate":"1/32",
          "Location":"Cave Of The Past"
       }
    },
@@ -603,7 +749,14 @@
          "Speed":"5",
          "Offense":"98",
          "Defense":"84",
-         "Location":"Lumine Hall, Magicant"
+         "Guts":"5",
+         "IQ":"3",
+         "Exp":"18348",
+         "Money":"$620",
+         "Drops":"PSI Caramel",
+         "Drops rate":"1/32",
+         "Location":"Lumine Hall, Magicant",
+         "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
    },
    {
@@ -616,10 +769,13 @@
          "Offense":"29",
          "Defense":"9",
          "Guts":"5",
+         "IQ":"3",
          "Exp":"1311",
          "Money":"$93",
          "Drops":"PSI caramel",
-         "Location":"Belch Base"
+         "Drops rate":"2/128",
+         "Location":"Belch Base",
+         "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
    },
    {
@@ -630,7 +786,13 @@
          "Speed":"30",
          "Offense":"160",
          "Defense":"160",
-         "Location":"Magicant"
+         "Guts":"7",
+         "Exp":"19210",
+         "Money":"$879",
+         "Drops":"Horn of life",
+         "Drops rate":"2/128",
+         "Location":"Magicant",
+         "Vulnerable to":"Hypnosis"
       }
    },
    {
@@ -642,7 +804,14 @@
          "Speed":"46",
          "Offense":"152",
          "Defense":"170",
+         "Guts":"43",
+         "IQ":"16",
+         "Exp":"48695",
+         "Money":"$807",
+         "Drops": "Goddess Ribbon",
+         "Drops rate":"1/128",
          "Location":"Onett, Cave Of The Past"
+         
       }
    },
    {
@@ -658,7 +827,9 @@
          "Exp":"3980",
          "Money":"$304",
          "Drops":"Double burger",
-         "Location":"Desert Gold Mine"
+         "Drops rate":"4/128",
+         "Location":"Desert Gold Mine",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -670,7 +841,13 @@
          "Speed":"20",
          "Offense":"100",
          "Defense":"110",
-         "Location":"Scaraba"
+         "Guts":"28",
+         "Exp":"16365",
+         "Money":"$604",
+         "Drops":"Beef Jerky",
+         "Drops rate":"2/128",
+         "Location":"Scaraba",
+         "Vulnerable to":"PSI Freeze and Hypnosis"
       }
    },
    {
@@ -686,7 +863,9 @@
          "Exp":"20",
          "Money":"$9",
          "Drops":"Salt packet",
-         "Location":"Winters"
+         "Drops rate":"16/128",
+         "Location":"Winters",
+         "Vulnerable to": "PSI Fire, PSI Freeze and Hypnosis"
       }
    },
    {
@@ -698,7 +877,13 @@
          "Speed":"20",
          "Offense":"94",
          "Defense":"106",
-         "Location":"Pyramid"
+         "Guts":"20",
+         "Exp":"13064",
+         "Money":"$470",
+         "Drops":"Pharaoh's curse",
+         "Drops rate":"8/128",
+         "Location":"Pyramid",
+         "Vulnerable to":"PSI Fire and Hypnosis"
       }
    },
    {
@@ -711,10 +896,13 @@
          "Offense":"27",
          "Defense":"25",
          "Guts":"5",
+         "IQ":"8",
          "Exp":"520",
          "Money":"$45",
          "Drops":"Tin of cocoa",
-         "Location":"Threed"
+         "Drops rate":"1/16",
+         "Location":"Threed",
+         "Vulnerable to":"PSI Fire, PSI Flash and Brainshock"
       }
    },
    {
@@ -726,7 +914,14 @@
          "Speed":"23",
          "Offense":"110",
          "Defense":"128",
-         "Location":"Deep Darkness"
+         "Guts":"10",
+         "IQ":"4",
+         "Exp":"19484",
+         "Money":"$692",
+         "Drops":"Super Plush Bear",
+         "Drops rate":"2/128",
+         "Location":"Deep Darkness",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -738,7 +933,13 @@
          "Speed":"60",
          "Offense":"93",
          "Defense":"103",
-         "Location":"Scaraba"
+         "Guts":"15",
+         "Exp":"4129",
+         "Money":"$456",
+         "Drops":"Skip sandwich DX",
+         "Drops rate":"4/128",
+         "Location":"Scaraba",
+         "Vulnerable to":"PSi Fire and Brainshock"
       }
    },
    {
@@ -750,7 +951,14 @@
          "Speed":"14",
          "Offense":"134",
          "Defense":"146",
-         "Location":"Deep Darkness"
+         "Guts":"11",
+         "IQ":"5",
+         "Exp":"17567",
+         "Money":"$690",
+         "Drops":"Viper",
+         "Drops rate":"16/128",
+         "Location":"Deep Darkness",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -762,7 +970,15 @@
          "Speed":"28",
          "Offense":"122",
          "Defense":"130",
-         "Location":"Lumine Hall"
+         "Guts":"5",
+         "IQ":"12",
+         "Exp":"28866",
+         "Money":"$756",
+         "Drops": "Meteotite",
+         "Drops rate":"1/128",
+         "Location":"Lumine Hall",
+         "Vulnerable to":"PSI Freeze"
+         
       }
    },
    {
@@ -778,7 +994,9 @@
          "Exp":"353",
          "Money":"$33",
          "Drops":"PSI caramel",
-         "Location": "Happy Happy Village"
+         "Drops rate":"1/128",
+         "Location": "Happy Happy Village",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -794,7 +1012,9 @@
          "Exp":"10354",
          "Money":"$528",
          "Drops":"Jar of delisauce",
-         "Location":"Cave of the Pink Cloud"
+         "Drops rate":"2/128",
+         "Location":"Cave of the Pink Cloud",
+         "Vulnerable to":"PSI Fire, PSI Freeze and Hypnosis"
       }
    },
    {
@@ -806,7 +1026,14 @@
          "Speed":"17",
          "Offense":"76",
          "Defense":"102",
-         "Location":"Dungeon Man, Winters"
+         "Guts":"7",
+         "IQ":"16",
+         "Exp":"7640",
+         "Money":"$467",
+         "Drops":"PSI caramel",
+         "Drops rate":"2/128",
+         "Location":"Dungeon Man, Winters",
+         "Vulnerable to":"PSI Fire and Hypnosis"
       }
    },
    {
@@ -817,7 +1044,13 @@
          "Speed":"21",
          "Offense":"89",
          "Defense":"94",
-         "Location":"Pyramid"
+         "Guts":"5",
+         "Exp":"11321",
+         "Money":"$625",
+         "Drops":"Pharaoh's curse",
+         "Drops rate":"1/32",
+         "Location":"Pyramid",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
@@ -833,7 +1066,9 @@
          "Exp":"223",
          "Money":"$14",
          "Drops":"Skip sandwich",
-         "Location":"Peaceful Rest Valley"
+         "Drops rate":"4/128",
+         "Location":"Peaceful Rest Valley",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -845,7 +1080,13 @@
          "Speed":"77",
          "Offense":"146",
          "Defense":"113",
-         "Location":"Magicant"
+         "Guts":"75",
+         "Exp":"10672",
+         "Money":"$703",
+         "Drops":"PSI caramel",
+         "Drops rate":"1/32",
+         "Location":"Magicant",
+         "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
    },
    {
@@ -857,10 +1098,13 @@
          "Speed":"30",
          "Offense":"12",
          "Defense":"24",
+         "Guts":"5",
          "Exp":"41",
          "Money":"$12",
          "Drops":"Fresh Egg",
-         "Location":"Brick Road Maze, Saturn Valley, Desert Gold Mine"
+         "Drops rate":"1/16",
+         "Location":"Brick Road Maze, Saturn Valley, Desert Gold Mine",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -876,7 +1120,9 @@
          "Exp":"2336",
          "Money":"$216",
          "Drops":"Xterminator spray",
-         "Location":"Fourside, Summers"
+         "Drops rate":"1/128",
+         "Location":"Fourside, Summers",
+         "Vulnerable to":"Paralysis"
       }
    },
    {
@@ -888,8 +1134,14 @@
          "Speed":"31",
          "Offense":"145",
          "Defense":"152",
-         "Drops":"Star Pendant (1/128)",
-         "Location":"Fire Spring"
+         "Guts":"1",
+         "IQ":"24",
+         "Exp":"39247",
+         "Money":"$862",
+         "Drops":"Star Pendant",
+         "Drops rate":"1/128",
+         "Location":"Fire Spring",
+         "Vulnerable to":"PSI Freeze and Starstorm"
       }
    },
    {
@@ -901,7 +1153,14 @@
          "Speed":"22",
          "Offense":"83",
          "Defense":"114",
-         "Location":"Deep Darkness"
+         "Guts":"9",
+         "IQ":"20",
+         "Exp":"15826",
+         "Money":"$624",
+         "Drops":"Beef Jerky",
+         "Drops rate":"4/128",
+         "Location":"Deep Darkness",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
@@ -909,12 +1168,19 @@
       "data":{
          "Comments":"He's manly, he's mean and he watches his bro's back. When the two get together, you're in big trouble.",
          "Hit points":"526",
-         "Psychic points":"220",
+         "Psychic points":"210",
          "Speed":"24",
          "Offense":"114",
          "Defense":"123",
+         "Guts":"11",
+         "IQ":"24",
+         "Exp":"15970",
+         "Money":"$686",
+         "Drops": "Horn of life",
+         "Drops rate":"1/128",
          "Location":"Deep Darkness",
-         "Drops": "Horn of life"
+         "Vulnerable to":"PSI Fire"
+        
       }
    },
    {
@@ -925,7 +1191,11 @@
          "Speed":"23",
          "Offense":"99",
          "Defense":"121",
-         "Location":"Scaraba"
+         "Guts":"8",
+         "Exp":"14475",
+         "Money":"$499",
+         "Location":"Scaraba",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -937,7 +1207,11 @@
          "Speed":"136",
          "Offense":"73",
          "Defense":"40",
-         "Location":"Scaraba"
+         "Guts":"20",
+         "Exp":"82570",
+         "Money":"$0",
+         "Location":"Scaraba",
+         "Vulnerable to":"PSI Fire, PSI Freeze, PSI Flash, Paralysis and Hypnosis"
       }
    },
    {
@@ -949,7 +1223,14 @@
          "Speed":"44",
          "Offense":"163",
          "Defense":"81",
-         "Location":"Onett(invaded)"
+         "Guts":"24",
+         "IQ":"8",
+         "Exp":"10480",
+         "Money":"$744",
+         "Location":"Onett(invaded)",
+         "Drops": "Meteotite",
+         "Drops rate":"1/128",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -965,7 +1246,9 @@
          "Exp":"609",
          "Money":"$49",
          "Drops":"Teddy bear",
-         "Location":"Lilliput Steps"
+         "Drops rate":"2/128",
+         "Location":"Lilliput Steps",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -980,7 +1263,9 @@
          "Exp":"8884",
          "Money":"$440",
          "Drops":"Super plush bear",
-         "Location":"Winters"
+         "Drops rate":"1/128",
+         "Location":"Winters",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -992,7 +1277,13 @@
          "Speed":"26",
          "Offense":"138",
          "Defense":"147",
-         "Location":"Winters"
+         "Guts":"8",
+         "Exp":"25607",
+         "Money":"$637",
+         "Location":"Stonehenge Base",
+         "Drops": "Meteotite",
+         "Drops rate":"1/128",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -1008,7 +1299,9 @@
          "Exp":"133",
          "Money":"$13",
          "Drops":"Croissant",
-         "Location":"Twoson, Peaceful Rest Valley"
+         "Drops rate":"4/128",
+         "Location":"Twoson, Peaceful Rest Valley",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1024,7 +1317,9 @@
          "Exp":"456",
          "Money":"$36",
          "Drops":"Croissant",
-         "Location":"Lilliput Steps, Dusty Dunes Desert, Deep Darkness, Summers"
+         "Drops rate":"4/128",
+         "Location":"Lilliput Steps, Dusty Dunes Desert, Deep Darkness, Summers",
+         "Vulnerable to":"PSI Fire, PSI Freeze, PSI Flash and Paralysis"
       }
    },
    {
@@ -1036,7 +1331,13 @@
          "Speed":"18",
          "Offense":"118",
          "Defense":"97",
-         "Location":"Magicant"
+         "Guts":"5",
+         "Exp":"8708",
+         "Money":"$659",
+         "Drops":"Magic Tart",
+         "Drops rate":"2/128",
+         "Location":"Magicant",
+         "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
    },
    {
@@ -1048,7 +1349,13 @@
          "Speed":"25",
          "Offense":"108",
          "Defense":"122",
-         "Location":"Stonehenge base"
+         "Guts":"7",
+         "Exp":"21056",
+         "Money":"$715",
+         "Drops":"PSI caramel",
+         "Drops rate":"4/128",
+         "Location":"Stonehenge base",
+         "Vulnerable to":"PSI Fire and Hypnosis"
       }
    },
    {
@@ -1063,7 +1370,9 @@
          "Exp":"1116",
          "Money":"$84",
          "Drops":"Pizza",
-         "Location":"Belch Base"
+         "Drops rate":"4/128",
+         "Location":"Belch Base",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1076,10 +1385,13 @@
          "Offense":"25",
          "Defense":"5",
          "Guts":"4",
+         "IQ":"3",
          "Exp":"304",
          "Money":"$30",
          "Drops":"Jar of hot sauce",
-         "Location":"Happy Happy Village cave"
+         "Drops rate":"1/64",
+         "Location":"Lilliput Steps",
+         "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
    },
    {
@@ -1095,7 +1407,9 @@
          "Exp":"3748",
          "Money":"$341",
          "Drops":"Sudden guts pill",
-         "Location":"Fourside (Department Store)"
+         "Drops rate":"1/128",
+         "Location":"Fourside (Department Store)",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1111,7 +1425,9 @@
          "Exp":"2736",
          "Money":"$310",
          "Drops":"Pizza",
-         "Location":"Fourside (Department Store), Dungeon Man"
+         "Drops rate":"2/128",
+         "Location":"Fourside (Department Store), Dungeon Man",
+         "Vulnerable to":"PSI Fire, PSI Freeze and Brainshock"
       }
    },
    {
@@ -1127,7 +1443,9 @@
          "Exp":"160",
          "Money":"$23",
          "Drops":"Ruler",
-         "Location":"Twoson"
+         "Drops rate":"1/16",
+         "Location":"Twoson",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1143,7 +1461,9 @@
          "Exp":"415",
          "Money":"$26",
          "Drops":"Boiled egg",
-         "Location":"Threed"
+         "Drops rate":"4/128",
+         "Location":"Threed",
+         "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
    },
    {
@@ -1159,7 +1479,9 @@
          "Exp":"1990",
          "Money":"$220",
          "Drops":"Carton of cream",
-         "Location":"Desert Gold Mine"
+         "Drops rate":"1/8",
+         "Location":"Desert Gold Mine",
+         "Vulnerable to":"PSi Fire and Brainshock"
       }
    },
    {
@@ -1171,7 +1493,13 @@
          "Speed":"43",
          "Offense":"147",
          "Defense":"176",
-         "Location":"Cave Of The Past"
+         "Guts":"8",
+         "Exp":"53142",
+         "Money":"$820",
+         "Drops":"Super bomb",
+         "Drops rate":"1/8",
+         "Location":"Cave Of The Past",
+         "Vulnerable to":"PSI Freeze, PSI Flash and Brainshock"
       }
    },
    {
@@ -1187,7 +1515,9 @@
          "Exp":"7448",
          "Money":"$420",
          "Drops":"Double burger",
-         "Location":"Summers"
+         "Drops rate":"1/32",
+         "Location":"Summers",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1198,7 +1528,13 @@
          "Speed":"12",
          "Offense":"106",
          "Defense":"173",
-         "Location":"Pyramid"
+         "Guts":"5",
+         "Exp":"19163",
+         "Money":"$628",
+         "Drops":"Sudden gets pill",
+         "Drops rate":"4/128",
+         "Location":"Pyramid",
+         "Vulnerable to":"PSI Fire and Paralysis"
       }
    },
    {
@@ -1210,7 +1546,14 @@
          "Speed":"2",
          "Offense":"79",
          "Defense":"77",
-         "Location":"Deep Darkness"
+         "Guts":"5",
+         "IQ":"7",
+         "Exp":"29982",
+         "Money":"$543",
+         "Drops":"Salt packet",
+         "Drops rate":"32/128",
+         "Location":"Deep Darkness",
+         "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
    },
    {
@@ -1226,7 +1569,9 @@
          "Exp":"1928",
          "Money":"$62",
          "Drops":"Meteornium",
-         "Location":"Grapefruit Falls"
+         "Drops rate":"1/128",
+         "Location":"Grapefruit Falls",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
@@ -1242,7 +1587,9 @@
          "Exp":"15",
          "Money":"$18",
          "Drops":"Hamburger",
-         "Location":"Onett"
+         "Drops rate": "1",
+         "Location":"Onett",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1254,7 +1601,13 @@
          "Speed":"30",
          "Offense":"124",
          "Defense":"144",
-         "Location":"Fire Spring"
+         "Guts":"1",
+         "Exp":"30094",
+         "Money":"$682",
+         "Drops":"PSI caramel",
+         "Drops rate": "1/64",
+         "Location":"Fire Spring",
+         "Vulnerable to":"PSI Freeze and Brainshock"
       }
    },
    {
@@ -1270,7 +1623,9 @@
          "Exp":"830",
          "Money":"$53",
          "Drops":"Croissant",
-         "Location":"Threed"
+         "Drops rate":"4/128",
+         "Location":"Threed",
+         "Vulnerable to":"PSI Freeze and Hypnosis"
       }
    },
    {
@@ -1286,7 +1641,9 @@
          "Exp":"95",
          "Money":"$15",
          "Drops":"Ketchup packet",
-         "Location":"Onett, Twoson"
+         "Drops rate": "8/128",
+         "Location":"Onett, Twoson",
+         "Vulnerable to":"PSI Fire, PSI Freeze and Brainshock"
       }
    },
    {
@@ -1302,7 +1659,9 @@
          "Exp":"2496",
          "Money":"$158",
          "Drops":"Picnic lunch",
-         "Location":"Milky Well Hole"
+         "Drops rate":"2/128",
+         "Location":"Milky Well Hole",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -1317,7 +1676,9 @@
          "Exp":"1175",
          "Money":"$35",
          "Drops":"Sugar packet",
-         "Location":"Grapefruit Falls"
+         "Drops rate":"16/128",
+         "Location":"Grapefruit Falls",
+         "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Hypnosis"
       }
    },
    {
@@ -1329,9 +1690,12 @@
          "Speed":"19",
          "Offense":"70",
          "Defense":"113",
-         "Exp":"4796",
+         "Guts":"5",
+         "IQ":"6",
+         "Exp":"4797",
          "Money":"$349",
          "Drops":"Super bomb",
+         "Drops rate":"1/64",
          "Location":"Moonside, Dungeon Man"
       }
    },
@@ -1348,7 +1712,9 @@
          "Exp":"34",
          "Money":"$9",
          "Drops":"Bread roll",
-         "Location":"Giant Step, Pond Cave"
+         "Drops rate":"1/32",
+         "Location":"Giant Step, Pond Cave",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1364,7 +1730,8 @@
          "Exp":"4",
          "Money":"$3",
          "Drops":"Bread roll",
-         "Location":"Onett, Twoson"
+         "Drops rate": "4/128 (64/128 only in Winters)",
+         "Location":"Onett, Twoson, Winters(while playing as Jeff after Ness and Paula get captured in Threed)"
       }
    },
    {
@@ -1376,7 +1743,13 @@
          "Speed":"23",
          "Offense":"55",
          "Defense":"20",
-         "Location":"Fourside (Department Store), Dungeon Man"
+         "Guts":"5",
+         "Exp":"2462",
+         "Money":"$280",
+         "Drops":"Cup of coffee",
+         "Drops rate": "1/2",
+         "Location":"Fourside (Department Store), Dungeon Man",
+         "Vulnerable to": "PSI Freeze"
       }
    },
    {
@@ -1392,6 +1765,7 @@
          "Exp":"5034",
          "Money":"$392",
          "Drops":"Big bottle rocket",
+         "Drops rate":"2/128",
          "Location":"Fourside (Monotoli Building)"
       }
    },
@@ -1408,7 +1782,9 @@
          "Exp":"44690",
          "Money":"$2630",
          "Drops":"Mummy Wrap",
-         "Location":"Summers (Cultural Museum)"
+         "Drops rate":"1/2",
+         "Location":"Summers (Cultural Museum)",
+         "Vulnerable to": "PSI Freeze, PSI Flash and Paralysis"
       }
    },
    {
@@ -1424,7 +1800,9 @@
          "Exp":"12",
          "Money":"$17",
          "Drops":"Pizza",
-         "Location":"Onett"
+         "Drops rate":"1/128",
+         "Location":"Onett",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1440,7 +1818,9 @@
          "Exp":"1823",
          "Money":"$140",
          "Drops":"Vial of serum",
-         "Location":"Dusty Dunes Desert"
+         "Drops rate":"4/128",
+         "Location":"Dusty Dunes Desert",
+         "Vulnerable to":"PSI Fire, PSI Freeze and Hypnosis"
       }
    },
    {
@@ -1453,10 +1833,13 @@
          "Offense":"35",
          "Defense":"89",
          "Guts":"2",
+         "IQ":"3",
          "Exp":"606",
          "Money":"$71",
          "Drops":"Broken iron",
-         "Location":"Threed"
+         "Drops rate":"8/128",
+         "Location":"Threed",
+         "Vulnerable to":"Psi Fire, PSI Flash, Paralysis and Hypnosis"
       }
    },
    {
@@ -1471,7 +1854,9 @@
          "Exp":"712",
          "Money":"$48",
          "Drops":"Refreshing herb",
-         "Location":"Threed"
+         "Drops rate":"1/32",
+         "Location":"Threed",
+         "Vulnerable to":"PSI Fire, PSI Flash and Brainshock"
       }
    },
    {
@@ -1483,11 +1868,14 @@
          "Speed":"17",
          "Offense":"50",
          "Defense":"65",
-         "Guts":"5",
+         "Guts":"5", 
+         "IQ":"13",
          "Exp":"2218",
          "Money":"$191",
          "Drops":"Meteornium",
-         "Location":"Dusty Dunes Desert"
+         "Drops rate":"1/128",
+         "Location":"Dusty Dunes Desert",
+         "Vulnerable to":"PSI Fire and Hypnosis"
       }
    },
    {
@@ -1499,7 +1887,14 @@
          "Speed":"30",
          "Offense":"131",
          "Defense":"262",
-         "Location":"Fire Spring"
+         "Guts":"14", 
+         "IQ":"8",
+         "Exp":"37618",
+         "Money":"$768",
+         "Drops": "Meteotite",
+         "Drops rate":"2/128",
+         "Location":"Fire Spring",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
@@ -1515,7 +1910,9 @@
          "Exp":"297",
          "Money":"$21",
          "Drops":"Meteornium",
-         "Location":"Peaceful Rest Valley"
+         "Drops rate":"2/128",
+         "Location":"Peaceful Rest Valley",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
@@ -1531,7 +1928,9 @@
          "Exp":"3",
          "Money":"$5",
          "Drops":"Cookie",
-         "Location":"Onett, Peaceful Rest Valley(cabin area), Winters"
+         "Drops rate":"1",
+         "Location":"Onett, Peaceful Rest Valley(cabin area), Winters",
+         "Vulnerable to":"PSI Fire, PSI Freeze, PSI Flash and Paralysis"
       }
    },
    {
@@ -1543,7 +1942,14 @@
          "Speed":"45",
          "Offense":"158",
          "Defense":"192",
-         "Location":"Cave Of The Past"
+         "Guts":"25",
+         "IQ":"32",
+         "Exp":"48311",
+         "Money":"$897",
+         "Drops":"Horn of life",
+         "Drops rate":"2/128",
+         "Location":"Cave Of The Past",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -1555,7 +1961,13 @@
          "Speed":"24",
          "Offense":"103",
          "Defense":"126",
-         "Location":"Stonehenge base"
+         "Guts":"25",
+         "Exp":"23396",
+         "Money":"$720",
+         "Drops": "Brain food lunch",
+         "Drops rate":"1/128",
+         "Location":"Stonehenge base",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1567,8 +1979,13 @@
          "Speed":"24",
          "Offense":"112",
          "Defense":"129",
+         "Guts":"25",
+         "Exp":"30145",
+         "Money":"$735",
          "Location":"Stonehenge base",
-         "Drops": "Sword of Kings"
+         "Drops": "Sword of Kings",
+         "Drops rate":"1/128",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1583,7 +2000,9 @@
          "Exp":"13179",
          "Money":"$541",
          "Drops":"Large Pizza",
-         "Location":"Fourside Sewers"
+         "Drops rate":"1/64",
+         "Location":"Fourside Sewers",
+         "Vulnerable to": "PSI Fire, PSI Flash, Paralysis and Hypnosis"
       }
    },
    {
@@ -1599,7 +2018,9 @@
          "Exp":"10122",
          "Money":"$495",
          "Drops":"Super bomb",
-         "Location":"Pond Cave"
+         "Drops rate":"1/64",
+         "Location":"Rainy Circle",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1615,7 +2036,9 @@
          "Exp":"14798",
          "Money":"$572",
          "Drops":"Snake",
-         "Location":"Cave of the Pink Cloud"
+         "Drops rate":"1/8",
+         "Location":"Cave of the Pink Cloud",
+         "Vulnerable to": "PSI Fire, PSI Freeze and PSI Flash"
       }
    },
    {
@@ -1631,7 +2054,9 @@
          "Exp":"356",
          "Money":"$29",
          "Drops":"PSI caramel",
-         "Location":"Peaceful Rest Valley"
+         "Drops rate":"1/128",
+         "Location":"Peaceful Rest Valley",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -1647,7 +2072,9 @@
          "Exp":"2786",
          "Money":"$276",
          "Drops":"Chick",
-         "Location":"Desert Gold Mine"
+         "Drops rate":"18/128",
+         "Location":"Desert Gold Mine",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
@@ -1663,7 +2090,9 @@
          "Exp":"10798",
          "Money":"$430",
          "Drops":"Bottle of water",
-         "Location":"Cave of the Pink Cloud"
+         "Drops rate":"1/32",
+         "Location":"Cave of the Pink Cloud",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1674,7 +2103,11 @@
          "Speed":"100",
          "Offense":"19",
          "Defense":"7",
-         "Location":"",
+         "Guts":"25",
+         "Exp":"1",
+         "Money":"$162",
+         "Location":"Become possessed",
+         "Vulnerable to":"All",
          "Note":"The Tiny Lil' Ghost is an enemy that joins your party when infected with the \"Mini-Ghost\" status. It sometimes attacks you and tries to freeze you, but it also takes damage from PSI Fire and the likes."
       }
    },
@@ -1688,10 +2121,13 @@
          "Offense":"69",
          "Defense":"75",
          "Guts":"20",
+         "IQ":"3",
          "Exp":"9310",
          "Money":"$525",
          "Drops":"Chick",
-         "Location":"Summers"
+         "Drops rate":"32/128",
+         "Location":"Summers",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1706,7 +2142,9 @@
          "Exp":"1865",
          "Money":"$119",
          "Drops":"Sprig of parsley",
-         "Location":"Milky Well, Monkey Caves"
+         "Drops rate":"8/128",
+         "Location":"Milky Well, Monkey Caves",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1722,7 +2160,9 @@
          "Exp":"570",
          "Money":"$47",
          "Drops":"Bomb",
-         "Location":"Threed"
+         "Drops rate":"4/128",
+         "Location":"Threed",
+         "Vulnerable to":"PSI Fire, PSI Freeze, PSI Flash and Hypnosis"
       }
    },
    {
@@ -1734,7 +2174,14 @@
          "Speed":"43",
          "Offense":"147",
          "Defense":"176",
-         "Location":"Cave Of The Past"
+         "Guts":"8",
+         "IQ":"24",
+         "Exp":"47876",
+         "Money":"$47",
+         "Drops":"PSI caramel",
+         "Drops rate":"16/128",
+         "Location":"Cave Of The Past",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -1750,7 +2197,9 @@
          "Exp":"146",
          "Money":"$19",
          "Drops":"Toothbrush",
-         "Location":"Twoson, Happy Happy Village"
+         "Drops rate":"16/128",
+         "Location":"Twoson, Happy Happy Village",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1761,8 +2210,14 @@
          "Speed":"27",
          "Offense":"116",
          "Defense":"134",
+         "Guts":"5",
+         "IQ":"15",
+         "Exp":"20389",
+         "Money":"$796",
          "Location":"Lumine Hall, Magicant",
-         "Drops": "Broken Antenna"
+         "Drops": "Broken Antenna",
+         "Drops rate":"1/128",
+         "Vulnerable to":"PSI Fire and Hypnosis"
       }
    },
    {
@@ -1778,7 +2233,9 @@
          "Exp":"700",
          "Money":"$58",
          "Drops":"Hamburger",
-         "Location":"Threed, Grapefruit Falls"
+         "Drops rate":"4/128",
+         "Location":"Threed, Grapefruit Falls",
+         "Vulnerable to":"PSI Fire and PSI Flash"
       }
    },
    {
@@ -1789,12 +2246,14 @@
          "Psychic points":"0",
          "Speed":"35",
          "Offense":"30",
-         "Defense":"36",
-         "Guts":"9",
+         "Defense":"26",
+         "Guts":"29",
          "Exp":"1757",
          "Money":"$80",
          "Drops":"Secret herb",
-         "Location":"Grapefruit Falls"
+         "Drops rate":"1/128",
+         "Location":"Grapefruit Falls",
+         "Vulnerable to":"PSI Fire, PSI Freeze, Hypnosis and Insecticide Spray"
       }
    },
    {
@@ -1806,7 +2265,13 @@
          "Speed":"17",
          "Offense":"126",
          "Defense":"172",
-         "Location":"Lost Underworld"
+         "Guts":"2",
+         "Exp":"33098",
+         "Money":"$745",
+         "Drops":"Luxury Jerky",
+         "Drops rate":"1/64",
+         "Location":"Lost Underworld",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1818,7 +2283,15 @@
          "Speed":"18",
          "Offense":"78",
          "Defense":"90",
-         "Location":"Winters"
+         "Guts":"5",
+         "IQ":"16",
+         "Exp":"5782",
+         "Money":"$256",
+         "Drops": "Meteotite",
+         "Drops rate":"1/128",
+         "Location":"Winters",
+         "Vulnerable to":"PSI Freeze"
+         
       }
    },
    {
@@ -1830,7 +2303,14 @@
          "Speed":"144",
          "Offense":"171",
          "Defense":"38",
-         "Location":"Cave Of The Past"
+         "Guts":"5",
+         "IQ":"63",
+         "Exp":"33818",
+         "Money":"$906",
+         "Drops": "Multi bottle rocket",
+         "Drops rate":"8/128",
+         "Location":"Cave Of The Past",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
@@ -1841,7 +2321,13 @@
          "Speed":"18",
          "Offense":"81",
          "Defense":"91",
-         "Location":"Winters"
+         "Guts":"5",
+         "Exp":"5397",
+         "Money":"$458",
+         "Drops": "Multi bottle rocket",
+         "Drops rate":"2/128",
+         "Location":"Winters",
+         "Vulnerable to":"PSI Freeze"
       }
    },
    {
@@ -1854,10 +2340,13 @@
          "Offense":"11",
          "Defense":"21",
          "Guts":"0",
+         "IQ":"9",
          "Exp":"17",
          "Money":"$11",
          "Drops":"Cookie",
-         "Location":"Winters, Dungeon Man"
+         "Drops rate":"1/4",
+         "Location":"Winters, Dungeon Man",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1873,19 +2362,28 @@
          "Exp":"13",
          "Money":"$18",
          "Drops":"Bag of fries",
-         "Location":"Onett"
+         "Drops rate":"4/128",
+         "Location":"Onett",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
       "name":"Zap Eel",
       "data":{
          "Comments":"Deep Darkness is also swimming with Zap Eels, which can put on impressive light shows when they strike their targets.",
-         "Hit points":"470",
+         "Hit points":"370",
          "Psychic points":"0",
          "Speed":"29",
          "Offense":"97",
          "Defense":"93",
-         "Location":"Deep Darkness"
+         "Guts":"5",
+         "IQ":"8",
+         "Exp":"12170",
+         "Money":"$611",
+         "Drops":"PSI caramel",
+         "Drops rate":"2/128",
+         "Location":"Deep Darkness",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1901,7 +2399,9 @@
          "Exp":"1354",
          "Money":"$54",
          "Drops":"Bottle rocket",
-         "Location":"Threed"
+         "Drops rate":"1/32",
+         "Location":"Threed",
+         "Vulnerable to":"PSI Fire, PSI Freeze, PSI Flash and Hypnosis"
       }
    },
    {
@@ -1914,9 +2414,13 @@
          "Offense":"28",
          "Defense":"19",
          "Guts":"9",
+         "Luck":"6",
+         "Exp":"950",
          "Money":"$81",
          "Drops":"Secret herb",
-         "Location":"Threed"
+         "Drops rate":"1/64",
+         "Location":"Threed",
+         "Vulnerable to": "PSI Freeze and PSI Flash"
       }
    }],
    "bosses":[
@@ -1931,7 +2435,11 @@
          "Guts":"16",
          "Exp":"5500",
          "Money":"$407",
-         "Location":"Threed"
+         "Drops": "Jar of fly honey",
+         "Drops rate":"1 (after defeating it in a trash can)",
+         "Location":"Threed",
+         "Vulnerable to":"PSI Fire"
+         
       }
    },
    {
@@ -1947,7 +2455,9 @@
          "Exp":"492",
          "Money":"$159",
          "Drops":"Boiled egg",
-         "Location":"Onett (Police Station)"
+         "Drops rate":"1/32",
+         "Location":"Onett (Police Station)",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -1959,6 +2469,9 @@
          "Speed":"31",
          "Offense":"159",
          "Defense":"174",
+         "Guts":"52",
+         "Exp":"0",
+         "Money":"$0",
          "Location":"Fire Spring"
       }
    },
@@ -1989,7 +2502,8 @@
          "Guts":"24",
          "Exp":"24291",
          "Money":"$1698",
-         "Location":"Fourside (Department Store)"
+         "Location":"Fourside (Department Store)",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -2001,7 +2515,10 @@
          "Speed":"31",
          "Offense":"167",
          "Defense":"230",
-         "Location":"Fire Spring"
+         "Guts":"10",
+         "Exp":"337738",
+         "Money":"$6968",
+         "Location":"Fire Spring (after the Carbon Dog is defeated)"
       }
    },
    {
@@ -2013,7 +2530,11 @@
          "Speed":"29",
          "Offense":"148",
          "Defense":"203",
-         "Location":"Lumine Hall"
+         "Guts":"47",
+         "Exp":"261637",
+         "Money":"$6564",
+         "Location":"Lumine Hall",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -2027,7 +2548,8 @@
          "Guts":"10",
          "Exp":"986",
          "Money":"$171",
-         "Location":"Twoson(Burglin Park)"
+         "Location":"Twoson(Burglin Park)",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -2042,7 +2564,8 @@
          "Guts":"1",
          "Exp":"28139",
          "Money":"$1852",
-         "Location":"Moonside"
+         "Location":"Moonside",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -2057,7 +2580,8 @@
          "Guts":"5",
          "Exp":"50",
          "Money":"$48",
-         "Location": "Onett"
+         "Location": "Onett",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -2072,7 +2596,8 @@
          "Guts":"0",
          "Exp":"76",
          "Money":"$31",
-         "Location":"Onett"
+         "Location":"Onett",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -2081,6 +2606,7 @@
          "Hit points":"9999",
          "Psychic points":"999",
          "Speed":"80",
+         "Guts":"5",
          "Offense":"255",
          "Defense":"255",
          "Location":"Cave Of The Past"
@@ -2092,6 +2618,7 @@
          "Hit points":"2000",
          "Psychic points":"0",
          "Speed":"80",
+         "Guts":"5",
          "Offense":"255",
          "Defense":"255",
          "Location":"Cave Of The Past"
@@ -2103,6 +2630,7 @@
          "Hit points":"9999",
          "Psychic points":"0",
          "Speed":"80",
+         "Guts":"5",
          "Offense":"255",
          "Defense":"127",
          "Location":"Cave Of The Past"
@@ -2111,7 +2639,7 @@
    {
       "name":"Guardian Digger",
       "data":{
-         "Comments":"The moles in the gold mine use PSI Shield to protect themselves, but you can attack them with Freeze and Flash.",
+         "Comments":"The moles in the gold mine use PSI Shield to protect themselves, but you can attack them with Freeze and PSI Flash.",
          "Hit points":"386",
          "Psychic points":"110",
          "Speed":"17",
@@ -2120,7 +2648,8 @@
          "Guts":"21",
          "Exp":"17301",
          "Money":"$1467",
-         "Location":"Desert Gold Mine"
+         "Location":"Desert Gold Mine",
+         "Vulnerable to":"PSI Fire, PSI Freeze and PSI Flash"
       }
    },
    {
@@ -2132,19 +2661,24 @@
          "Speed":"21",
          "Offense":"109",
          "Defense":"214",
-         "Location":"Pyramid"
+         "Guts":"1",
+         "Exp":"95390",
+         "Money":"$3235",
+         "Location":"Pyramid",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
       "name":"Heavily Armed Pokey",
       "data":{
-         "Hit points":"1746",
+         "Hit points":"2000",
          "Psychic points":"999",
-         "Speed":"51",
-         "Offense":"150",
-         "Defense":"18",
-         "Guts":"45",
-         "Location":"Cave Of The Past"
+         "Speed":"60",
+         "Offense":"145",
+         "Defense":"255",
+         "Guts":"5",
+         "Location":"Cave Of The Past",
+         "Vulnerable to":"Brainshock"
       }
    },
    {
@@ -2156,7 +2690,10 @@
          "Speed":"21",
          "Offense":"105",
          "Defense":"166",
-         "Location":"Open sea, Magicant (x3)"
+         "Guts":"1",
+         "Exp":"79267",
+         "Money":"$3049",
+         "Location":"Open sea (between Summers and Scaraba), Magicant (x3)"
       }
    },
    {
@@ -2168,7 +2705,13 @@
          "Speed":"24",
          "Offense":"136",
          "Defense":"177",
-         "Location":"Deep Darkness"
+         "Guts":"39",
+         "Exp":"125056",
+         "Money":"$3536",
+         "Location":"Deep Darkness",
+         "Drops": "Casey Bat",
+         "Drops rate":"1",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -2183,7 +2726,8 @@
          "Guts":"20",
          "Exp":"12509",
          "Money":"$664",
-         "Location":"Belch Base"
+         "Location":"Belch Base",
+         "Vulnerable to":"PSI Fire, PSI Freeze and Hypnosis"
       }
    },
    {
@@ -2199,7 +2743,8 @@
          "Exp":"1978",
          "Money":"$124",
          "Drops":"Bomb",
-         "Location":"Underground Path"
+         "Location":"Underground Path",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -2214,7 +2759,8 @@
          "Guts":"15",
          "Exp":"5791",
          "Money":"$400",
-         "Location":"Lilliput Steps"
+         "Location":"Lilliput Steps",
+         "Vulnerable to":"PSI Flash and Paralysis"
       }
    },
    {
@@ -2229,7 +2775,8 @@
          "Guts":"13",
          "Exp":"1412",
          "Money":"$195",
-         "Location":"Happy Happy Village"
+         "Location":"Happy Happy Village",
+         "Vulnerable to":"PSI Fire and PSI Freeze"
       }
    },
    {
@@ -2241,19 +2788,27 @@
          "Speed":"31",
          "Offense":"172",
          "Defense":"253",
-         "Location":"Magicant"
+         "Guts":"1",
+         "Exp":"89004",
+         "Money":"$4442",
+         "Location":"Magicant (Sea of Eden)",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
       "name":"Plague Rat of Doom",
       "data":{
-         "Comments":"The Plague Rat of Doom uses SMASH attacks frequently. Keep yourself healed up and in the fight. Use your top Fire and Flash powers.",
+         "Comments":"The Plague Rat of Doom uses SMASH attacks frequently. Keep yourself healed up and in the fight. Use your top Fire and PSI Flash powers.",
          "Hit points":"1827",
          "Psychic points":"60",
          "Speed":"19",
          "Offense":"71",
          "Defense":"180",
-         "Location":"Fourside Sewers"
+         "Guts":"250",
+         "Exp":"115272",
+         "Money":"$4464",
+         "Location":"Fourside Sewers",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -2265,7 +2820,11 @@
          "Speed":"18",
          "Offense":"95",
          "Defense":"154",
-         "Location":"Pond Cave"
+         "Guts":"32",
+         "Exp":"96323",
+         "Money":"$4086",
+         "Location":"Rainy Circle",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -2277,7 +2836,11 @@
          "Speed":"27",
          "Offense":"143",
          "Defense":"186",
-         "Location":"Stonehenge base"
+         "Guts":"43",
+         "Exp":"160524",
+         "Money":"$3827",
+         "Location":"Stonehenge base",
+         "Vulnerable to":"PSI Fire"
       }
    },
    {
@@ -2304,9 +2867,11 @@
          "Speed":"21",
          "Offense":"111",
          "Defense":"171",
+         "Guts":"35",
          "Exp":"129026",
          "Money":"$4796",
-         "Location":"Cave of the Pink Cloud"
+         "Location":"Cave of the Pink Cloud",
+         "Vulnerable to":"PSI Fire, PSI Freeze and PSI Flash"
       }
    },
    {
@@ -2319,7 +2884,7 @@
          "Offense":"19",
          "Defense":"23",
          "Guts":"9",
-         "Exp":"695",
+         "Exp":"685",
          "Money":"$150",
          "Location":"Giant Step"
       }

@@ -28,7 +28,7 @@ async function getItemLocation(item) {
                 
                 let specialEnemies = ["Arachnid!!!", "Bionic Kraken", "Final Starman", "Ghost of Starman", "Great Crested Booka", "Cute Li'l UFO",
                 "Hyper Spinning Robo", "Major Psychic Psycho", "Manly Fish's Brother", "Mighty Bear Seven", "Starman Super", "Tough Mobile Sprout",
-                "Wild 'N Wooly Shambler", "Frankystein Mark II", "Giygas Part III (unstable defenses)", "Starman Deluxe", "Starman Junior"]
+                "Wild 'N Wooly Shambler", "Frankystein Mark II", "Giygas Part III (unstable defenses)", "Starman Deluxe", "Starman Junior", "Extra Cranky Lady", "Fierce Shattered Man", "Over Zealous Cop"]
 
                 let foundSE = false;
                 
@@ -116,6 +116,10 @@ window.onload = async function () {
             let newEntry = document.createElement("div");
             if (typeof (element.data["Description"]) == "undefined") var description = "";
             else var description = element.data["Description"];
+            if (typeof (element.data["Comments"]) == "undefined") var comments = "";
+            else var comments = element.data["Comments"];
+            if(comments == "") var itemText = description;
+            else var itemText = comments;
             tableString = "";
             switch (Object.keys(data)[i]) {
                 case "weapons":
@@ -224,7 +228,7 @@ window.onload = async function () {
             newEntry.innerHTML = "<div class=\"row mb-5\" id=\"" + nameToImage(element.name.toLowerCase()) + "\">\
                                     <div class=\"col-lg-6\">\
                                         <h3 class=\"text-white\">" + element.name + "</h3>\
-                                        <span class=\"text-white description\">" + description + "</span>\
+                                        <span class=\"text-white description\">" + itemText + "</span>\
                                     </div>\
                                     <div class=\"col-lg-3\">\
                                     <img src=\"../../assets/sprites/ness.png\" class=\"img-hero"+ ness + "\" \>\

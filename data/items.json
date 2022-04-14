@@ -67,7 +67,7 @@
       "data":{
          "Comments":"Ness's first weapon.",
          "Description":"Ness can equip this weapon.",
-         "Location":"Ness's house (Gift Box), Onett (Drugstore)",
+         "Location":"Onett (Gift Box in Ness's House or Drugstore)",
          "Price":"$18",
          "Error rate":"1/16",
          "Offense up":"4"
@@ -137,7 +137,7 @@
    {
       "name":"Gaia Beam",
       "data":{
-         "Comments:":"Jeff's Ultimate Weapon. Jeff must repair the Broken Antenna to obtain this weapon.",
+         "Comments":"Jeff's Ultimate Weapon. Jeff must repair the Broken Antenna to obtain this weapon.",
          "Description":"Jeff can equip this weapon.",
          "Location":"Repair the Broken Antenna",
          "Price":"N/A",
@@ -204,7 +204,7 @@
    {
       "name":"Legendary Bat",
       "data":{
-         "Comments:":"Ness's ultimate weapon",
+         "Comments":"Ness's ultimate weapon",
          "Description":"Ness can equip this weapon.",
          "Location":"Cave Of The Past (Gift Box)",
          "Price":"N/A",
@@ -290,7 +290,7 @@
       "data":{
          "Comments":"Jeff's first weapon.",
          "Description":"Jeff can equip this weapon.",
-         "Location":"Snow Wood Boarding School (Gift Box)",
+         "Location":"Snow Wood Boarding School in Winters (Gift Box)",
          "Price":"$55",
          "Error rate":"0",
          "Offense up":"16"
@@ -499,7 +499,7 @@
       "data":{
          "Comments":"Increases Luck by 13.",
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck.",
-         "Location":"Fourside (Department Store), Desert Gold Mine (Gift Box), Toto (Grocery Store)",
+         "Location":"Fourside (Department Store), Desert Gold Mine (Gift Box), Summers (Grocery Store)",
          "Price":"$2000",
          "Defense up":"40",
          "Luck up": "13"
@@ -614,7 +614,7 @@
       "data":{
          "Comments":"Paula's ultimate ribbon.",
          "Description":"Miscellaneous equipment that can only be used by Paula.",
-         "Location":"Dropped by Ghost of Starman(1/128 chance)",
+         "Location":"Dropped by Ghost of Starman",
          "Price":"$6980",
          "Defense up":"110"
       }
@@ -652,7 +652,7 @@
       "name":"Holmes hat",
       "data":{
          "Description":"Must be equipped as \"other.\" It makes you feel like the great detective, Sherlock Holmes, when equipped.",
-         "Location":"Happy Happy Village (Drugstore), Snow Wood Boarding School (Gift Box)",
+         "Location":"Happy Happy Village (Drugstore), Snow Wood Boarding School in Winters(Gift Box)",
          "Price":"$59",
          "Defense up":"10"
       }
@@ -682,7 +682,7 @@
       "data":{
          "Comments":"Increases Luck by 18.",
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck. It's not money even though it's called a coin.",
-         "Location":"",
+         "Location":"???",
          "Price":"$1000",
          "Defense up":"47",
          "Luck up": "18"
@@ -816,7 +816,7 @@
       "data":{
          "Comments":"Provides protection from Fire, Freeze, Flash and Paralysis. This is the best pendant item in the game, though its usefulness is limited by its rarity.",
          "Description":"Must be equipped on your body. It protects you from fire, freeze, flash and paralysis attacks.",
-         "Location":"Dropped by Major Psychic Psycho(1/128 chance)",
+         "Location":"Dropped by Major Psychic Psycho",
          "Price":"$7000",
          "Defense up":"30"
       }
@@ -826,7 +826,7 @@
       "data":{
          "Comments":"Increases Luck by 25.",
          "Description":"Must be equipped as \"other.\" Increases your Defense and Luck.",
-         "Location: Tenda Village (Store":"",
+         "Location": "Tenda Village (Store)",
          "Price":"$3500",
          "Defense up":"60",
          "Luck up": "25"
@@ -837,7 +837,7 @@
       "data":{
          "Comments":"Can be used only by Paula. Increases her Luck by 25.",
          "Description":"Miscellaneous equipment that can only be used by Paula. When equipped, luck is increased.",
-         "Location: Dungeon Man (Gift Box":"",
+         "Location": "Dungeon Man (Gift Box)",
          "Price":"3500",
          "Defense up":"60",
          "Luck up": "25"
@@ -859,7 +859,7 @@
       "data":{
          "Comments":"Needed to withdraw or deposit cash. It's possible to deposit it into Escargo Express, but all that does is remove your ability to use the ATM.",
          "Description":"You know, you shouldn't leave home without... It even works overseas!",
-         "Location":"",
+         "Location":"Ness begins the adventure with it in his inventory",
          "Price":"N/A"
       }
    },
@@ -868,7 +868,7 @@
       "data":{
          "Comments":"Use at the Chaos Theater.",
          "Description":"It allows you go back stage at the Chaos Theater. Of course, you can also watch the show using the pass.",
-         "Location":"",
+         "Location":"It is given to Ness by Lucky after he becomes overjoyed at seeing Paula rescued by Ness. ",
          "Price":"N/A"
       }
    },
@@ -913,7 +913,7 @@
       "data":{
          "Comments":"Used only by Jeff. Stronger than a Bottle rocket.",
          "Description":"Items for Jeff. Fires a fast, powerful bottle rocket. Gone after one use.",
-         "Location":"Dusty Dunes Desert (Arms Dealer), Fourside (Arms Dealer), Desert Gold Mine (Gift Box), Scaraba (Weapon Shop)",
+         "Location":"Dusty Dunes Desert (Arms Dealer), Fourside (Arms Dealer), Desert Gold Mine (Gift Box), Scaraba (Weapon Shop), dropped by Sentry Robot",
          "Price":"$139"
       }
    },
@@ -922,7 +922,7 @@
       "data":{
          "Comments":"Use to hit multiple enemies with a single attack.",
          "Description":"Damages an enemy when used during battle. Because of its explosive power, it may effect others besides the target creature. Gone after one use.",
-         "Location":"Peaceful Rest Valley (Gift Box), Threed (Arms Dealer), Grapefruit Falls (Gift Box), The Belch Base (Gift Box), Fourside (Department Store, Arms Dealer), Desert Gold Mine (Gift Box), Scaraba (Weapon Shop), dropped by Attack Slug(1/128 chance)",
+         "Location":"Peaceful Rest Valley (Gift Box), Threed (Arms Dealer), Grapefruit Falls (Gift Box), The Belch Base (Gift Box), Fourside (Department Store or Arms Dealer), Desert Gold Mine (Gift Box), Scaraba (Weapon Shop), dropped by Attack Slug, dropped by Trick or Trick Kid",
          "Price":"$149"
       }
    },
@@ -931,7 +931,7 @@
       "data":{
          "Comments":"Use to attack during battle.",
          "Description":"Items for Jeff. Damages an enemy when used during battle. Gone after one use.",
-         "Location":"Threed (Arms Dealer), Dusty Dunes Desert (Arms Dealer), Fourside (Arms Dealer), Scaraba (Weapon Shop)",
+         "Location":"Threed (Arms Dealer), Dusty Dunes Desert (Arms Dealer), Fourside (Arms Dealer), Scaraba (Weapon Shop), dropped by Zombie Dog",
          "Price":"$29"
       }
    },
@@ -1012,16 +1012,16 @@
       "data":{
          "Comments":"Can be repaired by Jeff, to produce a Counter-PSI unit. Requires 1 IQ to fix.",
          "Description":"There's no way of knowing its original use. It's just some kind of broken gadget. That genius Jeff should be able to fix it sometime.",
-         "Location:":"Apple Kid's House (Twoson)",
+         "Location":"Apple Kid's House (Twoson)",
          "Price":"N/A"
       }
    },
    {
       "name":"Broken pipe",
       "data":{
-         "Comments:":"Can be repaired by Jeff to produce a Shield killer. Requires 30 IQ to fix.",
+         "Comments":"Can be repaired by Jeff to produce a Shield killer. Requires 30 IQ to fix.",
          "Description":"It looks like a busted water pipe. That genius Jeff should be able to fix it sometime.",
-         "Location":"Found in Dr. Andounts lab 2nd floor",
+         "Location":"Found in Dr. Andounts lab 2nd floor (Winters)",
          "Price":"N/A"
       }
    },
@@ -1030,7 +1030,7 @@
       "data":{
          "Comments":"Can be repaired by Jeff to produce a Defense spray. Requires 1 IQ to fix.",
          "Description":"A broken spray can. That genius Jeff should be able to fix it sometime.",
-         "Location":"Twoson (Burglin Park), Saturn Valley (Garbage), Fourside Sewer (Gift Box)",
+         "Location":"Twoson (Burglin Park), Saturn Valley (Garbage), Fourside Sewer (Gift Box), dropped by Armored Frog",
          "Price":"$189"
       }
    },
@@ -1039,7 +1039,7 @@
       "data":{
          "Comments":"Can be repaired by Jeff to produce a Magnum Air Gun. Requires 12 IQ to fix.",
          "Description":"A broken air gun. That genius Jeff should be able to fix it sometime.",
-         "Location":"Snow Wood Boarding School (Gift Box)",
+         "Location":"Snow Wood Boarding School in Winters(Gift Box)",
          "Price":"N/A"
       }
    },
@@ -1057,7 +1057,7 @@
       "data":{
          "Comments":"Can be repaired by Jeff to produce a Hungry HP-sucker. Requires 36 IQ to fix.",
          "Description":"A broken tube-shaped item. That genius Jeff should be able to fix it sometime.",
-         "Location:":"Monkey Caves",
+         "Location":"Monkey Cave",
          "Price":"N/A"
       }
    },
@@ -1075,7 +1075,7 @@
       "data":{
          "Comments":"If kept for a while, becomes a Chicken.",
          "Description":"A chick that just hatched.",
-         "Location":"Replaces a Fresh Egg in a character's inventory, after a certain amount of steps.",
+         "Location":"Replaces a Fresh Egg in a character's inventory after a certain amount of steps, dropped by Thirsty Coil Snake, dropped by Tough Guy",
          "Price":"$25",
          "Note":"Was rumored to cure Homesickness, but that proved to be false."
       }
@@ -1085,7 +1085,7 @@
       "data":{
          "Comments":"Sell for big cash. Will escape if you try to use it.",
          "Description":"A real, live chicken. Don't eat it, please.",
-         "Location":"Replaces a Chick in a character's inventory, after a certain amount of steps.",
+         "Location":"Replaces a Chick in a character's inventory after a certain amount of steps.",
          "Price":"$110"
       }
    },
@@ -1103,7 +1103,7 @@
       "data":{
          "Comments":"Used only by Jeff. Counters enemies' PSI attacks.",
          "Description":"Items for Jeff. Contains the enemy's PSI during a battle. Can be used many times.",
-         "Location":"",
+         "Location":"Replaces the Broken machine in Jeff's inventory after the item has been repaired.",
          "Price":"N/A"
       }
    },
@@ -1121,7 +1121,7 @@
       "data":{
          "Comments":"Used only by Jeff. Increases the Defense of all allies.",
          "Description":"Increases the Defense of all the friends. It is most effective if you use this power multiple times to \"layer\" the effect. Can be used many times.",
-         "Location:":"Replaces a Broken Trumpet in Jeff's inventory after the item is repaired.",
+         "Location":"Replaces a Broken trumpet in Jeff's inventory after the item is repaired.",
          "Price":"N/A"
       }
    },
@@ -1148,7 +1148,7 @@
       "data":{
          "Comments":"Erases the Iron Eraser of Stonehenge.",
          "Description":"Apple Kid's invention. The Eraser eraser erases eraser statues that block Ness's way.",
-         "Location":"Given to you in Dr. Andonuts's lab by the No Name Mouse.",
+         "Location":"Given to you in Dr. Andonuts's lab(Winters) by the No Name Mouse.",
          "Price":"N/A"
       }
    },
@@ -1220,7 +1220,7 @@
       "data":{
          "Comments":"Explains how to open the Pyramid.",
          "Description":"A copy of a hieroglyph. Something important is recorded in the ancient characters.",
-         "Location:":"Given by Summers Museum's Researcher.",
+         "Location":"Given by Summers Museum's Researcher.",
          "Price":"N/A"
       }
    },
@@ -1238,7 +1238,7 @@
       "data":{
          "Comments":"Used only by Jeff. Takes HP from all enemies and adds them to Jeff's HP.",
          "Description":"Items for Jeff. Sucks up some HP from all the enemies. The more HP the enemies have, the more you get. Can be used many times.",
-         "Location":"Replaces a Broken Tube in Jeff's inventory after the item is repaired.",
+         "Location":"Replaces a Broken tube in Jeff's inventory after the item is repaired.",
          "Price":"N/A"
       }
    },
@@ -1247,7 +1247,7 @@
       "data":{
          "Comments":"Spray on insect-type monsters.",
          "Description":"Deals 100 points of damage to any bug when used during combat. Gone after one use.",
-         "Location":"Threed (Drugstore, Garbage), Brick Road Maze (Gift Box), Saturn Valley (Drugstore), Fourside (Department Store)",
+         "Location":"Threed (Drugstore or Garbage), Brick Road Maze (Gift Box), Saturn Valley (Drugstore), Fourside (Department Store)",
          "Price":"$19"
       }
    },
@@ -1256,7 +1256,7 @@
       "data":{
          "Comments":"Return to owner in Twoson hospital to receive a Magic truffle.",
          "Description":"It doesn't look like it would do much of anything, but...",
-         "Location:":"Threed (Hospital 2nd floor)",
+         "Location":"Threed (Hospital 2nd floor)",
          "Price":"$2"
       }
    },
@@ -1353,7 +1353,7 @@
       "data":{
          "Comments":"Sell for a moderate amount of money.",
          "Description":"It can be sold for a very high price. Nothing happens if you use it. A good explanation is kind of tough...",
-         "Location":"Dropped by Plain Crocodile(1/128 chance), dropped by Smilin' Sphere(1/128 chance)",
+         "Location":"Dropped by Plain Crocodile, dropped by Smilin' Sphere, dropped by Spinning Robo",
          "Price":"$2000",
          "Note":": This item can only be obtained in 1/128 drops."
       }
@@ -1363,7 +1363,7 @@
       "data":{
          "Comments":"Sell for big money.",
          "Description":"It can be sold for a very high price. Nothing happens if you use it. A good explanation is kind of tough...",
-         "Location":"Dropped by Hyper Spinning Robo(1/128 chance), dropped by Mechanical Octobot(1/128 chance), dropped by Military Octobot(1/128 chance), dropped by Whirling Robo(1/128 chance), dropped by Soul Consuming Flame, dropped by Evil Eye, dropped by Big Pile of Puke,",
+         "Location":"Dropped by Hyper Spinning Robo, dropped by Mechanical Octobot, dropped by Military Octobot, dropped by Whirling Robo, dropped by Soul Consuming Flame, dropped by Evil Eye, dropped by Big Pile of Puke",
          "Price":"$4000"
       }
    },
@@ -1372,7 +1372,7 @@
       "data":{
          "Comments":"Used only by Jeff. Stronger than a Big bottle rocket.",
          "Description":"Items for Jeff. Possibly the strongest weapon around, it does a lot of damage due to its massive warhead. Gone after one use.",
-         "Location":"Scaraba (Grocery Store), Deep Darkness (Secret Weapon Shop)",
+         "Location":"Scaraba (Grocery Store), Deep Darkness (Secret Weapon Shop), dropped by Even Slimier Little Pile, dropped by Wooly Shambler, dropped by Wild 'N Wooly Shambler",
          "Price":"$2139"
       }
    },
@@ -1426,7 +1426,7 @@
       "data":{
          "Comments":"Poisons one enemy during battle.",
          "Description":"An ectoplasmic ooze is disgorged out of the dreadful box, and the enemy may be poisoned. Gone after one use.",
-         "Location":"The Pyramid (Gift Box)",
+         "Location":"The Pyramid (Gift Box), dropped by Guardian Hieroglyph, dropped by Lethal Asp Hieroglyph",
          "Price":"$290"
       }
    },
@@ -1517,7 +1517,7 @@
       "data":{
          "Comments":"Cures the Tenda people of their shyness.",
          "Description":"As the title says, it helps one overcome shyness.",
-         "Location:":"Onett Library",
+         "Location":"Onett Library",
          "Price":"N/A"
       }
    },
@@ -1544,7 +1544,7 @@
       "data":{
          "Comments":"Use during a battle to poison an enemy.",
          "Description":"When used during battle, it bites the enemy and disappears. It may also poison the enemy.",
-         "Location":"Scaraba (Snake Shop), Dungeon Man (Gift Box)",
+         "Location":"Scaraba (Snake Shop), Dungeon Man (Gift Box), dropped by Tangoo",
          "Price":"$220"
       }
    },
@@ -1580,7 +1580,7 @@
       "data":{
          "Comments":"Increases Guts during battle.",
          "Description":"Doubles your guts during battle. However, after a battle, your guts return to normal. Gone after one use.",
-         "Location":"Saturn Valley (Garbage), Monotoli Building (Gift Box), Cave of the Pink Cloud(Gift Box), Scaraba(Hassan's Shop), Dungeon Man (Gift Box), dropped by Enraged Fire Plug(1/128 chance), dropped by Musica(1/128 chance)",
+         "Location":"Saturn Valley (Garbage), Monotoli Building (Gift Box), Cave of the Pink Cloud(Gift Box), Scaraba(Hassan's Shop), Dungeon Man (Gift Box), dropped by Enraged Fire Plug, dropped by Musica, dropped by Electro Swoosh, dropped by Desert Wolf, dropped by Enraged Fire Plug, dropped by Petrified Royal Guard",
          "Price":"$500"
       }
    },
@@ -1589,7 +1589,7 @@
       "data":{
          "Comments":"Has the same effect as the Heavy bazooka. Can be used by anyone.",
          "Description":"Able to dish out some heavy-duty destruction in combat. Because of its explosive power, it may effect others besides the target creature. Gone after one use.",
-         "Location":"Fourside (Arms Dealer), Desert Gold Mine (Gift Box), Scaraba (Weapon Shop), Deep Darkness (Secret Weapon Shop), Lumine Hall (Gift Box)",
+         "Location":"Fourside (Arms Dealer), Desert Gold Mine (Gift Box), Scaraba (Weapon Shop), Deep Darkness (Secret Weapon Shop), Lumine Hall (Gift Box), dropped by Atomic Power Robot, dropped by Carefree Bomb, dropped by Nuclear Reactor Robot, dropped by Robo-Pump, dropped by Strong Crocodile",
          "Price":"$399"
       }
    },
@@ -1598,7 +1598,7 @@
       "data":{
          "Comments":"Absorbs damage from enemy attacks.",
          "Description":"A cute teddy bear!",
-         "Location":"Summers (Drugstore), Dungeon Man (Gift Box), dropped by Mighty Bear Seven(1/128 chance)",
+         "Location":"Summers (Drugstore), Dungeon Man (Gift Box), dropped by Mighty Bear Seven, dropped by Hard Crocodile",
          "Price":"$1198"
       }
    },
@@ -1644,7 +1644,7 @@
       "data":{
          "Comments":"Freezes an enemy during battle.",
          "Description":"Can be used during battle. Gone after one use.",
-         "Location":"Threed (Drugstore), Fourside (Department Store)",
+         "Location":"Threed (Drugstore), Fourside (Department Store), dropped by Unassuming Local Guy",
          "Price":"$3"
       }
    },
@@ -1662,7 +1662,7 @@
       "data":{
          "Comments":"Most users recover 30 HP. Poo recovers 6 HP.",
          "Description":"A fashionable treat for snobby, haute cuisine people in some big cities. When eaten, you recover about 30 HP.",
-         "Location":"Can be obtained from Electra in her room in the Monotoli Building",
+         "Location":"Can be obtained from Electra in her room in the Monotoli Building (Fourside)",
          "Price":"$48"
       }
    },
@@ -1679,7 +1679,7 @@
       "data":{
          "Comments":"Use to poison an enemy during battle.",
          "Description":"When used during battle, it bites the enemy and disappears. It always poisons the enemy.",
-         "Location":"Scaraba (Snake Shop), The Pyramid (Gift Box)",
+         "Location":"Scaraba (Snake Shop), The Pyramid (Gift Box), dropped by Hostile Elder Oak",
          "Price":"$550"
       }
    },
@@ -1697,7 +1697,7 @@
       "data":{
          "Comments":"Exterminates all insect-type monsters on battle screen. A mass and many-use version of the Insecticide Spray.",
          "Description":"Deals 200 points of damage to any bug when used during combat. Can be used many times.",
-         "Location":"dropped by Mad Taxi(1/128 chance)",
+         "Location":"dropped by Mad Taxi",
          "Price":"$315",
          "Note":": Can only be gotten from the Mad Taxi as a 1/128 drop."
       }
@@ -1726,7 +1726,7 @@
       "data":{
          "Comments":"Inexpensive and effective.",
          "Description":"When eaten, you recover about 24 HP.",
-         "Location":"Onett (Burger Shop), Twoson (Department Store), Fourside (Department Store)",
+         "Location":"Onett (Burger Shop), Twoson (Department Store), Fourside (Department Store), dropped by Yes Man Jr.",
          "Price":"$8",
          "Hit points up":"24 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1736,7 +1736,7 @@
       "data":{
          "Comments":"Sold in Burglin Park.",
          "Description":"When eaten, you recover about 25 HP.",
-         "Location":"Twoson (Burglin Park), Happy-Happy Village (Self-Service Shop), Fourside (Department Store), Scaraba (Hassan's Shop), Deep Darkness (Gift Box)",
+         "Location":"Twoson (Burglin Park), Happy Happy Village (Self-Service Shop), Fourside (Department Store), Scaraba (Hassan's Shop), Deep Darkness (Gift Box)",
          "Price":"$5",
          "Hit points up":"25 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1756,7 +1756,7 @@
       "data":{
          "Comments":"Can be purchased in Scaraba.",
          "Description":"Recipe for making jerky. Obtain some type of meat, slice it into pieces about a half of an inch thick. Hang the pieces on a laundry line or something like it and leave out in the sun for maybe 6 months... Well, that's what my recipe says. When eaten, you recover about 150 HP.",
-         "Location":"Scaraba (Grocery Store), Deep Darkness (Trading Company Employee, Gift Box)",
+         "Location":"Scaraba (Grocery Store), Deep Darkness (Trading Company Employee or Gift Box), dropped by Arachnid!!!, dropped by Great Crested Booka, dropped by Manly Fish",
          "Price":"$70",
          "Hit points up":"150 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1766,7 +1766,7 @@
       "data":{
          "Comments":"One of Jeff's first items.",
          "Description":"When eaten, you recover about 40 HP.",
-         "Location":"Fourside (Department Store), Scaraba (Delicacy Shop)",
+         "Location":"Fourside (Department Store), Scaraba (Delicacy Shop), dropped by No Good fly, dropped by Captain Strong",
          "Price":"$9",
          "Hit points up":"42 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1786,7 +1786,7 @@
       "data":{
          "Comments":"Good for helping Poo recover PP.",
          "Description":"When you drink it, your PP slightly increases.",
-         "Location":"Toto (Grocery Store), Dalaam (Restaurant), Scaraba (Delicacy Shop)",
+         "Location":"Summers (Grocery Store), Dalaam (Restaurant), Scaraba (Delicacy Shop), dropped by Thunder Mite",
          "Price":"$4",
          "Psychic points up":"1 (Ness, Paula) 0 (Jeff), 10 (Poo)"
       }
@@ -1806,7 +1806,7 @@
       "data":{
          "Comments":"Increases both HP and PP. A very good healing item that is useful up to the end of the game.",
          "Description":"When eaten, you recover about 300 HP and about 50 PP.",
-         "Location":"Monkey Cave (Chest), Dalaam (Restaurant), Lost Underworld (Gift Box), dropped by Conducting Spirit(1/128 chance), dropped by Starman(1/128 chance)",
+         "Location":"Monkey Cave (Chest), Dalaam (Restaurant), Lost Underworld (Gift Box), dropped by Conducting Spirit, dropped by Starman",
          "Price":"$800",
          "Hit points up":"300 (Ness, Paula, Jeff), Full recovery (Poo)",
          "Psychic points up":"50 (Ness, Paula) 0 (Jeff), Full recovery (Poo)"
@@ -1816,7 +1816,7 @@
       "name":"Bread roll",
       "data":{
          "Description":"When eaten, you recover about 30 HP.",
-         "Location":"Onett (Bakery, Gift Box), Twoson (Department Store, Burglin Park), Threed (Bakery), Brick Road Maze (Gift Box), Fourside (Department Store, Bakery)",
+         "Location":"Onett (Bakery or Gift Box), Twoson (Department Store or Burglin Park), Threed (Bakery), Brick Road Maze (Gift Box), Fourside (Department Store or Bakery), dropped by Rowdy Mouse, dropped by Runaway Dog",
          "Price":"$12",
          "Hit points up":"30 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1834,7 +1834,7 @@
       "name":"Can of fruit juice",
       "data":{
          "Description":"If you drink this, you recover about 6 HP.",
-         "Location":"Onett (Burger Shop, Garbage), Twoson (Department Store, Burglin Park), Happy Happy Village (Drugstore), Threed (Bakery), Dusty Dunes Desert (Drugstore), Fourside (Department Store), Summers (Restaurant), Toto (Grocery Store)",
+         "Location":"Onett (Burger Shop or Garbage), Twoson (Department Store or Burglin Park), Happy Happy Village (Drugstore), Threed (Bakery), Dusty Dunes Desert (Drugstore), Fourside (Department Store), Summers (Restaurant or Grocery Store)",
          "Price":"$4",
          "Hit points up":"6"
       }
@@ -1854,7 +1854,7 @@
       "data":{
          "Comments":"The first food item you'll find.",
          "Description":"When eaten, you recover about 6 HP.",
-         "Location":"Onett (Bakery), Twoson (Department Store, Burglin Park), Threed (Bakery), Snow Wood Boarding School (Gift Box), Fourside (Bakery)",
+         "Location":"Onett (Bakery), Twoson (Department Store or Burglin Park), Threed (Bakery), Snow Wood Boarding School in Winters (Gift Box), Fourside (Bakery), dropped by Spiteful Crow, dropped by Worthless Protoplasm",
          "Price":"$7",
          "Hit points up":"6"
       }
@@ -1864,7 +1864,7 @@
       "data":{
          "Comments":"Good to have in Happy Happy Village and Threed.",
          "Description":"When eaten, you recover about 60 HP.",
-         "Location":"Lilliputian Footprints (Gift Box), Peaceful Rest Valley (Gift Box), Threed (Bakery), Brick Road Maze (Gift Box), Fourside (Department Store, Bakery), Desert Gold Mine (Gift Box), Fourside Sewer (Gift Box)",
+         "Location":"Lilliput Steps (Gift Box), Peaceful Rest Valley (Gift Box), Threed (Bakery), Brick Road Maze (Gift Box), Fourside (Department Store or Bakery), Desert Gold Mine (Gift Box), Fourside Sewer (Gift Box), dropped by Mobile Sprout, dropped by Mole Playing Rough, dropped by Putrid Moldyman",
          "Price":"$18",
          "Hit points up":"60 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1874,7 +1874,7 @@
       "data":{
          "Comments":"Expensive and not very effective.",
          "Description":"If you drink this, you recover about 12 HP. I guess it tastes good to adults.",
-         "Location":"Onett (Burger Shop), Twoson (Department Store, Burglin Park), Happy Happy Village (Drugstore), Threed (Bakery), Winters (Drugstore, Dr. Andonuts' Lab), Fourside (Department Store), Summers (Restaurant), Toto (Grocery Store), Scaraba (Delicacy Shop)",
+         "Location":"Onett (Burger Shop), Twoson (Department Store or Burglin Park), Happy Happy Village (Drugstore), Threed (Bakery), Winters (Drugstore or Dr. Andonuts' Lab), Fourside (Department Store), Summers (Restaurant or Grocery Store), Scaraba (Delicacy Shop), dropped by Scalding Coffee Cup",
          "Price":"$6",
          "Hit points up":"12 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1894,7 +1894,7 @@
       "data":{
          "Comments":"Handy in Fourside.",
          "Description":"When eaten, you recover about 90 HP. 100% beef.",
-         "Location":"Fourside (Department Store), Moonside (Gift Box), Winters (Dr. Andonuts' Lab)",
+         "Location":"Fourside (Department Store), Moonside (Gift Box), Winters (Dr. Andonuts' Lab), dropped by Gigantic Ant, dropped by Caveboy, dropped by Elder Batty, dropped by Over Zealous Cop",
          "Price":"$24",
          "Hit points up":"96 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1904,7 +1904,7 @@
       "data":{
          "Comments":"Keep it until it hatches and becomes a Chicken.",
          "Description":"When eaten, you recover about 80 HP. So fresh, it's still warm.",
-         "Location":"Twoson (Burglin Park), Happy Happy Village (Self-Service Shop), Monkey Cave, Winters (Dr. Andonuts' Lab), Scaraba (Delicacy Shop)",
+         "Location":"Twoson (Burglin Park), Happy Happy Village (Self-Service Shop), Monkey Cave, Winters (Dr. Andonuts' Lab), Scaraba (Delicacy Shop), dropped by Mad Duck",
          "Price":"$12",
          "Hit points up":"84 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1924,7 +1924,7 @@
       "data":{
          "Comments":"Very handy in Onett and Twoson.",
          "Description":"When eaten, you recover about 50 HP. 100% beef.",
-         "Location":"Onett (Burger Shop, Garbage, Gift Box), The Caves at Giant Step (Gift Box), Twoson (Department Store), Fourside (Department Store), Monkey Cave (Chest)",
+         "Location":"Onett (Burger Shop or Garbage or Gift Box), The Caves at Giant Step (Gift Box), Twoson (Department Store), Fourside (Department Store), Monkey Cave (Chest), dropped by Pogo Punk, dropped by Urban Zombie",
          "Price":"$14",
          "Hit points up":"48 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1954,7 +1954,7 @@
       "data":{
          "Comments":"Everyone recovers 240 HP.",
          "Description":"Since it's a really big pizza, everyone can recover about 240 HP.",
-         "Location":"Ordered by phone from Mach Pizza",
+         "Location":"Ordered by phone from Mach Pizza, dropped by Stinky Ghost",
          "Price":"$238",
          "Hit points up":"240 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1964,7 +1964,7 @@
       "data":{
          "Comments":"Recover HP and PP in random amounts.",
          "Description":"It helps you recover your power... How much and exactly what you recover depends on your luck!",
-         "Location":"Onett (Bakery), Twoson (Department Store, Burglin Park), Happy Happy Village (Drugstore), Threed (Bakery), Winters (Drugstore), Dusty Dunes Desert (Drugstore), Fourside (Bakery), Toto (Grocery Store)",
+         "Location":"Onett (Bakery), Twoson (Department Store or Burglin Park), Happy Happy Village (Drugstore), Threed (Bakery), Winters (Drugstore), Dusty Dunes Desert (Drugstore), Fourside (Bakery), Summers (Grocery Store)",
          "Price":"$128",
          "Hit points up":"60 HP or 240 HP or Full, 6 HP (Poo)",
          "Psychic points up":"5 PP or 20 PP or Full, 0 (Poo)"
@@ -1975,7 +1975,7 @@
       "data":{
          "Comments":"Sold only in the Lost Underworld.",
          "Description":"A gourmet version of jerky that is considered a delicacy. It is created by a skillful artisan who has been making jerky for over 60 years. Jerky fans consider this the caviar of all jerkys. I understand that they don't dry gourmet jerky on a laundry line... When eaten, you recover about 300 HP.",
-         "Location":"Lost Underworld (Grocery Store)",
+         "Location":"Lost Underworld (Grocery Store), dropped by Wetnosaur",
          "Price":"$210",
          "Hit points up":"300 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -1995,7 +1995,7 @@
       "data":{
          "Comments":"Sold only in Summers.",
          "Description":"Replenishes 20 PP.",
-         "Location":"Summers (Street Vendor), Magicant (Gift Box)",
+         "Location":"Summers (Street Vendor), Magicant (Gift Box), dropped by Mr. Molecule",
          "Price":"$480",
          "Psychic points up":"20"
       }
@@ -2055,7 +2055,7 @@
       "data":{
          "Comments":"Use in the Dusty Dunes Desert.",
          "Description":"When eaten, you recover abut 80 HP. There's even a slice of your favorite cake!",
-         "Location":"Winters (Drugstore, Dr. Andonuts' Lab), Dusty Dunes Desert (Drugstore), Fourside (Department Store), Desert Gold Mine (Gift Box), Monkey Cave (Chest)",
+         "Location":"Winters (Drugstore or Dr. Andonuts' Lab), Dusty Dunes Desert (Drugstore), Fourside (Department Store), Desert Gold Mine (Gift Box), Monkey Cave (Chest), dropped by Ranboob",
          "Price":"$24",
          "Hit points up":"84 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -2075,7 +2075,7 @@
       "data":{
          "Comments":"Mmmm! Delivered piping Hot!",
          "Description":"When eaten, you recover about 120 HP.",
-         "Location":"Monkey Cave (Chest), Dungeon Man (Gift Box), dropped by Skate Punk(1/128 chance), ordered from Mach Pizza",
+         "Location":"Monkey Cave (Chest), Dungeon Man (Gift Box), ordered from Mach Pizza, dropped by Skate Punk, dropped by Mystical Record, dropped by Mostly Bad Fly",
          "Price":"$48",
          "Hit points up":"300 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -2105,7 +2105,7 @@
       "data":{
          "Comments":"Can be purchased only in the Dusty Dunes Desert.",
          "Description":"When eaten, you recover about 18 HP.",
-         "Location":"",
+         "Location":"Sold for $7 at the Dusty Dunes Desert after defeating the 5 Guardian Diggers.",
          "Price":"$7",
          "Hit points up":"18 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -2115,7 +2115,7 @@
       "data":{
          "Comments":"Refreshing!",
          "Description":"For building a stronger, healthier body. It gives you a blast of nourishment when you are fatigued. If you drink this, you recover about 80 HP.",
-         "Location":"Grapefruit Falls (Gift Box), Fourside (Department Store), Moonside (Gift Box), Monkey Cave (Chest), Scaraba (Hassan's Shop), Deep Darkness (Trading Company Employee), dropped by Annoying Old Party Man",
+         "Location":"Grapefruit Falls (Gift Box), Fourside (Department Store), Moonside (Gift Box), Monkey Cave (Chest), Scaraba (Hassan's Shop), Deep Darkness (Trading Company Employee), dropped by Annoying Old Party Man, dropped by Annoying Reveler",
          "Price":"$38",
          "Hit points up":"84 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -2124,7 +2124,7 @@
       "name":"PSI caramel",
       "data":{
          "Description":"Replenishes 20 PP.",
-         "Location":"Lilliputian Footprints (Gift Box), Desert Gold Mine (Gift Box), Dungeon Man (Gift Box), Stonehenge base (Gift Box), Magicant (Gift Box), dropped by Dali's Clock(1/128 chance), dropped by Insane Cultist(1/128 chance), dropped by Territorial Oak(1/128 chance)",
+         "Location":"Lilliput Steps (Gift Box), Desert Gold Mine (Gift Box), Dungeon Man (Gift Box), Stonehenge base (Gift Box), Magicant (Gift Box), dropped by Dali's Clock, dropped by Insane Cultist, dropped by Territorial Oak, dropped by Final Starman, dropped by Fobby, dropped by Foppy, dropped by Lesser Mook, dropped by Loaded Dice, dropped by Mook Senior, dropped by Psychic Psycho, dropped by Ultimate Octobot, dropped by Zap Eel",
          "Price":"N/A",
          "Psychic points up":"20",
          "Note":": Every enemy that drops this item has a 1/128 chance of dropping it."
@@ -2145,7 +2145,7 @@
       "data":{
          "Comments":"Walk very fast for about 10 seconds.",
          "Description":"Gives you a spring in your step for about 10 seconds. It also helps you recover your power a bit.",
-         "Location":"Onett (Bakery), The Caves at Giant Step (Gift Box), Twoson (Department Store, Burglin Park, Gift Box), Happy Happy Village (Drugstore), Threed (Bakery, Garbage), Dusty Dunes Desert (Drugstore), Fourside (Bakery)",
+         "Location":"Onett (Bakery), The Caves at Giant Step (Gift Box), Twoson (Department Store or Burglin Park or Gift Box), Happy Happy Village (Drugstore), Threed (Bakery or Garbage), Dusty Dunes Desert (Drugstore), Fourside (Bakery), dropped by Fierce Shattered Man, dropped by Farm Zombie",
          "Price":"$38",
          "Hit points up":"6",
          "Note":": Can be used to get out of bounds in several places."
@@ -2156,7 +2156,7 @@
       "data":{
          "Comments":"Walk very fast for about 20 seconds.",
          "Description":"Gives you a spring in your step for about 20 seconds. It also helps you recover your power a bit.",
-         "Location":"Winters (Drugstore), Underground Road (Coffin), Fourside (Bakery), Toto (Grocery Store)",
+         "Location":"Winters (Drugstore), Underground Road (Coffin), Fourside (Bakery), Summers (Grocery Store), dropped by Ego Orb, dropped by High-class UFO",
          "Price":"$98",
          "Hit points up":"6"
       }
@@ -2166,7 +2166,7 @@
       "data":{
          "Comments":"Barter in Tenda for this item.",
          "Description":"Recipe for making spicy jerky. Obtain some type of meat, slice it into pieces about a half of an inch thick. Season the pieces as much as possible, hang the pieces on a laundry line or something like it and leave out in the sun for maybe 8 months... Well, that's what my recipe says... When eaten, you recover about 250 HP.",
-         "Location":"Stonehenge base (Gift Box), Lumine Hall (Gift Box), exchanged from Tenda Village trader",
+         "Location":"Stonehenge base (Gift Box), Lumine Hall (Gift Box), exchanged from Tenda Village trader, dropped by Demonic Petunia",
          "Price":"$140",
          "Hit points up":"252 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -2177,7 +2177,7 @@
       "data":{
          "Comments":"Use with Banana, Luck sandwich, Popsicle or Trout yogurt.",
          "Description":"To use, sprinkle over food. A good combination increases the strength of your recovery.",
-         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop)",
+         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop), dropped by Noose Man",
          "Price":"$4"
       }
    },
@@ -2186,7 +2186,7 @@
       "data":{
          "Comments":"Use with any food item.",
          "Description":"Use by sprinkling it over food. It tastes good with any kind of food, thereby increasing the recovery power of the food.",
-         "Location":"Dalaam (Restaurant)",
+         "Location":"Dalaam (Restaurant), dropped by Kiss of Death",
          "Price":"$300"
       }
    },
@@ -2195,7 +2195,7 @@
       "data":{
          "Comments":"Use with Cup of Noodles, Pasta di Summers or Pizza.",
          "Description":"To use, sprinkle over food. A good combination increases the strength of your recovery.",
-         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop)",
+         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop), dropped by Arachnid!, dropped by Mr. Batty",
          "Price":"$3"
       }
    },
@@ -2204,7 +2204,7 @@
       "data":{
          "Comments":"Use with Bag of fries, Bean croquette, Beef jerky, Croissant, Double burger, Fresh Egg, Hamburger, Kabob, Luxury jerky, Magic truffle, Mammoth burger or Spicy jerky.",
          "Description":"To use, sprinkle over food. A good combination increases the strength of your recovery.",
-         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop)",
+         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop), dropped by Dread Skelpion, dropped by Ramblin' Evil Mushroom",
          "Price":"$2"
       }
    },
@@ -2213,7 +2213,7 @@
       "data":{
          "Comments":"Use with Boiled egg, Brain food lunch, Chef's special and Picnic lunch.",
          "Description":"To use, sprinkle over food. A good combination increases the strength of your recovery.",
-         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop)",
+         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop), dropped by Gruff Goat, dropped by Pitbull Slug",
          "Price":"$2"
       }
    },
@@ -2222,7 +2222,7 @@
       "data":{
          "Comments":"Use with Bowl of rice gruel, Peanut cheese bar or Piggy jelly.",
          "Description":"To use, sprinkle over food. A good combination increases the strength of your recovery.",
-         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop)",
+         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop), dropped by Tough Mobile Sprout",
          "Price":"$2"
       }
    },
@@ -2231,7 +2231,7 @@
       "data":{
          "Comments":"Use with Bread roll, Calorie stick, Magic pudding, Magic tart, Plain yogurt, PSI caramel or Rock candy.",
          "Description":"To use, sprinkle over food. A good combination increases the strength of your recovery.",
-         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop)",
+         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop), dropped by Red Antoid",
          "Price":"$3"
       }
    },
@@ -2240,7 +2240,7 @@
       "data":{
          "Comments":"Use with Cookie, Gelato de resort, Plain roll, Skip sandwich or Skip sandwich DX.",
          "Description":"To use, sprinkle over food. A good combination increases the strength of your recovery.",
-         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop)",
+         "Location":"Twoson (Burglin Park), Fourside (Department Store), Scaraba (Seasoning Shop), dropped by Handsome Tom",
          "Price":"$4"
       }
    }],
@@ -2268,7 +2268,7 @@
       "data":{
          "Comments":"Completely cures unconsciousness and all other adverse conditions. The same effect as Healing Omega.",
          "Description":"Revives a friend who is unconscious. In addition, it also works well with poison, nausea, colds, sunstroke, falling asleep, uncontrollable crying, and feeling strange. This is effective when you have paralysis, or if you have been diamondized.",
-         "Location":"Saturn Valley (Drugstore), Lost Underworld (Gift Box in Grocery Store), the Fire Spring (Gift Box), dropped by Manly Fish's Brother(1/128 chance)",
+         "Location":"Saturn Valley (Drugstore), Lost Underworld (Gift Box in Grocery Store), the Fire Spring (Gift Box), dropped by Manly Fish's Brother, dropped by French Kiss of Death, dropped by Squatter Demon",
          "Price":"$1780",
          "Note":": Possibly the hardest 1/128 item to get."
       }
@@ -2296,7 +2296,7 @@
       "data":{
          "Comments":"Cures a cold, sunstroke, crying, poison, feeling strange and nausea. The same effect as Healing Beta.",
          "Description":"It helps when you have been poisoned, or you are feeling nauseous. It also has other uses... colds, sunstroke, falling asleep, uncontrollable crying, and feeling strange.",
-         "Location":"Threed (Drugstore), Saturn Valley (Drugstore), Dusty Dunes Desert (Drugstore), Fourside (Department Store)",
+         "Location":"Threed (Drugstore), Saturn Valley (Drugstore), Dusty Dunes Desert (Drugstore), Fourside (Department Store), dropped by Abstract Art, dropped by Smilin' Sam",
          "Price":"$80"
       }
    },
@@ -2315,7 +2315,7 @@
       "data":{
          "Comments":"Cures all bad conditions and wakes someone who is unconscious. The same effect as Healing Gamma. Is a stronger version of the Refreshing herb.",
          "Description":"May revive a friend who is unconscious. In addition, it also works well on poison, nausea, colds, sunstroke, falling asleep, uncontrollable crying, and feeling strange. This is effective when you have paralysis, or you have been diamondized.",
-         "Location":"Saturn Valley (Drugstore), Desert Gold Mine (Gift Box), Moonside (Gift Box), Winters (Dr. Andonuts' Lab), Toto (Grocery Store), Scaraba (Hassan's Shop or Grocery Store), Deep Darkness (Trading Company Employee), dropped by Violent Roach(1/128 chance)",
+         "Location":"Saturn Valley (Drugstore), Desert Gold Mine (Gift Box), Moonside (Gift Box), Winters (Dr. Andonuts' Lab), Summers (Grocery Store), Scaraba (Hassan's Shop or Grocery Store), Deep Darkness (Trading Company Employee), dropped by Violent Roach, dropped by Zombie Possessor",
          "Price":"$380"
       }
    },
@@ -2333,7 +2333,7 @@
       "data":{
          "Comments":"Permanently increases Vitality by 1.",
          "Description":"It increases your Vitality by 1 when taken.",
-         "Location":"The Belch Base (Gift Box), Monotoli Building (Gift Box)",
+         "Location":"The Belch Base (Gift Box), Monotoli Building in Fourside(Gift Box)",
          "Price":"N/A"
       }
    },
@@ -2342,7 +2342,7 @@
       "data":{
          "Comments":"Works as an antidote for poisoning.",
          "Description":"This is the best thing to take when you get poisoned.",
-         "Location":"Threed (Drugstore), Scaraba (Hassan's Shop, Snake Shop)",
+         "Location":"Threed (Drugstore), Scaraba (Hassan's Shop, Snake Shop), dropped by Skelpion",
          "Price":"$58"
       }
    },

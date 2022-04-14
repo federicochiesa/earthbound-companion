@@ -28,7 +28,7 @@ async function getItemLocation(item) {
 
                 let specialEnemies = ["Arachnid!!!", "Bionic Kraken", "Final Starman", "Ghost of Starman", "Great Crested Booka", "Cute Li'l UFO",
                 "Hyper Spinning Robo", "Major Psychic Psycho", "Manly Fish's Brother", "Mighty Bear Seven", "Starman Super", "Tough Mobile Sprout",
-                "Wild 'N Wooly Shambler", "Frankystein Mark II", "Giygas Part III (unstable defenses)", "Starman Deluxe", "Starman Junior"]
+                "Wild 'N Wooly Shambler", "Frankystein Mark II", "Giygas Part III (unstable defenses)", "Starman Deluxe", "Starman Junior", "Extra Cranky Lady", "Over Zealous Cop", "Fierce Shattered Man"]
                 
                 let foundSE = false;
 
@@ -62,7 +62,10 @@ async function getItemLocation(item) {
                         }
                     }
                     for (const map of Object.keys(datam)){
-                        if(locs[j].search(capitalizeFirstLetters(map)) > -1){
+                        if(locs[j].search("Fourside Sewers") > -1){
+                            l = l.replace("Fourside Sewers", "<a href=\"../maps/?map="+ "foursidesewers" + "\" color: inherit\" class=\"itemLink\">"+ "Fourside Sewers" + "</a>");
+                        }
+                        else if(locs[j].search(capitalizeFirstLetters(map)) > -1){
                             l = l.replace(capitalizeFirstLetters(map), "<a href=\"../maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
                         }
                     }
@@ -113,10 +116,25 @@ async function getEnemyInfo(enemy) {
                     <th scope=\"row\">Guts</th>\
                     <td>" + element.data["Guts"] + "</td>\
                         </tr>"
+                if(typeof(element.data["Luck"]) != "undefined")
+                    returnString += "<tr>\
+                    <th scope=\"row\">Luck</th>\
+                    <td>" + element.data["Luck"] + "</td>\
+                        </tr>"
+                if(typeof(element.data["IQ"]) != "undefined")
+                    returnString += "<tr>\
+                    <th scope=\"row\">IQ</th>\
+                    <td>" + element.data["IQ"] + "</td>\
+                        </tr>"
                 if(typeof(element.data["Drops"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">Drops</th>\
                     <td><a href=\"../items/?item="+ nameToImage(element.data["Drops"].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ element.data["Drops"] + "</a></td>\
+                        </tr>"
+                if(typeof(element.data["Drops rate"]) != "undefined")
+                    returnString += "<tr>\
+                    <th scope=\"row\">Drops rate</th>\
+                    <td>" + element.data["Drops rate"] + "</td>\
                         </tr>"
                 if(typeof(element.data["Exp"]) != "undefined")
                     returnString += "<tr>\
@@ -127,6 +145,11 @@ async function getEnemyInfo(enemy) {
                     returnString += "<tr>\
                     <th scope=\"row\">Money</th>\
                     <td>" + element.data["Money"] + "</td>\
+                    </tr>"
+                if(typeof(element.data["Vulnerable to"]) != "undefined")
+                    returnString += "<tr>\
+                    <th scope=\"row\">Vulnerable to</th>\
+                    <td>" + element.data["Vulnerable to"] + "</td>\
                     </tr>"
 
                 returnString += "</tbody>\
