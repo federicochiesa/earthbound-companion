@@ -92,10 +92,30 @@
         "name": "giantstep",
         "pins": [
             {
-                "x": "200",
-                "y": "2000",
-                "type": "present"
+                "x": "518",
+                "y": "5464",
+                "type": "boss",
+                "name": "Titanic Ant"
+            },
+            {
+                "x": "1860",
+                "y": "5532",
+                "type": "present",
+                "name": "Cold Remedy"
+            },
+            {
+                "x": "1860",
+                "y": "4385",
+                "type": "present",
+                "name": "Skip Sandwich"
+            },
+            {
+                "x": "5630",
+                "y": "4000",
+                "type": "present",
+                "name": "Hamburger"
             }
+            
         ]
     },
     "twoson": {

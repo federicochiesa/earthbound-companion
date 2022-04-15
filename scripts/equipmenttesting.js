@@ -314,6 +314,7 @@ async function changeCharacter(clicked_id) {
         updateEquipmentStats(items);
 
         let magiSwitch = document.getElementById("flexSwitchCheckDefault");
+        magiSwitch.checked = false;
         if(name.innerText != "NESS") magiSwitch.disabled = true;
         else{
             magiSwitch.disabled = false;
