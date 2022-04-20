@@ -1,3 +1,13 @@
+const itemsP = (async function () {
+    return await getData("items");
+})()
+const enemiesP = (async function () {
+    return await getData("enemies");
+})()
+const mapsP = (async function () {
+    return await getData("maps");
+})()
+
 async function showInfoModal(item) {
     document.getElementById("infoModalTitle").textContent = "More info: " + item;
     document.getElementById("infoModalBody").innerHTML = await getEnemyInfo(item);
@@ -11,10 +21,10 @@ async function showMapModal(item) {
 }
 
 async function getItemLocation(item) {
-    let data = await getData("enemies");
-    let datam = await getData("maps");
-    let datae = await getData("items")
-    
+    let data = await enemiesP;
+    let datam = await mapsP;
+    let datae = await itemsP;
+
     for (let i = 0; i < Object.keys(data).length; i++) {
         let elements = data[Object.keys(data)[i]];
         for (const element of elements) {
@@ -27,54 +37,47 @@ async function getItemLocation(item) {
                 let bosses = data[Object.keys(data)[1]];
 
                 let specialEnemies = ["Arachnid!!!", "Bionic Kraken", "Final Starman", "Ghost of Starman", "Great Crested Booka", "Cute Li'l UFO",
-                "Hyper Spinning Robo", "Major Psychic Psycho", "Manly Fish's Brother", "Mighty Bear Seven", "Starman Super", "Tough Mobile Sprout",
-                "Wild 'N Wooly Shambler", "Frankystein Mark II", "Giygas Part III (unstable defenses)", "Starman Deluxe", "Starman Junior", "Extra Cranky Lady", "Over Zealous Cop", "Fierce Shattered Man"]
-                
+                    "Hyper Spinning Robo", "Major Psychic Psycho", "Manly Fish's Brother", "Mighty Bear Seven", "Starman Super", "Tough Mobile Sprout",
+                    "Wild 'N Wooly Shambler", "Frankystein Mark II", "Giygas Part III (unstable defenses)", "Starman Deluxe", "Starman Junior", "Extra Cranky Lady", "Over Zealous Cop", "Fierce Shattered Man"]
+
                 let foundSE = false;
 
-                for(let j = 0; j < locs.length; j++){
+                for (let j = 0; j < locs.length; j++) {
                     l = locs[j]
                     foundSE = false;
-                    for(const se of specialEnemies){
+                    for (const se of specialEnemies) {
                         if (locs[j].search(se) > -1) {
                             foundSE = true;
-                            l = l.replace(se, "<a href=\"../enemies/?item="+ nameToImage(se.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ se + "</a>");
+                            l = l.replace(se, "<a href=\"../enemies/?item=" + nameToImage(se.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + se + "</a>");
                         }
                     }
-                    if(!foundSE){
-                        for (const e of enemies) {
-                            if (locs[j].search(e.name) > -1) {
-                                l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
-                            }
-                        }
-                        for (const e of bosses) {
-                            if (locs[j].search(e.name) > -1) {
-                                l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
-                            }
-                        }
+                    if (!foundSE) {
+                        for (const e of enemies)
+                            if (locs[j].search(e.name) > -1)
+                                l = l.replace(e.name, "<a href=\"../enemies/?item=" + nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + e.name + "</a>");
+
+                        for (const e of bosses)
+                            if (locs[j].search(e.name) > -1)
+                                l = l.replace(e.name, "<a href=\"../enemies/?item=" + nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + e.name + "</a>");
                     }
                     for (let x = 0; x < Object.keys(datae).length; x++) {
                         let items = datae[Object.keys(datae)[x]];
-                        for (const k of items) {
-                            if (locs[j].search(k.name) > -1) {
-                                l = l.replace(k.name, "<a href=\"../items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
-                            }
-                        }
+                        for (const k of items)
+                            if (locs[j].search(k.name) > -1)
+                                l = l.replace(k.name, "<a href=\"../items/?item=" + nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + k.name + "</a>");
                     }
-                    for (const map of Object.keys(datam)){
-                        if(locs[j].search("Fourside Sewers") > -1){
-                            l = l.replace("Fourside Sewers", "<a href=\"../maps/?map="+ "foursidesewers" + "\" color: inherit\" class=\"itemLink\">"+ "Fourside Sewers" + "</a>");
-                        }
-                        else if(locs[j].search(capitalizeFirstLetters(map)) > -1){
-                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"../maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
-                        }
+                    for (const map of Object.keys(datam)) {
+                        if (locs[j].search("Fourside Sewers") > -1)
+                            l = l.replace("Fourside Sewers", "<a href=\"../maps/?map=" + "foursidesewers" + "\" color: inherit\" class=\"itemLink\">" + "Fourside Sewers" + "</a>");
+
+                        else if (locs[j].search(capitalizeFirstLetters(map)) > -1)
+                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"../maps/?map=" + nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + capitalizeFirstLetters(map) + "</a>");
                     }
-                    
+
                     returnString += " <tr>\
                                         <td>" + l + "</td>\
                                      </tr>\ ";
                 }
-
                 returnString += "</tbody>\
                             </table>";
                 return returnString;
@@ -84,7 +87,7 @@ async function getItemLocation(item) {
 }
 
 async function getEnemyInfo(enemy) {
-    let data = await getData("enemies");
+    let data = await enemiesP;
     for (let i = 0; i < Object.keys(data).length; i++) {
         let elements = data[Object.keys(data)[i]];
         for (const element of elements) {
@@ -111,42 +114,42 @@ async function getEnemyInfo(enemy) {
                         <th scope=\"row\">Speed</th>\
                         <td>" + element.data["Speed"] + "</td>\
                     </tr>\ ";
-                if(typeof(element.data["Guts"]) != "undefined")
+                if (typeof (element.data["Guts"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">Guts</th>\
                     <td>" + element.data["Guts"] + "</td>\
                         </tr>"
-                if(typeof(element.data["Luck"]) != "undefined")
+                if (typeof (element.data["Luck"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">Luck</th>\
                     <td>" + element.data["Luck"] + "</td>\
                         </tr>"
-                if(typeof(element.data["IQ"]) != "undefined")
+                if (typeof (element.data["IQ"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">IQ</th>\
                     <td>" + element.data["IQ"] + "</td>\
                         </tr>"
-                if(typeof(element.data["Drops"]) != "undefined")
+                if (typeof (element.data["Drops"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">Drops</th>\
-                    <td><a href=\"../items/?item="+ nameToImage(element.data["Drops"].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ element.data["Drops"] + "</a></td>\
+                    <td><a href=\"../items/?item="+ nameToImage(element.data["Drops"].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + element.data["Drops"] + "</a></td>\
                         </tr>"
-                if(typeof(element.data["Drops rate"]) != "undefined")
+                if (typeof (element.data["Drops rate"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">Drops rate</th>\
                     <td>" + element.data["Drops rate"] + "</td>\
                         </tr>"
-                if(typeof(element.data["Exp"]) != "undefined")
+                if (typeof (element.data["Exp"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">Experience</th>\
                     <td>" + element.data["Exp"] + "</td>\
                         </tr>"
-                if(typeof(element.data["Money"]) != "undefined")
+                if (typeof (element.data["Money"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">Money</th>\
                     <td>" + element.data["Money"] + "</td>\
                     </tr>"
-                if(typeof(element.data["Vulnerable to"]) != "undefined")
+                if (typeof (element.data["Vulnerable to"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">Vulnerable to</th>\
                     <td>" + element.data["Vulnerable to"] + "</td>\
@@ -163,7 +166,7 @@ async function getEnemyInfo(enemy) {
 window.onload = async function () {
     showSurveyToast();
 
-    let data = await getData("enemies");
+    let data = await enemiesP;
     let list = document.getElementById("dataList");
     for (let i = 0; i < Object.keys(data).length; i++) {
         let title = document.createElement("div");
@@ -219,44 +222,44 @@ window.onload = async function () {
         }
     }
 
-    setTimeout(function(){
+    setTimeout(function () {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const idToScroll = urlParams.get("item");
         if (idToScroll != null) {
             const element = document.getElementById(idToScroll);
             const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
-            window.scrollTo({ top: y});
+            window.scrollTo({ top: y });
         }
     }, 50);
 
     pages = ["items", "enemies", "shops", "maps"]
     data = []
     names = []
-    
-    setTimeout(async function(){
-        for(let j = 0; j < pages.length; j++){
+
+    setTimeout(async function () {
+        for (let j = 0; j < pages.length; j++) {
             data[j] = await getData(pages[j]);
             d = data[j]
-            if(j < 3){
+            if (j < 3) {
                 for (let i = 0; i < Object.keys(d).length; i++) {
                     var elements = d[Object.keys(d)[i]];
-                    for(let k = 0; k < elements.length; k++){
+                    for (let k = 0; k < elements.length; k++) {
                         names.push(elements[k].name)
                     }
                 }
-            }else{
+            } else {
                 for (const map of Object.keys(d))
                     names.push(capitalizeFirstLetters(map));
             }
         }
-        
+
     }, 100);
 
     autocomplete(document.getElementById("searchLabel"), names)
-    
+
     const searchButton = document.getElementById("searchButton");
-    searchButton.addEventListener('click', (_) =>{
+    searchButton.addEventListener('click', (_) => {
         searchOnSite(data);
     });
 

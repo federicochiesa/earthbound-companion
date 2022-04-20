@@ -122,7 +122,6 @@ window.onload = function () {
     searchButton.addEventListener('click', (_) => {
         searchOnSite(data);
     });
-    resizeTables();
 }
 
 function updateThumbnail(_, file) {

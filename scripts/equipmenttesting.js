@@ -1,3 +1,10 @@
+const dataP = (async function() {
+    return await getData("stats");
+  })()
+const itemsP = (async function() {
+    return await getData("items");
+  })()
+
 window.onload = async function () {
     showSurveyToast();
     let optionGroup = document.getElementById("levelSelect");
@@ -6,8 +13,8 @@ window.onload = async function () {
         option.innerText = i+1;
         optionGroup.appendChild(option);
     }
-    let data = await getData("stats");
-    let items = await getData("items");
+    let items = await itemsP;
+    let data = await dataP;
     let name = document.getElementById("character");
     let level = document.getElementById("level");
     let magiSwitch = document.getElementById("flexSwitchCheckDefault");
@@ -79,8 +86,6 @@ window.onload = async function () {
     }, 100);
 
     autocomplete(document.getElementById("searchLabel"), names)
-    
-    
 }
 
 
@@ -286,7 +291,8 @@ async function resetBonus() {
 }
 
 async function changeCharacter(clicked_id) {
-    let items = await getData("items");
+    let items = await itemsP;
+    let data = await dataP;
     let hero = document.getElementsByClassName("selected-hero")
     let pics = document.getElementsByClassName("select-hero")
     let name = document.getElementById("character");
@@ -301,7 +307,6 @@ async function changeCharacter(clicked_id) {
 
         hero[0].src = "../assets/sprites/" + clicked_id + ".png";
 
-        let data = await getData("stats");
         let level = document.getElementById("level");
         level.value = 1;
 
@@ -326,7 +331,7 @@ async function changeCharacter(clicked_id) {
 }
 
 async function equip(clicked_id){
-    let items = await getData("items");
+    let items = await itemsP;
     switch(clicked_id){
         case "arrowW":
             w = document.getElementById("weapon");
@@ -362,6 +367,7 @@ function calcFraction(fracString){
         }
     else return fracString;
 }
+
 function calcCurrentBonus(items){
     let weapon = document.getElementById("weapon");
     let body = document.getElementById("bodyEquip");
@@ -406,6 +412,7 @@ function calcCurrentBonus(items){
 
     return bonuses;
 }
+
 function calcEquippedBonus(items){
     let weapon = document.getElementById("equipped-weapon");
     let body = document.getElementById("equipped-body");

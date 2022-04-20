@@ -1,3 +1,13 @@
+const itemsP = (async function() {
+    return await getData("items");
+  })()
+const enemiesP = (async function() {
+    return await getData("enemies");
+  })()
+const mapsP = (async function() {
+    return await getData("maps");
+  })()
+
 function showInfoModal(item) {
     document.getElementById("infoModalTitle").textContent = "More info: " + item;
     document.getElementById("infoModalBody").textContent = "This is a test info modal for " + item;
@@ -11,9 +21,9 @@ async function showMapModal(item) {
 }
 
 async function getItemLocation(item) {
-    let data = await getData("items");
-    let datae = await getData("enemies");
-    let datam = await getData("maps");
+    let data = await itemsP;
+    let datae = await enemiesP;
+    let datam = await mapsP;
 
     for (let i = 0; i < Object.keys(data).length; i++) {
         let elements = data[Object.keys(data)[i]];
@@ -82,7 +92,7 @@ async function getItemLocation(item) {
 
 window.onload = async function () {
     showSurveyToast();
-    let data = await getData("items");
+    let data = await itemsP;
     let list = document.getElementById("dataList");
     for (let i = 0; i < Object.keys(data).length; i++) {
         let title = document.createElement("div");

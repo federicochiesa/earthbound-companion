@@ -1,5 +1,19 @@
+const shopsP = (async function() {
+    return await getData("shops");
+  })()
+const itemsP = (async function() {
+    return await getData("items");
+  })()
+const enemiesP = (async function() {
+    return await getData("enemies");
+  })()
+const mapsP = (async function() {
+    return await getData("maps");
+  })()
+
+
 async function findPrice(object) {
-    let data = await getData("items");
+    let data = await itemsP;
     for (let i = 0; i < Object.keys(data).length; i++) {
         var elements = data[Object.keys(data)[i]];
         for (const element of elements) {
@@ -57,10 +71,10 @@ async function showMapModal(item) {
 }
 
 async function getItemLocation(item) {
-    let data = await getData("shops");
-    let datai = await getData("items");
-    let datae = await getData("enemies");
-    let datam = await getData("maps");
+    let data = await shopsP;
+    let datai = await itemsP;
+    let datae = await enemiesP;
+    let datam = await mapsP;
 
     for (let i = 0; i < Object.keys(data).length; i++) {
         let elements = data[Object.keys(data)[i]];
@@ -89,30 +103,23 @@ async function getItemLocation(item) {
                         }
                     }
                     if(!foundSE){
-                        for (const e of enemies) {
-                            if (locs[j].search(e.name) > -1) {
+                        for (const e of enemies) 
+                            if (locs[j].search(e.name) > -1) 
                                 l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
-                            }
-                        }
-                        for (const e of bosses) {
-                            if (locs[j].search(e.name) > -1) {
+
+                        for (const e of bosses) 
+                            if (locs[j].search(e.name) > -1) 
                                 l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
-                            }
-                        }
                     }
                     for (let x = 0; x < Object.keys(datai).length; x++) {
                         let items = datai[Object.keys(datai)[x]];
-                        for (const k of items) {
-                            if (locs[j].search(k.name) > -1) {
+                        for (const k of items) 
+                            if (locs[j].search(k.name) > -1) 
                                 l = l.replace(k.name, "<a href=\"../items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
-                            }
-                        }
                     }
-                    for (const map of Object.keys(datam)){
-                        if(locs[j].search(capitalizeFirstLetters(map)) > -1){
+                    for (const map of Object.keys(datam))
+                        if(locs[j].search(capitalizeFirstLetters(map)) > -1)
                             l = l.replace(capitalizeFirstLetters(map), "<a href=\"../maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
-                        }
-                    }
                     
                     returnString += " <tr>\
                                         <td>" + l + "</td>\
@@ -129,7 +136,7 @@ async function getItemLocation(item) {
 
 window.onload = async function () {
     showSurveyToast();
-    let data = await getData("shops");
+    let data = await shopsP;
     let list = document.getElementById("dataList");
     for (let i = 0; i < Object.keys(data).length; i++) {
         let title = document.createElement("div");
