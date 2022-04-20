@@ -1,13 +1,3 @@
-const itemsP = (async function () {
-    return await getData("items");
-})()
-const enemiesP = (async function () {
-    return await getData("enemies");
-})()
-const mapsP = (async function () {
-    return await getData("maps");
-})()
-
 async function showInfoModal(item) {
     document.getElementById("infoModalTitle").textContent = "More info: " + item;
     document.getElementById("infoModalBody").innerHTML = await getEnemyInfo(item);

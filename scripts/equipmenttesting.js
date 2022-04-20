@@ -1,10 +1,3 @@
-const dataP = (async function() {
-    return await getData("stats");
-  })()
-const itemsP = (async function() {
-    return await getData("items");
-  })()
-
 window.onload = async function () {
     showSurveyToast();
     let optionGroup = document.getElementById("levelSelect");

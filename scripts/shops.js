@@ -1,17 +1,3 @@
-const shopsP = (async function() {
-    return await getData("shops");
-  })()
-const itemsP = (async function() {
-    return await getData("items");
-  })()
-const enemiesP = (async function() {
-    return await getData("enemies");
-  })()
-const mapsP = (async function() {
-    return await getData("maps");
-  })()
-
-
 async function findPrice(object) {
     let data = await itemsP;
     for (let i = 0; i < Object.keys(data).length; i++) {

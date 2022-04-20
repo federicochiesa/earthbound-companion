@@ -1,5 +1,21 @@
 var appRoot = "http://localhost:5500"
 
+const itemsP = (async function () {
+  return await getData("items");
+})()
+const enemiesP = (async function () {
+  return await getData("enemies");
+})()
+const mapsP = (async function () {
+  return await getData("maps");
+})()
+const shopsP = (async function() {
+  return await getData("shops");
+})()
+const dataP = (async function() {
+  return await getData("stats");
+})()
+
 function showSurveyToast() {
   if (getCookie("survey") == "") {
     setTimeout(function () {

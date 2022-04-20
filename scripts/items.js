@@ -1,13 +1,3 @@
-const itemsP = (async function() {
-    return await getData("items");
-  })()
-const enemiesP = (async function() {
-    return await getData("enemies");
-  })()
-const mapsP = (async function() {
-    return await getData("maps");
-  })()
-
 function showInfoModal(item) {
     document.getElementById("infoModalTitle").textContent = "More info: " + item;
     document.getElementById("infoModalBody").textContent = "This is a test info modal for " + item;
@@ -287,15 +277,11 @@ window.onload = async function () {
                         names.push(elements[k].name)
                 }
             }
-            else{
+            else
                 for (const map of Object.keys(d))
                     names.push(capitalizeFirstLetters(map));
-            }
         }
-        
     }, 100);
-
-
 
     autocomplete(document.getElementById("searchLabel"), names)
     

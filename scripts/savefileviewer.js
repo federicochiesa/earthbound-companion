@@ -263,7 +263,7 @@ class GameSave {
         }
         else
             document.getElementById("emptyFileWarning").style.display = "none";
-        let items = await getData("items");
+        let items = await itemsP;
         document.getElementById("handMoneyValue").innerText = this.moneyHand + "$";
         document.getElementById("ATMMoneyValue").innerText = this.moneyATM + "$";
         document.getElementById("petNameValue").innerText = this.petName;
@@ -569,7 +569,6 @@ function resizeTables() {
           for(let i = 0; i < 3; i++)
             if (document.getElementById("save" + i).style.opacity != 0.3)
                 saves[i].displayData();
-        
     }
     else if (document.getElementsByClassName("largeTable").length == 0 && window.innerWidth > 992) {
         document.getElementById("generalInfoTable").innerHTML = "<tbody class=\"largeTable\">\
@@ -732,6 +731,5 @@ function resizeTables() {
         for(let i = 0; i < 3; i++)
             if (document.getElementById("save" + i).style.opacity != 0.3)
                 saves[i].displayData();
-        
     }
 }
