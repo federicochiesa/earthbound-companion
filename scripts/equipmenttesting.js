@@ -498,7 +498,7 @@ function applyEquippedBonuses(items){
         if(equippedBonuses2[i] != equippedBonuses[i]) applyBonus(stats[i], equippedBonuses2[i] - equippedBonuses[i])
 
     stats[5].innerText = equippedBonuses2[5];
-    updateEquipmentStats("", items)
+    updateEquipmentStats(items)
 
     if(document.getElementById("flexSwitchCheckDefault").checked) applyMagicantBonus();
 }
