@@ -668,3 +668,7 @@ input[type=submit] {
         display: flex;
     }
 }
+
+.saveItemLink:hover{
+    color: grey;
+}

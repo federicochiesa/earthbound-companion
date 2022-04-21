@@ -254,6 +254,14 @@ class GameSave {
             this.escargoItems[i] = itemsLUT[data[i + hexToDec("76")]];
         this.inGameTimer = (data[hexToDec("1f7")] << 24) + (data[hexToDec("1f6")] << 16) + (data[hexToDec("1f5")] << 8) + data[hexToDec("1f4")];
     }
+
+    generateLink(id, name){
+      if(name != "(Nothing)"){
+        document.getElementById(id).innerHTML = "<a href=\"../wiki/items/?item="+ nameToImage(name.toLowerCase()) + "\" color: inherit\" class=\"saveItemLink\">"+ name + "</a>";
+      }
+      else document.getElementById(id).innerText = "(Nothing)";
+    }
+
     async displayData() {
         for (let i = 0; i < 3; i++)
             document.getElementById("savec" + i).style.display = "block";
@@ -276,13 +284,13 @@ class GameSave {
         document.getElementById("favFoodValue").innerText = this.favFood;
         for (let j = 0; j < this.numPartyMembers; j++) {
             document.getElementById("c" + j + "name").innerText = this.characters[j].name
-            document.getElementById("c" + j + "weapon").innerText = this.characters[j].equip[0];
-            document.getElementById("c" + j + "body").innerText = this.characters[j].equip[1];
-            document.getElementById("c" + j + "arms").innerText = this.characters[j].equip[2];
-            document.getElementById("c" + j + "other").innerText = this.characters[j].equip[3];
+            let fields = ["weapon", "body", "arms", "other"]
+            for(let k = 0; k < 4; k++)
+              this.generateLink("c" + j + fields[k], this.characters[j].equip[k])
             let inventory = this.characters[j].items;
-            for (let i = 0; i < inventory.length; i++)
-                document.getElementById("c" + j + "i" + i).innerText = inventory[i];
+            for (let i = 0; i < inventory.length; i++){
+                this.generateLink("c" + j + "i" + i, inventory[i])
+            }
             let stats = this.characters[j].stats;
             for (let i = 0; i < stats.length; i++)
                 document.getElementById("c" + j + "stat" + i).innerText = stats[i];
@@ -302,7 +310,7 @@ class GameSave {
         document.getElementById("escargo").style.display = "block";
         document.getElementById("generalInfo").style.display = "block";
         for (let i = 0; i < this.escargoItems.length - 1; i++)
-            document.getElementById("esc" + i).innerText = this.escargoItems[i]
+            this.generateLink("esc" + i, this.escargoItems[i])
     }
 
     static resetData() {
