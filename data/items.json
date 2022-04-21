@@ -150,7 +150,7 @@
       "data":{
          "Comments":"Increases Guts by 127.",
          "Description":"Find it from the Bionic Kraken in the Cave Of The Past.",
-         "Location":"Dropped by Bionic Kraken(1/128 chance)",
+         "Location":"Dropped by Bionic Kraken",
          "Price":"$2980",
          "Error rate":"1/16",
          "Offense up":"100",
@@ -217,7 +217,7 @@
       "data":{
          "Comments":"Increases Guts by 100, but you'll miss more often, too.",
          "Description":"Get one from a Chomposaur, if you can. for Paula",
-         "Location":"Dropped by Chomposaur in the Lost Underworld(1/128 chance)",
+         "Location":"Dropped by Chomposaur",
          "Price":"$4790",
          "Error rate":"1/4",
          "Offense up":"50",
@@ -342,7 +342,7 @@
       "data":{
          "Comments":"Poo's ultimate weapon.",
          "Description":"Poo can equip this weapon. It increases your Offense.",
-         "Location":"Dropped by Starman Super in Stonehenge Base(1/128 chance)",
+         "Location":"Dropped by Starman Super",
          "Price":"N/A",
          "Error rate":"0",
          "Offense up":"30",
@@ -949,7 +949,7 @@
       "data":{
          "Comments":"Can be repaired by Jeff to produce a Gaia Beam. Requires 65 IQ to fix.",
          "Description":"A piece of broken equipment that looks like a satellite dish. That genius Jeff should be able to fix it sometime.",
-         "Location":"Dropped by Uncontrollable Sphere(1/128 chance)",
+         "Location":"Dropped by Uncontrollable Sphere",
          "Price":"N/A"
       }
    },
@@ -1167,7 +1167,7 @@
          "Comments":"Attracts customers to buy your goods at any time.",
          "Description":"It invites people to come and buy your unnecessary goods. Can be used many times.",
          "Location":"Twoson (Burglin Park)",
-         "Price":"N/A"
+         "Price":"$98"
       }
    },
    {
