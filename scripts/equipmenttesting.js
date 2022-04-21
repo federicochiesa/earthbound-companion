@@ -1,3 +1,9 @@
+async function showInfoModal() {
+    document.getElementById("infoModalTitle").textContent = "Equipment Testing Help";
+    document.getElementById("infoModalBody").innerHTML = "This is the help example";
+    new bootstrap.Modal(document.getElementById('infoModal')).show();
+}
+
 window.onload = async function () {
     showSurveyToast();
     let optionGroup = document.getElementById("levelSelect");

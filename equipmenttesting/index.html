@@ -75,7 +75,7 @@
   <div class="container-sm">
     <div class="row">
       <div class="col">
-        <h1 class="text-white">Equipment Testing</h1>
+        <h1 class="text-white">Equipment Testing<img src="../assets/sprites/info.png" id="infoButton" onclick="showInfoModal()"></h1>
       </div>
     </div>
     <div class="row eqTestDiv">
@@ -245,6 +245,18 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content bg-dark">
+				<div class="modal-header">
+					<h5 class="modal-title text-white" id="infoModalTitle"></h5>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-white" id="infoModalBody"></div>
+			</div>
+		</div>
+	</div>
   <div class="toast-container">
     <div class="toast bg-dark text-white" role="alert" aria-live="assertive" aria-atomic="true" id="surveyToast">
       <div class="toast-body">
