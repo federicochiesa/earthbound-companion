@@ -2,199 +2,243 @@
 <html>
 
 <head>
-  <!-- Title and favicon tags -->
-  <title>Earthbound Companion: Maps</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-  <link rel="manifest" href="../../site.webmanifest">
-  <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#a9221c">
-  <meta name="apple-mobile-web-app-title" content="Earthbound Companion">
-  <meta name="application-name" content="Earthbound Companion">
-  <meta name="msapplication-TileColor" content="#a9221c">
-  <meta name="theme-color" content="#ffffff">
-  <!-- SEO and utility tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A companion WebApp for the Earthbound game">
-  <meta name="keywords" content="earthbound, companion, videogame, maps">
-  <!-- Bootstrap 5 tags -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <!-- Local stylesheets -->
-  <link rel="stylesheet" href="../../styles/main.css">
-  <!-- Local scripts -->
-  <script src="../../scripts/main.js"></script>
-  <script src="../../scripts/maps.js"></script>
+      <!-- Title and favicon tags -->
+      <title>Earthbound Companion: Maps</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+      <link rel="manifest" href="../../site.webmanifest">
+      <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#a9221c">
+      <meta name="apple-mobile-web-app-title" content="Earthbound Companion">
+      <meta name="application-name" content="Earthbound Companion">
+      <meta name="msapplication-TileColor" content="#a9221c">
+      <meta name="theme-color" content="#ffffff">
+      <!-- SEO and utility tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="A companion WebApp for the Earthbound game">
+      <meta name="keywords" content="earthbound, companion, videogame, maps">
+      <!-- Bootstrap 5 tags -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+      <!-- Local stylesheets -->
+      <link rel="stylesheet" href="../../styles/main.css">
+      <!-- Local scripts -->
+      <script src="../../scripts/main.js"></script>
+      <script src="../../scripts/maps.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark m-3">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Earthbound Companion</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../../">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../equipmenttesting/">Equipment Testing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" id="dropdownMenuLink"
-              data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-              Wiki
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="../../wiki/enemies/">Enemies</a></li>
-              <li><a class="dropdown-item" href="../../wiki/items/">Items</a></li>
-              <li><a class="dropdown-item active" href="#/">Maps</a></li>
-              <li><a class="dropdown-item" href="../../wiki/shops/">Shops</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../savefileviewer/">Save file viewer</a>
-          </li>
-        </ul>
-        <form class="d-flex" autocomplete="off" onsubmit="return false">
-          <div class="autocomplete" style="margin-right: 10px;">
-            <input class="form-control me-2" id="searchLabel" type="search" placeholder="Search" aria-label="Search">
-          </div>
-          <button class="btn btn-outline-light" id="searchButton" type="button">Search</button>
-        </form>
+      <nav class="navbar navbar-expand-lg navbar-dark m-3">
+            <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Earthbound Companion</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../../">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="../../equipmenttesting/">Equipment Testing</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                          id="dropdownMenuLink" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                          aria-expanded="false">
+                                          Wiki
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="../../wiki/enemies/">Enemies</a></li>
+                                          <li><a class="dropdown-item" href="../../wiki/items/">Items</a></li>
+                                          <li><a class="dropdown-item active" href="#/">Maps</a></li>
+                                          <li><a class="dropdown-item" href="../../wiki/shops/">Shops</a></li>
+                                    </ul>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="../../savefileviewer/">Save file viewer</a>
+                              </li>
+                        </ul>
+                        <form class="d-flex" autocomplete="off" onsubmit="return false">
+                              <div class="autocomplete" style="margin-right: 10px;">
+                                    <input class="form-control me-2" id="searchLabel" type="search" placeholder="Search"
+                                          aria-label="Search">
+                              </div>
+                              <button class="btn btn-outline-light" id="searchButton" type="button">Search</button>
+                        </form>
+                  </div>
+            </div>
+      </nav>
+      <div class="container-sm">
+            <div class="row">
+                  <div class="col">
+                        <h1 class="text-white">Maps</h1>
+                  </div>
+            </div>
+            <div class="row text-white" id="legend" style="margin-left: 0px;margin-bottom: 20px">
+                  <div class="row">
+                        <div class="col-sm">
+                              <h2 style="margin-bottom: 0px;">LEGEND:</h2>
+                        </div>
+                        <div class="col centering">
+                              <img src="../../assets/pins/enemy.png" width="20px" style="margin-right: 10px;">
+                              <h2 style="margin-bottom: 0px;">enemy</h2>
+                        </div>
+                        <div class="col centering">
+                              <img src="../../assets/pins/boss.png" width="20px" style="margin-right: 10px;">
+                              <h2 style="margin-bottom: 0px;">boss</h2>
+                        </div>
+                        <div class="col centering">
+                              <img src="../../assets/pins/present.png" width="20px" style="margin-right: 10px;">
+                              <h2 style="margin-bottom: 0px;">item</h2>
+                        </div>
+                        <div class="col centering">
+                              <img src="../../assets/pins/shop.png" width="20px" style="margin-right: 10px;">
+                              <h2 style="margin-bottom: 0px;">shop</h2>
+                        </div>
+                  </div>
+            </div>
+            <div class="row">
+                  <div class="col-sm-3">
+                        <ul id="mapSelector" style="height:600px; overflow: auto;">
+                              <li><a href="#/" onclick="updateMap(this.id);" id="onett"><img
+                                                src="../../assets/arrow.png" class="arrow" id="onettArrow">Onett</a>
+                              </li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="giantstep"><img
+                                                src="../../assets/arrow.png" class="arrow" id="giantstepArrow">Giant
+                                          Step</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="twoson"><img
+                                                src="../../assets/arrow.png" class="arrow" id="twosonArrow">Twoson</a>
+                              </li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="peacefulrestvalley"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="peacefulrestvalleyArrow">Peaceful Rest Valley</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="happyhappyvillage"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="happyhappyvillageArrow">Happy Happy Village</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="lilliputsteps"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="lilliputstepsArrow">Lilliput Steps</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="threed"><img
+                                                src="../../assets/arrow.png" class="arrow" id="threedArrow">Threed</a>
+                              </li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="winters"><img
+                                                src="../../assets/arrow.png" class="arrow" id="wintersArrow">Winters</a>
+                              </li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="brickroadmaze"><img
+                                                src="../../assets/arrow.png" class="arrow" id="brickroadmazeArrow">Brick
+                                          Road Maze</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="rainycircle"><img
+                                                src="../../assets/arrow.png" class="arrow" id="rainycircleArrow">Rainy
+                                          Circle</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="grapefruitfalls"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="grapefruitfallsArrow">Grapefruit Falls</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="cavetosaturnvalley"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="cavetosaturnvalleyArrow">Cave to Saturn Valley</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="saturnvalley"><img
+                                                src="../../assets/arrow.png" class="arrow" id="saturnvalleyArrow">Saturn
+                                          Valley</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="belchbase"><img
+                                                src="../../assets/arrow.png" class="arrow" id="belchbaseArrow">Belch
+                                          Base</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="milkywell"><img
+                                                src="../../assets/arrow.png" class="arrow" id="milkywellArrow">Milky
+                                          Well</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="dustydunesdesert"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="dustydunesdesertArrow">Dusty Dunes Desert</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="fourside"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="foursideArrow">Fourside</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="desertgoldmine"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="desertgoldmineArrow">Desert Gold Mine</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="moonside"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="moonsideArrow">Moonside</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="monkeycave"><img
+                                                src="../../assets/arrow.png" class="arrow" id="monkeycaveArrow">Monkey
+                                          Cave</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="summers"><img
+                                                src="../../assets/arrow.png" class="arrow" id="summersArrow">Summers</a>
+                              </li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="dalaam"><img
+                                                src="../../assets/arrow.png" class="arrow" id="dalaamArrow">Dalaam</a>
+                              </li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="foursidesewers"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="foursidesewersArrow">Fourside Sewers</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="pinkcloud"><img
+                                                src="../../assets/arrow.png" class="arrow" id="pinkcloudArrow">Pink
+                                          Cloud</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="scaraba"><img
+                                                src="../../assets/arrow.png" class="arrow" id="scarabaArrow">Scaraba</a>
+                              </li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="pyramid"><img
+                                                src="../../assets/arrow.png" class="arrow" id="pyramidArrow">Pyramid</a>
+                              </li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="dungeonman"><img
+                                                src="../../assets/arrow.png" class="arrow" id="dungeonmanArrow">Dungeon
+                                          Man</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="deepdarkness"><img
+                                                src="../../assets/arrow.png" class="arrow" id="deepdarknessArrow">Deep
+                                          Darkness</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="tendavillage"><img
+                                                src="../../assets/arrow.png" class="arrow" id="tendavillageArrow">Tenda
+                                          Village</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="stonehengebase"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="stonehengebaseArrow">Stonehenge Base</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="luminehall"><img
+                                                src="../../assets/arrow.png" class="arrow" id="luminehallArrow">Lumine
+                                          Hall</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="lostunderworld"><img
+                                                src="../../assets/arrow.png" class="arrow" id="lostunderworldArrow">Lost
+                                          Underworld</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="firespring"><img
+                                                src="../../assets/arrow.png" class="arrow" id="firespringArrow">Fire
+                                          Spring</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="magicant"><img
+                                                src="../../assets/arrow.png" class="arrow"
+                                                id="magicantArrow">Magicant</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="cavetothepast"><img
+                                                src="../../assets/arrow.png" class="arrow" id="cavetothepastArrow">Cave
+                                          To The Past</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="caveofthepast"><img
+                                                src="../../assets/arrow.png" class="arrow" id="caveofthepastArrow">Cave
+                                          Of The Past</a></li>
+                              <li><a href="#/" onclick="updateMap(this.id);" id="giygas"><img
+                                                src="../../assets/arrow.png" class="arrow" id="giygasArrow">Giygas</a>
+                              </li>
+                        </ul>
+                  </div>
+                  <iframe class="col-sm-9" id="mapiFrame" src="" style="height:70vh;" scrolling="no"></iframe>
+            </div>
       </div>
-    </div>
-  </nav>
-  <div class="container-sm">
-    <div class="row">
-      <div class="col">
-        <h1 class="text-white">Maps</h1>
+      <div class="toast-container">
+            <div class="toast bg-dark text-white" role="alert" aria-live="assertive" aria-atomic="true"
+                  id="surveyToast">
+                  <div class="toast-body">
+                        Hey! Would you help us improve this website by taking a short usability survey?<br>We won't ask
+                        for your
+                        personal data, we promise!
+                  </div>
+                  <div class="mb-2 me-2 d-flex justify-content-end">
+                        <button type="button" onclick="setSurveyCookie()" class="btn btn-secondary btn-sm me-2"
+                              data-bs-dismiss="toast">Don't ask again</button>
+                        <button type="button" class="btn btn-light btn-sm"
+                              onclick="window.location.href = &quot;https://docs.google.com/forms/d/1gTPUuU9rI2ghVn-WRfypgAV2GOOJQItU4Ueio89xn28&quot;">OK!</button>
+                  </div>
+            </div>
       </div>
-    </div>
-    <div class="row text-white" id="legend" style="margin-left: 0px;margin-bottom: 20px">
-      <div class="row">
-        <div class="col-sm">
-          <h2 style="margin-bottom: 0px;">LEGEND:</h2>
-        </div>
-        <div class="col centering">
-          <img src="../../assets/pins/enemy.png" width="20px" style="margin-right: 10px;">
-          <h2 style="margin-bottom: 0px;">enemy</h2>
-        </div>
-        <div class="col centering">
-          <img src="../../assets/pins/boss.png" width="20px" style="margin-right: 10px;">
-          <h2 style="margin-bottom: 0px;">boss</h2>
-        </div>
-        <div class="col centering">
-          <img src="../../assets/pins/present.png" width="20px" style="margin-right: 10px;">
-          <h2 style="margin-bottom: 0px;">item</h2>
-        </div>
-        <div class="col centering">
-          <img src="../../assets/pins/shop.png" width="20px" style="margin-right: 10px;">
-          <h2 style="margin-bottom: 0px;">shop</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-        <ul id="mapSelector" style="height:600px; overflow: auto;">
-          <li><a href="#/" onclick="updateMap(this.id);" id="onett"><img src="../../assets/arrow.png" class="arrow"
-                id="onettArrow">Onett</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="giantstep"><img src="../../assets/arrow.png" class="arrow"
-                id="giantstepArrow">Giant Step</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="twoson"><img src="../../assets/arrow.png" class="arrow"
-                id="twosonArrow">Twoson</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="peacefulrestvalley"><img src="../../assets/arrow.png"
-                class="arrow" id="peacefulrestvalleyArrow">Peaceful Rest Valley</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="happyhappyvillage"><img src="../../assets/arrow.png"
-                class="arrow" id="happyhappyvillageArrow">Happy Happy Village</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="lilliputsteps"><img src="../../assets/arrow.png"
-                class="arrow" id="lilliputstepsArrow">Lilliput Steps</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="threed"><img src="../../assets/arrow.png" class="arrow"
-                id="threedArrow">Threed</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="winters"><img src="../../assets/arrow.png" class="arrow"
-                id="wintersArrow">Winters</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="brickroadmaze"><img src="../../assets/arrow.png"
-                class="arrow" id="brickroadmazeArrow">Brick Road Maze</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="rainycircle"><img src="../../assets/arrow.png"
-                class="arrow" id="rainycircleArrow">Rainy Circle</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="grapefruitfalls"><img src="../../assets/arrow.png"
-                class="arrow" id="grapefruitfallsArrow">Grapefruit Falls</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="cavetosaturnvalley"><img src="../../assets/arrow.png"
-                class="arrow" id="cavetosaturnvalleyArrow">Cave to Saturn Valley</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="saturnvalley"><img src="../../assets/arrow.png"
-                class="arrow" id="saturnvalleyArrow">Saturn Valley</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="belchbase"><img src="../../assets/arrow.png" class="arrow"
-                id="belchbaseArrow">Belch Base</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="milkywell"><img src="../../assets/arrow.png" class="arrow"
-                id="milkywellArrow">Milky Well</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="dustydunesdesert"><img src="../../assets/arrow.png"
-                class="arrow" id="dustydunesdesertArrow">Dusty Dunes Desert</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="fourside"><img src="../../assets/arrow.png" class="arrow"
-                id="foursideArrow">Fourside</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="desertgoldmine"><img src="../../assets/arrow.png"
-                class="arrow" id="desertgoldmineArrow">Desert Gold Mine</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="moonside"><img src="../../assets/arrow.png" class="arrow"
-                id="moonsideArrow">Moonside</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="monkeycave"><img src="../../assets/arrow.png" class="arrow"
-                id="monkeycaveArrow">Monkey Cave</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="summers"><img src="../../assets/arrow.png" class="arrow"
-                id="summersArrow">Summers</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="dalaam"><img src="../../assets/arrow.png" class="arrow"
-                id="dalaamArrow">Dalaam</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="foursidesewers"><img src="../../assets/arrow.png"
-                class="arrow" id="foursidesewersArrow">Fourside Sewers</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="scaraba"><img src="../../assets/arrow.png" class="arrow"
-                id="scarabaArrow">Scaraba</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="pyramid"><img src="../../assets/arrow.png" class="arrow"
-                id="pyramidArrow">Pyramid</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="dungeonman"><img src="../../assets/arrow.png" class="arrow"
-                id="dungeonmanArrow">Dungeon Man</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="deepdarkness"><img src="../../assets/arrow.png"
-                class="arrow" id="deepdarknessArrow">Deep Darkness</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="tendavillage"><img src="../../assets/arrow.png"
-                class="arrow" id="tendavillageArrow">Tenda Village</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="stonehengebase"><img src="../../assets/arrow.png"
-                class="arrow" id="stonehengebaseArrow">Stonehenge Base</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="luminehall"><img src="../../assets/arrow.png" class="arrow"
-                id="luminehallArrow">Lumine Hall</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="lostunderworld"><img src="../../assets/arrow.png"
-                class="arrow" id="lostunderworldArrow">Lost Underworld</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="firespring"><img src="../../assets/arrow.png" class="arrow"
-                id="firespringArrow">Fire Spring</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="magicant"><img src="../../assets/arrow.png" class="arrow"
-                id="magicantArrow">Magicant</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="cavetothepast"><img src="../../assets/arrow.png"
-                class="arrow" id="cavetothepastArrow">Cave To The Past</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="caveofthepast"><img src="../../assets/arrow.png"
-                class="arrow" id="caveofthepastArrow">Cave Of The Past</a></li>
-          <li><a href="#/" onclick="updateMap(this.id);" id="giygas"><img src="../../assets/arrow.png" class="arrow"
-                id="giygasArrow">Giygas</a></li>
-        </ul>
-      </div>
-      <iframe class="col-sm-9" id="mapiFrame" src="" style="height:70vh;" scrolling="no"></iframe>
-    </div>
-  </div>
-  <div class="toast-container">
-    <div class="toast bg-dark text-white" role="alert" aria-live="assertive" aria-atomic="true" id="surveyToast">
-      <div class="toast-body">
-        Hey! Would you help us improve this website by taking a short usability survey?<br>We won't ask for your
-        personal data, we promise!
-      </div>
-      <div class="mb-2 me-2 d-flex justify-content-end">
-        <button type="button" onclick="setSurveyCookie()" class="btn btn-secondary btn-sm me-2"
-          data-bs-dismiss="toast">Don't ask again</button>
-        <button type="button" class="btn btn-light btn-sm"
-          onclick="window.location.href = &quot;https://docs.google.com/forms/d/1gTPUuU9rI2ghVn-WRfypgAV2GOOJQItU4Ueio89xn28&quot;">OK!</button>
-      </div>
-    </div>
-  </div>
 </body>
 
 </html>

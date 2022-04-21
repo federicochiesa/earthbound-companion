@@ -328,6 +328,16 @@
             }
         ]
     },
+    "pink cloud": {
+        "name": "pinkcloud",
+        "pins": [
+            {
+                "x": "200",
+                "y": "2000",
+                "type": "present"
+            }
+        ]
+    },
     "scaraba": {
         "name": "scaraba",
         "pins": [
