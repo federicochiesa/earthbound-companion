@@ -1,6 +1,12 @@
 async function showInfoModal() {
     document.getElementById("infoModalTitle").textContent = "Equipment Testing Help";
-    document.getElementById("infoModalBody").innerHTML = "This is the help example";
+    document.getElementById("infoModalBody").innerHTML = "Here you can compare the stats of the characters depending on the equipment selected. <br><br> \
+                                            1) To select an equipment use the selectors on the right of the table.<br>\
+                                            2) To equip an item after selecting it, use the arrow. <img onclick=\"equip(this.id)\" id=\"arrowB\" src=\"../assets/equipmentArrow.png\" class=\"eqArrow\"><br>\
+                                            3) To change the character level use the level selector in the statistics table.<br>\
+                                            4) Obviously \"(Nothing)\" indicates that there is no object (selected or equipped) and there is no increase or decrease in the statistics.\
+                                            Since in Poo's logic it is possible to have negative bonuses from equipment, not equipping anything can lead to an increase in statistics (in practice it is better not to equip anything than something wrong).<br><br>\
+                                            In the statistics table you can see the variations depending on the differences between the equipped items and those selected. ";
     new bootstrap.Modal(document.getElementById('infoModal')).show();
 }
 
