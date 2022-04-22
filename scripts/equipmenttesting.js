@@ -301,7 +301,7 @@ async function changeCharacter(clicked_id) {
     let hero = document.getElementsByClassName("selected-hero")
     let pics = document.getElementsByClassName("select-hero")
     let name = document.getElementById("character");
-    if (getComputedStyle(document.getElementById(clicked_id)).opacity == 0.3) {
+    if (getComputedStyle(document.getElementById(clicked_id)).opacity != 1) {
         name.innerText = clicked_id.toUpperCase()
         for (let j = 0; j < pics.length; j++) {
             if (pics[j].id != clicked_id)
@@ -312,8 +312,7 @@ async function changeCharacter(clicked_id) {
 
         hero[0].src = "../assets/sprites/" + clicked_id + ".png";
 
-        let level = document.getElementById("level");
-        level.value = 1;
+        document.getElementById("level").value = 1;
 
         resetBonus();
         updateStats(name, data);
@@ -331,8 +330,6 @@ async function changeCharacter(clicked_id) {
             magiSwitch.checked = false;
         }
     }
-
-
 }
 
 async function equip(clicked_id) {
