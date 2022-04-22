@@ -9,17 +9,17 @@ const enemiesP = (async function () {
 const mapsP = (async function () {
   return await getData("maps");
 })()
-const shopsP = (async function() {
+const shopsP = (async function () {
   return await getData("shops");
 })()
-const dataP = (async function() {
+const dataP = (async function () {
   return await getData("stats");
 })()
 
 function showSurveyToast() {
   if (getCookie("survey") == "") {
     setTimeout(function () {
-      const myToast = new bootstrap.Toast(document.getElementById("surveyToast"), {"autohide": false});
+      const myToast = new bootstrap.Toast(document.getElementById("surveyToast"), { "autohide": false });
       myToast.show();
     }, 2000);
   }
@@ -43,7 +43,7 @@ function getCookie(cname) {
     }
   }
   return "";
-} 
+}
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -52,9 +52,9 @@ function capitalizeFirstLetter(string) {
 function capitalizeFirstLetters(string) {
   let words = string.split(" ");
   finalString = ""
-  for(w of words)
+  for (w of words)
     finalString += (capitalizeFirstLetter(w) + " ");
-  finS = finalString.slice(0,-1);
+  finS = finalString.slice(0, -1);
   return finS;
 }
 
@@ -68,40 +68,40 @@ async function getData(type) {
   return data;
 }
 
-async function searchOnSite(data){
+async function searchOnSite(data) {
   let label = document.getElementById("searchLabel").value;
   let searchButton = document.getElementById("searchButton");
-  var popover = new bootstrap.Popover(searchButton, {content: "Nothing found. Did you type that right?"});
+  var popover = new bootstrap.Popover(searchButton, { content: "Nothing found. Did you type that right?" });
   pages = ["items", "enemies", "shops", "maps"]
   let found = false
-  
-  for(let j = 0; j < pages.length; j++){
-      d = data[j]
-      if(j < 3){
-        for (let i = 0; i < Object.keys(d).length; i++) {
-            var elements = d[Object.keys(d)[i]];
-            for(let k = 0; k < elements.length; k++){
-                if(nameToImage(elements[k].name.toLowerCase()) == nameToImage(label.toLowerCase())){
-                    found = true;
-                    window.location.href = appRoot + "/wiki/"+ pages[j] +"/?item="+ nameToImage(elements[k].name.toLowerCase());
-                    break;
-                }
-            }
-        }
-      }else{
-        for(const map of Object.keys(d)){
-          if(nameToImage(map.toLowerCase()) == nameToImage(label.toLowerCase())){
+
+  for (let j = 0; j < pages.length; j++) {
+    d = data[j]
+    if (j < 3) {
+      for (let i = 0; i < Object.keys(d).length; i++) {
+        var elements = d[Object.keys(d)[i]];
+        for (let k = 0; k < elements.length; k++) {
+          if (nameToImage(elements[k].name.toLowerCase()) == nameToImage(label.toLowerCase())) {
             found = true;
-            window.location.href = appRoot + "/wiki/"+ pages[j] +"/?map="+ nameToImage(map.toLowerCase());
+            window.location.href = appRoot + "/wiki/" + pages[j] + "/?item=" + nameToImage(elements[k].name.toLowerCase());
             break;
           }
         }
       }
+    } else {
+      for (const map of Object.keys(d)) {
+        if (nameToImage(map.toLowerCase()) == nameToImage(label.toLowerCase())) {
+          found = true;
+          window.location.href = appRoot + "/wiki/" + pages[j] + "/?map=" + nameToImage(map.toLowerCase());
+          break;
+        }
+      }
     }
-    if(!found){
-      popover.show();
-      setTimeout(function(){popover.hide()}, 2000);
-    }
+  }
+  if (!found) {
+    popover.show();
+    setTimeout(function () { popover.hide() }, 2000);
+  }
 }
 
 async function autocomplete(inp, arr) {
@@ -109,74 +109,74 @@ async function autocomplete(inp, arr) {
   the text field element and an array of possible autocompleted values:*/
   var currentFocus;
   /*execute a function when someone writes in the text field:*/
-  inp.addEventListener("input", function(e) {
-      var a, b, i, val = this.value;
-      /*close any already open lists of autocompleted values*/
-      closeAllLists();
-      if (!val) { return false;}
-      currentFocus = -1;
-      /*create a DIV element that will contain the items (values):*/
-      a = document.createElement("DIV");
-      a.setAttribute("id", this.id + "autocomplete-list");
-      a.setAttribute("class", "autocomplete-items");
-      /*append the DIV element as a child of the autocomplete container:*/
-      this.parentNode.appendChild(a);
-      /*for each item in the array...*/
-      j = 0
-      for (i = 0; i < arr.length; i++) {
-        /*check if the item starts with the same letters as the text field value:*/
-        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-          /*create a DIV element for each matching element:*/
-          b = document.createElement("DIV");
-          /*make the matching letters bold:*/
-          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-          b.innerHTML += arr[i].substr(val.length);
-          /*insert a input field that will hold the current array item's value:*/
-          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-          /*execute a function when someone clicks on the item value (DIV element):*/
-              b.addEventListener("click", async function(e) {
-                pages = ["items", "enemies", "shops", "maps"]
-                let data=[]
-                for(let j = 0; j < pages.length; j++)
-                  data[j] = await getData(pages[j]);
-              /*insert the value for the autocomplete text field:*/
-              inp.value = this.innerText;
-              searchOnSite(data)
-              /*close the list of autocompleted values,
-              (or any other open lists of autocompleted values:*/
-              closeAllLists();
-          });
-          a.appendChild(b);
-          if (j > 10) // Limit search suggestions to 10
-            break;
-          j++
-        }
+  inp.addEventListener("input", function (e) {
+    var a, b, i, val = this.value;
+    /*close any already open lists of autocompleted values*/
+    closeAllLists();
+    if (!val) { return false; }
+    currentFocus = -1;
+    /*create a DIV element that will contain the items (values):*/
+    a = document.createElement("DIV");
+    a.setAttribute("id", this.id + "autocomplete-list");
+    a.setAttribute("class", "autocomplete-items");
+    /*append the DIV element as a child of the autocomplete container:*/
+    this.parentNode.appendChild(a);
+    /*for each item in the array...*/
+    j = 0
+    for (i = 0; i < arr.length; i++) {
+      /*check if the item starts with the same letters as the text field value:*/
+      if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+        /*create a DIV element for each matching element:*/
+        b = document.createElement("DIV");
+        /*make the matching letters bold:*/
+        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+        b.innerHTML += arr[i].substr(val.length);
+        /*insert a input field that will hold the current array item's value:*/
+        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+        /*execute a function when someone clicks on the item value (DIV element):*/
+        b.addEventListener("click", async function (e) {
+          pages = ["items", "enemies", "shops", "maps"]
+          let data = []
+          for (let j = 0; j < pages.length; j++)
+            data[j] = await getData(pages[j]);
+          /*insert the value for the autocomplete text field:*/
+          inp.value = this.innerText;
+          searchOnSite(data)
+          /*close the list of autocompleted values,
+          (or any other open lists of autocompleted values:*/
+          closeAllLists();
+        });
+        a.appendChild(b);
+        if (j > 10) // Limit search suggestions to 10
+          break;
+        j++
       }
+    }
   });
   /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener("keydown", function(e) {
-      var x = document.getElementById(this.id + "autocomplete-list");
-      if (x) x = x.getElementsByTagName("div");
-      if (e.keyCode == 40) {
-        /*If the arrow DOWN key is pressed,
-        increase the currentFocus variable:*/
-        currentFocus++;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 38) { //up
-        /*If the arrow UP key is pressed,
-        decrease the currentFocus variable:*/
-        currentFocus--;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 13) {
-        /*If the ENTER key is pressed, prevent the form from being submitted,*/
-        e.preventDefault();
-        if (currentFocus > -1) {
-          /*and simulate a click on the "active" item:*/
-          if (x) x[currentFocus].click();
-        }
+  inp.addEventListener("keydown", function (e) {
+    var x = document.getElementById(this.id + "autocomplete-list");
+    if (x) x = x.getElementsByTagName("div");
+    if (e.keyCode == 40) {
+      /*If the arrow DOWN key is pressed,
+      increase the currentFocus variable:*/
+      currentFocus++;
+      /*and and make the current item more visible:*/
+      addActive(x);
+    } else if (e.keyCode == 38) { //up
+      /*If the arrow UP key is pressed,
+      decrease the currentFocus variable:*/
+      currentFocus--;
+      /*and and make the current item more visible:*/
+      addActive(x);
+    } else if (e.keyCode == 13) {
+      /*If the ENTER key is pressed, prevent the form from being submitted,*/
+      e.preventDefault();
+      if (currentFocus > -1) {
+        /*and simulate a click on the "active" item:*/
+        if (x) x[currentFocus].click();
       }
+    }
   });
   function addActive(x) {
     /*a function to classify an item as "active":*/
@@ -200,12 +200,12 @@ async function autocomplete(inp, arr) {
     var x = document.getElementsByClassName("autocomplete-items");
     for (var i = 0; i < x.length; i++) {
       if (elmnt != x[i] && elmnt != inp) {
-      x[i].parentNode.removeChild(x[i]);
+        x[i].parentNode.removeChild(x[i]);
+      }
     }
   }
+  document.addEventListener("click", function (e) {
+    closeAllLists(e.target);
+  });
 }
-document.addEventListener("click", function (e) {
-  closeAllLists(e.target);
-});
-} 
 

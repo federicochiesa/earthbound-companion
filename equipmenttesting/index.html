@@ -23,7 +23,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+    </script>
   <!-- Local scripts -->
   <script src="../scripts/main.js"></script>
   <script src="../scripts/equipmenttesting.js"></script>
@@ -48,8 +48,8 @@
             <a class="nav-link active" href="#">Equipment Testing</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-              data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              data-bs-auto-close="outside" aria-expanded="false">
               Wiki
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -65,9 +65,9 @@
         </ul>
         <form class="d-flex" autocomplete="off" onsubmit="return false">
           <div class="autocomplete" style="margin-right: 10px;">
-            <input class="form-control me-2" id = "searchLabel" type="search" placeholder="Search" aria-label="Search" >
+            <input class="form-control me-2" id="searchLabel" type="search" placeholder="Search" aria-label="Search">
           </div>
-          <button class="btn btn-outline-light" id = "searchButton" type="button">Search</button>
+          <button class="btn btn-outline-light" id="searchButton" type="button">Search</button>
         </form>
       </div>
     </div>
@@ -75,7 +75,8 @@
   <div class="container-sm">
     <div class="row">
       <div class="col">
-        <h1 class="text-white">Equipment Testing<img src="../assets/sprites/info.png" id="infoButton" onclick="showInfoModal()"></h1>
+        <h1 class="text-white">Equipment Testing<img src="../assets/sprites/info.png" id="infoButton"
+            onclick="showInfoModal()"></h1>
       </div>
     </div>
     <div class="row eqTestDiv">
@@ -246,17 +247,16 @@
     </div>
   </div>
   <div class="modal fade" id="infoModal" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content bg-dark">
-				<div class="modal-header">
-					<h5 class="modal-title text-white" id="infoModalTitle"></h5>
-					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-						aria-label="Close"></button>
-				</div>
-				<div class="modal-body text-white" id="infoModalBody"></div>
-			</div>
-		</div>
-	</div>
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h5 class="modal-title text-white" id="infoModalTitle"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-white" id="infoModalBody"></div>
+      </div>
+    </div>
+  </div>
   <div class="toast-container">
     <div class="toast bg-dark text-white" role="alert" aria-live="assertive" aria-atomic="true" id="surveyToast">
       <div class="toast-body">

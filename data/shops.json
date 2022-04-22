@@ -1,671 +1,670 @@
-{"shops":[
-   {
-      "name":"Mach Pizza",
-      "data":[
-         "Large pizza",
-         "Pizza"
-      ],
-      "Location": "Onett, Twoson, Threed"
-      
-   },
-   {
-      "name":"Onett Bakery",
-      "data":[
-         "Bread roll",
-         "Cookie",
-         "Lucky sandwich",
-         "Skip sandwich"
-      ],
-      "Location":"Onett"
-   },
-   {
-      "name":"Onett Burger Shop",
-      "data":[
-         "Bag of fries",
-         "Can of fruit juice",
-         "Cup of coffee",
-         "Hamburger"
-      ],
-      "Location":"Onett"
-   },
-   {
-      "name":"Onett Drugstore",
-      "data":[
-         "Baseball cap",
-         "Cheap bracelet",
-         "Cold remedy",
-         "Cracked bat",
-         "Tee ball bat",
-         "Yo-yo"
-      ],
-      "Location":"Onett"
-   },
-   {
-      "name":"Burglin Park - Antique Vendor",
-      "data":[
-         "For Sale sign"
-      ],
-      "Location":"Twoson"
-   },
-   {
-      "name":"Burglin Park - Baked Goods Vendor",
-      "data":[
-         "Bread roll",
-         "Can of fruit juice",
-         "Cookie",
-         "Cup of coffee",
-         "Lucky sandwich",
-         "Skip sandwich"
-      ],
-      "Location":"Twoson"
-   },
-   {
-      "name":"Burglin Park - Banana Vendor",
-      "data":[
-         "Banana"
-      ],
-      "Location":"Twoson"
-   },
-   {
-      "name":"Burglin Park - Condiment Vendor",
-      "data":[
-         "Carton of cream",
-         "Jar of hot sauce",
-         "Ketchup packet",
-         "Salt packet",
-         "Sprig of parsley",
-         "Sugar packet",
-         "Tin of cocoa"
-      ],
-      "Location":"Twoson"
-   },
-   {
-      "name":"Burglin Park - Egg Vendor",
-      "data":[
-         "Fresh egg"
-      ],
-      "Location":"Twoson"
-   },
-   {
-      "name":"Burglin Park - Junk Vendor",
-      "data":[
-         "Broken iron",
-         "Broken spray can",
-         "Copper bracelet",
-         "Defense spray",
-         "Rust promoter",
-         "Travel charm"
-      ],
-      "Location":"Twoson"
-   },
-   {
-      "name":"Burglin Park - Ruler Vendor",
-      "data":[
-         "Ruler"
-      ],
-      "Location":"Twoson"
-   },
-   {
-      "name":"Twoson Department Store - Bakery",
-      "data":[
-         "Bread roll",
-         "Cookie",
-         "Lucky sandwich",
-         "Skip sandwich"
-      ],
-      "Location":"Twoson"
-   },
-   {
-      "name":"Twoson Department Store - Burger Shop",
-      "data":[
-         "Bag of fries",
-         "Can of fruit juice",
-         "Cup of coffee",
-         "Hamburger"
-      ],
-      "Location":"Twoson"
-   },
-   {
-      "name":"Twoson Department Store - Shop",
-      "data":[
-         "Baseball cap",
-         "Cheap bracelet",
-         "Cracked bat",
-         "Fry pan",
-         "Ribbon",
-         "Slingshot",
-         "Teddy bear",
-         "Tee ball bat"
-      ],
-      "Location":"Twoson"
-   },
-   {
-      "name":"Blue-Blue Drugstore/Nothing Blue Drugstore",
-      "data":[
-         "Can of fruit juice",
-         "Cold remedy",
-         "Copper bracelet",
-         "Croissant",
-         "Cup of coffee",
-         "Fry pan",
-         "Holmes hat",
-         "Lucky sandwich",
-         "Refreshing herb",
-         "Ribbon",
-         "Sand lot bat",
-         "Skip sandwich"
-      ],
-      "Location":"Happy Happy Village"
-   },
-   {
-      "name":"Happy Happy Food Stand",
-      "data":[
-         "Banana",
-         "Fresh egg"
-      ],
-      "Location":"Happy Happy Village"
-   },
-   {
-      "name":"Arms Dealer behind pizza restaurant",
-      "data":[
-         "Bomb",
-         "Bottle rocket",
-         "Rust promoter",
-         "Toy air gun"
-      ],
-      "Location":"Threed"
-   },
-   {
-      "name":"Threed Bakery",
-      "data":[
-         "Bread roll",
-         "Can of fruit juice",
-         "Cookie",
-         "Croissant",
-         "Cup of coffee",
-         "Lucky sandwich",
-         "Skip sandwich"
-      ],
-      "Location":"Threed"
-   },
-   {
-      "name":"Threed Drugstore",
-      "data":[
-         "Calorie stick",
-         "Cold remedy",
-         "Copper bracelet",
-         "Hard hat",
-         "Insecticide spray",
-         "Minor league bat",
-         "Refreshing herb",
-         "Thick fry pan",
-         "Toothbrush",
-         "Vial of serum"
-      ],
-      "Location":"Threed"
-   },
-   {
-      "name":"Drug Store Best Friend",
-      "data":[
-         "Coin of silence",
-         "Cup of coffee",
-         "Lucky sandwich",
-         "Non-stick frypan",
-         "Picnic lunch",
-         "Skip sandwich DX",
-         "T-rex's bat"
-      ],
-      "Location":"Threed"
-   },
-   {
-      "name":"Guy outside tunnel to Threed",
-      "data":[
-         "Calorie stick",
-         "Croissant",
-         "Cup of coffee"
-      ],
-      "Location":"Threed"
-   },
-   {
-      "name":"Saturn Valley Shop",
-      "data":[
-         "Bionic slingshot",
-         "Great charm",
-         "Horn of life",
-         "Insecticide spray",
-         "Peanut cheese bar",
-         "Picture postcard",
-         "Red ribbon",
-         "Refreshing herb",
-         "Secret herb",
-         "Silver bracelet",
-         "Stag beetle",
-         "Travel charm"
-      ],
-      "Location":"Saturn Valley"
-   },
-   {
-      "name":"Arms Dealer behind drugstore",
-      "data":[
-         "Bomb",
-         "Bottle rocket",
-         "Rust promoter",
-         "Zip gun"
-      ],
-      "Location":"Dusty Dunes Desert"
-   },
-   {
-      "name":"Dusty Dunes Desert Drugstore",
-      "data":[
-         "Calorie stick",
-         "Can of fruit juice",
-         "Coin of slumber",
-         "Deluxe fry pan",
-         "Lucky sandwich",
-         "Mr. Baseball bat",
-         "Picnic lunch",
-         "Refreshing herb",
-         "Silver bracelet",
-         "Skip sandwich",
-         "Thick fry pan",
-         "Wet towel"
-      ],
-      "Location":"Dusty Dunes Desert"
-   },
-   {
-      "name":"Vendor near open Gold Mine",
-      "data":[
-         "Can of fruit juice",
-         "Cup of coffee",
-         "Hamburger",
-         "Picnic lunch",
-         "Popsicle",
-         "Skip sandwich",
-         "Wet towel"
-      ],
-      "Location":"Dusty Dunes Desert"
-   },
-   {
-      "name":"Fourside Bakery",
-      "data":[
-         "Bread roll",
-         "Cookie",
-         "Croissant",
-         "Lucky sandwich",
-         "Skip sandwich",
-         "Skip sandwich DX"
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Fourside Department Store - Arms Dealer",
-      "data":[
-         "Big bottle rocket",
-         "Bomb",
-         "Bottle rocket",
-         "Hyper beam",
-         "Super bomb"
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Fourside Department Store - Burger Shop",
-      "data":[
-         "Bag of fries",
-         "Can of fruit juice",
-         "Cup of coffee",
-         "Double burger",
-         "Hamburger"
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Fourside Department Store - Condiment Vendor",
-      "data":[
-         "Carton of cream",
-         "Jar of hot sauce",
-         "Ketchup packet",
-         "Salt packet",
-         "Sprig of parsley",
-         "Sugar packet",
-         "Tin of cocoa"
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Fourside Department Store - Food Shop",
-      "data":[
-         "Banana",
-         "Boiled egg",
-         "Bread roll",
-         "Croissant",
-         "Picnic lunch"
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Fourside Department Store - Front Desk",
-      "data":[
-         
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Fourside Department Store - Shop",
-      "data":[
-         "Calorie stick",
-         "Cold remedy",
-         "Protein drink",
-         "Refreshing herb"
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Fourside Department Store - Sports Shop",
-      "data":[
-         "Baseball cap",
-         "Minor league bat",
-         "Mr. Baseball bat",
-         "Sand lot bat"
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Fourside Department Store - Tool Shop",
-      "data":[
-         "Chef's fry pan",
-         "Deluxe fry pan",
-         "Gold bracelet",
-         "Insecticide spray",
-         "Protractor",
-         "Silver bracelet",
-         "Toothbrush"
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Fourside Department Store - Toy Shop",
-      "data":[
-         "Coin of defense",
-         "Coin of slumber",
-         "Defense ribbon",
-         "Red ribbon",
-         "Teddy bear",
-         "Trick yo-yo"
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Guy northeast of Department Store",
-      "data":[
-         "Broken gadget",
-         "Broken iron",
-         "Defense spray",
-         "Rust promoter"
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Topolla Theater",
-      "data":[
-         "Show ticket"
-      ],
-      "Location":"Fourside"
-   },
-   {
-      "name":"Hotel Dark Moon",
-      "data":[
-         "Can of fruit juice",
-         "Cup of coffee",
-         "Double burger",
-         "Hamburger",
-         "Lucky sandwich"
-      ],
-      "Location":"Moonside"
-   },
-   {
-      "name":"Big Foot (Andonuts's Lab, after returning to Winters)",
-      "data":[
-         "Beef jerky",
-         "Bottle of DXwater",
-         "Cup of coffee",
-         "Cup of noodles",
-         "Protein drink",
-         "Secret herb"
-      ],
-      "Location":"Winters"
-   },
-   {
-      "name":"Magic Cake Lady (after eating Magic cake)",
-      "data":[
-         "Magic tart"
-      ]
-   },
-   {
-      "name":"Summers Restaurant",
-      "data":[
-         "Can of fruit juice",
-         "Chef's special",
-         "Cup of coffee",
-         "Kraken soup",
-         "Pasta di Summers",
-         "Royal iced tea"
-      ],
-      "Location":"Summers"
-   },
-   {
-      "name":"Summers Shop",
-      "data":[
-         "Big league bat",
-         "Chef's fry pan",
-         "Diamond band",
-         "Gold bracelet",
-         "Lucky coin",
-         "Platinum band",
-         "Super plush bear"
-      ],
-      "Location":"Summers"
-   },
-   {
-      "name":"Toto Shop",
-      "data":[
-         "Bottle of water",
-         "Can of fruit juice",
-         "Coin of defense",
-         "Cup of coffee",
-         "Lucky sandwich",
-         "Secret herb",
-         "Skip sandwich DX"
-      ],
-      "Location":"Summers"
-   },
-   {
-      "name":"Vendor on the beach",
-      "data":[
-         "Gelato de resort"
-      ],
-      "Location":"Summers"
-   },
-   {
-      "name":"Dalaam Restaurant",
-      "data":[
-         "Bottle of water",
-         "Bowl of rice gruel",
-         "Brain food lunch",
-         "Jar of delisauce"
-      ],
-      "Location":"Dalaam"
-   },
-   {
-      "name":"Arms Dealer inside hotel",
-      "data":[
-         "Big bottle rocket",
-         "Bomb",
-         "Bottle rocket",
-         "Super bomb"
-      ],
-      "Location":"Scaraba"
-   },
-   {
-      "name":"Hassan's Shop",
-      "data":[
-         "Banana",
-         "Protein drink",
-         "Secret herb",
-         "Sudden guts pill",
-         "Vial of serum",
-         "Wet towel"
-      ],
-      "Location":"Scaraba"
-   },
-   {
-      "name":"Scaraba Market - Condiment Vendor",
-      "data":[
-         "Carton of cream",
-         "Jar of hot sauce",
-         "Ketchup packet",
-         "Salt packet",
-         "Sprig of parsley",
-         "Sugar packet",
-         "Tin of cocoa"
-      ]
-   },
-   {
-      "name":"Scaraba Market - Food Vendor",
-      "data":[
-         "Bean croquette",
-         "Boiled egg",
-         "Bottle of water",
-         "Cup of coffee",
-         "Fresh egg",
-         "Kabob",
-         "Molokheiya soup"
-      ],
-      "Location":"Scaraba"
-   },
-   {
-      "name":"Scaraba Market - Junk Vendor",
-      "data":[
-         "Big league bat",
-         "Broken cannon",
-         "Crystal charm",
-         "Defense spray",
-         "Piggy nose",
-         "Platinum band"
-      ],
-      "Location":"Scaraba"
-   },
-   {
-      "name":"Scaraba Market - Red Snake's Shop",
-      "data":[
-         "Snake",
-         "Vial of serum",
-         "Viper"
-      ],
-      "Location":"Scaraba"
-   },
-   {
-      "name":"Scaraba Market - Snake Bag Vendor",
-      "data":[
-         "Snake bag"
-      ],
-      "Location":"Scaraba"
-   },
-   {
-      "name":"Water Vendor near Pyramid",
-      "data":[
-         "Bottle of DXwater"
-      ],
-      "Location":"Scaraba"
-   },
-   {
-      "name":"Guy with Camel",
-      "data":[
-         "Bazooka",
-         "Beef jerky",
-         "Bottle of DXwater",
-         "Crusher beam",
-         "French fry pan",
-         "Multi bottle rocket",
-         "Secret herb"
-      ],
-      "Location":"Scaraba"
-   },
-   {
-      "name":"Arms Dealer (northeast Deep Darkness)",
-      "data":[
-         "Combat yo-yo",
-         "Multi bottle rocket",
-         "Rust promoter DX",
-         "Super bomb"
-      ],
-      "Location":"Deep Darkness"
-   },
-   {
-      "name":"Businessman (north Deep Darkness)",
-      "data":[
-         "Beef jerky",
-         "Bottle of DXwater",
-         "Charm coin",
-         "Cup of noodles",
-         "Diamond band",
-         "Protein drink",
-         "Secret herb"
-      ],
-      "Location":"Deep Darkness"
-   },
-   {
-      "name":"Big Foot (Andonuts's Lab, after Apple Kid is kidnapped)",
-      "data":[
-         "Cup of coffee",
-         "Double burger",
-         "Fresh egg",
-         "Picnic lunch",
-         "Secret herb"
-      ],
-      "Location":"Winters"
-   },
-   {
-      "name":"Underworld Tenda Village Shop",
-      "data":[
-         "Bottle of DXwater",
-         "Holy fry pan",
-         "Horn of life",
-         "Luxury jerky",
-         "Mammoth burger",
-         "Shiny coin",
-         "Ultimate bat"
-      ],
-      "Location":"Tenda Village"
-   },
-   {
-      "name":"Magicant Shop",
-      "data":[
-         "Earth pendant",
-         "Magic pudding"
-      ],
-      "Location":"Magicant"
-   },
-   {
-      "name":"Saturn Valley Shop (after Magicant)",
-      "data":[
-         "Bionic slingshot",
-         "Flame pendant",
-         "Great charm",
-         "Horn of life",
-         "Insecticide spray",
-         "Night pendant",
-         "Peanut cheese bar",
-         "Picture postcard",
-         "Piggy jelly",
-         "Rain pendant",
-         "Red ribbon",
-         "Refreshing herb",
-         "Secret herb",
-         "Silver bracelet",
-         "Stag beetle",
-         "Travel charm"
-      ],
-      "Location":"Saturn Valley"
-   }
-]}
+{
+   "shops": [
+      {
+         "name": "Mach Pizza",
+         "data": [
+            "Large pizza",
+            "Pizza"
+         ],
+         "Location": "Onett, Twoson, Threed"
+      },
+      {
+         "name": "Onett Bakery",
+         "data": [
+            "Bread roll",
+            "Cookie",
+            "Lucky sandwich",
+            "Skip sandwich"
+         ],
+         "Location": "Onett"
+      },
+      {
+         "name": "Onett Burger Shop",
+         "data": [
+            "Bag of fries",
+            "Can of fruit juice",
+            "Cup of coffee",
+            "Hamburger"
+         ],
+         "Location": "Onett"
+      },
+      {
+         "name": "Onett Drugstore",
+         "data": [
+            "Baseball cap",
+            "Cheap bracelet",
+            "Cold remedy",
+            "Cracked bat",
+            "Tee ball bat",
+            "Yo-yo"
+         ],
+         "Location": "Onett"
+      },
+      {
+         "name": "Burglin Park - Antique Vendor",
+         "data": [
+            "For Sale sign"
+         ],
+         "Location": "Twoson"
+      },
+      {
+         "name": "Burglin Park - Baked Goods Vendor",
+         "data": [
+            "Bread roll",
+            "Can of fruit juice",
+            "Cookie",
+            "Cup of coffee",
+            "Lucky sandwich",
+            "Skip sandwich"
+         ],
+         "Location": "Twoson"
+      },
+      {
+         "name": "Burglin Park - Banana Vendor",
+         "data": [
+            "Banana"
+         ],
+         "Location": "Twoson"
+      },
+      {
+         "name": "Burglin Park - Condiment Vendor",
+         "data": [
+            "Carton of cream",
+            "Jar of hot sauce",
+            "Ketchup packet",
+            "Salt packet",
+            "Sprig of parsley",
+            "Sugar packet",
+            "Tin of cocoa"
+         ],
+         "Location": "Twoson"
+      },
+      {
+         "name": "Burglin Park - Egg Vendor",
+         "data": [
+            "Fresh egg"
+         ],
+         "Location": "Twoson"
+      },
+      {
+         "name": "Burglin Park - Junk Vendor",
+         "data": [
+            "Broken iron",
+            "Broken spray can",
+            "Copper bracelet",
+            "Defense spray",
+            "Rust promoter",
+            "Travel charm"
+         ],
+         "Location": "Twoson"
+      },
+      {
+         "name": "Burglin Park - Ruler Vendor",
+         "data": [
+            "Ruler"
+         ],
+         "Location": "Twoson"
+      },
+      {
+         "name": "Twoson Department Store - Bakery",
+         "data": [
+            "Bread roll",
+            "Cookie",
+            "Lucky sandwich",
+            "Skip sandwich"
+         ],
+         "Location": "Twoson"
+      },
+      {
+         "name": "Twoson Department Store - Burger Shop",
+         "data": [
+            "Bag of fries",
+            "Can of fruit juice",
+            "Cup of coffee",
+            "Hamburger"
+         ],
+         "Location": "Twoson"
+      },
+      {
+         "name": "Twoson Department Store - Shop",
+         "data": [
+            "Baseball cap",
+            "Cheap bracelet",
+            "Cracked bat",
+            "Fry pan",
+            "Ribbon",
+            "Slingshot",
+            "Teddy bear",
+            "Tee ball bat"
+         ],
+         "Location": "Twoson"
+      },
+      {
+         "name": "Blue-Blue Drugstore/Nothing Blue Drugstore",
+         "data": [
+            "Can of fruit juice",
+            "Cold remedy",
+            "Copper bracelet",
+            "Croissant",
+            "Cup of coffee",
+            "Fry pan",
+            "Holmes hat",
+            "Lucky sandwich",
+            "Refreshing herb",
+            "Ribbon",
+            "Sand lot bat",
+            "Skip sandwich"
+         ],
+         "Location": "Happy Happy Village"
+      },
+      {
+         "name": "Happy Happy Food Stand",
+         "data": [
+            "Banana",
+            "Fresh egg"
+         ],
+         "Location": "Happy Happy Village"
+      },
+      {
+         "name": "Arms Dealer behind pizza restaurant",
+         "data": [
+            "Bomb",
+            "Bottle rocket",
+            "Rust promoter",
+            "Toy air gun"
+         ],
+         "Location": "Threed"
+      },
+      {
+         "name": "Threed Bakery",
+         "data": [
+            "Bread roll",
+            "Can of fruit juice",
+            "Cookie",
+            "Croissant",
+            "Cup of coffee",
+            "Lucky sandwich",
+            "Skip sandwich"
+         ],
+         "Location": "Threed"
+      },
+      {
+         "name": "Threed Drugstore",
+         "data": [
+            "Calorie stick",
+            "Cold remedy",
+            "Copper bracelet",
+            "Hard hat",
+            "Insecticide spray",
+            "Minor league bat",
+            "Refreshing herb",
+            "Thick fry pan",
+            "Toothbrush",
+            "Vial of serum"
+         ],
+         "Location": "Threed"
+      },
+      {
+         "name": "Drug Store Best Friend",
+         "data": [
+            "Coin of silence",
+            "Cup of coffee",
+            "Lucky sandwich",
+            "Non-stick frypan",
+            "Picnic lunch",
+            "Skip sandwich DX",
+            "T-rex's bat"
+         ],
+         "Location": "Threed"
+      },
+      {
+         "name": "Guy outside tunnel to Threed",
+         "data": [
+            "Calorie stick",
+            "Croissant",
+            "Cup of coffee"
+         ],
+         "Location": "Threed"
+      },
+      {
+         "name": "Saturn Valley Shop",
+         "data": [
+            "Bionic slingshot",
+            "Great charm",
+            "Horn of life",
+            "Insecticide spray",
+            "Peanut cheese bar",
+            "Picture postcard",
+            "Red ribbon",
+            "Refreshing herb",
+            "Secret herb",
+            "Silver bracelet",
+            "Stag beetle",
+            "Travel charm"
+         ],
+         "Location": "Saturn Valley"
+      },
+      {
+         "name": "Arms Dealer behind drugstore",
+         "data": [
+            "Bomb",
+            "Bottle rocket",
+            "Rust promoter",
+            "Zip gun"
+         ],
+         "Location": "Dusty Dunes Desert"
+      },
+      {
+         "name": "Dusty Dunes Desert Drugstore",
+         "data": [
+            "Calorie stick",
+            "Can of fruit juice",
+            "Coin of slumber",
+            "Deluxe fry pan",
+            "Lucky sandwich",
+            "Mr. Baseball bat",
+            "Picnic lunch",
+            "Refreshing herb",
+            "Silver bracelet",
+            "Skip sandwich",
+            "Thick fry pan",
+            "Wet towel"
+         ],
+         "Location": "Dusty Dunes Desert"
+      },
+      {
+         "name": "Vendor near open Gold Mine",
+         "data": [
+            "Can of fruit juice",
+            "Cup of coffee",
+            "Hamburger",
+            "Picnic lunch",
+            "Popsicle",
+            "Skip sandwich",
+            "Wet towel"
+         ],
+         "Location": "Dusty Dunes Desert"
+      },
+      {
+         "name": "Fourside Bakery",
+         "data": [
+            "Bread roll",
+            "Cookie",
+            "Croissant",
+            "Lucky sandwich",
+            "Skip sandwich",
+            "Skip sandwich DX"
+         ],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Fourside Department Store - Arms Dealer",
+         "data": [
+            "Big bottle rocket",
+            "Bomb",
+            "Bottle rocket",
+            "Hyper beam",
+            "Super bomb"
+         ],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Fourside Department Store - Burger Shop",
+         "data": [
+            "Bag of fries",
+            "Can of fruit juice",
+            "Cup of coffee",
+            "Double burger",
+            "Hamburger"
+         ],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Fourside Department Store - Condiment Vendor",
+         "data": [
+            "Carton of cream",
+            "Jar of hot sauce",
+            "Ketchup packet",
+            "Salt packet",
+            "Sprig of parsley",
+            "Sugar packet",
+            "Tin of cocoa"
+         ],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Fourside Department Store - Food Shop",
+         "data": [
+            "Banana",
+            "Boiled egg",
+            "Bread roll",
+            "Croissant",
+            "Picnic lunch"
+         ],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Fourside Department Store - Front Desk",
+         "data": [],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Fourside Department Store - Shop",
+         "data": [
+            "Calorie stick",
+            "Cold remedy",
+            "Protein drink",
+            "Refreshing herb"
+         ],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Fourside Department Store - Sports Shop",
+         "data": [
+            "Baseball cap",
+            "Minor league bat",
+            "Mr. Baseball bat",
+            "Sand lot bat"
+         ],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Fourside Department Store - Tool Shop",
+         "data": [
+            "Chef's fry pan",
+            "Deluxe fry pan",
+            "Gold bracelet",
+            "Insecticide spray",
+            "Protractor",
+            "Silver bracelet",
+            "Toothbrush"
+         ],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Fourside Department Store - Toy Shop",
+         "data": [
+            "Coin of defense",
+            "Coin of slumber",
+            "Defense ribbon",
+            "Red ribbon",
+            "Teddy bear",
+            "Trick yo-yo"
+         ],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Guy northeast of Department Store",
+         "data": [
+            "Broken gadget",
+            "Broken iron",
+            "Defense spray",
+            "Rust promoter"
+         ],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Topolla Theater",
+         "data": [
+            "Show ticket"
+         ],
+         "Location": "Fourside"
+      },
+      {
+         "name": "Hotel Dark Moon",
+         "data": [
+            "Can of fruit juice",
+            "Cup of coffee",
+            "Double burger",
+            "Hamburger",
+            "Lucky sandwich"
+         ],
+         "Location": "Moonside"
+      },
+      {
+         "name": "Big Foot (Andonuts's Lab, after returning to Winters)",
+         "data": [
+            "Beef jerky",
+            "Bottle of DXwater",
+            "Cup of coffee",
+            "Cup of noodles",
+            "Protein drink",
+            "Secret herb"
+         ],
+         "Location": "Winters"
+      },
+      {
+         "name": "Magic Cake Lady (after eating Magic cake)",
+         "data": [
+            "Magic tart"
+         ]
+      },
+      {
+         "name": "Summers Restaurant",
+         "data": [
+            "Can of fruit juice",
+            "Chef's special",
+            "Cup of coffee",
+            "Kraken soup",
+            "Pasta di Summers",
+            "Royal iced tea"
+         ],
+         "Location": "Summers"
+      },
+      {
+         "name": "Summers Shop",
+         "data": [
+            "Big league bat",
+            "Chef's fry pan",
+            "Diamond band",
+            "Gold bracelet",
+            "Lucky coin",
+            "Platinum band",
+            "Super plush bear"
+         ],
+         "Location": "Summers"
+      },
+      {
+         "name": "Toto Shop",
+         "data": [
+            "Bottle of water",
+            "Can of fruit juice",
+            "Coin of defense",
+            "Cup of coffee",
+            "Lucky sandwich",
+            "Secret herb",
+            "Skip sandwich DX"
+         ],
+         "Location": "Summers"
+      },
+      {
+         "name": "Vendor on the beach",
+         "data": [
+            "Gelato de resort"
+         ],
+         "Location": "Summers"
+      },
+      {
+         "name": "Dalaam Restaurant",
+         "data": [
+            "Bottle of water",
+            "Bowl of rice gruel",
+            "Brain food lunch",
+            "Jar of delisauce"
+         ],
+         "Location": "Dalaam"
+      },
+      {
+         "name": "Arms Dealer inside hotel",
+         "data": [
+            "Big bottle rocket",
+            "Bomb",
+            "Bottle rocket",
+            "Super bomb"
+         ],
+         "Location": "Scaraba"
+      },
+      {
+         "name": "Hassan's Shop",
+         "data": [
+            "Banana",
+            "Protein drink",
+            "Secret herb",
+            "Sudden guts pill",
+            "Vial of serum",
+            "Wet towel"
+         ],
+         "Location": "Scaraba"
+      },
+      {
+         "name": "Scaraba Market - Condiment Vendor",
+         "data": [
+            "Carton of cream",
+            "Jar of hot sauce",
+            "Ketchup packet",
+            "Salt packet",
+            "Sprig of parsley",
+            "Sugar packet",
+            "Tin of cocoa"
+         ]
+      },
+      {
+         "name": "Scaraba Market - Food Vendor",
+         "data": [
+            "Bean croquette",
+            "Boiled egg",
+            "Bottle of water",
+            "Cup of coffee",
+            "Fresh egg",
+            "Kabob",
+            "Molokheiya soup"
+         ],
+         "Location": "Scaraba"
+      },
+      {
+         "name": "Scaraba Market - Junk Vendor",
+         "data": [
+            "Big league bat",
+            "Broken cannon",
+            "Crystal charm",
+            "Defense spray",
+            "Piggy nose",
+            "Platinum band"
+         ],
+         "Location": "Scaraba"
+      },
+      {
+         "name": "Scaraba Market - Red Snake's Shop",
+         "data": [
+            "Snake",
+            "Vial of serum",
+            "Viper"
+         ],
+         "Location": "Scaraba"
+      },
+      {
+         "name": "Scaraba Market - Snake Bag Vendor",
+         "data": [
+            "Snake bag"
+         ],
+         "Location": "Scaraba"
+      },
+      {
+         "name": "Water Vendor near Pyramid",
+         "data": [
+            "Bottle of DXwater"
+         ],
+         "Location": "Scaraba"
+      },
+      {
+         "name": "Guy with Camel",
+         "data": [
+            "Bazooka",
+            "Beef jerky",
+            "Bottle of DXwater",
+            "Crusher beam",
+            "French fry pan",
+            "Multi bottle rocket",
+            "Secret herb"
+         ],
+         "Location": "Scaraba"
+      },
+      {
+         "name": "Arms Dealer (northeast Deep Darkness)",
+         "data": [
+            "Combat yo-yo",
+            "Multi bottle rocket",
+            "Rust promoter DX",
+            "Super bomb"
+         ],
+         "Location": "Deep Darkness"
+      },
+      {
+         "name": "Businessman (north Deep Darkness)",
+         "data": [
+            "Beef jerky",
+            "Bottle of DXwater",
+            "Charm coin",
+            "Cup of noodles",
+            "Diamond band",
+            "Protein drink",
+            "Secret herb"
+         ],
+         "Location": "Deep Darkness"
+      },
+      {
+         "name": "Big Foot (Andonuts's Lab, after Apple Kid is kidnapped)",
+         "data": [
+            "Cup of coffee",
+            "Double burger",
+            "Fresh egg",
+            "Picnic lunch",
+            "Secret herb"
+         ],
+         "Location": "Winters"
+      },
+      {
+         "name": "Underworld Tenda Village Shop",
+         "data": [
+            "Bottle of DXwater",
+            "Holy fry pan",
+            "Horn of life",
+            "Luxury jerky",
+            "Mammoth burger",
+            "Shiny coin",
+            "Ultimate bat"
+         ],
+         "Location": "Tenda Village"
+      },
+      {
+         "name": "Magicant Shop",
+         "data": [
+            "Earth pendant",
+            "Magic pudding"
+         ],
+         "Location": "Magicant"
+      },
+      {
+         "name": "Saturn Valley Shop (after Magicant)",
+         "data": [
+            "Bionic slingshot",
+            "Flame pendant",
+            "Great charm",
+            "Horn of life",
+            "Insecticide spray",
+            "Night pendant",
+            "Peanut cheese bar",
+            "Picture postcard",
+            "Piggy jelly",
+            "Rain pendant",
+            "Red ribbon",
+            "Refreshing herb",
+            "Secret herb",
+            "Silver bracelet",
+            "Stag beetle",
+            "Travel charm"
+         ],
+         "Location": "Saturn Valley"
+      }
+   ]
+}

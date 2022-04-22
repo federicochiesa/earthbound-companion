@@ -5,7 +5,7 @@ window.onload = function () {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const mapToShow = urlParams.get("map");
-    if(mapToShow != null)
+    if (mapToShow != null)
         updateMap(mapToShow);
     //Add click event listener on popovers
     const iframe = document.getElementById("mapiFrame");
@@ -13,19 +13,19 @@ window.onload = function () {
     pages = ["items", "enemies", "shops", "maps"]
     data = []
     names = []
-    
-    setTimeout(async function(){
-        for(let j = 0; j < pages.length; j++){
+
+    setTimeout(async function () {
+        for (let j = 0; j < pages.length; j++) {
             data[j] = await getData(pages[j]);
             d = data[j]
-            if(j < 3){
+            if (j < 3) {
                 for (let i = 0; i < Object.keys(d).length; i++) {
                     var elements = d[Object.keys(d)[i]];
-                    for(let k = 0; k < elements.length; k++)
+                    for (let k = 0; k < elements.length; k++)
                         names.push(elements[k].name)
                 }
             }
-            else{
+            else {
                 for (const map of Object.keys(d))
                     names.push(capitalizeFirstLetters(map));
             }
@@ -33,9 +33,9 @@ window.onload = function () {
     }, 100);
 
     autocomplete(document.getElementById("searchLabel"), names)
-    
+
     const searchButton = document.getElementById("searchButton");
-    searchButton.addEventListener('click', (_) =>{
+    searchButton.addEventListener('click', (_) => {
         searchOnSite(data);
     });
 
@@ -51,6 +51,6 @@ function updateMap(id) {
     document.getElementById("mapiFrame").src = "../../mapframe/dist/?region=" + id;
 }
 
-function checkForPopover(){
+function checkForPopover() {
 
 }
