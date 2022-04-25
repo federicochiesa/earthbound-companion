@@ -12,10 +12,13 @@ body,
     border-top-color: #1a1a1a !important;
 }
 
-.popover-body {
+.popover-body > a {
     color: white !important;
     font-family: "appleKid";
     font-size: 1.5rem;
     line-height: 100%;
+}
+
+.popover-body{
     padding: 0.5rem !important;
 }
