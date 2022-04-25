@@ -52,9 +52,15 @@
             },
             {
                 "x": "4889",
-                "y": "2504",
+                "y": "2475",
                 "type": "enemy",
                 "name": "Skate Punk"
+            },
+            {
+                "x": "5250",
+                "y": "2550",
+                "type": "enemy",
+                "name": "Yes Man Jr."
             },
             {
                 "x": "5063",
@@ -78,13 +84,19 @@
                 "x": "6515",
                 "y": "6526",
                 "type": "present",
-                "name": "Baseball Cap"
+                "name": "Mr. Baseball Cap"
             },
             {
                 "x": "6069",
                 "y": "7245",
                 "type": "present",
-                "name": "Hamburger"
+                "name": "Bread roll"
+            },
+            {
+                "x": "4750",
+                "y": "2675",
+                "type": "present",
+                "name": "Can of fruit juice"
             }
         ]
     },
@@ -114,6 +126,24 @@
                 "y": "4000",
                 "type": "present",
                 "name": "Hamburger"
+            },
+            {
+                "x": "8800",
+                "y": "818",
+                "type": "enemy",
+                "name": "Attack Slug"
+            },
+            {
+                "x": "7200",
+                "y": "2700",
+                "type": "enemy",
+                "name": "Rowdy Mice"
+            },
+            {
+                "x": "4800",
+                "y": "4300",
+                "type": "enemy",
+                "name": "Black Antoid"
             }
             
         ]
@@ -412,9 +442,58 @@
         "name": "lostunderworld",
         "pins": [
             {
-                "x": "200",
+                "x": "2490",
+                "y": "4060",
+                "type": "present",
+                "name": "Cloak of kings"
+            },
+            {
+                "x": "4925",
+                "y": "4300",
+                "type": "present",
+                "name": "Brain food lunch"
+            },
+            {
+                "x": "6075",
+                "y": "7300",
+                "type": "present",
+                "name": "Guts Capsule"
+            },
+            {
+                "x": "8510",
+                "y": "6930",
+                "type": "present",
+                "name": "Sea Pendant"
+            },
+            {
+                "x": "9600",
+                "y": "3480",
+                "type": "present",
+                "name": "Horn of life"
+            },
+            {
+                "x": "4100",
+                "y": "5880",
+                "type": "shop",
+                "name": "Underworld Tenda Village Shop"
+            },
+            {
+                "x": "5454",
                 "y": "2000",
-                "type": "present"
+                "type": "enemy",
+                "name": "Wetnosaur"
+            },
+            {
+                "x": "7500",
+                "y": "5000",
+                "type": "enemy",
+                "name": "Ego orb"
+            },
+            {
+                "x": "2500",
+                "y": "2700",
+                "type": "enemy",
+                "name": "Chomposaur"
             }
         ]
     },

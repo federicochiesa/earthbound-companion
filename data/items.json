@@ -703,7 +703,7 @@
       "data":{
          "Comments":"Provides protection from Sleep. Increases Luck by 10.",
          "Description":"Must be equipped on your arm. It increases your Defense. Helps you from being hypnotized, and it also increases your Luck.",
-         "Location":"Stonehenge base (Gift Box)",
+         "Location":"Stonehenge Base (Gift Box)",
          "Price":"$1590",
          "Defense up":"60",
          "Luck up": "10"
@@ -764,7 +764,7 @@
       "data":{
          "Comments":"Can be used only by Paula. Increases her Luck by 40.",
          "Description":"Miscellaneous equipment that can only be used by Paula. When equipped, Luck is increased. Same as the one that Mr. Saturn wears on his head.",
-         "Location":"Given to you by a Mr. Saturn after you defeat Starman Deluxe and shut down the Stonehenge base.",
+         "Location":"Given to you by a Mr. Saturn after you defeat Starman Deluxe and shut down the Stonehenge Base.",
          "Price":"$3980",
          "Defense up":"90",
          "Luck up": "40"
@@ -985,7 +985,7 @@
       "data":{
          "Comments":"Can be repaired by Jeff to produce a Baddest Beam. Requires 55 IQ to fix.",
          "Description":"A broken device that looks like a harmonica. That genius Jeff should be able to fix it sometime.",
-         "Location":"Stonehenge base (Gift Box)",
+         "Location":"Stonehenge Base (Gift Box)",
          "Price":"N/A"
       }
    },
@@ -1048,7 +1048,7 @@
       "data":{
          "Comments":"Can be repaired by Jeff to produce a Defense shower. Requires 40 IQ to fix.",
          "Description":"A broken apparatus that is shaped like a trumpet. That genius Jeff should be able to fix it sometime.",
-         "Location":"Stonehenge base (Gift Box)",
+         "Location":"Stonehenge Base (Gift Box)",
          "Price":"N/A"
       }
    },
@@ -1112,7 +1112,7 @@
       "data":{
          "Comments":"Same effect as Healing Omega.",
          "Description":"Revives a friend who is unconscious. In addition, it also works well on poison, nausea, colds, sunstroke, falling asleep, uncontrollable crying and feeling strange. This is effective when you have paralysis, or you have been diamondized.",
-         "Location":"Peaceful Rest Valley (Gift Box), Monkey Cave (Chest), The Pyramid (Gift Box), Dungeon Man (Gift Box), Deep Darkness (Gift Box), Stonehenge base (Gift Box), Lumine Hall (Gift Box)",
+         "Location":"Peaceful Rest Valley (Gift Box), Monkey Cave (Chest), The Pyramid (Gift Box), Dungeon Man (Gift Box), Deep Darkness (Gift Box), Stonehenge Base (Gift Box), Lumine Hall (Gift Box)",
          "Price":"$178"
       }
    },
@@ -2124,7 +2124,7 @@
       "name":"PSI caramel",
       "data":{
          "Description":"Replenishes 20 PP.",
-         "Location":"Lilliput Steps (Gift Box), Desert Gold Mine (Gift Box), Dungeon Man (Gift Box), Stonehenge base (Gift Box), Magicant (Gift Box), dropped by Dali's Clock, dropped by Insane Cultist, dropped by Territorial Oak, dropped by Final Starman, dropped by Fobby, dropped by Foppy, dropped by Lesser Mook, dropped by Loaded Dice, dropped by Mook Senior, dropped by Psychic Psycho, dropped by Ultimate Octobot, dropped by Zap Eel",
+         "Location":"Lilliput Steps (Gift Box), Desert Gold Mine (Gift Box), Dungeon Man (Gift Box), Stonehenge Base (Gift Box), Magicant (Gift Box), dropped by Dali's Clock, dropped by Insane Cultist, dropped by Territorial Oak, dropped by Final Starman, dropped by Fobby, dropped by Foppy, dropped by Lesser Mook, dropped by Loaded Dice, dropped by Mook Senior, dropped by Psychic Psycho, dropped by Ultimate Octobot, dropped by Zap Eel",
          "Price":"N/A",
          "Psychic points up":"20",
          "Note":": Every enemy that drops this item has a 1/128 chance of dropping it."
@@ -2166,7 +2166,7 @@
       "data":{
          "Comments":"Barter in Tenda for this item.",
          "Description":"Recipe for making spicy jerky. Obtain some type of meat, slice it into pieces about a half of an inch thick. Season the pieces as much as possible, hang the pieces on a laundry line or something like it and leave out in the sun for maybe 8 months... Well, that's what my recipe says... When eaten, you recover about 250 HP.",
-         "Location":"Stonehenge base (Gift Box), Lumine Hall (Gift Box), exchanged from Tenda Village trader, dropped by Demonic Petunia",
+         "Location":"Stonehenge Base (Gift Box), Lumine Hall (Gift Box), exchanged from Tenda Village trader, dropped by Demonic Petunia",
          "Price":"$140",
          "Hit points up":"252 (Ness, Paula, Jeff), 6 (Poo)"
       }
@@ -2259,7 +2259,7 @@
       "data":{
          "Comments":"Permanently increases Guts by 1.",
          "Description":"It increases your Guts by 1 when taken.",
-         "Location":"Desert Gold Mine (Gift Box), Stonehenge base (Gift Box), Lost Underworld (Gift Box)",
+         "Location":"Desert Gold Mine (Gift Box), Stonehenge Base (Gift Box), Lost Underworld (Gift Box)",
          "Price":"N/A"
       }
    },
@@ -2324,7 +2324,7 @@
       "data":{
          "Comments":"Permanently increases Speed by 1.",
          "Description":"It increases your Speed by 1 when taken.",
-         "Location":"The Pyramid (Gift Box), Stonehenge base (Gift Box), The Fire Spring (Gift Box)",
+         "Location":"The Pyramid (Gift Box), Stonehenge Base (Gift Box), The Fire Spring (Gift Box)",
          "Price":"N/A"
       }
    },

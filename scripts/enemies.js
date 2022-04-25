@@ -119,11 +119,20 @@ async function getEnemyInfo(enemy) {
                     <th scope=\"row\">IQ</th>\
                     <td>" + element.data["IQ"] + "</td>\
                         </tr>"
-                if (typeof (element.data["Drops"]) != "undefined")
-                    returnString += "<tr>\
+                if (typeof (element.data["Drops"]) != "undefined"){
+                    if(element.data["Drops"].search(",")>-1){
+                        drops = element.data["Drops"].split(",")
+                        returnString += "<tr>\
                     <th scope=\"row\">Drops</th>\
-                    <td><a href=\"../items/?item="+ nameToImage(element.data["Drops"].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + element.data["Drops"] + "</a></td>\
+                    <td><a href=\"../items/?item="+ nameToImage(drops[0].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + drops[0] + "</a> or \
+                    <a href=\"../items/?item="+ nameToImage(drops[1].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + drops[1] + "</a></td>\
                         </tr>"
+                    } else
+                        returnString += "<tr>\
+                        <th scope=\"row\">Drops</th>\
+                        <td><a href=\"../items/?item="+ nameToImage(element.data["Drops"].toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + element.data["Drops"] + "</a></td>\
+                            </tr>"
+                }
                 if (typeof (element.data["Drops rate"]) != "undefined")
                     returnString += "<tr>\
                     <th scope=\"row\">Drops rate</th>\

@@ -12,7 +12,7 @@
          "Exp":"4361",
          "Money":"$255",
          "Drops":"Refreshing herb",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Moonside"
       }
    },
@@ -47,7 +47,7 @@
          "Exp":"2373",
          "Money":"$268",
          "Drops":"Protein drink",
-         "Drops rate": "8/128",
+         "Drops rate": "1/16",
          "Location":"Fourside"
       }
    },
@@ -64,7 +64,7 @@
          "Exp":"4933",
          "Money":"$296",
          "Drops":"Jar of hot sauce",
-         "Drops rate": "16/128",
+         "Drops rate": "1/8",
          "Location":"Brick Road Maze"
       }
    },
@@ -80,7 +80,7 @@
          "Exp":"10449",
          "Money":"$412",
          "Drops":"Beef Jerky",
-         "Drops rate": "4/128",
+         "Drops rate": "1/32",
          "Location":"The Pyramid (Scaraba)",
          "Vulnerable to": "PSI Fire, PSI Freeze and Insecticide Spray"
       }
@@ -98,7 +98,7 @@
          "Exp":"1566",
          "Money":"$77",
          "Drops":"Broken spray can",
-         "Drops rate": "16/128",
+         "Drops rate": "1/8",
          "Location":"Grapefruit Falls",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
@@ -115,7 +115,7 @@
          "Guts":"8",
          "Luck": "12",
          "Drops":"Super bomb",
-         "Drops rate": "8/128",
+         "Drops rate": "1/16",
          "Exp":"26937",
          "Money":"$730",
          "Location":"Stonehenge base",
@@ -152,7 +152,7 @@
          "Exp":"4108",
          "Money":"$172",
          "Drops":"Wet towel",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Dusty Dunes Desert",
          "Vulnerable to": "Paralysis"
       }
@@ -189,7 +189,7 @@
          "Money":"$728",
          "Location":"Deep Darkness",
          "Drops": "Meteotite",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Vulnerable to":"PSI Freeze"
       }
    },
@@ -242,7 +242,7 @@
          "Exp":"14941",
          "Money":"$641",
          "Drops":"Super bomb",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Magicant",
          "Vulnerable to":"PSI Freeze"
       }
@@ -260,7 +260,7 @@
          "Exp":"618",
          "Money":"$17",
          "Drops":"Picnic lunch, Double burger",
-         "Drops rate": "1 for Picnic Lunch and 4/128 for Double Burger",
+         "Drops rate": "1 for Picnic Lunch and 1/32 for Double Burger",
          "Location":"Winters, Stonehenge area",
          "Vulnerable to": "PSI Fire"
       }
@@ -364,7 +364,7 @@
          "Exp":"200",
          "Money":"$17",
          "Drops":"Handbag strap",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Twoson",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
@@ -382,7 +382,7 @@
          "Exp":"3618",
          "Money":"$244",
          "Drops":"Big bottle rocket",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Fourside, Summers",
          "Vulnerable to":"Hypnosis and PSI Freeze"
       }
@@ -481,7 +481,7 @@
          "Exp":"15171",
          "Money":"$724",
          "Drops":"Spicy Jerky",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Deep Darkness",
          "Vulnerable to":"PSI Fire"
       }
@@ -499,7 +499,7 @@
          "Exp":"3740",
          "Money":"$114",
          "Drops":"Sudden guts pill",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Dusty Dunes Desert",
          "Vulnerable to":"Paralysis"
       }
@@ -535,7 +535,7 @@
          "Exp":"24180",
          "Money":"$836",
          "Drops":"Skip sandwich DX",
-         "Drops rate":"8/128",
+         "Drops rate":"1/16",
          "Location":"Lost Underworld",
          "Vulnerable to":"PSI Freeze"
       }
@@ -553,7 +553,7 @@
          "Exp":"4178",
          "Money":"$371",
          "Drops":"Double burger",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Rainy Circle",
          "Vulnerable to": "PSI Fire, PSI Freeze, PSI Flash, Paralysis and Brainshock"
       }
@@ -572,7 +572,7 @@
          "Money":"$791",
          "Location":"Magicant",
          "Drops":"Sudden guts pill",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Vulnerable to":"PSI Flash"
       }
    },
@@ -609,7 +609,7 @@
          "Exp":"15075",
          "Money":"$579",
          "Drops":"Multi bottle rocket",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Deep Darkness",
          "Vulnerable to":"Paralysis"
       }
@@ -665,7 +665,7 @@
          "Exp":"3651",
          "Money":"$134",
          "Drops":"Handbag strap",
-         "Drops rate":"16/128",
+         "Drops rate":"1/8",
          "Location":"Fourside",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
@@ -682,7 +682,7 @@
          "Exp":"700",
          "Money":"$58",
          "Drops":"Skip sandwich",
-         "Drops rate":"8/128",
+         "Drops rate":"1/16",
          "Location":"Grapefruit Falls, Belch Base",
          "Vulnerable to":"PSI Fire and PSI Flash"
       }
@@ -773,7 +773,7 @@
          "Exp":"1311",
          "Money":"$93",
          "Drops":"PSI caramel",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Belch Base",
          "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
@@ -790,7 +790,7 @@
          "Exp":"19210",
          "Money":"$879",
          "Drops":"Horn of life",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Magicant",
          "Vulnerable to":"Hypnosis"
       }
@@ -827,7 +827,7 @@
          "Exp":"3980",
          "Money":"$304",
          "Drops":"Double burger",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Desert Gold Mine",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
@@ -845,7 +845,7 @@
          "Exp":"16365",
          "Money":"$604",
          "Drops":"Beef Jerky",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Scaraba",
          "Vulnerable to":"PSI Freeze and Hypnosis"
       }
@@ -863,7 +863,7 @@
          "Exp":"20",
          "Money":"$9",
          "Drops":"Salt packet",
-         "Drops rate":"16/128",
+         "Drops rate":"1/8",
          "Location":"Winters",
          "Vulnerable to": "PSI Fire, PSI Freeze and Hypnosis"
       }
@@ -881,7 +881,7 @@
          "Exp":"13064",
          "Money":"$470",
          "Drops":"Pharaoh's curse",
-         "Drops rate":"8/128",
+         "Drops rate":"1/16",
          "Location":"Pyramid",
          "Vulnerable to":"PSI Fire and Hypnosis"
       }
@@ -919,7 +919,7 @@
          "Exp":"19484",
          "Money":"$692",
          "Drops":"Super Plush Bear",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Deep Darkness",
          "Vulnerable to":"PSI Fire"
       }
@@ -937,7 +937,7 @@
          "Exp":"4129",
          "Money":"$456",
          "Drops":"Skip sandwich DX",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Scaraba",
          "Vulnerable to":"PSi Fire and Brainshock"
       }
@@ -956,7 +956,7 @@
          "Exp":"17567",
          "Money":"$690",
          "Drops":"Viper",
-         "Drops rate":"16/128",
+         "Drops rate":"1/8",
          "Location":"Deep Darkness",
          "Vulnerable to":"PSI Fire"
       }
@@ -1012,7 +1012,7 @@
          "Exp":"10354",
          "Money":"$528",
          "Drops":"Jar of delisauce",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Cave of the Pink Cloud",
          "Vulnerable to":"PSI Fire, PSI Freeze and Hypnosis"
       }
@@ -1031,7 +1031,7 @@
          "Exp":"7640",
          "Money":"$467",
          "Drops":"PSI caramel",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Dungeon Man, Winters",
          "Vulnerable to":"PSI Fire and Hypnosis"
       }
@@ -1066,7 +1066,7 @@
          "Exp":"223",
          "Money":"$14",
          "Drops":"Skip sandwich",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Peaceful Rest Valley",
          "Vulnerable to":"PSI Fire"
       }
@@ -1158,7 +1158,7 @@
          "Exp":"15826",
          "Money":"$624",
          "Drops":"Beef Jerky",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Deep Darkness",
          "Vulnerable to":"PSI Freeze"
       }
@@ -1246,7 +1246,7 @@
          "Exp":"609",
          "Money":"$49",
          "Drops":"Teddy bear",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Lilliput Steps",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
@@ -1299,7 +1299,7 @@
          "Exp":"133",
          "Money":"$13",
          "Drops":"Croissant",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Twoson, Peaceful Rest Valley",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
@@ -1317,7 +1317,7 @@
          "Exp":"456",
          "Money":"$36",
          "Drops":"Croissant",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Lilliput Steps, Dusty Dunes Desert, Deep Darkness, Summers",
          "Vulnerable to":"PSI Fire, PSI Freeze, PSI Flash and Paralysis"
       }
@@ -1335,7 +1335,7 @@
          "Exp":"8708",
          "Money":"$659",
          "Drops":"Magic Tart",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Magicant",
          "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
@@ -1353,7 +1353,7 @@
          "Exp":"21056",
          "Money":"$715",
          "Drops":"PSI caramel",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Stonehenge base",
          "Vulnerable to":"PSI Fire and Hypnosis"
       }
@@ -1370,7 +1370,7 @@
          "Exp":"1116",
          "Money":"$84",
          "Drops":"Pizza",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Belch Base",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
@@ -1425,7 +1425,7 @@
          "Exp":"2736",
          "Money":"$310",
          "Drops":"Pizza",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Fourside (Department Store), Dungeon Man",
          "Vulnerable to":"PSI Fire, PSI Freeze and Brainshock"
       }
@@ -1461,7 +1461,7 @@
          "Exp":"415",
          "Money":"$26",
          "Drops":"Boiled egg",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Threed",
          "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
@@ -1532,7 +1532,7 @@
          "Exp":"19163",
          "Money":"$628",
          "Drops":"Sudden gets pill",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Pyramid",
          "Vulnerable to":"PSI Fire and Paralysis"
       }
@@ -1551,7 +1551,7 @@
          "Exp":"29982",
          "Money":"$543",
          "Drops":"Salt packet",
-         "Drops rate":"32/128",
+         "Drops rate":"31/64",
          "Location":"Deep Darkness",
          "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Brainshock"
       }
@@ -1623,7 +1623,7 @@
          "Exp":"830",
          "Money":"$53",
          "Drops":"Croissant",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Threed",
          "Vulnerable to":"PSI Freeze and Hypnosis"
       }
@@ -1641,7 +1641,7 @@
          "Exp":"95",
          "Money":"$15",
          "Drops":"Ketchup packet",
-         "Drops rate": "8/128",
+         "Drops rate": "1/16",
          "Location":"Onett, Twoson",
          "Vulnerable to":"PSI Fire, PSI Freeze and Brainshock"
       }
@@ -1659,7 +1659,7 @@
          "Exp":"2496",
          "Money":"$158",
          "Drops":"Picnic lunch",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Milky Well Hole",
          "Vulnerable to":"PSI Fire"
       }
@@ -1676,7 +1676,7 @@
          "Exp":"1175",
          "Money":"$35",
          "Drops":"Sugar packet",
-         "Drops rate":"16/128",
+         "Drops rate":"1/8",
          "Location":"Grapefruit Falls",
          "Vulnerable to":"PSI Fire, PSI Freeze, Paralysis and Hypnosis"
       }
@@ -1730,7 +1730,7 @@
          "Exp":"4",
          "Money":"$3",
          "Drops":"Bread roll",
-         "Drops rate": "4/128 (64/128 only in Winters)",
+         "Drops rate": "1/32 (61/32 only in Winters)",
          "Location":"Onett, Twoson, Winters(while playing as Jeff after Ness and Paula get captured in Threed)"
       }
    },
@@ -1765,7 +1765,7 @@
          "Exp":"5034",
          "Money":"$392",
          "Drops":"Big bottle rocket",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Fourside (Monotoli Building)"
       }
    },
@@ -1818,7 +1818,7 @@
          "Exp":"1823",
          "Money":"$140",
          "Drops":"Vial of serum",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Dusty Dunes Desert",
          "Vulnerable to":"PSI Fire, PSI Freeze and Hypnosis"
       }
@@ -1837,7 +1837,7 @@
          "Exp":"606",
          "Money":"$71",
          "Drops":"Broken iron",
-         "Drops rate":"8/128",
+         "Drops rate":"1/16",
          "Location":"Threed",
          "Vulnerable to":"Psi Fire, PSI Flash, Paralysis and Hypnosis"
       }
@@ -1892,7 +1892,7 @@
          "Exp":"37618",
          "Money":"$768",
          "Drops": "Meteotite",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Fire Spring",
          "Vulnerable to":"PSI Freeze"
       }
@@ -1910,7 +1910,7 @@
          "Exp":"297",
          "Money":"$21",
          "Drops":"Meteornium",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Peaceful Rest Valley",
          "Vulnerable to":"PSI Freeze"
       }
@@ -1947,7 +1947,7 @@
          "Exp":"48311",
          "Money":"$897",
          "Drops":"Horn of life",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Cave Of The Past",
          "Vulnerable to":"PSI Fire"
       }
@@ -2072,7 +2072,7 @@
          "Exp":"2786",
          "Money":"$276",
          "Drops":"Chick",
-         "Drops rate":"18/128",
+         "Drops rate":"11/16",
          "Location":"Desert Gold Mine",
          "Vulnerable to":"PSI Freeze"
       }
@@ -2125,7 +2125,7 @@
          "Exp":"9310",
          "Money":"$525",
          "Drops":"Chick",
-         "Drops rate":"32/128",
+         "Drops rate":"31/64",
          "Location":"Summers",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
@@ -2142,7 +2142,7 @@
          "Exp":"1865",
          "Money":"$119",
          "Drops":"Sprig of parsley",
-         "Drops rate":"8/128",
+         "Drops rate":"1/16",
          "Location":"Milky Well, Monkey Caves",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
@@ -2160,7 +2160,7 @@
          "Exp":"570",
          "Money":"$47",
          "Drops":"Bomb",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Threed",
          "Vulnerable to":"PSI Fire, PSI Freeze, PSI Flash and Hypnosis"
       }
@@ -2179,7 +2179,7 @@
          "Exp":"47876",
          "Money":"$47",
          "Drops":"PSI caramel",
-         "Drops rate":"16/128",
+         "Drops rate":"1/8",
          "Location":"Cave Of The Past",
          "Vulnerable to":"PSI Fire"
       }
@@ -2197,7 +2197,7 @@
          "Exp":"146",
          "Money":"$19",
          "Drops":"Toothbrush",
-         "Drops rate":"16/128",
+         "Drops rate":"1/8",
          "Location":"Twoson, Happy Happy Village",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
@@ -2233,7 +2233,7 @@
          "Exp":"700",
          "Money":"$58",
          "Drops":"Hamburger",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Threed, Grapefruit Falls",
          "Vulnerable to":"PSI Fire and PSI Flash"
       }
@@ -2308,7 +2308,7 @@
          "Exp":"33818",
          "Money":"$906",
          "Drops": "Multi bottle rocket",
-         "Drops rate":"8/128",
+         "Drops rate":"1/16",
          "Location":"Cave Of The Past",
          "Vulnerable to":"PSI Freeze"
       }
@@ -2325,7 +2325,7 @@
          "Exp":"5397",
          "Money":"$458",
          "Drops": "Multi bottle rocket",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Winters",
          "Vulnerable to":"PSI Freeze"
       }
@@ -2362,7 +2362,7 @@
          "Exp":"13",
          "Money":"$18",
          "Drops":"Bag of fries",
-         "Drops rate":"4/128",
+         "Drops rate":"1/32",
          "Location":"Onett",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
@@ -2381,7 +2381,7 @@
          "Exp":"12170",
          "Money":"$611",
          "Drops":"PSI caramel",
-         "Drops rate":"2/128",
+         "Drops rate":"1/64",
          "Location":"Deep Darkness",
          "Vulnerable to":"PSI Fire and PSI Freeze"
       }
