@@ -119,8 +119,8 @@ async function getEnemyInfo(enemy) {
                     <th scope=\"row\">IQ</th>\
                     <td>" + element.data["IQ"] + "</td>\
                         </tr>"
-                if (typeof (element.data["Drops"]) != "undefined"){
-                    if(element.data["Drops"].search(",")>-1){
+                if (typeof (element.data["Drops"]) != "undefined") {
+                    if (element.data["Drops"].search(",") > -1) {
                         drops = element.data["Drops"].split(",")
                         returnString += "<tr>\
                     <th scope=\"row\">Drops</th>\

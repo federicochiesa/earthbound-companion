@@ -1,35 +1,43 @@
 @media (max-width:577px) {
-    .adjustTableOnPhone > * > * > * {
+    .adjustTableOnPhone>*>*>* {
         font-size: 20px;
     }
 
-    .table>:not(caption)>*>*{
-        padding:0 5px 0 0 !important;
+    .table>:not(caption)>*>* {
+        padding: 0 5px 0 0 !important;
         line-height: 30px !important;
         margin-left: 10px !important;
     }
-    select{
+
+    select {
         padding: 0;
     }
 
-    #save1, #save2, #save0{
+    #save1,
+    #save2,
+    #save0 {
         font-size: 24px !important;
     }
 
-    .statsTable{
+    .statsTable {
         padding-right: 0 !important;
     }
 
-    .statsTable>*>*>*, .tableInfo>*>*>*{
+    .statsTable>*>*>*,
+    .tableInfo>*>*>* {
         font-size: 20px;
     }
-    #loadedFileBanner{
+
+    #loadedFileBanner {
         font-size: 30px;
     }
-    #escargo > div, #escargoTable{
+
+    #escargo>div,
+    #escargoTable {
         margin: 0 !important;
     }
-    .titleSpan{
+
+    .titleSpan {
         font-size: 18px;
     }
 }
