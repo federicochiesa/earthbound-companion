@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Title and favicon tags -->
   <title>Earthbound Companion: Home</title>
@@ -29,6 +30,7 @@
   <!-- Local stylesheets -->
   <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body class="main-body">
   <nav class="navbar navbar-expand-lg navbar-dark m-3">
     <div class="container-fluid">
@@ -63,9 +65,9 @@
         </ul>
         <form class="d-flex" autocomplete="off" onsubmit="return false">
           <div class="autocomplete" style="margin-right: 10px;">
-            <input class="form-control me-2" id = "searchLabel" type="search" placeholder="Search" aria-label="Search" >
+            <input class="form-control me-2" id="searchLabel" type="search" placeholder="Search" aria-label="Search">
           </div>
-          <button class="btn btn-outline-light" id = "searchButton" type="button">Search</button>
+          <button class="btn btn-outline-light" id="searchButton" type="button">Search</button>
         </form>
       </div>
     </div>
@@ -88,11 +90,14 @@
         personal data, we promise!
       </div>
       <div class="mb-2 me-2 d-flex justify-content-end">
-      <button type="button" onclick="setSurveyCookie()" class="btn btn-secondary btn-sm me-2" data-bs-dismiss="toast">Don't ask again</button>
-      <button type="button" class="btn btn-light btn-sm" onclick="window.location.href = &quot;https://docs.google.com/forms/d/1gTPUuU9rI2ghVn-WRfypgAV2GOOJQItU4Ueio89xn28&quot;">OK!</button>
+        <button type="button" onclick="setSurveyCookie()" class="btn btn-secondary btn-sm me-2"
+          data-bs-dismiss="toast">Don't ask again</button>
+        <button type="button" class="btn btn-light btn-sm"
+          onclick="window.location.href = &quot;https://docs.google.com/forms/d/1gTPUuU9rI2ghVn-WRfypgAV2GOOJQItU4Ueio89xn28&quot;">OK!</button>
       </div>
     </div>
   </div>
   <script>showSurveyToast()</script>
 </body>
+
 </html>

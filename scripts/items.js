@@ -25,31 +25,31 @@ async function getItemLocation(item) {
 
                 let enemies = datae[Object.keys(datae)[0]];
                 let bosses = datae[Object.keys(datae)[1]];
-                
+
                 let specialEnemies = ["Arachnid!!!", "Bionic Kraken", "Final Starman", "Ghost of Starman", "Great Crested Booka", "Cute Li'l UFO",
-                "Hyper Spinning Robo", "Major Psychic Psycho", "Manly Fish's Brother", "Mighty Bear Seven", "Starman Super", "Tough Mobile Sprout",
-                "Wild 'N Wooly Shambler", "Frankystein Mark II", "Giygas Part III (unstable defenses)", "Starman Deluxe", "Starman Junior", "Extra Cranky Lady", "Fierce Shattered Man", "Over Zealous Cop"]
+                    "Hyper Spinning Robo", "Major Psychic Psycho", "Manly Fish's Brother", "Mighty Bear Seven", "Starman Super", "Tough Mobile Sprout",
+                    "Wild 'N Wooly Shambler", "Frankystein Mark II", "Giygas Part III (unstable defenses)", "Starman Deluxe", "Starman Junior", "Extra Cranky Lady", "Fierce Shattered Man", "Over Zealous Cop"]
 
                 let foundSE = false;
-                
-                for(let j = 0; j < locs.length; j++){
+
+                for (let j = 0; j < locs.length; j++) {
                     foundSE = false;
                     l = locs[j]
-                    for(const se of specialEnemies){
+                    for (const se of specialEnemies) {
                         if (locs[j].search(se) > -1) {
                             foundSE = true;
-                            l = l.replace(se, "<a href=\"../enemies/?item="+ nameToImage(se.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ se + "</a>");
+                            l = l.replace(se, "<a href=\"../enemies/?item=" + nameToImage(se.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + se + "</a>");
                         }
                     }
-                    if(!foundSE){
+                    if (!foundSE) {
                         for (const e of enemies) {
                             if (locs[j].search(e.name) > -1) {
-                                l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                                l = l.replace(e.name, "<a href=\"../enemies/?item=" + nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + e.name + "</a>");
                             }
                         }
                         for (const e of bosses) {
                             if (locs[j].search(e.name) > -1) {
-                                l = l.replace(e.name, "<a href=\"../enemies/?item="+ nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ e.name + "</a>");
+                                l = l.replace(e.name, "<a href=\"../enemies/?item=" + nameToImage(e.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + e.name + "</a>");
                             }
                         }
                     }
@@ -57,16 +57,16 @@ async function getItemLocation(item) {
                         let items = data[Object.keys(data)[x]];
                         for (const k of items) {
                             if (locs[j].search(k.name) > -1) {
-                                l = l.replace(k.name, "<a href=\"../items/?item="+ nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ k.name + "</a>");
+                                l = l.replace(k.name, "<a href=\"../items/?item=" + nameToImage(k.name.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + k.name + "</a>");
                             }
                         }
                     }
-                    for (const map of Object.keys(datam)){
-                        if(locs[j].search(capitalizeFirstLetters(map)) > -1){
-                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"../maps/?map="+ nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">"+ capitalizeFirstLetters(map) + "</a>");
+                    for (const map of Object.keys(datam)) {
+                        if (locs[j].search(capitalizeFirstLetters(map)) > -1) {
+                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"../maps/?map=" + nameToImage(map.toLowerCase()) + "\" color: inherit\" class=\"itemLink\">" + capitalizeFirstLetters(map) + "</a>");
                         }
                     }
-                    
+
                     returnString += " <tr>\
                                         <td>" + l + "</td>\
                                      </tr>\ ";
@@ -118,7 +118,7 @@ window.onload = async function () {
             else var description = element.data["Description"];
             if (typeof (element.data["Comments"]) == "undefined") var comments = "";
             else var comments = element.data["Comments"];
-            if(comments == "") var itemText = description;
+            if (comments == "") var itemText = description;
             else var itemText = comments;
             tableString = "";
             switch (Object.keys(data)[i]) {
@@ -138,7 +138,7 @@ window.onload = async function () {
                                                 <td>" + element.data["Offense up"] + "</td>\
                                             </tr>\ ";
 
-                    if(typeof(element.data["Guts up"]) != "undefined")
+                    if (typeof (element.data["Guts up"]) != "undefined")
                         tableString += "<tr>\
                                         <th scope=\"row\">Guts Up</th>\
                                          <td>" + element.data["Guts up"] + "</td>\
@@ -159,13 +159,13 @@ window.onload = async function () {
                                                     <td>" + element.data["Defense up"] + "</td>\
                                                 </tr>\ ";
 
-                    if(typeof(element.data["Speed up"]) != "undefined")
-                    tableString += "<tr>\
+                    if (typeof (element.data["Speed up"]) != "undefined")
+                        tableString += "<tr>\
                                     <th scope=\"row\">Speed Up</th>\
                                         <td>" + element.data["Speed up"] + "</td>\
                                     </tr>\ ";
-                    if(typeof(element.data["Luck up"]) != "undefined")
-                    tableString += "<tr>\
+                    if (typeof (element.data["Luck up"]) != "undefined")
+                        tableString += "<tr>\
                                     <th scope=\"row\">Luck Up</th>\
                                         <td>" + element.data["Luck up"] + "</td>\
                                     </tr>\ ";
@@ -251,29 +251,29 @@ window.onload = async function () {
         }
     }
 
-    setTimeout(function(){
+    setTimeout(function () {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const idToScroll = urlParams.get("item");
         if (idToScroll != null) {
             const element = document.getElementById(idToScroll);
             const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
-            window.scrollTo({ top: y});
+            window.scrollTo({ top: y });
         }
     }, 50);
 
     pages = ["items", "enemies", "shops", "maps"]
     data = []
     names = []
-    
-    setTimeout(async function(){
-        for(let j = 0; j < pages.length; j++){
+
+    setTimeout(async function () {
+        for (let j = 0; j < pages.length; j++) {
             data[j] = await getData(pages[j]);
             d = data[j]
-            if(j < 3){
+            if (j < 3) {
                 for (let i = 0; i < Object.keys(d).length; i++) {
                     var elements = d[Object.keys(d)[i]];
-                    for(let k = 0; k < elements.length; k++)
+                    for (let k = 0; k < elements.length; k++)
                         names.push(elements[k].name)
                 }
             }
@@ -284,9 +284,9 @@ window.onload = async function () {
     }, 100);
 
     autocomplete(document.getElementById("searchLabel"), names)
-    
+
     const searchButton = document.getElementById("searchButton");
-    searchButton.addEventListener('click', (_) =>{
+    searchButton.addEventListener('click', (_) => {
         searchOnSite(data);
     });
 }
