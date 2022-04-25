@@ -1,4 +1,4 @@
-var appRoot = "http://localhost:5500"
+var appRoot = "http://192.168.1.121:5500"
 
 const itemsP = (async function () {
   return await getData("items");

@@ -306,6 +306,7 @@ table {
         font-size: 3rem
     }
 
+
 }
 
 .table {
@@ -458,7 +459,6 @@ select {
     background-color: transparent;
     border: none;
     color: white;
-    size: 5 !important;
     --form-select-font-family: "appleKid" !important;
     width: 100%;
 }

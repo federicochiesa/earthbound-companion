@@ -1,0 +1,35 @@
+@media (max-width:577px) {
+    .adjustTableOnPhone > * > * > * {
+        font-size: 20px;
+    }
+
+    .table>:not(caption)>*>*{
+        padding:0 5px 0 0 !important;
+        line-height: 30px !important;
+        margin-left: 10px !important;
+    }
+    select{
+        padding: 0;
+    }
+
+    #save1, #save2, #save0{
+        font-size: 24px !important;
+    }
+
+    .statsTable{
+        padding-right: 0 !important;
+    }
+
+    .statsTable>*>*>*, .tableInfo>*>*>*{
+        font-size: 20px;
+    }
+    #loadedFileBanner{
+        font-size: 30px;
+    }
+    #escargo > div, #escargoTable{
+        margin: 0 !important;
+    }
+    .titleSpan{
+        font-size: 18px;
+    }
+}
