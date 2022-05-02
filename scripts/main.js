@@ -17,7 +17,7 @@ const dataP = (async function () {
 })()
 const npcP = (async function(){
   return await getData("npc");
-})
+})()
 
 function showSurveyToast() {
   if (getCookie("survey") == "") {

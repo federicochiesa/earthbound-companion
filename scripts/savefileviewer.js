@@ -256,7 +256,7 @@ class GameSave {
     for (i = 0; i < 36; i++)
       this.escargoItems[i] = itemsLUT[data[i + hexToDec("76")]];
     for (i = 0; i < 6; i++)
-      this.partyMembers.push(partyMembersLUT[data[i + hexToDec("b6")]]);
+      this.partyMembers.push(data[i + hexToDec("b6")]);
     this.inGameTimer = (data[hexToDec("1f7")] << 24) + (data[hexToDec("1f6")] << 16) + (data[hexToDec("1f5")] << 8) + data[hexToDec("1f4")];
   }
 
@@ -287,9 +287,43 @@ class GameSave {
     }
     document.getElementById("favThingValue").innerText = this.favThing;
     document.getElementById("favFoodValue").innerText = this.favFood;
-    for (let j = 0; j < this.numPartyMembers; j++) {
+
+    let NPCdata = await npcP;
+    let len = 0;
+    for (let j = 0; j < this.partyMembers.length; j++){
+      if(this.partyMembers[j] != 0) len+=1;
+    }
+    for (let j = 0; j < len; j++) {
+      if(this.partyMembers[j] > 4){
+        let stats = [];
+        if(this.partyMembers[j] == 7){
+          document.getElementById("cc" + j + "name").innerText = this.petName;
+          stats = NPCdata["King"];
+          document.getElementById("cc"+j+"img").src = "../assets/sprites/King.png"
+        }
+        else{
+          document.getElementById("cc" + j + "name").innerText = partyMembersLUT[this.partyMembers[j]];
+          if(partyMembersLUT[this.partyMembers[j]].search("Flying Man") > -1){
+            stats = NPCdata["Flying Man"];
+            document.getElementById("cc"+j+"img").src = "../assets/sprites/FlyingMan.png"
+          }
+          else{
+            stats = NPCdata[partyMembersLUT[this.partyMembers[j]]];
+            document.getElementById("cc"+j+"img").src = "../assets/sprites/"+ nameToImage(partyMembersLUT[this.partyMembers[j]]) +".png"
+          }
+        }
+        let Labels = ["Offense", "Defense", "Speed", "Guts", "Luck"]
+        for (let i = 0; i < Labels.length; i++)
+          document.getElementById("cc" + j + "stat" + i).innerText = stats[Labels[i]];
+        document.getElementById("cc" + j + "level").innerText = stats["Level"];
+        document.getElementById("cc" + j + "hp").innerText = stats["HP"];
+        document.getElementById("cc" + j + "pp").innerText = stats["PP"];
+
+        document.getElementById("cc" + j).style.display = "block";
+      }else{
       document.getElementById("c" + j + "name").innerText = this.characters[j].name
       let fields = ["weapon", "body", "arms", "other"]
+
       for (let k = 0; k < 4; k++)
         this.generateLink("c" + j + fields[k], this.characters[j].equip[k])
       let inventory = this.characters[j].items;
@@ -309,8 +343,9 @@ class GameSave {
           if (weapons[i].name.toUpperCase() == this.characters[j].equip[0].toUpperCase())
             document.getElementById("c" + j + "errorRate").innerText = weapons[i].data["Error rate"];
       } else document.getElementById("c" + j + "errorRate").innerText = "0";
-
       document.getElementById("c" + j).style.display = "block";
+    }
+    
     }
     document.getElementById("escargo").style.display = "block";
     document.getElementById("generalInfo").style.display = "block";
@@ -343,6 +378,9 @@ class GameSave {
       document.getElementById("c" + j + "hp").innerText = "";
       document.getElementById("c" + j + "pp").innerText = "";
       document.getElementById("c" + j + "errorRate").innerText = "";
+    }
+    for(let j = 1; j < 6; j++) {
+      document.getElementById("cc" + j).style.display = "none";
     }
     document.getElementById("escargo").style.display = "none";
     for (let i = 0; i < 35; i++)
