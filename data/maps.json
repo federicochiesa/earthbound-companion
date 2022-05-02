@@ -97,12 +97,30 @@
                 "y": "2675",
                 "type": "present",
                 "name": "Can of fruit juice"
+            },
+            {
+                "x": "4660",
+                "y": "50",
+                "type": "door",
+                "name": "Twoson"
+            },
+            {
+                "x": "4385",
+                "y": "6975",
+                "type": "door",
+                "name": "Giant Step"
             }
         ]
     },
     "giant step": {
         "name": "giantstep",
         "pins": [
+            {
+                "x": "518",
+                "y": "5657",
+                "type": "door",
+                "name": "Giant Step Sanctuary"
+            },
             {
                 "x": "518",
                 "y": "5464",
@@ -144,6 +162,24 @@
                 "y": "4300",
                 "type": "enemy",
                 "name": "Black Antoid"
+            },
+            {
+                "x": "11133",
+                "y": "889",
+                "type": "door",
+                "name": "Onett"
+            },
+            {
+                "x": "4490",
+                "y": "4462",
+                "type": "door",
+                "name": "Outside"
+            },
+            {
+                "x": "7040",
+                "y": "5306",
+                "type": "door",
+                "name": "Outside"
             }
         ]
     },
@@ -494,6 +530,18 @@
                 "y": "2700",
                 "type": "enemy",
                 "name": "Chomposaur"
+            },
+            {
+                "x": "708",
+                "y": "1870",
+                "type": "door",
+                "name": "Fire Spring"
+            },
+            {
+                "x": "1540",
+                "y": "5580",
+                "type": "door",
+                "name": "Cave To The Past"
             }
         ]
     },
