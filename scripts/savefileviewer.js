@@ -89,7 +89,7 @@ var itemsLUT = ["(Nothing)", "Franklin badge", "Teddy bear",
   "Mr. Saturn coin", "Meteornium", "Popsicle",
   "Cup of Lifenoodles", "Carrot key", "-", "-"];
 
-var partyMembersLUT = ["(None)", "Ness", "Paula", "Jeff", "Poo", "Pokey", "Picky", "King", "Tony", "Bubble Monkey", "Dungeon Man", "Flying Man 1", "Flying Man 2", "Flying Man 3", "Flying Man 4", "Flying Man 5", "Teddy Bear", "Super Plush Bear"];
+var partyMembersLUT = ["(None)", "ness", "paula", "jeff", "poo", "Pokey", "Picky", "King", "Tony", "Bubble Monkey", "Dungeon Man", "Flying Man 1", "Flying Man 2", "Flying Man 3", "Flying Man 4", "Flying Man 5", "Teddy Bear", "Super Plush Bear"];
 
 window.onload = function () {
   showSurveyToast();
@@ -294,6 +294,15 @@ class GameSave {
       if(this.partyMembers[j] != 0) len+=1;
     }
     for (let j = 0; j < len; j++) {
+      if(this.partyMembers[j] == 7)
+        document.getElementById("p"+j+"img").src = "../assets/sprites/King.png"
+      else if(partyMembersLUT[this.partyMembers[j]].search("Flying Man") > -1)
+        document.getElementById("p"+j+"img").src = "../assets/sprites/FlyingMan.png"
+      else
+        document.getElementById("p"+j+"img").src = "../assets/sprites/"+ nameToImage(partyMembersLUT[this.partyMembers[j]]) +".png"
+      document.getElementById("p"+j+"img").style.margin = "15px";
+    }
+    for (let j = 0; j < len; j++) {
       if(this.partyMembers[j] > 4){
         let stats = [];
         if(this.partyMembers[j] == 7){
@@ -349,6 +358,7 @@ class GameSave {
     }
     document.getElementById("escargo").style.display = "block";
     document.getElementById("generalInfo").style.display = "block";
+    document.getElementById("partyMembers").style.display = "block";
     for (let i = 0; i < this.escargoItems.length - 1; i++)
       this.generateLink("esc" + i, this.escargoItems[i])
   }
@@ -382,13 +392,42 @@ class GameSave {
     for(let j = 1; j < 6; j++) {
       document.getElementById("cc" + j).style.display = "none";
     }
+    for (let j = 0; j < 6; j++) {
+      document.getElementById("p"+j+"img").src = ""
+      document.getElementById("p"+j+"img").style.opacity = 1;
+      document.getElementById("p"+j+"img").style.margin = "0px";
+    }
     document.getElementById("escargo").style.display = "none";
     for (let i = 0; i < 35; i++)
       document.getElementById("esc" + i).innerText = "(Nothing)"
     document.getElementById("generalInfo").style.display = "none";
+    document.getElementById("partyMembers").style.display = "none";
     for (let i = 0; i < 3; i++)
       document.getElementById("savec" + i).style.display = "none";
   }
+}
+
+async function displayPlayer(clicked_id){
+  players = ["ness", "paula", "jeff", "poo"];
+  console.log(clicked_id[1])
+  if(getComputedStyle(document.getElementById(clicked_id)).opacity != 1){
+    document.getElementById(clicked_id).style.opacity = 1;
+    if(clicked_id[1] < 4){
+      if(getComputedStyle(document.getElementById("c"+clicked_id[1])).display == "none" && document.getElementById(clicked_id).src.search(players[clicked_id[1]]) > -1)
+        document.getElementById("c"+clicked_id[1]).style.display = "block";
+      else document.getElementById("cc"+clicked_id[1]).style.display = "block";
+    }
+    else document.getElementById("cc"+clicked_id[1]).style.display = "block";
+  } else{
+    document.getElementById(clicked_id).style.opacity = 0.3;
+    if(clicked_id[1] < 4){
+      if(getComputedStyle(document.getElementById("c"+clicked_id[1])).display == "block")
+        document.getElementById("c"+clicked_id[1]).style.display = "none";
+      else document.getElementById("cc"+clicked_id[1]).style.display = "none";
+    }
+    else document.getElementById("cc"+clicked_id[1]).style.display = "none";
+  }
+
 }
 
 
@@ -617,6 +656,58 @@ function resizeTables() {
             </tr>\
           </tbody>"
     }
+    for (let i = 1; i < 6; i++) {
+      document.getElementById("cc" + i + "statsTable").innerHTML = "<tbody>\
+                  <tr>\
+                    <th scope=\"row\">\
+                      Offense\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"stat0\"></td>\
+                    <th scope=\"row\">\
+                      Defense\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"stat1\"></td>\
+                  </tr>\
+                  <tr>\
+                    <th scope=\"row\">\
+                      Speed\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"stat2\"></td>\
+                    <th scope=\"row\">\
+                      Guts\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"stat3\"></td>\
+                  </tr>\
+                  <tr>\
+                    <th scope=\"row\">\
+                      Luck\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"stat4\"></td>\
+                    <th scope=\"row\">\
+                      Level\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"level\"></td>\
+                  </tr>\
+                  <tr>\
+                    <th scope=\"row\">\
+                      HP\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"hp\"></td>\
+                    <th scope=\"row\">\
+                      PP\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"pp\"></td>\
+                  </tr>\
+                </tbody>";
+    }
     for (let i = 0; i < 3; i++)
       if (document.getElementById("save" + i).style.opacity != 0.3)
         saves[i].displayData();
@@ -778,6 +869,54 @@ function resizeTables() {
               <td id=\"c" + i + "pp\"></td>\
             </tr>\
           </tbody>"
+    }
+     for (let i = 1; i < 6; i++) {
+      document.getElementById("cc" + i + "statsTable").innerHTML = "<tbody>\
+                    <tr>\
+                    <th scope=\"row\">\
+                      Offense\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"stat0\"></td>\
+                    <th scope=\"row\">\
+                      Defense\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"stat1\"></td>\
+                    <th scope=\"row\">\
+                      Speed\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"stat2\"></td>\
+                    <th scope=\"row\">\
+                      Guts\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"stat3\"></td>\
+                  </tr>\
+                  <tr>\
+                    <th scope=\"row\">\
+                      Luck\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"stat4\"></td>\
+                    <th scope=\"row\">\
+                      Level\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"level\"></td>\
+                    <th scope=\"row\">\
+                      HP\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"hp\"></td>\
+                    <th scope=\"row\">\
+                      PP\
+                    </th>\
+                    <td>:</td>\
+                    <td id=\"cc"+i+"pp\"></td>\
+                  </tr>\
+                </tbody>";
     }
     for (let i = 0; i < 3; i++)
       if (document.getElementById("save" + i).style.opacity != 0.3)

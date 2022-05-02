@@ -104,33 +104,33 @@
   "Speed": 100
 },
 "Teddy Bear":{
-    "Defense": 92,
+    "Defense": 0,
     "Fire vulnerability": "70%",
     "Flash vulnerability": "70%",
     "Freeze vulnerability": "70%",
-    "Guts": 50,
+    "Guts": 0,
     "HP": 100,
     "Hypnosis/Brainshock vulnerability": "10%",
-    "Level": 99,
-    "Luck": 24,
-    "Offense": 95,
+    "Level": 1,
+    "Luck": 0,
+    "Offense": 0,
     "PP": 0,
     "Paralysis vulnerability": "50%",
-    "Speed": 100
+    "Speed": 0
   },
 "Super Plush Bear":{
-    "Defense": 92,
+    "Defense": 0,
     "Fire vulnerability": "70%",
     "Flash vulnerability": "70%",
     "Freeze vulnerability": "70%",
-    "Guts": 50,
-    "HP": 100,
+    "Guts": 0,
+    "HP": 400,
     "Hypnosis/Brainshock vulnerability": "10%",
-    "Level": 99,
-    "Luck": 24,
-    "Offense": 95,
+    "Level": 1,
+    "Luck": 0,
+    "Offense": 0,
     "PP": 0,
     "Paralysis vulnerability": "50%",
-    "Speed": 100
+    "Speed": 0
   }
 }
