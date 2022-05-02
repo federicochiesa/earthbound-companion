@@ -89,6 +89,8 @@ var itemsLUT = ["(Nothing)", "Franklin badge", "Teddy bear",
   "Mr. Saturn coin", "Meteornium", "Popsicle",
   "Cup of Lifenoodles", "Carrot key", "-", "-"];
 
+var partyMembersLUT = ["(None)", "Ness", "Paula", "Jeff", "Poo", "Pokey", "Picky", "King", "Tony", "Bubble Monkey", "Dungeon Man", "Flying Man 1", "Flying Man 2", "Flying Man 3", "Flying Man 4", "Flying Man 5", "Teddy Bear", "Super Plush Bear"];
+
 window.onload = function () {
   showSurveyToast();
   initThumbnail();
@@ -213,6 +215,7 @@ class GameSave {
     this.numPartyMembers = data[hexToDec("ce")];
     this.flags = []
     this.escargoItems = [];
+    this.partyMembers = [];
 
     for (var i = 0; i < 24; i++) {
       let ch = data[i + hexToDec("2C")];
@@ -252,6 +255,8 @@ class GameSave {
 
     for (i = 0; i < 36; i++)
       this.escargoItems[i] = itemsLUT[data[i + hexToDec("76")]];
+    for (i = 0; i < 6; i++)
+      this.partyMembers.push(partyMembersLUT[data[i + hexToDec("b6")]]);
     this.inGameTimer = (data[hexToDec("1f7")] << 24) + (data[hexToDec("1f6")] << 16) + (data[hexToDec("1f5")] << 8) + data[hexToDec("1f4")];
   }
 
