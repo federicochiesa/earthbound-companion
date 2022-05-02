@@ -15,6 +15,9 @@ const shopsP = (async function () {
 const dataP = (async function () {
   return await getData("stats");
 })()
+const npcP = (async function(){
+  return await getData("npc");
+})
 
 function showSurveyToast() {
   if (getCookie("survey") == "") {
