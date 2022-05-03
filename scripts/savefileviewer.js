@@ -328,7 +328,6 @@ class GameSave {
         document.getElementById("cc" + j + "hp").innerText = stats["HP"];
         document.getElementById("cc" + j + "pp").innerText = stats["PP"];
 
-        document.getElementById("cc" + j).style.display = "block";
       }else{
       document.getElementById("c" + j + "name").innerText = this.characters[j].name
       let fields = ["weapon", "body", "arms", "other"]
@@ -352,7 +351,6 @@ class GameSave {
           if (weapons[i].name.toUpperCase() == this.characters[j].equip[0].toUpperCase())
             document.getElementById("c" + j + "errorRate").innerText = weapons[i].data["Error rate"];
       } else document.getElementById("c" + j + "errorRate").innerText = "0";
-      document.getElementById("c" + j).style.display = "block";
     }
     
     }
@@ -394,7 +392,7 @@ class GameSave {
     }
     for (let j = 0; j < 6; j++) {
       document.getElementById("p"+j+"img").src = ""
-      document.getElementById("p"+j+"img").style.opacity = 1;
+      document.getElementById("p"+j+"img").style.opacity = 0.3;
       document.getElementById("p"+j+"img").style.margin = "0px";
     }
     document.getElementById("escargo").style.display = "none";

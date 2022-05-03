@@ -201,7 +201,6 @@ table {
     .eqTestDiv>* {
         width: auto !important;
     }
-
     .tables-div {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -700,3 +699,4 @@ input[type=submit] {
     height: 2.5rem;
     margin-left: 15px
 }
+
