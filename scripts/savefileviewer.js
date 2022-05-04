@@ -115,7 +115,6 @@ window.onload = function () {
           names.push(capitalizeFirstLetters(map));
       }
     }
-
   }, 100);
 
   autocomplete(document.getElementById("searchLabel"), names)
@@ -201,6 +200,49 @@ async function initThumbnail() {
   if (typeof (saves[0]) != "undefined")
     GameSave.resetData();
   window.onresize = null;
+}
+
+function displayPlayerMulti(clicked_id) {
+  players = ["ness", "paula", "jeff", "poo"];
+  console.log(clicked_id)
+  if (getComputedStyle(document.getElementById(clicked_id)).opacity != 1) {
+    document.getElementById(clicked_id).style.opacity = 1;
+    if (clicked_id[1] < 4) {
+      if (getComputedStyle(document.getElementById("c" + clicked_id[1])).display == "none" && document.getElementById(clicked_id).src.search(players[clicked_id[1]]) > -1)
+        document.getElementById("c" + clicked_id[1]).style.display = "block";
+      else document.getElementById("cc" + clicked_id[1]).style.display = "block";
+    }
+    else document.getElementById("cc" + clicked_id[1]).style.display = "block";
+  } else {
+    document.getElementById(clicked_id).style.opacity = 0.3;
+    if (clicked_id[1] < 4) {
+      if (getComputedStyle(document.getElementById("c" + clicked_id[1])).display == "block")
+        document.getElementById("c" + clicked_id[1]).style.display = "none";
+      else document.getElementById("cc" + clicked_id[1]).style.display = "none";
+    }
+    else document.getElementById("cc" + clicked_id[1]).style.display = "none";
+  }
+}
+
+function displayPlayer(clicked_id) {
+  players = ["ness", "paula", "jeff", "poo"];
+  console.log(clicked_id)
+  if (getComputedStyle(document.getElementById(clicked_id)).opacity != 1) {
+    for(i = 0; i < 6; i++){
+      if(i != 0)
+        document.getElementById("cc" + i).style.display = "none"
+      if(i < 4)
+        document.getElementById("c" + i).style.display = "none"
+      document.getElementById("p" + i + "img").style.opacity = 0.3
+    }
+    document.getElementById(clicked_id).style.opacity = 1;
+    if (clicked_id[1] < 4) {
+      if (getComputedStyle(document.getElementById("c" + clicked_id[1])).display == "none" && document.getElementById(clicked_id).src.search(players[clicked_id[1]]) > -1)
+        document.getElementById("c" + clicked_id[1]).style.display = "block";
+      else document.getElementById("cc" + clicked_id[1]).style.display = "block";
+    }
+    else document.getElementById("cc" + clicked_id[1]).style.display = "block";
+  }
 }
 
 class GameSave {
@@ -290,35 +332,35 @@ class GameSave {
 
     let NPCdata = await npcP;
     let len = 0;
-    for (let j = 0; j < this.partyMembers.length; j++){
-      if(this.partyMembers[j] != 0) len+=1;
+    for (let j = 0; j < this.partyMembers.length; j++) {
+      if (this.partyMembers[j] != 0) len += 1;
     }
     for (let j = 0; j < len; j++) {
-      if(this.partyMembers[j] == 7)
-        document.getElementById("p"+j+"img").src = "../assets/sprites/King.png"
-      else if(partyMembersLUT[this.partyMembers[j]].search("Flying Man") > -1)
-        document.getElementById("p"+j+"img").src = "../assets/sprites/FlyingMan.png"
+      if (this.partyMembers[j] == 7)
+        document.getElementById("p" + j + "img").src = "../assets/sprites/King.png"
+      else if (partyMembersLUT[this.partyMembers[j]].search("Flying Man") > -1)
+        document.getElementById("p" + j + "img").src = "../assets/sprites/FlyingMan.png"
       else
-        document.getElementById("p"+j+"img").src = "../assets/sprites/"+ nameToImage(partyMembersLUT[this.partyMembers[j]]) +".png"
-      document.getElementById("p"+j+"img").style.margin = "15px";
+        document.getElementById("p" + j + "img").src = "../assets/sprites/" + nameToImage(partyMembersLUT[this.partyMembers[j]]) + ".png"
+      document.getElementById("p" + j + "img").style.margin = "15px";
     }
     for (let j = 0; j < len; j++) {
-      if(this.partyMembers[j] > 4){
+      if (this.partyMembers[j] > 4) {
         let stats = [];
-        if(this.partyMembers[j] == 7){
+        if (this.partyMembers[j] == 7) {
           document.getElementById("cc" + j + "name").innerText = this.petName;
           stats = NPCdata["King"];
-          document.getElementById("cc"+j+"img").src = "../assets/sprites/King.png"
+          document.getElementById("cc" + j + "img").src = "../assets/sprites/King.png"
         }
-        else{
+        else {
           document.getElementById("cc" + j + "name").innerText = partyMembersLUT[this.partyMembers[j]];
-          if(partyMembersLUT[this.partyMembers[j]].search("Flying Man") > -1){
+          if (partyMembersLUT[this.partyMembers[j]].search("Flying Man") > -1) {
             stats = NPCdata["Flying Man"];
-            document.getElementById("cc"+j+"img").src = "../assets/sprites/FlyingMan.png"
+            document.getElementById("cc" + j + "img").src = "../assets/sprites/FlyingMan.png"
           }
-          else{
+          else {
             stats = NPCdata[partyMembersLUT[this.partyMembers[j]]];
-            document.getElementById("cc"+j+"img").src = "../assets/sprites/"+ nameToImage(partyMembersLUT[this.partyMembers[j]]) +".png"
+            document.getElementById("cc" + j + "img").src = "../assets/sprites/" + nameToImage(partyMembersLUT[this.partyMembers[j]]) + ".png"
           }
         }
         let Labels = ["Offense", "Defense", "Speed", "Guts", "Luck"]
@@ -328,35 +370,36 @@ class GameSave {
         document.getElementById("cc" + j + "hp").innerText = stats["HP"];
         document.getElementById("cc" + j + "pp").innerText = stats["PP"];
 
-      }else{
-      document.getElementById("c" + j + "name").innerText = this.characters[j].name
-      let fields = ["weapon", "body", "arms", "other"]
+      } else {
+        document.getElementById("c" + j + "name").innerText = this.characters[j].name
+        let fields = ["weapon", "body", "arms", "other"]
 
-      for (let k = 0; k < 4; k++)
-        this.generateLink("c" + j + fields[k], this.characters[j].equip[k])
-      let inventory = this.characters[j].items;
-      for (let i = 0; i < inventory.length; i++) {
-        this.generateLink("c" + j + "i" + i, inventory[i])
+        for (let k = 0; k < 4; k++)
+          this.generateLink("c" + j + fields[k], this.characters[j].equip[k])
+        let inventory = this.characters[j].items;
+        for (let i = 0; i < inventory.length; i++) {
+          this.generateLink("c" + j + "i" + i, inventory[i])
+        }
+        let stats = this.characters[j].stats;
+        for (let i = 0; i < stats.length; i++)
+          document.getElementById("c" + j + "stat" + i).innerText = stats[i];
+        document.getElementById("c" + j + "level").innerText = this.characters[j].level;
+        document.getElementById("c" + j + "xp").innerText = this.characters[j].exp;
+        document.getElementById("c" + j + "hp").innerText = this.characters[j].currHP;
+        document.getElementById("c" + j + "pp").innerText = this.characters[j].currPP;
+        var weapons = items[Object.keys(items)[0]]
+        if (this.characters[j].equip[0].toUpperCase() != "(NOTHING)") {
+          for (let i = 0; i < weapons.length; i++)
+            if (weapons[i].name.toUpperCase() == this.characters[j].equip[0].toUpperCase())
+              document.getElementById("c" + j + "errorRate").innerText = weapons[i].data["Error rate"];
+        } else document.getElementById("c" + j + "errorRate").innerText = "0";
       }
-      let stats = this.characters[j].stats;
-      for (let i = 0; i < stats.length; i++)
-        document.getElementById("c" + j + "stat" + i).innerText = stats[i];
-      document.getElementById("c" + j + "level").innerText = this.characters[j].level;
-      document.getElementById("c" + j + "xp").innerText = this.characters[j].exp;
-      document.getElementById("c" + j + "hp").innerText = this.characters[j].currHP;
-      document.getElementById("c" + j + "pp").innerText = this.characters[j].currPP;
-      var weapons = items[Object.keys(items)[0]]
-      if (this.characters[j].equip[0].toUpperCase() != "(NOTHING)") {
-        for (let i = 0; i < weapons.length; i++)
-          if (weapons[i].name.toUpperCase() == this.characters[j].equip[0].toUpperCase())
-            document.getElementById("c" + j + "errorRate").innerText = weapons[i].data["Error rate"];
-      } else document.getElementById("c" + j + "errorRate").innerText = "0";
-    }
-    
     }
     document.getElementById("escargo").style.display = "block";
     document.getElementById("generalInfo").style.display = "block";
     document.getElementById("partyMembers").style.display = "block";
+    document.getElementById("p0img").style.opacity = 1;
+    document.getElementById("c0").style.display = "block";
     for (let i = 0; i < this.escargoItems.length - 1; i++)
       this.generateLink("esc" + i, this.escargoItems[i])
   }
@@ -387,13 +430,13 @@ class GameSave {
       document.getElementById("c" + j + "pp").innerText = "";
       document.getElementById("c" + j + "errorRate").innerText = "";
     }
-    for(let j = 1; j < 6; j++) {
+    for (let j = 1; j < 6; j++) {
       document.getElementById("cc" + j).style.display = "none";
     }
     for (let j = 0; j < 6; j++) {
-      document.getElementById("p"+j+"img").src = ""
-      document.getElementById("p"+j+"img").style.opacity = 0.3;
-      document.getElementById("p"+j+"img").style.margin = "0px";
+      document.getElementById("p" + j + "img").src = ""
+      document.getElementById("p" + j + "img").style.opacity = 0.3;
+      document.getElementById("p" + j + "img").style.margin = "0px";
     }
     document.getElementById("escargo").style.display = "none";
     for (let i = 0; i < 35; i++)
@@ -402,32 +445,13 @@ class GameSave {
     document.getElementById("partyMembers").style.display = "none";
     for (let i = 0; i < 3; i++)
       document.getElementById("savec" + i).style.display = "none";
+    document.getElementById("emptyFileWarning").style.display = "none";
+    for(let i = 0; i < 3; i++){
+      document.getElementById("save" + i).style.opacity = 0.3;
+    }
+    document.getElementById("save0").style.opacity = 1;
   }
 }
-
-async function displayPlayer(clicked_id){
-  players = ["ness", "paula", "jeff", "poo"];
-  console.log(clicked_id[1])
-  if(getComputedStyle(document.getElementById(clicked_id)).opacity != 1){
-    document.getElementById(clicked_id).style.opacity = 1;
-    if(clicked_id[1] < 4){
-      if(getComputedStyle(document.getElementById("c"+clicked_id[1])).display == "none" && document.getElementById(clicked_id).src.search(players[clicked_id[1]]) > -1)
-        document.getElementById("c"+clicked_id[1]).style.display = "block";
-      else document.getElementById("cc"+clicked_id[1]).style.display = "block";
-    }
-    else document.getElementById("cc"+clicked_id[1]).style.display = "block";
-  } else{
-    document.getElementById(clicked_id).style.opacity = 0.3;
-    if(clicked_id[1] < 4){
-      if(getComputedStyle(document.getElementById("c"+clicked_id[1])).display == "block")
-        document.getElementById("c"+clicked_id[1]).style.display = "none";
-      else document.getElementById("cc"+clicked_id[1]).style.display = "none";
-    }
-    else document.getElementById("cc"+clicked_id[1]).style.display = "none";
-  }
-
-}
-
 
 class PartyMember {
   constructor(data) {
@@ -661,48 +685,48 @@ function resizeTables() {
                       Offense\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"stat0\"></td>\
+                    <td id=\"cc"+ i + "stat0\"></td>\
                     <th scope=\"row\">\
                       Defense\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"stat1\"></td>\
+                    <td id=\"cc"+ i + "stat1\"></td>\
                   </tr>\
                   <tr>\
                     <th scope=\"row\">\
                       Speed\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"stat2\"></td>\
+                    <td id=\"cc"+ i + "stat2\"></td>\
                     <th scope=\"row\">\
                       Guts\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"stat3\"></td>\
+                    <td id=\"cc"+ i + "stat3\"></td>\
                   </tr>\
                   <tr>\
                     <th scope=\"row\">\
                       Luck\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"stat4\"></td>\
+                    <td id=\"cc"+ i + "stat4\"></td>\
                     <th scope=\"row\">\
                       Level\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"level\"></td>\
+                    <td id=\"cc"+ i + "level\"></td>\
                   </tr>\
                   <tr>\
                     <th scope=\"row\">\
                       HP\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"hp\"></td>\
+                    <td id=\"cc"+ i + "hp\"></td>\
                     <th scope=\"row\">\
                       PP\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"pp\"></td>\
+                    <td id=\"cc"+ i + "pp\"></td>\
                   </tr>\
                 </tbody>";
     }
@@ -868,51 +892,51 @@ function resizeTables() {
             </tr>\
           </tbody>"
     }
-     for (let i = 1; i < 6; i++) {
+    for (let i = 1; i < 6; i++) {
       document.getElementById("cc" + i + "statsTable").innerHTML = "<tbody>\
                     <tr>\
                     <th scope=\"row\">\
                       Offense\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"stat0\"></td>\
+                    <td id=\"cc"+ i + "stat0\"></td>\
                     <th scope=\"row\">\
                       Defense\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"stat1\"></td>\
+                    <td id=\"cc"+ i + "stat1\"></td>\
                     <th scope=\"row\">\
                       Speed\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"stat2\"></td>\
+                    <td id=\"cc"+ i + "stat2\"></td>\
                     <th scope=\"row\">\
                       Guts\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"stat3\"></td>\
+                    <td id=\"cc"+ i + "stat3\"></td>\
                   </tr>\
                   <tr>\
                     <th scope=\"row\">\
                       Luck\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"stat4\"></td>\
+                    <td id=\"cc"+ i + "stat4\"></td>\
                     <th scope=\"row\">\
                       Level\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"level\"></td>\
+                    <td id=\"cc"+ i + "level\"></td>\
                     <th scope=\"row\">\
                       HP\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"hp\"></td>\
+                    <td id=\"cc"+ i + "hp\"></td>\
                     <th scope=\"row\">\
                       PP\
                     </th>\
                     <td>:</td>\
-                    <td id=\"cc"+i+"pp\"></td>\
+                    <td id=\"cc"+ i + "pp\"></td>\
                   </tr>\
                 </tbody>";
     }
