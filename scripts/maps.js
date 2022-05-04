@@ -1,15 +1,15 @@
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const mapToShow = urlParams.get("map");
+
 window.onload = function () {
     showSurveyToast();
     updateMap("onett");
     //Go to selected map in query URL(if any)
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const mapToShow = urlParams.get("map");
     if (mapToShow != null)
         updateMap(mapToShow);
     //Add click event listener on popovers
     const iframe = document.getElementById("mapiFrame");
-
     pages = ["items", "enemies", "shops", "maps"]
     data = []
     names = []
@@ -38,8 +38,6 @@ window.onload = function () {
     searchButton.addEventListener('click', (_) => {
         searchOnSite(data);
     });
-
-
 }
 
 function updateMap(id) {
@@ -48,9 +46,9 @@ function updateMap(id) {
         arrows[i].setAttribute("style", "display: none;");
     }
     document.getElementById(id + "Arrow").style.display = "inline";
-    document.getElementById("mapiFrame").src = "../../mapframe/dist/?region=" + id;
-}
-
-function checkForPopover() {
-
+    if(urlParams.get("pin") != null){
+        document.getElementById("mapiFrame").src = "../../mapframe/dist/?region=" + id + "&pin=" + urlParams.get("pin");
+    }
+    else
+        document.getElementById("mapiFrame").src = "../../mapframe/dist/?region=" + id
 }

@@ -61,7 +61,7 @@ async function getItemLocation(item) {
                             l = l.replace("Fourside Sewers", "<a href=\"../maps/?map=" + "foursidesewers" + "\" color: inherit\" class=\"itemLink\">" + "Fourside Sewers" + "</a>");
 
                         else if (locs[j].search(capitalizeFirstLetters(map)) > -1)
-                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"../maps/?map=" + nameToImage(map.toLowerCase()) + "&pin="+ nameToImage(item) + "\" color: inherit\" class=\"itemLink\">" + capitalizeFirstLetters(map) + "</a>");
+                            l = l.replace(capitalizeFirstLetters(map), "<a href=\"../maps/?map=" + nameToImage(map.toLowerCase()) + "&pin="+ nameToImage(item).toLowerCase() + "\" color: inherit\" class=\"itemLink\">" + capitalizeFirstLetters(map) + "</a>");
                     }
 
                     returnString += " <tr>\
